@@ -3,6 +3,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { ArrowRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
+import { TALENT_DATA } from '../data/talent';
 
 export default function Home() {
   const { t } = useLanguage();
@@ -86,26 +87,28 @@ export default function Home() {
               </Link>
            </div>
 
-           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-              {[1, 2, 3].map((i) => (
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+              {TALENT_DATA.slice(0, 3).map((person) => (
                 <motion.div 
-                  key={i}
+                  key={person.id}
                   whileHover={{ y: -10 }}
                   className="group"
                 >
-                  <div className="aspect-[3/4] bg-zinc-900 overflow-hidden relative mb-6">
-                    <img 
-                      src={`https://images.unsplash.com/photo-${i === 1 ? '1506794778202-cad84cf45f1d' : i === 2 ? '1531746020798-e6953c6e8e04' : '1507003211169-0a1dd7228f2d'}?auto=format&fit=crop&q=80&w=800`}
-                      alt="Talent"
-                      className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                  </div>
-                  <h3 className="text-2xl font-serif mb-1">Alex Rivera</h3>
-                  <p className="text-xs uppercase tracking-tight opacity-40">Model / Barcelona</p>
+                  <Link to={`/talent/${person.id}`}>
+                    <div className="aspect-[3/4] bg-zinc-900 overflow-hidden relative mb-6">
+                      <img 
+                        src={person.image}
+                        alt={person.name}
+                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    </div>
+                    <h3 className="text-2xl font-serif mb-1 group-hover:opacity-60 transition-opacity">{person.name}</h3>
+                    <p className="text-xs uppercase tracking-tight opacity-40">{person.stats.profession || person.type} / {person.location}</p>
+                  </Link>
                 </motion.div>
               ))}
-           </div>
+            </div>
         </div>
       </section>
 

@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: t('nav.talent'), path: '/talent' },
     { name: t('nav.events'), path: '/events' },
     { name: t('nav.projects'), path: '/projects' },
+    { name: t('nav.hospitality'), path: '/hospitality' },
     { name: t('nav.clients'), path: '/clients' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.contact'), path: '/contact' },
