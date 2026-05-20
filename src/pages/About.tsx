@@ -32,7 +32,7 @@ export default function About() {
       <section className="px-6 grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 max-w-7xl mx-auto items-start mb-40">
         <div className="md:sticky md:top-32 aspect-[4/5] bg-zinc-900 overflow-hidden">
           <img 
-            src="https://images.unsplash.com/photo-1507679799987-c73774573b2a?auto=format&fit=crop&q=80&w=1200"
+            src="/JVV-PatrickSchuttler10-e1635273090865.jpg"
             alt="Jesús Vázquez Viedma"
             className="w-full h-full object-cover grayscale opacity-70"
           />
