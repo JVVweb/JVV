@@ -3,59 +3,13 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft } from 'lucide-react';
 import SEO from '../components/SEO';
-
-const PROJECT_DETAILS = {
-  1: {
-    title: 'Vogue Editorial',
-    client: 'Vogue España',
-    year: '2026',
-    description: 'A study in minimalist elegance and high-fashion storytelling. This editorial explored the intersection of light, shadow and avant-garde silhouette.',
-    images: [
-      'https://images.unsplash.com/photo-1558769132-cb1aea458c5e',
-      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35',
-      'https://images.unsplash.com/photo-1539109132314-347752418b70'
-    ]
-  },
-  2: {
-    title: 'Urban Nomads',
-    client: 'Zara Home',
-    year: '2025',
-    description: 'Capturing the essence of modern living in transit. A cinematic campaign featuring natural textures and atmospheric interior design.',
-    images: [
-      'https://images.unsplash.com/photo-1441986300917-64674bd600d8',
-      'https://images.unsplash.com/photo-1524758631624-e2822e304c36',
-      'https://images.unsplash.com/photo-1513506003901-1e6a229e2d15'
-    ]
-  },
-  3: {
-    title: 'Autumn Glow',
-    client: 'Mango',
-    year: '2026',
-    description: 'Warm tones and soft layering for the transitional season. A campaign focused on comfort, style, and the beauty of changing landscapes.',
-    images: [
-      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d',
-      'https://images.unsplash.com/photo-1509631179647-0177331693ae',
-      'https://images.unsplash.com/photo-1445205170230-053b830c6050'
-    ]
-  },
-  4: {
-    title: 'Digital Soul',
-    client: 'Bershka',
-    year: '2025',
-    description: 'Exploring the boundary between the physical and digital realms. Vibrant colors and high-energy photography defining Gen Z aesthetics.',
-    images: [
-      'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f',
-      'https://images.unsplash.com/photo-1529139572765-397033ef7e8f',
-      'https://images.unsplash.com/photo-1503342217505-b0a15ec3261c'
-    ]
-  }
-};
+import { PROJECTS_DATA } from '../data/projects';
 
 export default function ProjectDetail() {
   const { id } = useParams();
   const { t } = useLanguage();
   const navigate = useNavigate();
-  const project = PROJECT_DETAILS[id as unknown as keyof typeof PROJECT_DETAILS];
+  const project = PROJECTS_DATA.find(p => p.id === Number(id));
 
   if (!project) {
     navigate('/projects');
@@ -67,7 +21,7 @@ export default function ProjectDetail() {
       <SEO 
         title={`${project.title} | ${project.client}`}
         description={`${project.title} - A campaign for ${project.client} (${project.year}) produced by JVV Agency. ${project.description}`}
-        ogImage={project.images[0] || "https://images.unsplash.com/photo-1507679799987-c73774573b2a?auto=format&fit=crop&q=80&w=1200"}
+        ogImage={project.images[0]?.startsWith('http') ? `${project.images[0]}?auto=format&fit=crop&q=80&w=1200` : project.images[0]}
       />
       <div className="max-w-7xl mx-auto">
         <Link 
@@ -80,39 +34,40 @@ export default function ProjectDetail() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
           <div className="lg:col-span-8">
-            <h1 className="text-6xl md:text-8xl font-serif tracking-tighter mb-8">{project.title}</h1>
+            <h1 className="text-6xl md:text-8xl font-serif tracking-tighter mb-8 uppercase leading-tight">{project.title}</h1>
             <p className="text-xl font-light opacity-60 leading-relaxed max-w-2xl">
               {project.description}
             </p>
           </div>
           <div className="lg:col-span-4 flex flex-col justify-end lg:items-end">
-            <div className="space-y-4 text-right">
+            <div className="space-y-4 text-right w-full">
               <div className="flex justify-between lg:justify-end lg:space-x-12 border-b border-white/10 pb-4">
                 <span className="text-[10px] uppercase tracking-widest opacity-30">Client</span>
-                <span className="text-sm">{project.client}</span>
+                <span className="text-sm font-medium">{project.client}</span>
               </div>
               <div className="flex justify-between lg:justify-end lg:space-x-12 border-b border-white/10 pb-4">
                 <span className="text-[10px] uppercase tracking-widest opacity-30">Year</span>
-                <span className="text-sm">{project.year}</span>
+                <span className="text-sm font-medium">{project.year}</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="space-y-12">
+        {/* 3 Images Side-by-Side Parallel Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {project.images.map((img, i) => (
             <motion.div 
               key={i}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="aspect-video overflow-hidden bg-zinc-900"
+              transition={{ duration: 0.8, delay: i * 0.1 }}
+              className="aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-zinc-900 shadow-lg border border-white/5"
             >
               <img 
-                src={`${img}?auto=format&fit=crop&q=85&w=2000`} 
+                src={img.startsWith('http') ? `${img}?auto=format&fit=crop&q=85&w=1000` : img} 
                 alt={`${project.title} ${i}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
               />
             </motion.div>
           ))}

@@ -58,7 +58,7 @@ export default function Talent() {
               className="group cursor-pointer"
             >
               <Link to={`/talent/${person.id}`}>
-                <div className="aspect-[3/4] overflow-hidden bg-zinc-900 mb-4 grayscale hover:grayscale-0 transition-all duration-700 relative">
+                <div className="aspect-[3/4] overflow-hidden bg-zinc-900 mb-4 transition-all duration-700 relative">
                   <img 
                     src={`${person.image}?auto=format&fit=crop&q=80&w=800`}
                     alt={person.name}

@@ -18,12 +18,12 @@ export const TALENT_DATA: Talent[] = [
     name: 'Valeria Vegas', 
     type: 'artists', 
     location: 'Madrid', 
-    image: '/Valeria vegas.jpg',
-    description: 'Valeria Vegas has a degree in Audiovisual Communication. Since 2015 she is a columnist and writes in several Spanish media such as Vanity Fair, Shangay, Candy, Lecturas... Co-writer of the hit series "Veneno" and "Vestidas de azul", she is also the author of multiple books and the director of acclaimed documentaries.',
+    image: '/valeria-vegas.jpg',
+    description: 'Valeria Vegas holds a degree in Audiovisual Communication. Since 2015, she has been a regular columnist and writer for multiple major Spanish media outlets including Vanity Fair, Shangay, Candy, and Lecturas. Celebrated as the co-writer together with Los Javis of the hit series "Veneno" and "Vestidas de azul", she is the author of multiple acclaimed books and the director of the award-winning documentary "Manolita, La Chen de Arcos". She is currently a weekly contributor to the program "Y ahora Sonsoles" and an ambassador for The Body Shop.',
     gallery: [
-      '/Valeria vegas.jpg',
-      'https://images.unsplash.com/photo-1544005313-94ddf0286df2',
-      'https://images.unsplash.com/photo-1517841905240-472988babdf9'
+      '/valeria-vegas.jpg',
+      'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
+      'https://images.unsplash.com/photo-1544005313-94ddf0286df2'
     ],
     stats: { profession: 'Writer / Communicator', education: 'Audiovisual Communication', notable: 'Veneno, Vestidas de azul, Libérate' },
     projects: [
@@ -38,10 +38,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Joan Pedrola', 
     type: 'actors', 
     location: 'Barcelona', 
-    image: '/Joan Pedrola.jpg',
-    description: 'Discovered at the age of 19, Joan Pedrola quickly accelerated his international career, modeling for D&G, Versace, Armani, and Prada, and appearing in Carolina Herrera\'s 212 VIP campaign. He studied illustration at Llotja and transitioned to acting, starring in Netflix series "El Inocente" and "Bienvenidos a Edén".',
+    image: '/joan-pedrola.jpg',
+    description: 'Discovered at the age of 19, Joan Pedrola quickly accelerated his international modeling career, starting with a worldwide D&G campaign shot by Mario Testino. He walked the best catwalks in the world (Milan, Paris, New York) for D&G, Versace, Armani, and Prada, and was the image of Carolina Herrera\'s 212 VIP perfume. He studied illustration at Llotja and completed acting training at Eòlia, starring in Netflix series "El Inocente" and "Bienvenidos a Edén". In 2021, he was chosen as the ambassador and image for Armani Exchange.',
     gallery: [
-      '/Joan Pedrola.jpg',
+      '/joan-pedrola.jpg',
       'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d',
       'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
     ],
@@ -58,12 +58,12 @@ export const TALENT_DATA: Talent[] = [
     name: 'Andrea Tivadar', 
     type: 'actors', 
     location: 'Londres / Barcelona', 
-    image: '/Andrea Tivadar.jpg',
-    description: 'British actress of Romanian origin, Andrea is the international image of Festina watches alongside Gerard Butler and a worldwide image for Lindt. Her screen appearances include HBO\'s Killing Eve, Netflix\'s Warrior Nun, and films like Safe Inside (nominated for Best Actress) and Lumina.',
+    image: '/andrea-tivadar.jpg',
+    description: 'British actress of Romanian origin, Andrea currently divides her time between London and Barcelona. After graduating in Materials Science & Engineering from Queen Mary University of London, she debuted in 2012. Her international screen career includes HBO\'s Killing Eve (Season 2), Netflix\'s Warrior Nun (Season 2), Si Lo Hubiera Sabido, and lead roles in Safe Inside (nominated for Best Actress) and Lumina. She is the international image of Festina watches alongside Gerard Butler and the worldwide image of Lindt.',
     gallery: [
-      '/Andrea Tivadar.jpg',
-      'https://images.unsplash.com/photo-1534528741775-53994a69daeb',
-      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1'
+      '/andrea-tivadar.jpg',
+      '/Andrea.jpg',
+      '/Andrea 2.jpg'
     ],
     stats: { languages: 'EN, ES, RO, FR', education: 'QMUL Materials Science & Eng.', brand: 'Festina Watches & Lindt' },
     projects: [
@@ -78,10 +78,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'David Castillo', 
     type: 'actors', 
     location: 'Madrid', 
-    image: '/David Castillo.jpg',
-    description: 'Beginning his career at age 7, David gained massive popularity as Jonathan in the hit TV series "Aída". He has toured the country in classical theater productions with the Compañía Nacional de Teatro Clásico and stars in Amazon Prime\'s "El Cid" as Squire Lisardo, and Disney+\'s "Besos al aire".',
+    image: '/david-castillo.jpg',
+    description: 'David Castillo began his professional screen career at age 7, later achieving massive national popularity in Spain as Jonathan in the hit comedy series "Aída". He transitioned to classical theater, joining the Joven Compañía Nacional de Teatro Clásico and touring the country in leading roles. On screen, he stars in Amazon Prime\'s historical epic "El Cid" as Squire Lisardo, and Disney+\'s series "Besos al aire". He is also a poet and published his poetry book "Piedra de madera" in 2023.',
     gallery: [
-      '/David Castillo.jpg',
+      '/david-castillo.jpg',
       'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6',
       'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce'
     ],
@@ -98,10 +98,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Rocío Saiz', 
     type: 'artists', 
     location: 'Madrid', 
-    image: '/Rocío Saiz.jpg',
-    description: 'Activist, singer, DJ, and communicator. Rocío is a lead singer of Monterrosa and Las Chillers, and a prominent LGTBIQ+ icon in Spain. Her work merges political activism, feminism, and electronic pop anthems, presenting for W Ibiza, Movistar+, and performing at major national festivals.',
+    image: '/rocio-saiz.jpg',
+    description: 'Activist, singer, DJ, and communicator. Rocío is a lead singer of Monterrosa and Las Chillers, and a prominent LGTBIQ+ icon in Spain. Her work merges political activism, feminism, and electronic pop anthems. On television, she presented the new Movistar+ space "La Nevera de Inverfest" and hosted the fashion show "Out of the closet" for Hotel W Ibiza. She has participated in major festivals including Atlantic Fest, Cala Mijas, and Culture Business Pride in Tenerife.',
     gallery: [
-      '/Rocío Saiz.jpg',
+      '/rocio-saiz.jpg',
       'https://images.unsplash.com/photo-1516873240891-4bf014598ab4',
       'https://images.unsplash.com/photo-1514525253161-7a46d19cd819'
     ],
@@ -117,10 +117,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Delaporte', 
     type: 'artists', 
     location: 'Madrid', 
-    image: '/Delaporte.jpg',
-    description: 'Delaporte is an Italian-Spanish electronic music duo created by Sandra Delaporte and Sergio Salvi. Winners of three MIN Independent Music Awards, they have produced soundtracks for Movistar\'s "Fama a Bailar" and Prime Video\'s "Sin Huellas". They launched the female visibility project "Titanas" in 2021.',
+    image: '/delaporte.jpg',
+    description: 'Delaporte is an award-winning Italian-Spanish electronic music project based in Madrid, created by Sandra Delaporte and Sergio Salvi. Winners of three MIN Independent Music Awards, they have produced soundtracks for Movistar\'s "Fama a Bailar" and Prime Video\'s "Sin Huellas". They launched the female visibility project "Titanas" in 2021. Sandra Delaporte has been chosen as the face of Amazon Fashion and both serve as ambassadors for Nike and Armani Exchange.',
     gallery: [
-      '/Delaporte.jpg',
+      '/delaporte.jpg',
       'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4',
       'https://images.unsplash.com/photo-1470225620780-dba8ba36b745'
     ],
@@ -137,10 +137,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Pepa Charro (La Terremoto)', 
     type: 'actors', 
     location: 'Palma', 
-    image: '/Pepa Charro _La terremoto_.jpg',
-    description: 'Versatile actress, comedian, vedette, and cultural promoter, Pepa Charro and her alter ego "La Terremoto de Alcorcón" have a long career in film, theater, and television. Collaborator of Pedro Almodóvar, host of Netflix\'s "Niquelao" and TVE\'s "Masterchef Celebrity", she also runs the iconic Bar Flexas in Palma.',
+    image: '/pepa-charro.jpg',
+    description: 'Versatile actress, comedian, vedette, cultural promoter, and businesswoman. Pepa Charro and her alter ego "La Terremoto de Alcorcón" have a legendary career in cabaret, film, theater, and television. A collaborator of Pedro Almodóvar ("Los Amantes Pasajeros") and Agustí Villaronga ("Loli Tormenta"), she is a regular host on TVE\'s "Masterchef Celebrity" and Netflix\'s "Niquelao!". She is also the owner and cultural promoter of the iconic Bar Flexas in Palma.',
     gallery: [
-      '/Pepa Charro _La terremoto_.jpg',
+      '/pepa-charro.jpg',
       'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b',
       'https://images.unsplash.com/photo-1513151233558-d860c5398176'
     ],
@@ -156,10 +156,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Natalie Batlle', 
     type: 'artists', 
     location: 'Chicago / Barcelona', 
-    image: '/Natalie_batlle.jpg',
-    description: 'Entrepreneur, brand strategist, storyteller, and international speaker. Natalie stands out for building purpose-driven brands with a social impact. With roots in both Chicago and Spain, she has collaborated with LVMH, Bumble, and Under Armour, and has been featured in Vogue, La Vanguardia, and Forbes.',
+    image: '/natalie-batlle.jpg',
+    description: 'Entrepreneur, brand consultant, and international speaker. Natalie stands out for her expertise in storytelling and building purpose-driven brands with high social impact and strong media presence. She has collaborated with brands such as LVMH, Bumble, and Under Armour, and has been featured in Vogue, La Vanguardia, and Forbes. Natalie splits her time between Chicago and Barcelona, connecting brands and people to create innovative, purpose-driven projects.',
     gallery: [
-      '/Natalie_batlle.jpg',
+      '/natalie-batlle.jpg',
       'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2',
       'https://images.unsplash.com/photo-1580894732444-8fecef2271ff'
     ],
@@ -174,10 +174,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'DJ Suri', 
     type: 'artists', 
     location: 'Madrid / Valencia', 
-    image: '/Dj Suri.jpg',
-    description: 'Award-winning international DJ and producer with 18 years of career. He was the first Spaniard to officially remix Lady Gaga, achieving No. 1 on the Billboard Dance Club Chart, and has produced remixes for Beyonce, P!nk, Lady Gaga, and Paris Hilton. Headliner of global prides (New York, Sydney World Pride).',
+    image: '/dj-suri.jpg',
+    description: 'Award-winning international DJ, producer, and LGTBIQ+ activist with an outstanding 18-year career. He was the first Spanish DJ to officially remix Lady Gaga ("Til It Happens To You"), achieving No. 1 on the Billboard Dance Club Chart, and has produced remixes for Beyonce, P!nk, and Paris Hilton (co-producing "Summer Reign" in Ibiza). A resident DJ for the global brand "Papa Party", Republik Madrid, and Deseo 54 Valencia, he has headlined the biggest prides in New York, Madrid, and Sydney World Pride.',
     gallery: [
-      '/Dj Suri.jpg',
+      '/dj-suri.jpg',
       'https://images.unsplash.com/photo-1501386761578-eac5c94b800a',
       'https://images.unsplash.com/photo-1487180142328-0c4e37023af5'
     ],
@@ -193,10 +193,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Martina Benvenutto', 
     type: 'models', 
     location: 'Mallorca / Barcelona', 
-    image: '/Martina BENVENUTTO.jpg',
-    description: 'Creative director, interior designer, and model. Martina is the founder of "Benvenutto", a boho chic fashion label. Trained in interior design in Barcelona, she is a Knack Art Show ambassador, photographer\'s muse, and has modeled for campaigns for W Ibiza, Ivvana Mestre, and San Miguel.',
+    image: '/martina-benvenutto.jpg',
+    description: 'Creative director, interior designer, and model. Martina is the founder and creative director of the boho chic clothing label "Benvenutto", designed for free-spirited women. Trained in interior design in Barcelona, she is a passionate art collector and ambassador for the Knack Art Show. She has been the muse for prominent photographers and modeled in campaigns for San Miguel, Port Aventura, and W Ibiza fashion parades (Ivvana Mestre).',
     gallery: [
-      '/Martina BENVENUTTO.jpg',
+      '/martina-benvenutto.jpg',
       'https://images.unsplash.com/photo-1490481651871-ab68de25d43d',
       'https://images.unsplash.com/photo-1488161628813-04466f872be2'
     ],
@@ -211,10 +211,10 @@ export const TALENT_DATA: Talent[] = [
     name: 'Rebeca Khamlichi', 
     type: 'artists', 
     location: 'Madrid', 
-    image: '/REBECA KHAMLICHI.jpg',
-    description: 'Painter, graphic designer, and influencer. Rebeca\'s colorful pop-art universe blends XVII century religious iconography, cartoons, and Goya\'s dark paintings. She has collaborated on murals, fashion campaigns, and designs for Reebok, Coca-Cola, Beefeater, and Absolut.',
+    image: '/rebeca-khamlichi.jpg',
+    description: 'Painter, graphic designer, and influencer. Rebeca\'s colorful pop-art universe blends XVII century religious iconography, cartoons, contemporary pop culture, and dark paintings. Working from her scenic terrace over Old Madrid, she has collaborated on creative murals, designs, and product customisation for global brands including Reebok, Coca-Cola, Beefeater, and Absolut.',
     gallery: [
-      '/REBECA KHAMLICHI.jpg',
+      '/rebeca-khamlichi.jpg',
       'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119',
       'https://images.unsplash.com/photo-1541701494587-cb58502866ab'
     ],
@@ -222,6 +222,25 @@ export const TALENT_DATA: Talent[] = [
     projects: [
       { title: 'Absolut Murals Campaign', year: '2023' },
       { title: 'Reebok Collaboration Design', year: '2022' }
+    ]
+  },
+  { 
+    id: 12, 
+    name: 'Pablo Erroz', 
+    type: 'artists', 
+    location: 'Palma de Mallorca', 
+    image: '/pablo-erroz.jpg',
+    description: 'Pablo Erroz is one of Spain\'s most promising fashion designers and a highly influential voice in contemporary Spanish fashion. Born in Palma de Mallorca and trained in Barcelona, he launched his unisex and timeless luxury label in 2010 after gaining extensive outerwear and leather experience with Inditex. Fusing street style with sophisticated luxury, his annual collections promote ethical and circular fashion. Erroz has pioneered bridges between fashion and tech, collaborating with Xiaomi on the Smart Band 8 Pro, and designed the customized Air Europa float for the Madrid Pride parade in 2024.',
+    gallery: [
+      '/pablo-erroz.jpg',
+      'https://images.unsplash.com/photo-1507679799987-c73774573b2a',
+      'https://images.unsplash.com/photo-1490481651871-ab68de25d43d'
+    ],
+    stats: { profession: 'Fashion Designer', education: 'Inditex outer & leather background', notable: 'Xiaomi collaboration, Air Europa Float' },
+    projects: [
+      { title: 'Air Europa LGTBIQ+ Float Customization', year: '2024' },
+      { title: 'Xiaomi Smart Band 8 Pro Collaboration', year: '2023-2024' },
+      { title: 'Annual Unisex Luxury Collection Launches', year: '2010-2026' }
     ]
   }
 ];

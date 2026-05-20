@@ -2,37 +2,7 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import SEO from '../components/SEO';
-
-const PROJECTS = [
-  {
-    id: 1,
-    title: 'Vogue Editorial',
-    client: 'Vogue España',
-    year: '2026',
-    image: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e'
-  },
-  {
-    id: 2,
-    title: 'Urban Nomads',
-    client: 'Zara Home',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8'
-  },
-  {
-    id: 3,
-    title: 'Autumn Glow',
-    client: 'Mango',
-    year: '2026',
-    image: 'https://images.unsplash.com/photo-1490481651871-ab68de25d43d'
-  },
-  {
-    id: 4,
-    title: 'Digital Soul',
-    client: 'Bershka',
-    year: '2025',
-    image: 'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f'
-  }
-];
+import { PROJECTS_DATA } from '../data/projects';
 
 export default function Projects() {
   const { t } = useLanguage();
@@ -51,7 +21,7 @@ export default function Projects() {
       </header>
 
       <div className="space-y-20 md:space-y-32">
-        {PROJECTS.map((project, idx) => (
+        {PROJECTS_DATA.map((project, idx) => (
           <motion.div 
             key={project.id}
             initial={{ opacity: 0, y: 40 }}
@@ -60,11 +30,11 @@ export default function Projects() {
             className={`grid grid-cols-1 md:grid-cols-12 gap-12 items-center ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
           >
             <div className={`md:col-span-7 ${idx % 2 !== 0 ? 'md:order-2' : ''}`}>
-              <Link to={`/projects/${project.id}`} className="block aspect-video overflow-hidden bg-zinc-900 group cursor-pointer relative">
+              <Link to={`/projects/${project.id}`} className="block aspect-video overflow-hidden bg-zinc-900 group cursor-pointer relative shadow-lg border border-white/5">
                 <img 
-                  src={`${project.image}?auto=format&fit=crop&q=80&w=1200`}
+                  src={project.image.startsWith('http') ? `${project.image}?auto=format&fit=crop&q=80&w=1200` : project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
                    <span className="text-xs uppercase tracking-tight border border-white/40 px-6 py-3 rounded-full">Explore View</span>
@@ -78,7 +48,7 @@ export default function Projects() {
                 <div className="w-8 h-px bg-white" />
                 <span>{project.client}</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight">{project.title}</h2>
+              <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title}</h2>
               <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
                 Full Case Study
               </Link>
