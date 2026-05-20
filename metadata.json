@@ -1,0 +1,8 @@
+{
+  "name": "jvv Agency",
+  "description": "Premium representation agency for artists, models, and actors in Spain. Editorial modern design showcasing a portfolio of world-class talent.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

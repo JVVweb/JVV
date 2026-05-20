@@ -1,0 +1,160 @@
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+
+type Language = 'es' | 'en';
+
+interface LanguageContextType {
+  language: Language;
+  setLanguage: (lang: Language) => void;
+  t: (key: string) => string;
+}
+
+const translations: Record<Language, Record<string, string>> = {
+  es: {
+    'nav.home': 'Inicio',
+    'nav.talent': 'Talento',
+    'nav.projects': 'Proyectos',
+    'nav.events': 'Eventos',
+    'nav.clients': 'Clientes',
+    'nav.about': 'Agencia',
+    'nav.contact': 'Contacto',
+    'hero.title': 'La agencia detrás del talento extraordinario.',
+    'hero.subtitle': 'Representación de talentos & eventos con una visión editorial moderna.',
+    'home.about.title': 'Sobre la Agencia',
+    'home.about.text': 'Fundada en octubre de 2015 por Jesús Vázquez Viedma, JVV es el puente entre la visión creativa y la representación icónica en España y más allá.',
+    'home.about.cta': 'Nuestra Agencia',
+    'events.title': 'Eventos',
+    'events.subtitle': 'Producimos eventos en cualquier parte del mundo y desarrollamos listas de invitados adaptadas a cualquier tipo de acción.',
+    'clients.title': 'Clientes',
+    'clients.subtitle': 'Marcas que confían en nuestra visión y excelencia.',
+    'talent.all': 'Todo el Talento',
+    'talent.models': 'Modelos',
+    'talent.actors': 'Actores',
+    'talent.artists': 'Artistas',
+    'talent.view': 'Ver Portafolio',
+    'talent.back': 'Volver al Roster',
+    'talent.booking': 'Solicitar Reserva',
+    'talent.portfolio': 'Selección de Portafolio',
+    'talent.works': 'Obras Seleccionadas',
+    'talent.specs': 'Especificaciones',
+    'projects.title': 'Proyectos Recientes',
+    'projects.subtitle': 'Explorando los límites de la narrativa visual a través de la representación y eventos de alto nivel.',
+    'about.since': 'Desde 2015',
+    'about.hero': 'Redefiniendo la representación y los eventos en la era moderna.',
+    'about.vision.title': 'Nuestra Visión',
+    'about.vision.p1': 'JVV fue fundada en octubre de 2015 por Jesús Vázquez Viedma tras más de quince años de experiencia profesional en la industria de la moda.',
+    'about.vision.p2': 'Licenciado en Derecho por la Universidad Carlos III, donde continuó su carrera como profesor del Máster Vogue-Carlos III en Comunicación de Moda y Belleza desde casi sus inicios, antes de continuar su carrera profesional en el extranjero.',
+    'about.vision.p3': 'Se estableció durante diez años en Milán, donde trabajó como director comercial para marcas como Miu Miu, Trussardi o Marc Jacobs. También residió en Londres, donde trabajó para Burberry, hasta que terminó regresando a España para dirigir la marca Stella McCartney a nivel nacional.',
+    'about.founder.title': 'Jesús Vázquez Viedma',
+    'about.founder.role': 'Fundador',
+    'about.services.title': 'Nuestros Servicios',
+    'about.services.s1.title': 'Representación',
+    'about.services.s1.desc': 'Gestión integral de carrera para artistas visuales y escénicos.',
+    'about.services.s2.title': 'Producción de Eventos',
+    'about.services.s2.desc': 'Creación y gestión de experiencias de marca exclusivas.',
+    'about.services.s3.title': 'Casting Global',
+    'about.services.s3.desc': 'Servicios de casting especializados para producciones de moda y cine.',
+    'contact.inquiries': 'Consultas',
+    'contact.offices': 'Oficinas',
+    'contact.follow': 'Síguenos',
+    'contact.form.name': 'Nombre Completo',
+    'contact.form.email': 'Correo Electrónico',
+    'contact.form.subject': 'Asunto',
+    'contact.form.message': 'Mensaje',
+    'contact.form.send': 'Enviar Mensaje',
+    'footer.rights': '© 2026 jvv Agency. Todos los derechos reservados.',
+    'footer.privacy': 'Política de Privacidad',
+    'footer.terms': 'Términos de Servicio',
+  },
+  en: {
+    'nav.home': 'Home',
+    'nav.talent': 'Talent',
+    'nav.projects': 'Projects',
+    'nav.events': 'Events',
+    'nav.clients': 'Clients',
+    'nav.about': 'Agency',
+    'nav.contact': 'Contact',
+    'hero.title': 'The agency behind extraordinary talent.',
+    'hero.subtitle': 'Talent representation & events with a modern editorial vision.',
+    'home.about.title': 'About the Agency',
+    'home.about.text': 'Founded in October 2015 by Jesús Vázquez Viedma, JVV is the bridge between creative vision and iconic representation in Spain and beyond.',
+    'home.about.cta': 'Our Agency',
+    'events.title': 'Events',
+    'events.subtitle': 'We produce events in any part of the world and develop guest lists adapted to any kind of action.',
+    'clients.title': 'Clients',
+    'clients.subtitle': 'Brands that trust our vision and excellence.',
+    'talent.all': 'All Talent',
+    'talent.models': 'Models',
+    'talent.actors': 'Actors',
+    'talent.artists': 'Artists',
+    'talent.view': 'View Portfolio',
+    'talent.back': 'Back to Roster',
+    'talent.booking': 'Request Booking',
+    'talent.portfolio': 'Portfolio Selection',
+    'talent.works': 'Selected Works',
+    'talent.specs': 'Specifications',
+    'projects.title': 'Recent Projects',
+    'projects.subtitle': 'Exploring the boundaries of visual storytelling through high-end representation and events.',
+    'about.since': 'Since 2015',
+    'about.hero': 'Redefining representation and events in the modern age.',
+    'about.vision.title': 'Our Vision',
+    'about.vision.p1': 'JVV was founded in October 2015 by Jesús Vázquez Viedma after more than fifteen years of professional experience in the fashion industry.',
+    'about.vision.p2': 'A law graduate from Carlos III University, he also served as a professor in the Vogue-Carlos III Master\'s in Fashion and Beauty Communication almost from its beginning before moving abroad.',
+    'about.vision.p3': 'He spent ten years in Milan working as a commercial director for brands like Miu Miu, Trussardi, and Marc Jacobs. He also lived in London working for Burberry, eventually returning to Spain to lead the Stella McCartney brand nationwide.',
+    'about.founder.title': 'Jesús Vázquez Viedma',
+    'about.founder.role': 'Founder',
+    'about.services.title': 'Our Services',
+    'about.services.s1.title': 'Representation',
+    'about.services.s1.desc': 'Holistic career management for visual and performing artists.',
+    'about.services.s2.title': 'Event Production',
+    'about.services.s2.desc': 'Creation and management of exclusive brand experiences.',
+    'about.services.s3.title': 'Global Casting',
+    'about.services.s3.desc': 'Specialized casting services for fashion and cinematic productions.',
+    'contact.inquiries': 'Inquiries',
+    'contact.offices': 'Offices',
+    'contact.follow': 'Follow',
+    'contact.form.name': 'Full Name',
+    'contact.form.email': 'Email Address',
+    'contact.form.subject': 'Subject',
+    'contact.form.message': 'Message',
+    'contact.form.send': 'Send Message',
+    'footer.rights': '© 2026 jvv Agency. All rights reserved.',
+    'footer.privacy': 'Privacy Policy',
+    'footer.terms': 'Terms of Service',
+  }
+};
+
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+
+export function LanguageProvider({ children }: { children: ReactNode }) {
+  const [language, setLanguage] = useState<Language>(() => {
+    const saved = localStorage.getItem('jvv-lang') as Language;
+    return saved || 'es';
+  });
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
+  const handleSetLanguage = (lang: Language) => {
+    setLanguage(lang);
+    localStorage.setItem('jvv-lang', lang);
+  };
+
+  const t = (key: string) => {
+    return translations[language][key] || key;
+  };
+
+  return (
+    <LanguageContext.Provider value={{ language, setLanguage: handleSetLanguage, t }}>
+      {children}
+    </LanguageContext.Provider>
+  );
+}
+
+export function useLanguage() {
+  const context = useContext(LanguageContext);
+  if (!context) {
+    throw new Error('useLanguage must be used within a LanguageProvider');
+  }
+  return context;
+}
