@@ -21,7 +21,8 @@ export default function Contact() {
           <div className="space-y-12">
             <div>
               <h4 className="text-xs uppercase tracking-tight opacity-30 mb-4">{t('contact.inquiries')}</h4>
-              <p className="text-2xl font-light">hello@jvv.agency</p>
+              <p className="text-2xl font-light">info@jvv.com.es</p>
+              <p className="text-xl font-light opacity-40">(+34) 618 785 351</p>
             </div>
             <div>
               <h4 className="text-xs uppercase tracking-tight opacity-30 mb-4">{t('contact.offices')}</h4>

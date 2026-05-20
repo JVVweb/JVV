@@ -19,8 +19,9 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.2em] mb-8 font-sans font-bold opacity-30 text-white">Contact</h4>
             <ul className="space-y-4 text-sm font-light">
-              <li><a href="mailto:hello@jvv.agency" className="hover:opacity-60 transition-opacity">hello@jvv.agency</a></li>
+              <li><a href="mailto:info@jvv.com.es" className="hover:opacity-60 transition-opacity">info@jvv.com.es</a></li>
               <li className="opacity-40">Madrid & Barcelona</li>
+              <li className="opacity-40">(+34 ) 618 785 351</li>
             </ul>
           </div>
           
