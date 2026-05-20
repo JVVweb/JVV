@@ -25,7 +25,7 @@ export default function Home() {
           className="text-center max-w-5xl"
         >
           <h1 className="text-[12vw] md:text-[7vw] font-serif leading-[0.95] tracking-tighter mb-8 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent max-w-[280px] md:max-w-4xl mx-auto">
-            {t('hero.title')}
+            La agencia detrás <br className="hidden md:inline"/> del talento extraordinario.
           </h1>
           <p className="text-base md:text-xl font-light opacity-70 max-w-xs md:max-w-xl mx-auto uppercase tracking-tighter leading-relaxed">
             {t('hero.subtitle')}
