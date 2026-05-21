@@ -37,7 +37,7 @@ export default function Navbar() {
           <img 
             src="/JVV WHITE LOGO.png" 
             alt="JVV Agency" 
-            className="h-7 w-auto object-contain transition-transform duration-500 hover:scale-105"
+            className="h-9 md:h-11 w-auto object-contain transition-transform duration-500 hover:scale-105"
           />
         </Link>
 

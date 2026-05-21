@@ -71,7 +71,7 @@ export default function Home() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center max-w-5xl"
         >
-          <h1 className="text-[12vw] md:text-[6vw] font-serif leading-[0.95] tracking-tighter mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent max-w-[280px] md:max-w-5xl mx-auto drop-shadow-sm">
+          <h1 className="text-[12vw] md:text-[6vw] font-serif leading-[0.95] tracking-tighter mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent max-w-[340px] md:max-w-5xl mx-auto drop-shadow-sm">
             {t('hero.title')}
           </h1>
           <p className="text-base md:text-xl font-light opacity-80 max-w-xs md:max-w-xl mx-auto uppercase tracking-tighter leading-relaxed">
@@ -100,8 +100,17 @@ export default function Home() {
           >
             <span className="text-xs uppercase tracking-tight opacity-30 mb-8 block font-display">{t('home.about.title')}</span>
             <h2 className="text-4xl md:text-6xl font-serif leading-tight">
-              Curating style, <br />
-              representing <span className="italic">soul</span>.
+              {language === 'es' ? (
+                <>
+                  Comisariando estilo, <br />
+                  representando el <span className="italic">alma</span>.
+                </>
+              ) : (
+                <>
+                  Curating style, <br />
+                  representing <span className="italic">soul</span>.
+                </>
+              )}
             </h2>
           </motion.div>
           <motion.div
@@ -141,7 +150,8 @@ export default function Home() {
                 key={`logo-1-${idx}`}
                 src={logo}
                 alt="Client Brand"
-                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300 filter invert brightness-200 contrast-150"
+                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             ))}
             {/* Set 2 (loop copy) */}
@@ -150,7 +160,8 @@ export default function Home() {
                 key={`logo-2-${idx}`}
                 src={logo}
                 alt="Client Brand"
-                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300 filter invert brightness-200 contrast-150"
+                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             ))}
           </div>
@@ -194,21 +205,26 @@ export default function Home() {
       </section>
 
       {/* Projects Call to Action */}
-      <section className="py-40 px-6 text-center overflow-hidden relative">
-        <motion.div
-           style={{ x: '-20%' }}
-           animate={{ x: '10%' }}
-           transition={{ duration: 20, repeat: Infinity, repeatType: 'reverse', ease: 'linear' }}
-           className="absolute top-1/2 -translate-y-1/2 left-0 text-[20vw] font-display font-bold opacity-[0.02] whitespace-nowrap pointer-events-none"
-        >
-          EDITORIAL CAMPAIGNS PRODUCTION FASHION
-        </motion.div>
-
-        <div className="relative z-10">
-          <h2 className="text-5xl md:text-7xl font-serif mb-12 italic">
-            {language === 'es' ? 'Creemos impacto.' : "Let's create impact."}
+      <section className="py-36 px-6 text-center relative border-t border-white/5 bg-[#030303]">
+        <div className="max-w-4xl mx-auto relative z-10">
+          <span className="text-[10px] uppercase tracking-[0.2em] opacity-30 mb-6 block font-display">
+            {language === 'es' ? 'Trabajo & Producción' : 'Work & Production'}
+          </span>
+          <h2 className="text-5xl md:text-8xl font-serif mb-12 tracking-tight leading-none">
+            {language === 'es' ? (
+              <>
+                Creemos <span className="italic font-light">impacto</span>.
+              </>
+            ) : (
+              <>
+                Let's create <span className="italic font-light">impact</span>.
+              </>
+            )}
           </h2>
-          <Link to="/contact" className="inline-block px-12 py-6 border border-white/20 rounded-full text-lg uppercase tracking-tight hover:bg-white hover:text-brand-bg transition-all duration-700">
+          <Link 
+            to="/contact" 
+            className="inline-block px-10 py-5 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all duration-500 font-display font-medium bg-transparent"
+          >
             {language === 'es' ? 'Iniciar una Colaboración' : 'Start a Collaboration'}
           </Link>
         </div>

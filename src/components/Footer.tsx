@@ -14,7 +14,7 @@ export default function Footer() {
               <img 
                 src="/JVV WHITE LOGO.png" 
                 alt="JVV Agency" 
-                className="h-7 w-auto object-contain"
+                className="h-10 w-auto object-contain"
               />
             </div>
             <p className="text-white/40 max-w-sm font-light text-sm">
@@ -25,16 +25,20 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.2em] mb-8 font-sans font-bold opacity-30 text-white">Contact</h4>
+            <h4 className="text-[10px] uppercase tracking-[0.2em] mb-8 font-sans font-bold opacity-30 text-white">
+              {language === 'es' ? 'Contacto' : 'Contact'}
+            </h4>
             <ul className="space-y-4 text-sm font-light">
               <li><a href="mailto:info@jvv.com.es" className="hover:opacity-60 transition-opacity">info@jvv.com.es</a></li>
-              <li className="opacity-40">Madrid & Barcelona</li>
+              <li className="opacity-40">Madrid, Barcelona & Mallorca</li>
               <li className="opacity-40">(+34 ) 618 785 351</li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.2em] mb-8 font-sans font-bold opacity-30 text-white">Social</h4>
+            <h4 className="text-[10px] uppercase tracking-[0.2em] mb-8 font-sans font-bold opacity-30 text-white">
+              {language === 'es' ? 'Redes' : 'Social'}
+            </h4>
             <div className="flex space-x-6">
               <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Instagram className="w-5 h-5" /></a>
               <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Twitter className="w-5 h-5" /></a>

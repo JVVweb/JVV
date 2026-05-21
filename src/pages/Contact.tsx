@@ -48,7 +48,7 @@ export default function Contact() {
               <input 
                 type="text" 
                 className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg"
-                placeholder="John Doe"
+                placeholder="Alejandro García"
               />
             </div>
             <div className="space-y-2">
@@ -56,7 +56,7 @@ export default function Contact() {
               <input 
                 type="email" 
                 className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg"
-                placeholder="john@example.com"
+                placeholder="alejandro@example.com"
               />
             </div>
             <div className="space-y-2">

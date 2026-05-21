@@ -56,7 +56,9 @@ export default function About() {
 
       <section className="bg-[#080808] py-32 px-6">
          <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-xs uppercase tracking-tight opacity-30 mb-20">{t('about.services.title')}</h2>
+            <h2 className="text-xs uppercase tracking-wider opacity-30 mb-20" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
+              {t('about.services.title')}
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
               {[
                 { title: t('about.services.s1.title'), desc: t('about.services.s1.desc') },
@@ -64,7 +66,7 @@ export default function About() {
                 { title: t('about.services.s3.title'), desc: t('about.services.s3.desc') }
               ].map((s, i) => (
                 <div key={i}>
-                  <h3 className="text-2xl font-serif mb-4">{s.title}</h3>
+                  <h3 className="text-2xl mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>{s.title}</h3>
                   <p className="text-sm opacity-50 max-w-xs mx-auto">{s.desc}</p>
                 </div>
               ))}

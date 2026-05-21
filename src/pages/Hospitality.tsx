@@ -9,7 +9,7 @@ const HOTEL_PROJECTS = [
     location: 'Barcelona',
     descEs: 'Club privado de miembros y hotel de referencia en el barrio Gótico de Barcelona. Colaboramos en la conceptualización de campañas de relaciones públicas y vinculación con el talento artístico local.',
     descEn: 'Private members\' club and hotel of reference in Barcelona\'s Gothic quarter. We collaborate in the conceptualization of public relations campaigns and connection with local artistic talent.',
-    image: '/clients 1.jpg',
+    image: '/sohohouse.webp',
     typeEs: 'Consultoría y RRPP',
     typeEn: 'Consulting & PR'
   },
@@ -19,7 +19,7 @@ const HOTEL_PROJECTS = [
     location: 'Mallorca',
     descEs: 'El epítome del lujo costero en el Mediterráneo. Colaboración en posicionamiento de marca, eventos exclusivos para clientes VIP y campañas de comunicación editorial.',
     descEn: 'The epitome of coastal luxury in the Mediterranean. Collaboration in brand positioning, exclusive events for VIP clients, and editorial communication campaigns.',
-    image: '/clients 2.jpg',
+    image: '/stregis.webp',
     typeEs: 'Posicionamiento y Eventos',
     typeEn: 'Positioning & Events'
   },
@@ -29,7 +29,7 @@ const HOTEL_PROJECTS = [
     location: 'Ibiza',
     descEs: 'Un santuario de diseño moderno frente al mar en Santa Eulalia. Programación creativa de eventos de moda, curación musical y convocatorias de prensa internacional.',
     descEn: 'A modern beachfront design sanctuary in Santa Eulalia. Creative programming for fashion events, music curation, and international press invitations.',
-    image: '/clients 1.jpg',
+    image: '/w-ibiza.jpeg',
     typeEs: 'Curación Creativa y Eventos',
     typeEn: 'Creative Curation & Events'
   },
@@ -39,7 +39,7 @@ const HOTEL_PROJECTS = [
     location: 'Palma de Mallorca',
     descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
     descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
-    image: '/clients 2.jpg',
+    image: '',
     typeEs: 'Estrategia de Marca',
     typeEn: 'Brand Strategy'
   },
@@ -49,7 +49,7 @@ const HOTEL_PROJECTS = [
     location: 'Madrid',
     descEs: 'Hub artístico en la emblemática Plaza de Santa Ana. Coordinación de eventos premium, presentaciones de moda y activaciones de marca de gran repercusión mediática.',
     descEn: 'Artistic hub in the emblematic Plaza de Santa Ana. Coordination of premium events, fashion presentations, and brand activations with high media impact.',
-    image: '',
+    image: '/me.jpeg',
     typeEs: 'Activación de Marca',
     typeEn: 'Brand Activation'
   }
