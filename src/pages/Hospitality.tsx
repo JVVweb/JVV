@@ -39,7 +39,7 @@ const HOTEL_PROJECTS = [
     location: 'Palma de Mallorca',
     descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
     descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
-    image: '',
+    image: '/photo-hotel-cappuccino-palma-palma-de-mallorca-22.jpeg',
     typeEs: 'Estrategia de Marca',
     typeEn: 'Brand Strategy'
   },

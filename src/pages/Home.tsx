@@ -102,13 +102,13 @@ export default function Home() {
             <h2 className="text-4xl md:text-6xl font-serif leading-tight">
               {language === 'es' ? (
                 <>
-                  Comisariando estilo, <br />
-                  representando el <span className="italic">alma</span>.
+                  Curando el estilo, <br />
+                  representando el <span className="italic">talento</span>.
                 </>
               ) : (
                 <>
                   Curating style, <br />
-                  representing <span className="italic">soul</span>.
+                  representing <span className="italic">talent</span>.
                 </>
               )}
             </h2>
@@ -150,7 +150,7 @@ export default function Home() {
                 key={`logo-1-${idx}`}
                 src={logo}
                 alt="Client Brand"
-                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                className="h-11 md:h-16 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             ))}
@@ -160,7 +160,7 @@ export default function Home() {
                 key={`logo-2-${idx}`}
                 src={logo}
                 alt="Client Brand"
-                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                className="h-11 md:h-16 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
                 style={{ filter: 'brightness(0) invert(1)' }}
               />
             ))}

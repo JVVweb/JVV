@@ -20,17 +20,16 @@ export default function Contact() {
           <h1 className="text-5xl md:text-8xl font-serif mb-12 tracking-tighter">{t('nav.contact')}</h1>
           <div className="space-y-12">
             <div>
-              <h4 className="text-xs uppercase tracking-tight opacity-30 mb-4">{t('contact.inquiries')}</h4>
+              <h4 className="text-xs uppercase tracking-wider opacity-30 mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
+                {t('contact.inquiries')}
+              </h4>
               <p className="text-2xl font-light">info@jvv.com.es</p>
               <p className="text-xl font-light opacity-40">(+34) 618 785 351</p>
             </div>
             <div>
-              <h4 className="text-xs uppercase tracking-tight opacity-30 mb-4">{t('contact.offices')}</h4>
-              <p className="text-xl font-light mb-2">Calle de Serrano, Madrid</p>
-              <p className="text-xl font-light">Passeig de Gràcia, Barcelona</p>
-            </div>
-            <div>
-              <h4 className="text-xs uppercase tracking-tight opacity-30 mb-4">{t('contact.follow')}</h4>
+              <h4 className="text-xs uppercase tracking-wider opacity-30 mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
+                {t('contact.follow')}
+              </h4>
               <p className="text-xl font-light">@jvv.agency</p>
             </div>
           </div>

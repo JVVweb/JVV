@@ -135,17 +135,17 @@ export default function EventDetail() {
       </section>
 
       {/* Hero Image */}
-      <section className="px-6 mb-32">
+      <section className="px-6 max-w-4xl mx-auto mb-32">
         <motion.div 
-          initial={{ opacity: 0, scale: 1.05 }}
+          initial={{ opacity: 0, scale: 1.02 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.5 }}
-          className="aspect-video md:aspect-[21/9] overflow-hidden bg-zinc-900 shadow-xl border border-white/5"
+          transition={{ duration: 1.2 }}
+          className="aspect-video w-full overflow-hidden bg-zinc-900 shadow-xl border border-white/5"
         >
           <img 
             src={event.image} 
             alt={event.title}
-            className="w-full h-full object-cover brightness-90"
+            className="w-full h-full object-cover brightness-95"
           />
         </motion.div>
       </section>
