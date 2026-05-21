@@ -47,8 +47,10 @@ export default function SEO({ title, description, ogType = 'website', ogImage }:
     updateMetaTag('og:type', ogType, true);
 
     // 5. OG Image
-    const defaultImage = 'https://images.unsplash.com/photo-1507679799987-c73774573b2a?auto=format&fit=crop&q=80&w=1200';
-    const finalImage = ogImage || defaultImage;
+    const defaultImage = window.location.origin + '/banner jvv.jpg';
+    const finalImage = ogImage 
+      ? (ogImage.startsWith('http') ? ogImage : window.location.origin + ogImage) 
+      : defaultImage;
     updateMetaTag('og:image', finalImage, true);
     updateMetaTag('twitter:image', finalImage);
 

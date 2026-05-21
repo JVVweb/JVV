@@ -9,7 +9,7 @@ const HOTEL_PROJECTS = [
     location: 'Barcelona',
     descEs: 'Club privado de miembros y hotel de referencia en el barrio Gótico de Barcelona. Colaboramos en la conceptualización de campañas de relaciones públicas y vinculación con el talento artístico local.',
     descEn: 'Private members\' club and hotel of reference in Barcelona\'s Gothic quarter. We collaborate in the conceptualization of public relations campaigns and connection with local artistic talent.',
-    image: 'https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&q=80&w=1200',
+    image: '/clients 1.jpg',
     typeEs: 'Consultoría y RRPP',
     typeEn: 'Consulting & PR'
   },
@@ -19,7 +19,7 @@ const HOTEL_PROJECTS = [
     location: 'Mallorca',
     descEs: 'El epítome del lujo costero en el Mediterráneo. Colaboración en posicionamiento de marca, eventos exclusivos para clientes VIP y campañas de comunicación editorial.',
     descEn: 'The epitome of coastal luxury in the Mediterranean. Collaboration in brand positioning, exclusive events for VIP clients, and editorial communication campaigns.',
-    image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&q=80&w=1200',
+    image: '/clients 2.jpg',
     typeEs: 'Posicionamiento y Eventos',
     typeEn: 'Positioning & Events'
   },
@@ -29,7 +29,7 @@ const HOTEL_PROJECTS = [
     location: 'Ibiza',
     descEs: 'Un santuario de diseño moderno frente al mar en Santa Eulalia. Programación creativa de eventos de moda, curación musical y convocatorias de prensa internacional.',
     descEn: 'A modern beachfront design sanctuary in Santa Eulalia. Creative programming for fashion events, music curation, and international press invitations.',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=1200',
+    image: '/clients 1.jpg',
     typeEs: 'Curación Creativa y Eventos',
     typeEn: 'Creative Curation & Events'
   },
@@ -39,7 +39,7 @@ const HOTEL_PROJECTS = [
     location: 'Palma de Mallorca',
     descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
     descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
-    image: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&q=80&w=1200',
+    image: '/clients 2.jpg',
     typeEs: 'Estrategia de Marca',
     typeEn: 'Brand Strategy'
   },
@@ -49,7 +49,7 @@ const HOTEL_PROJECTS = [
     location: 'Madrid',
     descEs: 'Hub artístico en la emblemática Plaza de Santa Ana. Coordinación de eventos premium, presentaciones de moda y activaciones de marca de gran repercusión mediática.',
     descEn: 'Artistic hub in the emblematic Plaza de Santa Ana. Coordination of premium events, fashion presentations, and brand activations with high media impact.',
-    image: 'https://images.unsplash.com/photo-1455587734955-081b22074882?auto=format&fit=crop&q=80&w=1200',
+    image: '',
     typeEs: 'Activación de Marca',
     typeEn: 'Brand Activation'
   }
@@ -89,11 +89,24 @@ export default function Hospitality() {
           >
             <div className={`md:col-span-7 ${idx % 2 !== 0 ? 'md:order-2' : ''}`}>
               <div className="aspect-video overflow-hidden bg-zinc-900 group relative">
-                <img 
-                  src={project.image}
-                  alt={project.name}
-                  className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
-                />
+                {project.image ? (
+                  <img 
+                    src={project.image}
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-zinc-950 border border-white/5 flex flex-col items-center justify-center group-hover:bg-zinc-900/50 transition-all duration-700">
+                    <img 
+                      src="/JVV WHITE LOGO.png" 
+                      alt="JVV Logo Placeholder" 
+                      className="h-12 w-auto opacity-10 group-hover:opacity-20 transition-opacity duration-700 object-contain"
+                    />
+                    <span className="text-[10px] tracking-widest uppercase opacity-20 group-hover:opacity-30 mt-3 transition-opacity duration-700 font-display">
+                      JVV Hospitality
+                    </span>
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700" />
               </div>
             </div>

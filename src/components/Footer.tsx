@@ -3,16 +3,24 @@ import { Instagram, Twitter, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   
   return (
     <footer className="bg-brand-bg pt-24 pb-12 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
           <div className="md:col-span-1">
-            <h2 className="text-4xl font-display font-medium tracking-tighter mb-6">JVV<span className="opacity-20">.</span></h2>
+            <div className="mb-6 flex items-center">
+              <img 
+                src="/JVV WHITE LOGO.png" 
+                alt="JVV Agency" 
+                className="h-7 w-auto object-contain"
+              />
+            </div>
             <p className="text-white/40 max-w-sm font-light text-sm">
-              Representing the vanguard of Spanish talent & production since 2015. 
+              {language === 'es' 
+                ? 'Representando la vanguardia del talento y producción en España desde 2015.' 
+                : 'Representing the vanguard of talent & production in Spain since 2015.'}
             </p>
           </div>
           

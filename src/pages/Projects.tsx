@@ -5,7 +5,7 @@ import SEO from '../components/SEO';
 import { PROJECTS_DATA } from '../data/projects';
 
 export default function Projects() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="pt-40 pb-32 px-6 max-w-7xl mx-auto">
@@ -32,12 +32,14 @@ export default function Projects() {
             <div className={`md:col-span-7 ${idx % 2 !== 0 ? 'md:order-2' : ''}`}>
               <Link to={`/projects/${project.id}`} className="block aspect-video overflow-hidden bg-zinc-900 group cursor-pointer relative shadow-lg border border-white/5">
                 <img 
-                  src={project.image.startsWith('http') ? `${project.image}?auto=format&fit=crop&q=80&w=1200` : project.image}
-                  alt={project.title}
+                  src={project.image}
+                  alt={project.title[language]}
                   className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
-                   <span className="text-xs uppercase tracking-tight border border-white/40 px-6 py-3 rounded-full">Explore View</span>
+                   <span className="text-xs uppercase tracking-tight border border-white/40 px-6 py-3 rounded-full">
+                     {language === 'es' ? 'Explorar' : 'Explore View'}
+                   </span>
                 </div>
               </Link>
             </div>
@@ -48,9 +50,9 @@ export default function Projects() {
                 <div className="w-8 h-px bg-white" />
                 <span>{project.client}</span>
               </div>
-              <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title}</h2>
+              <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
               <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
-                Full Case Study
+                {language === 'es' ? 'Caso de Estudio Completo' : 'Full Case Study'}
               </Link>
             </div>
           </motion.div>

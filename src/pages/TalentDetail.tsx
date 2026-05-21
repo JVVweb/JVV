@@ -8,7 +8,7 @@ import SEO from '../components/SEO';
 
 export default function TalentDetail() {
   const { id } = useParams();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navigate = useNavigate();
   const talent = TALENT_DATA.find(t => t.id === Number(id));
 
@@ -18,12 +18,18 @@ export default function TalentDetail() {
 
   if (!talent) return null;
 
+  const professionTitle = talent.type === 'models' 
+    ? (language === 'es' ? 'Modelo' : 'Model') 
+    : talent.type === 'actors' 
+    ? (language === 'es' ? 'Actor' : 'Actor') 
+    : (language === 'es' ? 'Artista' : 'Artist');
+
   return (
     <div className="pt-40 pb-24">
       <SEO 
-        title={`${talent.name} - ${talent.type === 'models' ? 'Model' : talent.type === 'actors' ? 'Actor' : 'Artist'}`}
-        description={`${talent.name}, ${talent.type === 'models' ? 'Model' : talent.type === 'actors' ? 'Actor' : 'Artist'} represented by JVV Agency, based in ${talent.location}. ${talent.description}`}
-        ogImage={talent.image || "https://images.unsplash.com/photo-1507679799987-c73774573b2a?auto=format&fit=crop&q=80&w=1200"}
+        title={`${talent.name} - ${professionTitle}`}
+        description={`${talent.name}, ${professionTitle} ${language === 'es' ? 'representado por JVV Agency, establecido en' : 'represented by JVV Agency, based in'} ${talent.location}. ${talent.description[language]}`}
+        ogImage={talent.image}
       />
       
       <div className="max-w-7xl mx-auto px-6">
@@ -50,7 +56,7 @@ export default function TalentDetail() {
 
             <div className="space-y-6">
               <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
-                {talent.description}
+                {talent.description[language]}
               </p>
             </div>
 
@@ -58,7 +64,7 @@ export default function TalentDetail() {
             <div className="border-t border-b border-white/5 py-8 space-y-4">
               <h4 className="text-[10px] uppercase tracking-widest opacity-40 font-sans tracking-widest">{t('talent.specs')}</h4>
               <div className="grid grid-cols-2 gap-x-8 gap-y-4">
-                {Object.entries(talent.stats).map(([label, value]) => (
+                {Object.entries(talent.stats[language]).map(([label, value]) => (
                   <div key={label} className="flex flex-col border-b border-white/5 pb-2">
                     <span className="text-[10px] uppercase tracking-tight opacity-30 capitalize">{label}</span>
                     <span className="text-sm font-medium mt-1 text-white/90">{value}</span>
@@ -74,7 +80,7 @@ export default function TalentDetail() {
                 {talent.projects.map((proj, i) => (
                   <div key={i} className="py-4 flex justify-between items-center group cursor-default">
                     <div>
-                      <h4 className="text-lg font-serif text-white/50 group-hover:text-white transition-colors">{proj.title}</h4>
+                      <h4 className="text-lg font-serif text-white/50 group-hover:text-white transition-colors">{proj.title[language]}</h4>
                       <p className="text-[10px] uppercase tracking-tight opacity-30 mt-1">{talent.name} &bull; Editorial</p>
                     </div>
                     <span className="text-xs font-mono opacity-20">{proj.year}</span>
@@ -85,16 +91,16 @@ export default function TalentDetail() {
           </div>
 
           {/* Right Column: Beautifully Constrained Sticky Portrait Card */}
-          <div className="md:col-span-5 md:sticky md:top-32">
+          <div className="md:col-span-5 md:sticky md:top-32 flex justify-center w-full">
             <motion.div 
               initial={{ opacity: 0, scale: 1.02 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2 }}
-              className="aspect-[3/4] w-full bg-zinc-900 overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-white/5"
-              style={{ maxHeight: '680px' }}
+              className="aspect-[3/4] w-full max-w-[450px] bg-zinc-900 overflow-hidden shadow-[0_0_50px_rgba(0,0,0,0.8)] border border-white/5"
+              style={{ maxHeight: '580px' }}
             >
               <img 
-                src={`${talent.image}?auto=format&fit=crop&q=95&w=1200`} 
+                src={talent.image} 
                 alt={talent.name}
                 className="w-full h-full object-cover object-center transition-transform duration-[2s] hover:scale-105"
               />
@@ -117,8 +123,8 @@ export default function TalentDetail() {
                 className="aspect-[3/4] bg-zinc-900 overflow-hidden shadow-lg border border-white/5"
               >
                 <img 
-                  src={`${img}?auto=format&fit=crop&q=80&w=1000`} 
-                  alt="Gallery"
+                  src={img} 
+                  alt={`${talent.name} Portfolio ${i}`}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-[1.5s]"
                 />
               </motion.div>

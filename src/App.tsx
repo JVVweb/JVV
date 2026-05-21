@@ -10,7 +10,6 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import Events from './pages/Events';
 import EventDetail from './pages/EventDetail';
-import Clients from './pages/Clients';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Hospitality from './pages/Hospitality';
@@ -41,7 +40,6 @@ export default function App() {
               <Route path="/events" element={<Events />} />
               <Route path="/events/:id" element={<EventDetail />} />
               <Route path="/hospitality" element={<Hospitality />} />
-              <Route path="/clients" element={<Clients />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

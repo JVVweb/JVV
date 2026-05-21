@@ -4,7 +4,7 @@ import { Send } from 'lucide-react';
 import SEO from '../components/SEO';
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="pt-40 pb-32 px-6 max-w-7xl mx-auto">
@@ -62,10 +62,10 @@ export default function Contact() {
             <div className="space-y-2">
               <label className="text-xs uppercase tracking-tight opacity-40">{t('contact.form.subject')}</label>
               <select className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg appearance-none cursor-pointer">
-                <option className="bg-brand-bg">Talent Scouting</option>
-                <option className="bg-brand-bg">Booking Inquiry</option>
-                <option className="bg-brand-bg">Press / Media</option>
-                <option className="bg-brand-bg">Other</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Representación de Talento' : 'Talent Scouting'}</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Solicitud de Reserva / Booking' : 'Booking Inquiry'}</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Prensa / Medios' : 'Press / Media'}</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Otro' : 'Other'}</option>
               </select>
             </div>
             <div className="space-y-2">

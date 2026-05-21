@@ -4,9 +4,43 @@ import { ArrowRight, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 import { TALENT_DATA } from '../data/talent';
+import { useState, useEffect } from 'react';
+
+const BANNERS = [
+  '/banner jvv.jpg',
+  '/JJJV BANNER.jpg',
+  '/JJV BANNER.jpg'
+];
+
+const CLIENT_LOGOS = [
+  '/jvv-reebok9.png',
+  '/JVV-tiffanny-19.png',
+  '/JVV-YSLbeaute9.png',
+  '/jvv-mac9.png',
+  '/JVV-chloe-logo9.png',
+  '/imgi_86_PACO-RABANNE9.png',
+  '/imgi_88_INAEM-1500x920-copia9.png',
+  '/imgi_145_JVV-VOGUE_LOGO9.png',
+  '/imgi_360_AMAZ9ON-1024x1024.png'
+];
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const [bgIndex, setBgIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setBgIndex((prev) => (prev + 1) % BANNERS.length);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, []);
+
+  const getProfession = (person: any) => {
+    const isEs = language === 'es';
+    if (person.type === 'models') return isEs ? 'Modelo' : 'Model';
+    if (person.type === 'actors') return isEs ? 'Actor' : 'Actor';
+    return isEs ? 'Artista' : 'Artist';
+  };
 
   return (
     <div className="relative">
@@ -16,8 +50,20 @@ export default function Home() {
       />
       {/* Hero Section */}
       <section className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden px-6">
-        {/* Background Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,#1a1a1a_0%,#050505_70%)] -z-10" />
+        {/* Background Carousel */}
+        <div className="absolute inset-0 -z-20 overflow-hidden bg-black">
+          {BANNERS.map((banner, index) => (
+            <div
+              key={banner}
+              className={`absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] ${
+                index === bgIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+              }`}
+              style={{ backgroundImage: `url('${banner}')` }}
+            />
+          ))}
+        </div>
+        {/* Contrast Protection Overlay with high contrast gradient & subtle blur */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/85 -z-10 backdrop-blur-[0.5px]" />
         
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -25,10 +71,10 @@ export default function Home() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="text-center max-w-5xl"
         >
-          <h1 className="text-[12vw] md:text-[6vw] font-serif leading-[0.95] tracking-tighter mb-8 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent max-w-[280px] md:max-w-5xl mx-auto">
+          <h1 className="text-[12vw] md:text-[6vw] font-serif leading-[0.95] tracking-tighter mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent max-w-[280px] md:max-w-5xl mx-auto drop-shadow-sm">
             {t('hero.title')}
           </h1>
-          <p className="text-base md:text-xl font-light opacity-70 max-w-xs md:max-w-xl mx-auto uppercase tracking-tighter leading-relaxed">
+          <p className="text-base md:text-xl font-light opacity-80 max-w-xs md:max-w-xl mx-auto uppercase tracking-tighter leading-relaxed">
             {t('hero.subtitle')}
           </p>
         </motion.div>
@@ -39,8 +85,8 @@ export default function Home() {
           transition={{ delay: 1, duration: 1 }}
           className="absolute bottom-12 flex flex-col items-center"
         >
-          <span className="text-xs uppercase tracking-tight mb-4 opacity-40">Explore</span>
-          <ChevronDown className="w-4 h-4 animate-bounce opacity-40" />
+          <span className="text-xs uppercase tracking-tight mb-4 opacity-55">{language === 'es' ? 'Explorar' : 'Explore'}</span>
+          <ChevronDown className="w-4 h-4 animate-bounce opacity-55" />
         </motion.div>
       </section>
 
@@ -76,13 +122,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Brand Logo Marquee Section */}
+      <section className="py-24 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-12">
+          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
+            {language === 'es' ? 'Marcas Colaboradoras' : 'Partner Brands'}
+          </span>
+        </div>
+        <div className="relative w-full flex items-center overflow-hidden">
+          {/* Side fade masks for elegant depth */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          
+          <div className="animate-marquee flex items-center space-x-16 md:space-x-28">
+            {/* Set 1 */}
+            {CLIENT_LOGOS.map((logo, idx) => (
+              <img
+                key={`logo-1-${idx}`}
+                src={logo}
+                alt="Client Brand"
+                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300 filter invert brightness-200 contrast-150"
+              />
+            ))}
+            {/* Set 2 (loop copy) */}
+            {CLIENT_LOGOS.map((logo, idx) => (
+              <img
+                key={`logo-2-${idx}`}
+                src={logo}
+                alt="Client Brand"
+                className="h-8 md:h-12 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300 filter invert brightness-200 contrast-150"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Featured Talent Grid (Teaser) */}
       <section className="py-32 px-6 bg-[#080808]">
         <div className="max-w-7xl mx-auto">
            <div className="flex justify-between items-end mb-16">
-              <h2 className="text-5xl font-serif">The Talent</h2>
+              <h2 className="text-5xl font-serif">{language === 'es' ? 'El Talento' : 'The Talent'}</h2>
               <Link to="/talent" className="text-sm uppercase tracking-tight opacity-50 hover:opacity-100 transition-opacity flex items-center space-x-2">
-                <span>View All Portfolio</span>
+                <span>{language === 'es' ? 'Ver Todo el Roster' : 'View All Roster'}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
            </div>
@@ -104,7 +185,7 @@ export default function Home() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                     </div>
                     <h3 className="text-2xl font-serif mb-1 group-hover:opacity-60 transition-opacity">{person.name}</h3>
-                    <p className="text-xs uppercase tracking-tight opacity-40">{person.stats.profession || person.type} / {person.location}</p>
+                    <p className="text-xs uppercase tracking-tight opacity-40">{getProfession(person)} / {person.location}</p>
                   </Link>
                 </motion.div>
               ))}
@@ -124,9 +205,11 @@ export default function Home() {
         </motion.div>
 
         <div className="relative z-10">
-          <h2 className="text-5xl md:text-7xl font-serif mb-12 italic">Let's create impact.</h2>
+          <h2 className="text-5xl md:text-7xl font-serif mb-12 italic">
+            {language === 'es' ? 'Creemos impacto.' : "Let's create impact."}
+          </h2>
           <Link to="/contact" className="inline-block px-12 py-6 border border-white/20 rounded-full text-lg uppercase tracking-tight hover:bg-white hover:text-brand-bg transition-all duration-700">
-            Start a Collaboration
+            {language === 'es' ? 'Iniciar una Colaboración' : 'Start a Collaboration'}
           </Link>
         </div>
       </section>

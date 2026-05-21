@@ -35,7 +35,7 @@ export const EVENTS_DATA = [
 ];
 
 export default function Events() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <div className="pt-40 pb-32 px-6">
@@ -84,7 +84,7 @@ export default function Events() {
                <div className="flex items-center space-x-3 text-[9px] uppercase tracking-widest opacity-30">
                   <span>{event.category}</span>
                   <div className="w-1 h-1 bg-white rounded-full opacity-20" />
-                  <span>Production</span>
+                  <span>{language === 'es' ? 'Producción' : 'Production'}</span>
                </div>
                <Link to={`/events/${event.id}`}>
                  <h3 className="text-2xl font-serif tracking-tight uppercase group-hover:opacity-60 transition-opacity leading-tight">
@@ -92,7 +92,7 @@ export default function Events() {
                  </h3>
                </Link>
                <Link to={`/events/${event.id}`} className="inline-block text-[9px] uppercase tracking-widest border-b border-white/10 pb-1 hover:border-white transition-all pt-2">
-                  View Detail
+                  {language === 'es' ? 'Ver Detalle' : 'View Detail'}
                </Link>
             </div>
           </motion.div>
@@ -102,14 +102,16 @@ export default function Events() {
       <section className="mt-60 max-w-7xl mx-auto border-t border-white/5 pt-32">
          <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
             <h2 className="text-4xl md:text-7xl font-serif tracking-tighter leading-[0.9] opacity-80 uppercase">
-              Exclusive <br /> Experiences.
+              {language === 'es' ? 'Experiencias' : 'Exclusive'} <br /> {language === 'es' ? 'Exclusivas.' : 'Experiences.'}
             </h2>
             <div className="space-y-8">
                <p className="text-lg font-light opacity-50 leading-relaxed max-w-md">
-                 We create and manage guest lists for the world's most prestigious brands, ensuring high-impact visibility and authentic engagement.
+                 {language === 'es' 
+                   ? 'Creamos y gestionamos listas de invitados para las marcas más prestigiosas del mundo, garantizando visibilidad de alto impacto y un engagement auténtico.'
+                   : 'We create and manage guest lists for the world\'s most prestigious brands, ensuring high-impact visibility and authentic engagement.'}
                </p>
                <a href="/contact" className="inline-block text-xs uppercase tracking-widest border border-white/20 px-10 py-4 hover:bg-white hover:text-black transition-all">
-                 Inquire Now
+                 {language === 'es' ? 'Contactar' : 'Inquire Now'}
                </a>
             </div>
          </div>
