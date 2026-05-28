@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="mb-6 flex items-center">
               <img 
-                src="/JVV WHITE LOGO.png" 
+                src="/jvv logo white new.png" 
                 alt="JVV Agency" 
                 className="h-10 w-auto object-contain"
               />

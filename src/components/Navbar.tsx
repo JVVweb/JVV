@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <Link to="/" className="flex items-center">
           <img 
-            src="/JVV WHITE LOGO.png" 
+            src="/jvv logo white new.png" 
             alt="JVV Agency" 
             className="h-9 md:h-11 w-auto object-contain transition-transform duration-500 hover:scale-105"
           />
@@ -92,7 +92,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed right-0 top-0 bottom-0 w-[80%] max-w-sm bg-zinc-950/95 backdrop-blur-md border-l border-white/10 z-40 md:hidden flex flex-col p-10 pt-28 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+              className="fixed right-0 top-0 bottom-0 w-[80%] max-w-sm bg-black border-l border-white/10 z-40 md:hidden flex flex-col p-10 pt-28 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
             >
               <div className="flex flex-col space-y-6 overflow-y-auto max-h-[calc(100vh-220px)] pr-2 no-scrollbar">
                 {navItems.map((item) => (
@@ -100,7 +100,7 @@ export default function Navbar() {
                     key={item.path} 
                     to={item.path} 
                     onClick={() => setIsOpen(false)}
-                    className={`text-3xl font-serif tracking-tighter hover:opacity-60 transition-opacity uppercase ${location.pathname === item.path ? 'text-white font-medium' : 'text-white/60'}`}
+                    className={`font-sans text-sm uppercase tracking-widest hover:opacity-100 transition-opacity ${location.pathname === item.path ? 'text-white font-medium opacity-100' : 'text-white/60'}`}
                   >
                     {item.name}
                   </Link>

@@ -98,7 +98,7 @@ export default function Hospitality() {
                 ) : (
                   <div className="w-full h-full bg-zinc-950 border border-white/5 flex flex-col items-center justify-center group-hover:bg-zinc-900/50 transition-all duration-700">
                     <img 
-                      src="/JVV WHITE LOGO.png" 
+                      src="/jvv logo white new.png" 
                       alt="JVV Logo Placeholder" 
                       className="h-12 w-auto opacity-10 group-hover:opacity-20 transition-opacity duration-700 object-contain"
                     />

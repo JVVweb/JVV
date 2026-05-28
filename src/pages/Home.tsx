@@ -6,10 +6,19 @@ import SEO from '../components/SEO';
 import { TALENT_DATA } from '../data/talent';
 import { useState, useEffect } from 'react';
 
-const BANNERS = [
+const DESKTOP_BANNERS = [
   '/banner jvv.jpg',
   '/JJJV BANNER.jpg',
-  '/JJV BANNER.jpg'
+  '/JJV BANNER.jpg',
+  '/me.jpeg',
+  '/sohohouse.webp'
+];
+
+const MOBILE_BANNERS = [
+  '/Andrea 3.jpg',
+  '/JJJV BANNER.jpg',
+  '/me.jpeg',
+  '/sohohouse.webp'
 ];
 
 const CLIENT_LOGOS = [
@@ -27,13 +36,26 @@ const CLIENT_LOGOS = [
 export default function Home() {
   const { t, language } = useLanguage();
   const [bgIndex, setBgIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const activeBanners = isMobile ? MOBILE_BANNERS : DESKTOP_BANNERS;
+
+  useEffect(() => {
+    setBgIndex((prev) => prev % activeBanners.length);
     const timer = setInterval(() => {
-      setBgIndex((prev) => (prev + 1) % BANNERS.length);
+      setBgIndex((prev) => (prev + 1) % activeBanners.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isMobile, activeBanners.length]);
 
   const getProfession = (person: any) => {
     const isEs = language === 'es';
@@ -52,7 +74,7 @@ export default function Home() {
       <section className="h-screen w-full flex flex-col items-center justify-center relative overflow-hidden px-6">
         {/* Background Carousel */}
         <div className="absolute inset-0 -z-20 overflow-hidden bg-black">
-          {BANNERS.map((banner, index) => (
+          {activeBanners.map((banner, index) => (
             <div
               key={banner}
               className={`absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] ${
@@ -78,6 +100,28 @@ export default function Home() {
             {t('hero.subtitle')}
           </p>
         </motion.div>
+
+        {/* Micro-animated Carousel Progress Indicators */}
+        <div className="absolute bottom-28 flex space-x-3 z-10">
+          {activeBanners.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => setBgIndex(idx)}
+              className="relative h-[2px] w-12 bg-white/20 overflow-hidden cursor-pointer focus:outline-none transition-all duration-300 hover:bg-white/40"
+              aria-label={`Go to slide ${idx + 1}`}
+            >
+              {idx === bgIndex && (
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  animate={{ scaleX: 1 }}
+                  key={`progress-${isMobile ? 'm' : 'd'}-${idx}`}
+                  transition={{ duration: 5, ease: 'linear' }}
+                  className="absolute inset-0 bg-white origin-left"
+                />
+              )}
+            </button>
+          ))}
+        </div>
 
         <motion.div 
           initial={{ opacity: 0 }}
