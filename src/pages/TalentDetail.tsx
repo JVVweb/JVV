@@ -132,6 +132,36 @@ export default function TalentDetail() {
           </div>
         </section>
 
+        {/* Videos Section */}
+        {talent.videos && talent.videos.length > 0 && (
+          <section className="mb-32 border-t border-white/5 pt-20">
+            <h3 className="text-[10px] uppercase tracking-widest opacity-40 mb-12 font-sans tracking-widest">
+              {language === 'es' ? 'Videos Destacados' : 'Featured Videos'}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {talent.videos.map((videoUrl, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  className="aspect-video w-full bg-zinc-900 overflow-hidden shadow-lg border border-white/5 relative"
+                >
+                  <iframe
+                    src={videoUrl}
+                    title={`${talent.name} Video ${i + 1}`}
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          </section>
+        )}
+
         {/* Footer Navigation */}
         <section className="flex justify-between items-center py-20 border-t border-white/5">
            <button onClick={() => navigate('/talent')} className="text-xs uppercase tracking-tight opacity-40 hover:opacity-100 transition-opacity">{t('talent.back')}</button>
