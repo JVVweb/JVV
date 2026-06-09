@@ -1,5 +1,5 @@
 import { useLanguage } from '../context/LanguageContext';
-import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -41,7 +41,6 @@ export default function Footer() {
             </h4>
             <div className="flex space-x-6">
               <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Twitter className="w-5 h-5" /></a>
               <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>

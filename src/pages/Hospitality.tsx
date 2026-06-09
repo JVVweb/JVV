@@ -4,14 +4,14 @@ import SEO from '../components/SEO';
 
 const HOTEL_PROJECTS = [
   {
-    id: 'soho-house',
-    name: 'Soho House Barcelona',
-    location: 'Barcelona',
-    descEs: 'Club privado de miembros y hotel de referencia en el barrio Gótico de Barcelona. Colaboramos en la conceptualización de campañas de relaciones públicas y vinculación con el talento artístico local.',
-    descEn: 'Private members\' club and hotel of reference in Barcelona\'s Gothic quarter. We collaborate in the conceptualization of public relations campaigns and connection with local artistic talent.',
-    image: '/sohohouse.webp',
-    typeEs: 'Consultoría y RRPP',
-    typeEn: 'Consulting & PR'
+    id: 'cappuccino',
+    name: 'Hotel Cappuccino',
+    location: 'Palma de Mallorca',
+    descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
+    descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
+    image: '/photo-hotel-cappuccino-palma-palma-de-mallorca-22.jpeg',
+    typeEs: 'Estrategia de Marca',
+    typeEn: 'Brand Strategy'
   },
   {
     id: 'st-regis',
@@ -24,6 +24,16 @@ const HOTEL_PROJECTS = [
     typeEn: 'Positioning & Events'
   },
   {
+    id: 'soho-house',
+    name: 'Soho House Barcelona',
+    location: 'Barcelona',
+    descEs: 'Club privado de miembros y hotel de referencia en el barrio Gótico de Barcelona. Colaboramos en la conceptualización de campañas de relaciones públicas y vinculación con el talento artístico local.',
+    descEn: 'Private members\' club and hotel of reference in Barcelona\'s Gothic quarter. We collaborate in the conceptualization of public relations campaigns and connection with local artistic talent.',
+    image: '/sohohouse.webp',
+    typeEs: 'Consultoría y RRPP',
+    typeEn: 'Consulting & PR'
+  },
+  {
     id: 'w-ibiza',
     name: 'W Ibiza',
     location: 'Ibiza',
@@ -32,16 +42,6 @@ const HOTEL_PROJECTS = [
     image: '/w-ibiza.jpeg',
     typeEs: 'Curación Creativa y Eventos',
     typeEn: 'Creative Curation & Events'
-  },
-  {
-    id: 'cappuccino',
-    name: 'Hotel Cappuccino',
-    location: 'Palma de Mallorca',
-    descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
-    descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
-    image: '/photo-hotel-cappuccino-palma-palma-de-mallorca-22.jpeg',
-    typeEs: 'Estrategia de Marca',
-    typeEn: 'Brand Strategy'
   },
   {
     id: 'me-madrid',

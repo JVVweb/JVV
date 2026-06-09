@@ -50,6 +50,12 @@ export default function About() {
             <p>
               {t('about.vision.p3')}
             </p>
+            <p>
+              {t('about.vision.p4')}
+            </p>
+            <p>
+              {t('about.vision.p5')}
+            </p>
           </div>
         </div>
       </section>

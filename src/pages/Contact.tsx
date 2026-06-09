@@ -30,7 +30,7 @@ export default function Contact() {
               <h4 className="text-xs uppercase tracking-wider opacity-30 mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
                 {t('contact.follow')}
               </h4>
-              <p className="text-xl font-light">@jvv.agency</p>
+              <p className="text-xl font-light">@jvv_pr</p>
             </div>
           </div>
         </motion.div>
@@ -47,7 +47,7 @@ export default function Contact() {
               <input 
                 type="text" 
                 className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg"
-                placeholder="Alejandro García"
+                placeholder=""
               />
             </div>
             <div className="space-y-2">
@@ -55,7 +55,7 @@ export default function Contact() {
               <input 
                 type="email" 
                 className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg"
-                placeholder="alejandro@example.com"
+                placeholder=""
               />
             </div>
             <div className="space-y-2">
