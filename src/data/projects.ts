@@ -40,7 +40,7 @@ export const PROJECTS_DATA: Project[] = [
       es: "La escénica campaña editorial 'Chloe's Clue' creada para la marca de cosmética de lujo francesa Caudalie en la naturaleza virgen de Menorca. Una fusión de belleza limpia y orgánica, luz solar y elementos mediterráneos.",
       en: "The scenic 'Chloe's Clue' editorial campaign created for French luxury skincare brand Caudalie in the pristine nature of Menorca. A fusion of clean, organic beauty, sunlight, and Mediterranean elements."
     },
-    image: '/Caudile1.jpg',
+    image: '/caudile 3.jpg',
     images: [
       '/caudile 3.jpg',
       '/Caudile1.jpg',

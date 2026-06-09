@@ -49,7 +49,7 @@ const HOTEL_PROJECTS = [
     location: 'Madrid',
     descEs: 'Hub artístico en la emblemática Plaza de Santa Ana. Coordinación de eventos premium, presentaciones de moda y activaciones de marca de gran repercusión mediática.',
     descEn: 'Artistic hub in the emblematic Plaza de Santa Ana. Coordination of premium events, fashion presentations, and brand activations with high media impact.',
-    image: '/me.jpeg',
+    image: '/hotel-me-new.jpg',
     typeEs: 'Activación de Marca',
     typeEn: 'Brand Activation'
   }

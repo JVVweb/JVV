@@ -52,7 +52,7 @@ export default function Projects() {
               </div>
               <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
               <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
-                {language === 'es' ? 'Caso de Estudio Completo' : 'Full Case Study'}
+                {language === 'es' ? 'Explorar Proyecto' : 'Explore Project'}
               </Link>
             </div>
           </motion.div>
