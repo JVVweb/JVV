@@ -30,13 +30,18 @@ export default function Projects() {
             className={`grid grid-cols-1 md:grid-cols-12 gap-12 items-center ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
           >
             <div className={`md:col-span-7 ${idx % 2 !== 0 ? 'md:order-2' : ''}`}>
-              <Link to={`/projects/${project.id}`} className="block aspect-video overflow-hidden bg-zinc-900 group cursor-pointer relative shadow-lg border border-white/5">
+              <Link to={`/projects/${project.id}`} className="block relative w-full h-[50vh] md:h-[70vh] overflow-hidden bg-zinc-900 group cursor-pointer shadow-lg border border-white/5 flex items-center justify-center">
+                <img 
+                  src={project.image}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover blur-3xl opacity-30"
+                />
                 <img 
                   src={project.image}
                   alt={project.title[language]}
-                  className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+                  className="relative max-w-full max-h-full object-contain transition-transform duration-[2s] group-hover:scale-105 z-10"
                 />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center z-20">
                    <span className="text-xs uppercase tracking-tight border border-white/40 px-6 py-3 rounded-full">
                      {language === 'es' ? 'Explorar' : 'Explore View'}
                    </span>
@@ -45,10 +50,14 @@ export default function Projects() {
             </div>
             
             <div className={`md:col-span-5 ${idx % 2 !== 0 ? 'md:order-1' : ''}`}>
-              <div className="flex items-center space-x-4 mb-6 opacity-30 text-xs uppercase tracking-tight">
-                <span>{project.year}</span>
-                <div className="w-8 h-px bg-white" />
-                <span>{project.client}</span>
+              <div className="flex items-center space-x-4 mb-6 text-xs uppercase tracking-tight">
+                <span className="opacity-30">{project.year}</span>
+                {project.talent && (
+                  <>
+                    <span className="opacity-30">—</span>
+                    <span className="opacity-100 font-bold text-white text-sm md:text-base tracking-normal">{project.talent}</span>
+                  </>
+                )}
               </div>
               <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
               <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
