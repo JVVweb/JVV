@@ -112,7 +112,7 @@ export default function TalentDetail() {
         {/* Portfolio Gallery Grid */}
         <section className="mb-32 border-t border-white/5 pt-20">
           <h3 className="text-[10px] uppercase tracking-widest opacity-40 mb-12 font-sans tracking-widest">{t('talent.portfolio')}</h3>
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
+          <div className="columns-2 lg:columns-3 gap-4 md:gap-8 [column-fill:_balance] box-border">
             {talent.gallery.map((img, i) => (
               <motion.div 
                 key={i}
@@ -120,12 +120,12 @@ export default function TalentDetail() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="aspect-[3/4] bg-zinc-900 overflow-hidden shadow-lg border border-white/5"
+                className="break-inside-avoid mb-4 md:mb-8 bg-zinc-900 overflow-hidden shadow-lg border border-white/5"
               >
                 <img 
                   src={img} 
                   alt={`${talent.name} Portfolio ${i}`}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-[1.5s]"
+                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-[1.5s]"
                 />
               </motion.div>
             ))}

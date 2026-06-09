@@ -224,7 +224,7 @@ export default function Home() {
            </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-              {TALENT_DATA.slice(0, 3).map((person) => (
+              {TALENT_DATA.slice(0, 6).map((person) => (
                 <motion.div 
                   key={person.id}
                   whileHover={{ y: -10 }}
