@@ -53,8 +53,8 @@ export default function ProjectDetail() {
           </div>
         </div>
 
-        {/* 3 Images Side-by-Side Parallel Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Aspect-Ratio Preserving Masonry Grid Layout */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
           {project.images.map((img, i) => (
             <motion.div 
               key={i}
@@ -62,16 +62,48 @@ export default function ProjectDetail() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: i * 0.1 }}
-              className="aspect-[3/4] md:aspect-[4/5] overflow-hidden bg-zinc-900 shadow-lg border border-white/5"
+              className="break-inside-avoid mb-6 bg-zinc-900 shadow-lg border border-white/5 overflow-hidden rounded-sm"
             >
               <img 
                 src={img} 
                 alt={`${project.title[language]} ${i}`}
-                className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
+                className="w-full h-auto object-contain transition-transform duration-[2s] hover:scale-105 block"
               />
             </motion.div>
           ))}
         </div>
+
+        {/* Seamless Project Navigation */}
+        <section className="border-t border-white/5 pt-16 mt-24">
+           {(() => {
+              const currentIndex = PROJECTS_DATA.findIndex(p => p.id === Number(id));
+              const prevProject = PROJECTS_DATA[currentIndex - 1] || PROJECTS_DATA[PROJECTS_DATA.length - 1];
+              const nextProject = PROJECTS_DATA[currentIndex + 1] || PROJECTS_DATA[0];
+              return (
+                <div className="flex flex-col sm:flex-row justify-between items-stretch gap-6">
+                  <Link 
+                    to={`/projects/${prevProject.id}`} 
+                    className="flex-1 group flex flex-col items-start justify-center p-6 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01]"
+                  >
+                     <span className="text-[9px] uppercase tracking-widest opacity-40 mb-2">&larr; {language === 'es' ? 'Anterior' : 'Previous'}</span>
+                     <span className="text-base font-serif text-white/70 group-hover:text-white transition-colors">{prevProject.title[language] || prevProject.talent}</span>
+                  </Link>
+                  <div className="flex items-center justify-center min-w-[150px]">
+                     <Link to="/projects" className="text-xs uppercase tracking-widest border border-white/10 px-8 py-4 hover:border-white transition-all text-center w-full">
+                       {language === 'es' ? 'Ver Proyectos' : 'All Projects'}
+                     </Link>
+                  </div>
+                  <Link 
+                    to={`/projects/${nextProject.id}`} 
+                    className="flex-1 group flex flex-col items-end justify-center p-6 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01] text-right"
+                  >
+                     <span className="text-[9px] uppercase tracking-widest opacity-40 mb-2">{language === 'es' ? 'Siguiente' : 'Next'} &rarr;</span>
+                     <span className="text-base font-serif text-white/70 group-hover:text-white transition-colors">{nextProject.title[language] || nextProject.talent}</span>
+                  </Link>
+                </div>
+              );
+           })()}
+        </section>
       </div>
     </div>
   );

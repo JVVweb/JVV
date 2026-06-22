@@ -168,7 +168,7 @@ export default function EventDetail() {
 
       {/* Gallery Grid */}
       <section className="px-6 max-w-7xl mx-auto mb-40">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
            {event.gallery.map((img, i) => (
              <motion.div 
                key={i}
@@ -176,12 +176,12 @@ export default function EventDetail() {
                whileInView={{ opacity: 1, y: 0 }}
                viewport={{ once: true }}
                transition={{ delay: i * 0.1 }}
-               className={`overflow-hidden bg-zinc-900 shadow-md border border-white/5 ${i === 0 ? 'md:col-span-2 aspect-video' : 'aspect-[4/5]'}`}
+               className="break-inside-avoid mb-6 bg-zinc-900 shadow-md border border-white/5 overflow-hidden rounded-sm"
              >
                <img 
                  src={img} 
                  alt="Gallery"
-                 className="w-full h-full object-cover hover:scale-105 transition-all duration-[1s]"
+                 className="w-full h-auto object-contain hover:scale-105 transition-transform duration-[1s] block"
                />
              </motion.div>
            ))}
@@ -223,12 +223,37 @@ export default function EventDetail() {
          </div>
       </section>
 
-      {/* Back Button */}
-      <div className="text-center pb-20">
-         <Link to="/events" className="text-xs uppercase tracking-widest border border-white/20 px-8 py-4 hover:bg-white hover:text-black transition-all">
-           {language === 'es' ? 'Volver a Eventos' : 'Back to Events'}
-         </Link>
-      </div>
+      {/* Seamless Project Navigation */}
+      <section className="px-6 max-w-7xl mx-auto border-t border-white/5 pt-16 pb-20">
+         {(() => {
+            const currentIndex = EVENTS_DETAILS_DATA.findIndex(e => e.id === Number(id));
+            const prevEvent = EVENTS_DETAILS_DATA[currentIndex - 1] || EVENTS_DETAILS_DATA[EVENTS_DETAILS_DATA.length - 1];
+            const nextEvent = EVENTS_DETAILS_DATA[currentIndex + 1] || EVENTS_DETAILS_DATA[0];
+            return (
+              <div className="flex flex-col sm:flex-row justify-between items-stretch gap-6">
+                <Link 
+                  to={`/events/${prevEvent.id}`} 
+                  className="flex-1 group flex flex-col items-start justify-center p-6 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01]"
+                >
+                   <span className="text-[9px] uppercase tracking-widest opacity-40 mb-2">&larr; {language === 'es' ? 'Anterior' : 'Previous'}</span>
+                   <span className="text-xl font-serif text-white/70 group-hover:text-white transition-colors">{prevEvent.title}</span>
+                </Link>
+                <div className="flex items-center justify-center min-w-[150px]">
+                   <Link to="/events" className="text-xs uppercase tracking-widest border border-white/10 px-8 py-4 hover:border-white transition-all text-center w-full">
+                     {language === 'es' ? 'Ver Todos' : 'View All'}
+                   </Link>
+                </div>
+                <Link 
+                  to={`/events/${nextEvent.id}`} 
+                  className="flex-1 group flex flex-col items-end justify-center p-6 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01] text-right"
+                >
+                   <span className="text-[9px] uppercase tracking-widest opacity-40 mb-2">{language === 'es' ? 'Siguiente' : 'Next'} &rarr;</span>
+                   <span className="text-xl font-serif text-white/70 group-hover:text-white transition-colors">{nextEvent.title}</span>
+                </Link>
+              </div>
+            );
+         })()}
+      </section>
     </div>
   );
 }

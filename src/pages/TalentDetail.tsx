@@ -162,13 +162,52 @@ export default function TalentDetail() {
           </section>
         )}
 
-        {/* Footer Navigation */}
-        <section className="flex justify-between items-center py-20 border-t border-white/5">
-           <button onClick={() => navigate('/talent')} className="text-xs uppercase tracking-tight opacity-40 hover:opacity-100 transition-opacity">{t('talent.back')}</button>
-           <Link to="/contact" className="group flex items-center space-x-4 text-xs uppercase tracking-tight">
-             <span>{t('talent.booking')}</span>
-             <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
-           </Link>
+        {/* Seamless Talent Navigation */}
+        <section className="border-t border-white/5 pt-16 pb-16">
+          {(() => {
+             const currentIndex = TALENT_DATA.findIndex(t => t.id === Number(id));
+             const prevTalent = TALENT_DATA[currentIndex - 1] || TALENT_DATA[TALENT_DATA.length - 1];
+             const nextTalent = TALENT_DATA[currentIndex + 1] || TALENT_DATA[0];
+             return (
+               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
+                 <Link 
+                   to={`/talent/${prevTalent.id}`} 
+                   className="group flex items-center space-x-4 p-4 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01]"
+                 >
+                   <div className="w-12 h-16 bg-zinc-900 overflow-hidden flex-shrink-0">
+                     <img src={prevTalent.image} alt={prevTalent.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                   </div>
+                   <div className="flex flex-col">
+                     <span className="text-[8px] uppercase tracking-widest opacity-40 mb-1">&larr; {language === 'es' ? 'Anterior' : 'Previous'}</span>
+                     <span className="text-sm font-serif text-white/80 group-hover:text-white transition-colors">{prevTalent.name}</span>
+                   </div>
+                 </Link>
+
+                 <div className="flex flex-col items-center justify-center gap-4 py-4 sm:py-0">
+                   <Link to="/talent" className="text-xs uppercase tracking-widest border border-white/10 px-8 py-3.5 hover:border-white transition-all text-center">
+                     {t('talent.all')}
+                   </Link>
+                   <Link to="/contact" className="group flex items-center space-x-2 text-[10px] uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity">
+                     <span>{t('talent.booking')}</span>
+                     <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                   </Link>
+                 </div>
+
+                 <Link 
+                   to={`/talent/${nextTalent.id}`} 
+                   className="group flex items-center justify-end space-x-4 p-4 border border-white/5 hover:border-white/20 transition-all duration-500 hover:bg-white/[0.01] text-right"
+                 >
+                   <div className="flex flex-col items-end">
+                     <span className="text-[8px] uppercase tracking-widest opacity-40 mb-1">{language === 'es' ? 'Siguiente' : 'Next'} &rarr;</span>
+                     <span className="text-sm font-serif text-white/80 group-hover:text-white transition-colors">{nextTalent.name}</span>
+                   </div>
+                   <div className="w-12 h-16 bg-zinc-900 overflow-hidden flex-shrink-0">
+                     <img src={nextTalent.image} alt={nextTalent.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                   </div>
+                 </Link>
+               </div>
+             );
+          })()}
         </section>
 
       </div>

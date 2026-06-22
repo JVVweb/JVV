@@ -68,20 +68,22 @@ export default function Events() {
             transition={{ delay: (idx % 3) * 0.1 }}
             className="group flex flex-col"
           >
-            <Link to={`/events/${event.id}`} className="block relative aspect-[3/4] overflow-hidden bg-zinc-900 mb-8 border border-white/5 shadow-md">
+            <Link to={`/events/${event.id}`} className="block relative aspect-[3/4] overflow-hidden bg-zinc-900 mb-8 border border-white/5 shadow-md rounded-sm">
                <img 
                  src={event.image} 
                  alt={event.title}
                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-[1.5s]"
                />
-               <div className="absolute top-6 left-6 flex items-center space-x-3">
-                  <div className="w-8 h-[1px] bg-white/40" />
-                  <span className="text-[9px] uppercase tracking-widest font-mono">{event.date.month} {event.date.year}</span>
+               {/* Elegant Glassmorphic Date Badge */}
+               <div className="absolute top-4 left-4 bg-brand-bg/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 flex flex-col items-center justify-center min-w-[55px] text-center shadow-lg rounded-sm transition-transform duration-500 group-hover:-translate-y-0.5">
+                  <span className="text-[9px] font-sans font-bold tracking-wider text-white/60 uppercase leading-none">{event.date.month}</span>
+                  <span className="text-2xl font-serif font-bold text-white leading-none my-1">{event.date.day}</span>
+                  <span className="text-[8px] font-mono text-white/40 tracking-wider leading-none">{event.date.year}</span>
                </div>
             </Link>
 
-            <div className="space-y-3">
-               <div className="flex items-center space-x-3 text-[9px] uppercase tracking-widest opacity-30">
+            <div className="space-y-3 px-1">
+               <div className="flex items-center space-x-3 text-[9px] uppercase tracking-widest opacity-40">
                   <span>{event.category}</span>
                   <div className="w-1 h-1 bg-white rounded-full opacity-20" />
                   <span>{language === 'es' ? 'Producción' : 'Production'}</span>
