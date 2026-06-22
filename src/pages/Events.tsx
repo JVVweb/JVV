@@ -74,19 +74,12 @@ export default function Events() {
                  alt={event.title}
                  className="w-full h-full object-cover group-hover:scale-105 transition-all duration-[1.5s]"
                />
-               {/* Elegant Glassmorphic Date Badge */}
-               <div className="absolute top-4 left-4 bg-brand-bg/85 backdrop-blur-md border border-white/10 px-3.5 py-2.5 flex flex-col items-center justify-center min-w-[55px] text-center shadow-lg rounded-sm transition-transform duration-500 group-hover:-translate-y-0.5">
-                  <span className="text-[9px] font-sans font-bold tracking-wider text-white/60 uppercase leading-none">{event.date.month}</span>
-                  <span className="text-2xl font-serif font-bold text-white leading-none my-1">{event.date.day}</span>
-                  <span className="text-[8px] font-mono text-white/40 tracking-wider leading-none">{event.date.year}</span>
-               </div>
             </Link>
 
             <div className="space-y-3 px-1">
-               <div className="flex items-center space-x-3 text-[9px] uppercase tracking-widest opacity-40">
+               <div className="flex items-center justify-between text-[10px] uppercase tracking-widest opacity-40 font-sans font-medium">
                   <span>{event.category}</span>
-                  <div className="w-1 h-1 bg-white rounded-full opacity-20" />
-                  <span>{language === 'es' ? 'Producción' : 'Production'}</span>
+                  <span>{event.date.month} {event.date.day}, {event.date.year}</span>
                </div>
                <Link to={`/events/${event.id}`}>
                  <h3 className="text-2xl font-serif tracking-tight uppercase group-hover:opacity-60 transition-opacity leading-tight">

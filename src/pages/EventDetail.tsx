@@ -135,17 +135,17 @@ export default function EventDetail() {
       </section>
 
       {/* Hero Image */}
-      <section className="px-6 max-w-4xl mx-auto mb-32">
+      <section className="px-6 max-w-5xl mx-auto mb-32 flex justify-center">
         <motion.div 
-          initial={{ opacity: 0, scale: 1.02 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="aspect-video w-full overflow-hidden bg-zinc-900 shadow-xl border border-white/5"
+          className="w-full bg-zinc-900/50 shadow-xl border border-white/5 flex justify-center"
         >
           <img 
             src={event.image} 
             alt={event.title}
-            className="w-full h-full object-cover brightness-95"
+            className="max-h-[75vh] w-auto h-auto object-contain brightness-95"
           />
         </motion.div>
       </section>
@@ -155,12 +155,12 @@ export default function EventDetail() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           <div className="md:col-span-3">
              <h2 className="text-[10px] uppercase tracking-[0.3em] opacity-30 mt-2 font-sans font-bold">
-               {language === 'es' ? 'El Briefing' : 'The Brief'}
+               {language === 'es' ? 'El Proyecto' : 'The Project'}
              </h2>
           </div>
           <div className="md:col-span-9">
-             <p className="text-2xl md:text-4xl font-serif leading-relaxed tracking-tight opacity-80 italic">
-               "{event.description[language]}"
+             <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
+               {event.description[language]}
              </p>
           </div>
         </div>
@@ -186,41 +186,6 @@ export default function EventDetail() {
              </motion.div>
            ))}
         </div>
-      </section>
-
-      {/* Results / Details */}
-      <section className="px-6 max-w-7xl mx-auto border-t border-white/10 py-32 grid grid-cols-1 md:grid-cols-3 gap-16">
-         <div className="space-y-6">
-            <h4 className="text-[10px] uppercase tracking-[0.2em] opacity-40 font-sans font-semibold">
-              {language === 'es' ? 'Producción' : 'Production'}
-            </h4>
-            <div className="h-[1px] w-8 bg-white/20" />
-            <p className="text-sm font-light leading-relaxed opacity-70">
-              {language === 'es' ? 'Gestión de Lista de Invitados' : 'Guest List Management'}<br/>
-              {language === 'es' ? 'Logística de VIPs' : 'VIP Logistics'}<br/>
-              {language === 'es' ? 'Estrategia en Redes Sociales' : 'Social Media Strategy'}
-            </p>
-         </div>
-         <div className="space-y-6">
-            <h4 className="text-[10px] uppercase tracking-[0.2em] opacity-40 font-sans font-semibold">
-              {language === 'es' ? 'Repercusión' : 'Engagement'}
-            </h4>
-            <div className="h-[1px] w-8 bg-white/20" />
-            <p className="text-sm font-light leading-relaxed opacity-70">
-              {language === 'es' ? 'Más de 50 Influencers de Primer Nivel' : '50+ Tier 1 Influencers'}<br/>
-              {language === 'es' ? 'Más de 1.2M de Alcance' : '1.2M+ Reach'}<br/>
-              {language === 'es' ? 'Más de 20 Medios de Comunicación' : '20+ Media Outlets'}
-            </p>
-         </div>
-         <div className="space-y-6">
-            <h4 className="text-[10px] uppercase tracking-[0.2em] opacity-40 font-sans font-semibold">
-              {language === 'es' ? 'Estado' : 'Status'}
-            </h4>
-            <div className="h-[1px] w-8 bg-white/20" />
-            <p className="text-sm font-light leading-relaxed opacity-70 font-sans">
-              {language === 'es' ? 'Completado' : 'Completed'} &bull; {event.date.year}
-            </p>
-         </div>
       </section>
 
       {/* Seamless Project Navigation */}
