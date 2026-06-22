@@ -531,6 +531,9 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ FOMO/imgi_35_fomo_07.jpg",
       "/Events/JVV _ FOMO/imgi_38_fomo_08.jpg",
       "/Events/JVV _ FOMO/imgi_4_fomo_01.jpg"
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/D37VUCEK2gI"
     ]
   },
   {
@@ -1025,6 +1028,36 @@ export default function EventDetail() {
            ))}
         </div>
       </section>
+
+      {/* Videos Section */}
+      {event.videos && event.videos.length > 0 && (
+        <section className="px-6 max-w-7xl mx-auto mb-40 border-t border-white/5 pt-20">
+          <h3 className="text-[10px] uppercase tracking-widest opacity-40 mb-12 font-sans tracking-widest">
+            {language === 'es' ? 'Videos Destacados' : 'Featured Videos'}
+          </h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {event.videos.map((videoUrl, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="aspect-video w-full bg-zinc-900 overflow-hidden shadow-lg border border-white/5 relative"
+              >
+                <iframe
+                  src={videoUrl}
+                  title={`${event.title} Video ${i + 1}`}
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              </motion.div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Seamless Project Navigation */}
       <section className="px-6 max-w-7xl mx-auto border-t border-white/5 pt-16 pb-20">
