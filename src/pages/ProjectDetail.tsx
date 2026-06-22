@@ -90,7 +90,7 @@ export default function ProjectDetail() {
                   </Link>
                   <div className="flex items-center justify-center min-w-[150px]">
                      <Link to="/projects" className="text-xs uppercase tracking-widest border border-white/10 px-8 py-4 hover:border-white transition-all text-center w-full">
-                       {language === 'es' ? 'Otros Proyectos' : 'Other Projects'}
+                       {language === 'es' ? 'Ver Proyectos' : 'All Projects'}
                      </Link>
                   </div>
                   <Link 
