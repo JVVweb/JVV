@@ -38,7 +38,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "JVV estuvo a cargo de la producción del evento y del concepto CASA PATYKA en Barcelona, un formato que por primera vez llegó a la ciudad. Diseñado para crear una experiencia de lujo eco, este espacio reunió a profesionales de farmacia, influencers y otras personas afines a la marca para descubrir Glow, la nueva línea de PATYKA, formulada para iluminar la piel con ingredientes naturales y orgánicos. Quienes asistieron pudieron experimentar de primera mano la innovación de la marca, probar los productos y sumergirse en el universo sensorial de PATYKA.",
       "en": "JVV was in charge of the event production and the CASA PATYKA concept in Barcelona, a format that arrived in the city for the first time. Designed to create an eco-luxury experience, this space brought together pharmacy professionals, influencers, and brand enthusiasts to discover Glow, PATYKA's new line formulated to illuminate the skin with natural and organic ingredients. Attendees had the opportunity to experience the brand's innovation firsthand, test the products, and immerse themselves in PATYKA's sensory universe."
     },
-    "image": "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_101_Patyka-88-scaled.jpg",
+    "image": "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled_portada.jpg",
     "gallery": [
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_101_Patyka-88-scaled.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_36_T8A2447-scaled.jpg",
@@ -46,7 +46,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_46_Patyka-26-scaled.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_51_Patyka-33-scaled.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_56_Patyka-54-scaled.jpg",
-      "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled.jpg",
+      "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled_portada.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_71_Patyka-27-scaled.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_76_Patyka-51-scaled.jpg",
       "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_81_Patyka-66-scaled.jpg",
@@ -88,13 +88,13 @@ const EVENTS_DETAILS_DATA = [
       "es": "En la edición de 2025 del Palma International Boat Show (30 de abril – 3 de mayo), una de las ferias náuticas más prestigiosas del Mediterráneo y referencia internacional en el sector, JVV se encargó de la selección y coordinación de perfiles estratégicos e influencers, conectando el mundo náutico con nuevas audiencias y generando visibilidad de alto valor para el evento. El Palma International Boat Show reúne a más de 30.000 visitantes y a más de 300 empresas internacionales, consolidando a Palma de Mallorca como un epicentro global de la náutica y un punto de encuentro imprescindible para la innovación, el lifestyle y el mar",
       "en": "At the 2025 edition of the Palma International Boat Show (April 30 – May 3), one of the most prestigious boat shows in the Mediterranean and an international reference in the sector, JVV was in charge of selecting and coordinating strategic profiles and influencers, connecting the nautical world with new audiences and generating high-value visibility for the event. The Palma International Boat Show brings together over 30.000 visitors and more than 300 international companies, consolidating Palma de Mallorca as a global epicentre for yachting and an essential meeting point for innovation, lifestyle, and the sea."
     },
-    "image": "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_16_PIB-1.jpg",
+    "image": "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg",
     "gallery": [
       "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_16_PIB-1.jpg",
       "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_19_PIB-2.jpg",
       "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_22_PIB-3.jpg",
       "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_25_PIB-4.jpg",
-      "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5.jpg"
+      "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg"
     ]
   },
   {
@@ -111,11 +111,11 @@ const EVENTS_DETAILS_DATA = [
       "es": "The Body Shop dejó en manos de JVV la producción del en evento de inauguración de su nueva tienda en el Aeropuerto de Barajas, Madrid. El encuentro contó con la presencia destacada de dos de nuestras #JVVPeople, Valeria Vegas y Rocío Saiz, además de un histórico de la Movida Madrileña,  Paco Clavel, quienes ofrecieron una cautivadora charla sobre ese momento tan increíble de la capital y nos dieron a conocer más la marca. Además, Rocío Saiz amenizó la noche con una sesión muy viajera mientras les invitades bailaban, probaban los productos y se refrescaban.",
       "en": "The Body Shop entrusted JVV with the production of the opening event for its new store at Barajas Airport, Madrid. The gathering featured the prominent presence of two of our #JVVPeople, Valeria Vegas and Rocío Saiz, alongside Paco Clavel, a historical figure of the Movida Madrileña, who gave a captivating talk about that incredible era of the capital and introduced us to the brand. Additionally, Rocío Saiz enlivened the night with a travel-themed DJ set while guests danced, tested products, and refreshed themselves."
     },
-    "image": "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_10_3.jpg",
+    "image": "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_16_32bfcdd1-8c05-48f0-8577-0d8be4d58759_portada.jpg",
     "gallery": [
       "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_10_3.jpg",
       "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_11_2.jpg",
-      "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_16_32bfcdd1-8c05-48f0-8577-0d8be4d58759.jpg",
+      "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_16_32bfcdd1-8c05-48f0-8577-0d8be4d58759_portada.jpg",
       "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_8_1.jpg"
     ]
   },
@@ -133,14 +133,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Los ‘Premios Food & Drink de Time Out 2023’ se vistieron de verde gracias a JVV. La revista contó con nuestra colaboración para decorar este evento anual que tuvo lugar de en el Teatro Eslava para celebrar la escena gastronómica de la ciudad, premiando a los mejores en la industria de la comida y las bebidas.",
       "en": "The 'Time Out Food & Drink Awards 2023' were dressed in green thanks to JVV. The magazine collaborated with us to decorate this annual event, which took place at the Eslava Theatre to celebrate the city's gastronomic scene, honoring the best in the food and beverage industry."
     },
-    "image": "/Events/JVV _ TIMEOUT/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg",
+    "image": "/Events/JVV _ TIMEOUT/imgi_14_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0011_Logo-2048x1365_portada.jpg",
     "gallery": [
-      "/Events/JVV _ TIMEOUT/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg",
-      "/Events/JVV _ TIMEOUT/imageye___-_imgi_12_WhatsApp-Image-2023-05-17-at-16.16.42.jpg",
-      "/Events/JVV _ TIMEOUT/imageye___-_imgi_16_MG_3556-2048x1463.jpg",
-      "/Events/JVV _ TIMEOUT/imageye___-_imgi_22_MG_3973-2048x1462.jpg",
-      "/Events/JVV _ TIMEOUT/imageye___-_imgi_28_MG_4065-2048x1462.jpg",
-      "/Events/JVV _ TIMEOUT/imgi_14_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0011_Logo-2048x1365.jpg",
+      "/Events/JVV _ TIMEOUT/imgi_14_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0011_Logo-2048x1365_portada.jpg",
       "/Events/JVV _ TIMEOUT/imgi_18_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0057_Logo-2048x1365.jpg",
       "/Events/JVV _ TIMEOUT/imgi_22_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0149_Logo-2048x1365.jpg",
       "/Events/JVV _ TIMEOUT/imgi_26_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0206_Logo-2048x1365.jpg"
@@ -160,13 +155,13 @@ const EVENTS_DETAILS_DATA = [
       "es": "Para dar la bienvenida al 2023, el hotel RIU Plaza de España contó con JVV para la producción de un evento muy especial. Junto a Isaac Dos Puntos, JVV creó la experiencia sensorial RIUTUAL.Con máscaras, brillo, mucho misterio y el ritmo de nuestra JVV FRiend, la Dj Alicia Galuzis, despedimos el año por todo lo alto",
       "en": "To welcome 2023, the RIU Plaza de España hotel counted on JVV to produce a very special event. Together with Isaac Dos Puntos, JVV created the sensory experience RIUTUAL. With masks, glitter, mystery, and the beats of our JVV Friend, DJ Alicia Galuzis, we bid farewell to the year in style."
     },
-    "image": "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg",
+    "image": "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg",
     "gallery": [
-      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg",
-      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_12_WhatsApp-Image-2023-05-17-at-16.16.42.jpg",
-      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg",
-      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_22_MG_3973-2048x1462.jpg",
-      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_28_MG_4065-2048x1462.jpg"
+      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg",
+      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_12_WhatsApp-Image-2023-05-17-at-16.16.42.jpg",
+      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg",
+      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_22_MG_3973-2048x1462.jpg",
+      "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_28_MG_4065-2048x1462.jpg"
     ]
   },
   {
@@ -183,8 +178,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Durante las tres primeras ediciones del  Festival Paraiso,  JVV se ha ocupado de la confirmación y la gestión de algunos de los patrocinios confirmados, como Zumos Linda, la marca deportiva Reebok y en esta ultima edición con Schweppes . Además en sus tres ediciones hemos aportado color a la convocatoria con la asistencia de influencers y artistas, muches de elles parte de nuestra #JVVPeople.",
       "en": "During the first three editions of Paraíso Festival, JVV was in charge of securing and managing confirmed sponsorships, including Zumos Linda, sports brand Reebok, and in this latest edition, Schweppes. Additionally, throughout all three editions, we brought color to the guest list with the attendance of influencers and artists, many of whom are part of our #JVVPeople."
     },
-    "image": "/Events/JVV _ FESTIVAL PARAÍSO III Edición/imgi_11_5-2-1.jpg",
+    "image": "/Events/JVV _ FESTIVAL PARAÍSO III Edición/SHYGIRL-PARAISO-FESTIVAL-5-1_portada.jpg",
     "gallery": [
+      "/Events/JVV _ FESTIVAL PARAÍSO III Edición/SHYGIRL-PARAISO-FESTIVAL-5-1_portada.jpg",
       "/Events/JVV _ FESTIVAL PARAÍSO III Edición/imgi_11_5-2-1.jpg",
       "/Events/JVV _ FESTIVAL PARAÍSO III Edición/imgi_19_Paraiso-2022_PJGarcinuno_1E9A1662-1-scaled.jpg",
       "/Events/JVV _ FESTIVAL PARAÍSO III Edición/imgi_22_Paraiso-2022_PJGarcinuno_1E9A1694-1-2048x1365.jpg",
@@ -210,7 +206,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_4_PORTADA-scaled.jpg",
       "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_5_poble-nou-aleix-31-scaled.jpg",
       "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_6_poble-nou-aleix-40-scaled.jpg",
-      "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_7_poble-nou-aleix-24-scaled.jpg",
+      "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_7_poble-nou-aleix-24-scaled_portada.jpg",
       "/Events/JVV _ PRIVILEGIADA Presentación corto/imgi_8_poble-nou-aleix-27-scaled.jpg"
     ]
   },
@@ -228,9 +224,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Frangelico , la marca italiana del grupo Campari nos delegó la convocatoria de influencers e invitados afines a la marca para su evento de presentación en Madrid donde descubrieron las nuevas formas de consumir este histórico digestivo. Actrices como Michelle Calvo ,  Paloma López, el actor Jorge López o la cantante  Javiera Mena no quisieron perderse esta cita llena de sorpresas, juegos y risas.",
       "en": "Frangelico, the Italian brand from Campari Group, delegated to us the guest list management of influencers and brand advocates for its presentation event in Madrid, where they discovered new ways to enjoy this classic liqueur. Actresses like Michelle Calvo, Paloma López, actor Jorge López, and singer Javiera Mena did not want to miss this event full of surprises, games, and laughter."
     },
-    "image": "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n.jpg",
+    "image": "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n_portada.jpg",
     "gallery": [
-      "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n.jpg",
+      "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n_portada.jpg",
       "/Events/JVV _ FRANGELICO/imgi_5_60914570_2274642219285064_7550676502692508645_n.jpg",
       "/Events/JVV _ FRANGELICO/imgi_6_59894378_147463536392500_1403255679737929204_n.jpg",
       "/Events/JVV _ FRANGELICO/imgi_7_frangelico-sobremesa-madrid-2019_selecció-final_07-.jpg"
@@ -250,7 +246,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "LATITUDE , el colectivo que ha revolucionado la moda en España consiguiendo hacer una colección completamente ecosostenible enteramente producida en nuestro país, decidió montar una tienda efímera en Madrid por casi dos meses dentro del concept store El Paracaidista , para que no hubiera excusa para conocer de primera mano sus prendas, sus siguientes pasos y a algunas de sus integrantes. En JVV nos ocupamos de la convocatoria, producción y realizamos distintos eventos con algunas de nuestras #JVVPeople como  Carla y Sandra o  Julia De Castro.",
       "en": "LATITUDE, the collective that has revolutionized fashion in Spain by creating a completely eco-sustainable collection entirely produced in our country, decided to set up a pop-up store in Madrid for almost two months inside the concept store El Paracaidista. In JVV, we managed the guest list, production, and held various events with some of our #JVVPeople, such as Carla and Sandra or Julia De Castro."
     },
-    "image": "/Events/JVV _ LATITUDE en El Paracaidista/imgi_14_DSCF2260.png",
+    "image": "/Events/JVV _ LATITUDE en El Paracaidista/imgi_52_Invitacion1_portada.png",
     "gallery": [
       "/Events/JVV _ LATITUDE en El Paracaidista/imgi_14_DSCF2260.png",
       "/Events/JVV _ LATITUDE en El Paracaidista/imgi_16_Unknown-1-2.png",
@@ -258,7 +254,8 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ LATITUDE en El Paracaidista/imgi_18_Unknown-3-2.png",
       "/Events/JVV _ LATITUDE en El Paracaidista/imgi_19_DSCF2237-1.png",
       "/Events/JVV _ LATITUDE en El Paracaidista/imgi_20_Unknown-4.png",
-      "/Events/JVV _ LATITUDE en El Paracaidista/imgi_24_PHOTO-2018-12-14-12-48-45-700x933.jpg"
+      "/Events/JVV _ LATITUDE en El Paracaidista/imgi_24_PHOTO-2018-12-14-12-48-45-700x933.jpg",
+      "/Events/JVV _ LATITUDE en El Paracaidista/imgi_52_Invitacion1_portada.png"
     ]
   },
   {
@@ -275,9 +272,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Repetimos con el verano ya finalizado en el Together We Fest en su edición catalana. En el Club de Polo y con una programación muy similar a la de Madrid, por dos días sus asistentes pudieron bailar al ritmo del grupo Delaporte, #JVVPeople. Además otros dos artistas que también vinieron de la mano de JVV, la actriz Clara Maldonado y el actor Jorge López.",
       "en": "We returned at the end of the summer for the Together We Fest Catalan edition. Held at the Club de Polo with a similar schedule to Madrid, attendees danced for two days to the beats of our #JVVPeople group, Delaporte. We also brought actress Clara Maldonado and actor Jorge López to the event."
     },
-    "image": "/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114.jpg",
+    "image": "/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114_portada.jpg",
     "gallery": [
-      "/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114.jpg",
+      "/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114_portada.jpg",
       "/Events/JVV _ APEROL FEST Barcelona/imgi_5_APEROL-TWF_BCN-1655.jpg",
       "/Events/JVV _ APEROL FEST Barcelona/imgi_6_69997171_372487340303228_1533284820018411927_n.jpg",
       "/Events/JVV _ APEROL FEST Barcelona/imgi_7_APEROL-TWF_BCN-3574.jpg",
@@ -299,9 +296,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "La firma francesa de calzado Roger Vivier escogió a Julia De Castro, #JVVPeople, como Maestra de Ceremonias para presentar su colección en la Fundación Fernando de Castro en Madrid, ante un selecto y distinguido grupo de invitados elegidos por su director creativo, Gherardo Felloni, presente en el evento, que compartió cena y velada con Inès de la Fressange, Bibiana Fernández, Ana García Siñeriz, Laura Ponte, Boris Izaguirre y un sinfín de personalidades que gozaron de los temas y sonidos de De La Puríssima.",
       "en": "French footwear house Roger Vivier chose Julia De Castro (#JVVPeople) as Master of Ceremonies to present its collection at the Fernando de Castro Foundation in Madrid. The select group of guests invited by creative director Gherardo Felloni shared an evening with Inès de la Fressange, Bibiana Fernández, Ana García Siñeriz, Laura Ponte, Boris Izaguirre, and many other personalities who enjoyed the sounds of De La Puríssima."
     },
-    "image": "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled.jpg",
+    "image": "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled_portada.jpg",
     "gallery": [
-      "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled.jpg",
+      "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled_portada.jpg",
       "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_5_20190618sdr132_20190618113639465-scaled.jpg",
       "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_6_20190618sdr136_20190618113639465-scaled.jpg"
     ]
@@ -320,11 +317,11 @@ const EVENTS_DETAILS_DATA = [
       "es": "JVV colaboró una vez más con la bebida italiana APEROL para poner música y llevar a invitados muy especiales a su Together We Fest. La primera edición de su propio festival que por tres días ofreció una programación similar a sus asistentes dentro del marco incomparable de la Embajada de Italia. Fueron muchas las sorpresas que se dieron y el nexo común de todas las jornadas fue nuestro grupo #JVVPeople, DELAPORTE y junto a ellos trajimos en uno de sus días a la cantante mexicana Ximena Sariñana que se presentó a España a través de Aperol y JVV. Además, conseguimos traer al actor José Lamuño y a Jorge López, el actor revelación de la segunda temporada de Élite (Netflix).",
       "en": "JVV collaborated once again with Italian brand APEROL to provide music and bring very special guests to their Together We Fest. The first edition of their own festival offered three days of programming inside the Italian Embassy. The highlight of all sessions was our #JVVPeople band, DELAPORTE. Alongside them, we hosted Mexican singer Ximena Sariñana for her Spanish debut, and brought actor José Lamuño and Jorge López (from Netflix's Élite)."
     },
-    "image": "/Events/JVV _ APEROL FEST Madrid/imgi_4_H71A1340.jpg",
+    "image": "/Events/JVV _ APEROL FEST Madrid/imgi_6_H71A9166_portada.jpg",
     "gallery": [
       "/Events/JVV _ APEROL FEST Madrid/imgi_4_H71A1340.jpg",
       "/Events/JVV _ APEROL FEST Madrid/imgi_5_H71A1727.jpg",
-      "/Events/JVV _ APEROL FEST Madrid/imgi_6_H71A9166.jpg",
+      "/Events/JVV _ APEROL FEST Madrid/imgi_6_H71A9166_portada.jpg",
       "/Events/JVV _ APEROL FEST Madrid/imgi_7_H71A9859.jpg"
     ]
   },
@@ -342,7 +339,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "En junio tuvo lugar la primera edición de  PARAÍSO FESTIVAL en Madrid. Un festival boutique que da un paso más en el territorio nacional para una apuesta de calidad musical pero también de gastronomía, arte, naturaleza y respeto ambiental. En JVV nos ocupamos del patrocinio, selección de influencers e invitados y en su jornada del sábado pudimos contar con la increíble actuación de nuestro grupo #JVVPeople,  DELAPORTE y con la sesión que nos dejó sin parar de bailar de nuestro #JVVFriend,  YANIK PARK.",
       "en": "June marked the debut of PARAÍSO FESTIVAL in Madrid, a boutique festival merging music, gastronomy, art, and environmental sustainability. JVV was in charge of sponsorships, influencer selection, and guests. Saturday's highlight was the incredible performance by our #JVVPeople band, DELAPORTE, and a dance-filled set by our #JVVFriend, YANIK PARK."
     },
-    "image": "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_10_AYanik-Park-2.png",
+    "image": "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_5_Paraiso-cartel-1_portada.png",
     "gallery": [
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_10_AYanik-Park-2.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_11_Ayanik-park.png",
@@ -351,7 +348,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_14_Paraiso-escenario-1.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_15_Aparaiso-2018-nabscabDSC_3940.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_4_A_DSC8447_nabscab.png",
-      "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_5_Paraiso-cartel-1.png",
+      "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_5_Paraiso-cartel-1_portada.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_6_A_DSC8661_Rodiguez-Jr-Liset-Alea-nabscab.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_7_A_DSC8908_nabscab.png",
       "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_8_Sandra-y-Carla-b.png",
@@ -372,7 +369,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "Una vez más nuestro director y fundador,  Jesús Vázquez Viedma, ejerció de maestro de ceremonias para la cita mensual de Fashion For Lunch en Soho House Barcelona. En el restaurante italiano Cecconi’s tuvimos el placer de contar con una de las fundadoras de la app/web del e-commerce de segunda mano de marcas de lujo, Sophie Hersan y con su actual embajadora en España, Blanca Miró. Al finalizar la charla, JVV inauguró el primer pop up en la capital catalana y que por tres días permitió que Vestiaire Collective tuviera una efímera tienda física en Soho House, uno de los emplazamientos más visitados de Barcelona.",
       "en": "Once again, our founder Jesús Vázquez Viedma acted as master of ceremonies for the monthly Fashion For Lunch event at Soho House Barcelona. Held at Cecconi's, the talk featured Sophie Hersan (co-founder of luxury resale platform Vestiaire Collective) and ambassador Blanca Miró. Afterwards, JVV launched the brand's first pop-up shop in Barcelona, creating a three-day physical boutique inside Soho House."
     },
-    "image": "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_10_FashionLunch_VC_SH_62.png",
+    "image": "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_9_FashionLunch_VC_SH_11_portada.png",
     "gallery": [
       "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_10_FashionLunch_VC_SH_62.png",
       "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_4_FashionLunch_VC_SH_18.png",
@@ -380,7 +377,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_6_FashionLunch_VC_SH_28.png",
       "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_7_FashionLunch_VC_SH_60.png",
       "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_8_FashionLunch_VC_SH_13.png",
-      "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_9_FashionLunch_VC_SH_11.png"
+      "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_9_FashionLunch_VC_SH_11_portada.png"
     ]
   },
   {
@@ -397,12 +394,12 @@ const EVENTS_DETAILS_DATA = [
       "es": "",
       "en": "Florentine luxury house Bottega Veneta (Kering Group) trusted JVV to invite selected private club members to explore their latest creations at the Paseo de Gracia boutique. This was followed by an Italian dinner prepared by Cecconi's in the private room of the club, adorned with the iconic Cabat bag designs."
     },
-    "image": "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_10_Bottega-Veneta-3.png",
+    "image": "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_5_Bottega-Veneta-2_portada.png",
     "gallery": [
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_10_Bottega-Veneta-3.png",
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_11_Bottega-Veneta-8-1.png",
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_4_Bottega-Veneta-7.png",
-      "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_5_Bottega-Veneta-2.png",
+      "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_5_Bottega-Veneta-2_portada.png",
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_6_Bottega-Veneta-6.png",
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_7_Bottega-Veneta-4.png",
       "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_8_Bottega-Veneta-1.png",
@@ -423,14 +420,14 @@ const EVENTS_DETAILS_DATA = [
       "es": "El 14 de mayo Andrea Dopico Cafarelli presentó en la Galería Senda de Barcelona su primer libro para la elaboración de un postre al plato, trasladando su vocación por la pastelería e iniciando con ello una nueva andadura. JVV estuvo a cargo de la convocatoria de medios e invitados así como de cerrar el patrocinio de Cavas Gramona quienes deleitaron a los invitados con su Cava Gramona Imperial Brut Reserva 2013. El arte, el diseño y la cocina se fusionaron durante esta tarde con la finalidad de plasmar un objeto único que potencie la transmisión de conocimientos técnicos de pastelería y a su vez despierte la creatividad del lector",
       "en": "On May 14, Andrea Dopico Cafarelli presented her debut book on plated desserts at Galería Senda in Barcelona, capturing her passion for pastry arts. JVV was in charge of media, guest invitations, and securing the sponsorship of Cavas Gramona. Art, design, and culinary arts blended together to present a unique reference book designed to inspire readers' pastry creativity."
     },
-    "image": "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_10_IMG_2487.png",
+    "image": "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_6_IMG_21002-2_portada.png",
     "gallery": [
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_10_IMG_2487.png",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_11_JVV-Email-EVENTS-ELEMENTS.png",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_12_IMG_2480.png",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_4_2018-04-17-PHOTO-00001060.png",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_5_IMG_20092-2.png",
-      "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_6_IMG_21002-2.png",
+      "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_6_IMG_21002-2_portada.png",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_7_IMG_21392.jpg",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_8_IMG_20342.jpg",
       "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_9_IMG_2498.png"
@@ -450,11 +447,11 @@ const EVENTS_DETAILS_DATA = [
       "es": "Vandômian tuvo por primera vez en Madrid su tienda efímera por un día en la calle Lagasca. Durante toda esta jornada sus asistentes pudieron conocer de la mano de su fundadora, Xantal Farnós, todas las colecciones que se encuentran en su web y así poder probar las piezas en un espacio acorde con el estilo de la marca. Contamos con la presencia de, entre otros, Eugenia Martínez de Irujo, Maria Zurita, y muchos más que no quisieron perderse esta oportunidad única.",
       "en": "Vandômian held its first one-day pop-up boutique in Madrid on Lagasca Street. Throughout the day, visitors met founder Xantal Farnós, explored the collections, and tried on pieces in a space tailored to the brand's aesthetic. High-profile guests like Eugenia Martínez de Irujo and Maria Zurita attended this exclusive showcase."
     },
-    "image": "/Events/JVV _ VANDÔMIAN/imgi_4_IMG_1871.png",
+    "image": "/Events/JVV _ VANDÔMIAN/imgi_6_IMG_1872_portada.png",
     "gallery": [
       "/Events/JVV _ VANDÔMIAN/imgi_4_IMG_1871.png",
       "/Events/JVV _ VANDÔMIAN/imgi_5_IMG_1873.png",
-      "/Events/JVV _ VANDÔMIAN/imgi_6_IMG_1872.png"
+      "/Events/JVV _ VANDÔMIAN/imgi_6_IMG_1872_portada.png"
     ]
   },
   {
@@ -471,14 +468,14 @@ const EVENTS_DETAILS_DATA = [
       "es": "La tercera boutique de los hermanos Buxó se inauguró en España en Noviembre de 2017 siguiendo las pautas de las dos anteriores. En JVV colaboramos dotándole de una convocatoria muy especial y organizando una post-party que congregó a más de 200 personas en uno de los locales más carismáticos de todo Barcelona.",
       "en": "The third boutique of the Buxó brothers opened in Spain in November 2017. JVV collaborated by curating a very special guest list and organizing an after-party that brought together over 200 guests in one of Barcelona's most charismatic venues."
     },
-    "image": "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_4_shonmott.jpg",
+    "image": "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_9_shonmott_02_portada.jpg",
     "gallery": [
       "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_4_shonmott.jpg",
       "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_5_shonmott_01.jpg",
       "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_6_shonmott_05.jpg",
       "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_7_shonmott_04.jpg",
       "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_8_shonmott_03.jpg",
-      "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_9_shonmott_02.jpg"
+      "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_9_shonmott_02_portada.jpg"
     ]
   },
   {
@@ -495,9 +492,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Quisimos invitar a lo más selecto de Madrid para darle a conocer el total look de La Perla para la temporada O/I 2017-2018. Una tarde llena de conversaciones interesantes, belleza e innumerables propuestas de la mano de esta colección italiana. Su emplazamiento en Madrid, en la calle Ortega y Gasset, fue el marco perfecto para esta reunión.",
       "en": "We invited Madrid's elite to discover the total look of La Perla's F/W 2017-2018 collection. An afternoon filled with engaging conversations, beauty, and Italian design at their Ortega y Gasset boutique in Madrid, providing the perfect setting."
     },
-    "image": "/Events/JVV _ LA PERLA/imgi_10_La_perla_07.jpg",
+    "image": "/Events/JVV _ LA PERLA/imgi_10_La_perla_07_portada.jpg",
     "gallery": [
-      "/Events/JVV _ LA PERLA/imgi_10_La_perla_07.jpg",
+      "/Events/JVV _ LA PERLA/imgi_10_La_perla_07_portada.jpg",
       "/Events/JVV _ LA PERLA/imgi_11_La_perla_06.jpg",
       "/Events/JVV _ LA PERLA/imgi_12_La_perla_05.jpg",
       "/Events/JVV _ LA PERLA/imgi_13_La_perla_04.jpg",
@@ -525,7 +522,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "En JVV queríamos congregar a muchos de nuestros JVVPeople y  JVVFriends en un mismo momento y por eso pensamos en una larga jornada dominical para hacer realidad este propósito. El lugar elegido, Nubel , un espacio creado por Jean Nouvel , dentro del Museo Nacional Centro de Arte Reina Sofía , fue el envoltorio perfecto para esta acción y durante más de 8 horas contamos con la música de Laura Put, Patricia Valley, Yanik Park, Daniel Baughman y Alicia Galuzis y las intervenciones en los más pequeños de nuestros artistas Nadia Benyahya y Misterpiro. Fueron muchos los invitados que nos acompañaron en nuestra primera fiesta FOMO y que quisieron retratarse por nuestra fotógrafa Ana Belén y Álvaro Manof (El Chico De Los Recados).",
       "en": "At JVV, we wanted to gather our JVVPeople and JVVFriends in one place, organizing a Sunday event to bring this vision to life. The venue, Nubel (designed by Jean Nouvel inside the Reina Sofía Museum), was the perfect setting. For over 8 hours, we featured music by Laura Put, Patricia Valley, Yanik Park, Daniel Baughman, and Alicia Galuzis, plus artistic interventions by Nadia Benyahya and Misterpiro. Many guests joined us for our first FOMO party, captured by photographer Ana Belén and Álvaro Manof."
     },
-    "image": "/Events/JVV _ FOMO/imgi_20_fomo_02.jpg",
+    "image": "/Events/JVV _ FOMO/imgi_38_fomo_08_portada.jpg",
     "gallery": [
       "/Events/JVV _ FOMO/imgi_20_fomo_02.jpg",
       "/Events/JVV _ FOMO/imgi_23_fomo_04.jpg",
@@ -533,7 +530,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ FOMO/imgi_29_fomo_05.jpg",
       "/Events/JVV _ FOMO/imgi_32_fomo_06.jpg",
       "/Events/JVV _ FOMO/imgi_35_fomo_07.jpg",
-      "/Events/JVV _ FOMO/imgi_38_fomo_08.jpg",
+      "/Events/JVV _ FOMO/imgi_38_fomo_08_portada.jpg",
       "/Events/JVV _ FOMO/imgi_4_fomo_01.jpg"
     ],
     "videos": [
@@ -554,9 +551,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Kenzo quiso inaugurar su nueva flagship store en Paseo de Gracia (Barcelona) por todo lo alto con la visita de sus directores creativos, Carol Lim y Humberto León. Fuimos los encargados del desarrollo de todo el evento para el que contamos con la colaboración de Carlota Guerrero y sus bailarines. La velada fue muy especial, con regalo de caricaturas a todos los asistentes y una sesión de música que hizo bailar hasta a los maniquíes. Una larga lista de invitados que congregó a muchas caras conocidas y sociedad catalana y española en general, que no quisieron perderse ningún detalle en una noche que se alargó felizmente. También fuimos los responsables de la prensa y comunicación tanto del evento como de las entrevistas con muchos de los medios españoles más importantes, así como de seleccionar y coordinar a las celebrities e influencers que asistieron.",
       "en": "Kenzo celebrated the grand opening of its new flagship store on Paseo de Gracia (Barcelona) with creative directors Carol Lim and Humberto León. We managed the entire event, collaborating with Carlota Guerrero and her dancers. The evening featured custom caricatures for guests and a lively DJ set. We curated the guest list of public figures and handled press, media relations, and celebrity coordination."
     },
-    "image": "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01.jpg",
+    "image": "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01_portada.jpg",
     "gallery": [
-      "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01.jpg",
+      "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01_portada.jpg",
       "/Events/JVV _ KENZO BCN/imgi_21_Kenzo_02.jpg",
       "/Events/JVV _ KENZO BCN/imgi_22_Kenzo_04.jpg",
       "/Events/JVV _ KENZO BCN/imgi_23_Kenzo_18.jpg",
@@ -589,9 +586,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Tuvimos el placer de ocuparnos de la entera producción del evento de celebración del 115 aniversario de la primera casa de capas del mundo y para ello reunimos a sus clientes y personalidades bajo el cielo de Madrid, en la terraza del Hotel Me . Fue una noche muy especial que culminó con la actuación sorpresa del bailarín Sergio Bernal.",
       "en": "We produced the anniversary event celebrating the 115th year of the world's first luxury cape house, Capas Seseña. Gathering clients and prominent figures at the rooftop of the Me Hotel under the Madrid sky, the special evening culminated with a surprise performance by dancer Sergio Bernal."
     },
-    "image": "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02.jpg",
+    "image": "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02_portada.jpg",
     "gallery": [
-      "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02.jpg",
+      "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02_portada.jpg",
       "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_07.jpg",
       "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_08.jpg",
       "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_09.jpg",
@@ -623,7 +620,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "Mango nos encargó la producción del evento especial de la noche Shopping Gauean en su tienda de la calle Fuenterrabia 15 en San Sebastian. Fueron muchas las personas que se acercaron y escucharon la música non stop del dj Alverto Sánchez y disfrutaron de descuentos y sorpresas.",
       "en": "Mango commissioned us to produce a special event for the Shopping Gauean night at their boutique on Fuenterrabia 15 in San Sebastián. Many visitors enjoyed non-stop music by DJ Alverto Sánchez, along with exclusive promotions and surprises."
     },
-    "image": "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_10_Mango_donosti_06.jpg",
+    "image": "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10_portada.jpg",
     "gallery": [
       "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_10_Mango_donosti_06.jpg",
       "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_11_Mango_donosti_05.jpg",
@@ -638,7 +635,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_6_Mango_donosti_09.jpg",
       "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_7_Mango_donosti_08.jpg",
       "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_8_Mango_donosti_07.jpg",
-      "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10.jpg"
+      "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10_portada.jpg"
     ]
   },
   {
@@ -655,7 +652,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "Violeta by Mango de la calle Velazquez estuvo repleta de visitas durante la noche MANGO X VOGUE FASHION’S NIGHT OUT (VFNO) . Tania Llasera ejerció de madrina del evento y la dj Alicia Galuzis hicieron de esta noche un momento muy especial, sin olvidarnos de la bebida que corrió durante toda la fiesta con Gramona ,  Linda y Cervezas Malasaña .",
       "en": "Violeta by Mango on Velázquez Street was packed during MANGO X VOGUE FASHION'S NIGHT OUT (VFNO). Hosted by Tania Llasera with a live set by DJ Alicia Galuzis, it was a very special evening, complemented by beverages from Gramona, Linda, and Cervezas Malasaña."
     },
-    "image": "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VioletaxMango_12.jpg",
+    "image": "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_9_VioletaxMango_13_portada.jpg",
     "gallery": [
       "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VioletaxMango_12.jpg",
       "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_11_VioletaxMango_08.jpg",
@@ -671,7 +668,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_6_VioletaxMango_16.jpg",
       "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_7_VioletaxMango_15.jpg",
       "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_8_VioletaxMango_14.jpg",
-      "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_9_VioletaxMango_13.jpg"
+      "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_9_VioletaxMango_13_portada.jpg"
     ]
   },
   {
@@ -688,7 +685,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "En JVV nos ocupamos de la producción del evento en la tienda de la Calle Goya durante la noche MANGO X VOGUE FASHION’S NIGHT OUT (VFNO) . Un gran set fotográfico donde los clientes pudieron llevarse su foto instantánea de recuerdo y el escuchar al dj Pascal Moscheni fueron los platos fuertes de una velada única.",
       "en": "At JVV, we produced the event at the Goya Street store for MANGO X VOGUE FASHION'S NIGHT OUT (VFNO). Highlights included an interactive photo studio for instant keepsakes and a DJ set by Pascal Moscheni."
     },
-    "image": "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VFNO_26.jpg",
+    "image": "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_8_VFNO_22_portada.jpg",
     "gallery": [
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VFNO_26.jpg",
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_11_VFNO_06.jpg",
@@ -714,7 +711,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_5_VFNO_01.jpg",
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_6_VFNO_25.jpg",
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_7_VFNO_24.jpg",
-      "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_8_VFNO_22.jpg",
+      "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_8_VFNO_22_portada.jpg",
       "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_9_VFNO_21.jpg"
     ]
   },
@@ -732,11 +729,11 @@ const EVENTS_DETAILS_DATA = [
       "es": "JVV une sus fuerzas con el fotógrafo Nacho Alegre y sus socios con la reciente apertura del restaurante-cocktelería Servicio Continuo en Barcelona y junto con Kiko Buxó, co-fundador de Shon Mott , amenizan las tardes con un afterwork donde se junta la gente más interesante de esta ciudad. Buenos cocktails, buena música y una cocina abierta non-stop son también puntos a favor de esta reunión quincenal.",
       "en": "JVV teamed up with photographer Nacho Alegre and partners for the opening of the Servicio Continuo cocktail bar in Barcelona. Together with Shon Mott co-founder Kiko Buxó, we host a bi-weekly afterwork gathering bringing together the city's creatives with great cocktails, music, and non-stop kitchen service."
     },
-    "image": "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_113_SC_SunsetPeople_54-768x1152.jpg",
+    "image": "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_34_SC_SunsetPeople_8-768x1152_portada.jpg",
     "gallery": [
       "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_113_SC_SunsetPeople_54-768x1152.jpg",
       "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_116_SC_SunsetPeople_57-768x1152.jpg",
-      "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_34_SC_SunsetPeople_8-768x1152.jpg",
+      "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_34_SC_SunsetPeople_8-768x1152_portada.jpg",
       "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_35_SC_SunsetPeople_11-768x1152.jpg",
       "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_40_SC_SunsetPeople_22-768x1152.jpg",
       "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_57_SC_SunsetPeople_23-768x1152.jpg",
@@ -758,7 +755,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "Después de varios meses dando otra vez sentido a la noche madrileña con  CHA CHÁ, en el que colabora cada semana JVV , decidimos hacer una versión diurna y vespertina de 12 horas de música sin parar en uno de los mejores cielos de Madrid, el del Hotel Me en Plaza Santa Ana. Para ello se redecoró completamente la terraza con un sinfín de rosas y se creó una estancia secreta al más puro estilo «boudoir francés» .",
       "en": "Following months of redefining Madrid's nightlife with CHA CHÁ club, JVV co-produced a 12-hour daytime and evening rooftop festival at the Me Hotel in Plaza Santa Ana. The terrace was transformed with countless roses, featuring a secret 'French boudoir' experience."
     },
-    "image": "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_108_13268219_252684188420706_3781755597142707113_o.jpg",
+    "image": "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_164_13247789_252684125087379_6652051671936717720_o_portada.jpg",
     "gallery": [
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_108_13268219_252684188420706_3781755597142707113_o.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_115_13254763_252684258420699_3910968046848071465_o.jpg",
@@ -768,7 +765,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_143_13248390_252684048420720_8634359961708064747_o.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_150_13248326_252683628420762_4735658838677888349_o.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_157_13247825_252684145087377_3347771721788816441_o-1.jpg",
-      "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_164_13247789_252684125087379_6652051671936717720_o.jpg",
+      "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_164_13247789_252684125087379_6652051671936717720_o_portada.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_171_13246444_252683811754077_4076198123276823846_o.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_178_13246321_252683945087397_4290169221369030388_o.jpg",
       "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_185_13244113_252682855087506_1103409002563227790_o.jpg",
@@ -804,7 +801,7 @@ const EVENTS_DETAILS_DATA = [
       "es": "La marca italiana confió la completa producción del único evento de este año en España, a JVV desarrollando todo su mundo en el interior del Teatro El Principito en el centro de Madrid. No faltaron actores, cantantes, escritores, políticos y un sinfín de socialité que no quisieron perderse la actuación de Aluna George en su única visita española y todas las sorpresas que la marca les tenía preparados en esta velada.  Pascal Moscheni, JVV Friend , fue el encargado de hacer bailar a los invitados.",
       "en": "The Italian house entrusted the complete production of its sole Spanish event of the year to JVV, executing the concept at El Principito Theatre in Madrid. Prominent figures enjoyed an exclusive performance by AlunaGeorge, with DJ Pascal Moscheni closing the evening."
     },
-    "image": "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_23_IMG_9522-1024x683.jpg",
+    "image": "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_41_IMG_9838-1024x683_portada.jpg",
     "gallery": [
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_23_IMG_9522-1024x683.jpg",
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_24_IMG_9557-1024x683.jpg",
@@ -824,7 +821,7 @@ const EVENTS_DETAILS_DATA = [
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_38_IMG_9774-1024x683.jpg",
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_39_IMG_9775-1024x683.jpg",
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_40_IMG_9830-1024x683.jpg",
-      "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_41_IMG_9838-1024x683.jpg",
+      "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_41_IMG_9838-1024x683_portada.jpg",
       "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_72_IMG_9774-768x512.jpg"
     ]
   },
@@ -842,12 +839,13 @@ const EVENTS_DETAILS_DATA = [
       "es": "The Apartments Madrid en su búsqueda de no solo dar alojamiento a los turistas nacionales e internacionales que llegan cada semana a sus apartamentos, quiso contar con JVV para desarrollar un ambiente acogedor e intimo y así presentar las fotografías de Alberto Lázaro, cuyo hobby en redes sociales le ha hecho ganar un espacio en el mundo de la expresión fotográfica a través de retazos de fachadas y pavimentos que recoge en sus viajes a cualquier parte del mundo.",
       "en": "The Apartments Madrid collaborated with JVV to create an intimate atmosphere showcasing the travel photography of Alberto Lázaro, whose visual collection of street textures and facades captured worldwide has earned him a significant social media following."
     },
-    "image": "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_15_e01f0be7-1282-4d73-84d0-fecfde9e2aa0.jpg",
+    "image": "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_35_apart_portada.jpg",
     "gallery": [
       "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_15_e01f0be7-1282-4d73-84d0-fecfde9e2aa0.jpg",
       "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_19_a2769117-70b7-4e9b-8d7a-1290575225fa.jpg",
       "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_23_15f42987-fcee-4c7b-a505-fa08ffef6071.jpg",
-      "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_27_39b0cce4-c4b5-4052-a103-25532807b42e.jpg"
+      "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_27_39b0cce4-c4b5-4052-a103-25532807b42e.jpg",
+      "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_35_apart_portada.jpg"
     ]
   },
   {
@@ -883,9 +881,9 @@ const EVENTS_DETAILS_DATA = [
       "es": "Después del éxito de la primera tienda en Barcelona a primeros del 2015, los hermanos Buxó no tardaron en dar el paso a la capital para dar a conocer esta joven pero cuidada marca, a los madrileños. El evento de inauguración estuvo marcado por una representación de la vida social española en todos los ámbitos cuya nota musical la puso Lucía Scansetti , también representada publicitariamente por JVV , presentando su EP, Dimensions of Dialogue .",
       "en": "Following the success of their first store in Barcelona, the Buxó brothers opened in Madrid to introduce their minimalist label. The launch event featured guests from Spanish society, with a live music set by singer Lucía Scansetti performing her EP 'Dimensions of Dialogue'."
     },
-    "image": "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1.jpg",
+    "image": "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1_portada.jpg",
     "gallery": [
-      "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1.jpg",
+      "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1_portada.jpg",
       "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_31_MG_4600-1.jpg",
       "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_34_MG_4532-1.jpg",
       "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_37_MG_4557-1.jpg",
