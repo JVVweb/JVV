@@ -79,7 +79,7 @@ export const EVENTS_DATA = [
       "day": "31",
       "year": "2022"
     },
-    "image": "/hotel-me-new.jpg"
+    "image": "/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg"
   },
   {
     "id": 8,
