@@ -60,7 +60,7 @@ export default function Talent() {
               <Link to={`/talent/${person.id}`}>
                 <div className="aspect-[3/4] overflow-hidden bg-zinc-900 mb-4 transition-all duration-700 relative">
                   <img 
-                    src={person.image}
+                    src={`${person.image}?auto=format&fit=crop&q=80&w=800`}
                     alt={person.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]"
                   />
