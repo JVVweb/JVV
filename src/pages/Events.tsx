@@ -135,13 +135,13 @@ export const EVENTS_DATA = [
       es: 'Para dar la bienvenida al 2023, el hotel RIU Plaza de España contó con JVV para la producción de un evento muy especial. Junto a Isaac Dos Puntos, JVV creó la experiencia sensorial RIUTUAL. Con máscaras, brillo, mucho misterio y el ritmo de nuestra JVV FRiend, la Dj Alicia Galuzis, despedimos el año por todo lo alto.',
       en: 'To welcome 2023, the RIU Plaza de España hotel counted on JVV to produce a very special event. Together with Isaac Dos Puntos, JVV created the RIUTUAL sensory experience. With masks, glitter, a lot of mystery and the rhythm of our JVV FRiend, DJ Alicia Galuzis, we say goodbye to the year in style.'
     },
-    image: '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg',
+    image: '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg',
     gallery: [
-      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg',
-      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_12_WhatsApp-Image-2023-05-17-at-16.16.42.jpg',
-      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg',
-      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_22_MG_3973-2048x1462.jpg',
-      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_28_MG_4065-2048x1462.jpg'
+      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg',
+      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_12_WhatsApp-Image-2023-05-17-at-16.16.42.jpg',
+      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg',
+      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_22_MG_3973-2048x1462.jpg',
+      '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_28_MG_4065-2048x1462.jpg'
     ]
   },
   {
