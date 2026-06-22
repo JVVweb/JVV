@@ -987,6 +987,7 @@ export default function EventDetail() {
           <img 
             src={event.image} 
             alt={event.title}
+            loading="lazy"
             className="w-full h-auto max-h-[70vh] object-contain"
           />
         </motion.div>
@@ -1017,6 +1018,7 @@ export default function EventDetail() {
                <img 
                  src={img} 
                  alt="Gallery"
+                 loading="lazy"
                  className="w-full h-auto object-contain hover:scale-105 transition-transform duration-[1s] block"
                />
              </motion.div>
