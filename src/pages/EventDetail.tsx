@@ -100,7 +100,7 @@ export default function EventDetail() {
           className="group flex items-center space-x-2 text-[10px] uppercase tracking-[0.2em] opacity-40 hover:opacity-100 transition-all mb-16"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          <span>{language === 'es' ? 'Volver a Eventos' : 'Return to Catalog'}</span>
+          <span>{language === 'es' ? 'Otros Eventos' : 'Other Events'}</span>
         </Link>
         
         <div className="flex flex-col md:flex-row md:items-end md:justify-between">
@@ -110,7 +110,7 @@ export default function EventDetail() {
               animate={{ opacity: 0.3 }}
               className="text-[10px] uppercase tracking-[0.4em] mb-6 block font-sans font-bold"
             >
-              {event.category} &mdash; {language === 'es' ? 'Proyecto' : 'Project'} 0{event.id}
+              {event.category}
             </motion.span>
             <motion.h1 
               initial={{ opacity: 0, x: -20 }}
@@ -134,36 +134,14 @@ export default function EventDetail() {
         </div>
       </section>
 
-      {/* Hero Image */}
-      <section className="px-6 max-w-5xl mx-auto mb-32 flex justify-center">
-        <motion.div 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-          className="w-full bg-zinc-900/50 shadow-xl border border-white/5 flex justify-center"
-        >
-          <img 
-            src={event.image} 
-            alt={event.title}
-            className="max-h-[75vh] w-auto h-auto object-contain brightness-95"
-          />
-        </motion.div>
-      </section>
-
-      {/* Overview */}
-      <section className="px-6 max-w-7xl mx-auto mb-40">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          <div className="md:col-span-3">
-             <h2 className="text-[10px] uppercase tracking-[0.3em] opacity-30 mt-2 font-sans font-bold">
-               {language === 'es' ? 'El Proyecto' : 'The Project'}
-             </h2>
-          </div>
-          <div className="md:col-span-9">
-             <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
-               {event.description[language]}
-             </p>
-          </div>
-        </div>
+      {/* Overview (Stacked and centered format) */}
+      <section className="px-6 max-w-3xl mx-auto mb-32">
+        <h2 className="text-[10px] uppercase tracking-[0.3em] opacity-30 mb-6 font-sans font-bold block">
+          {language === 'es' ? 'El Proyecto' : 'The Project'}
+        </h2>
+        <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
+          {event.description[language]}
+        </p>
       </section>
 
       {/* Gallery Grid */}
@@ -205,7 +183,7 @@ export default function EventDetail() {
                 </Link>
                 <div className="flex items-center justify-center min-w-[150px]">
                    <Link to="/events" className="text-xs uppercase tracking-widest border border-white/10 px-8 py-4 hover:border-white transition-all text-center w-full">
-                     {language === 'es' ? 'Ver Todos' : 'View All'}
+                     {language === 'es' ? 'Otros Eventos' : 'Other Events'}
                    </Link>
                 </div>
                 <Link 
