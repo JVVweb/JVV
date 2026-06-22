@@ -24,7 +24,7 @@ export const EVENTS_DATA = [
       "day": "18",
       "year": "2024"
     },
-    "image": "/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_101_Patyka-88-scaled.jpg"
+    image: '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled_portada.jpg'
   },
   {
     "id": 3,
@@ -46,7 +46,7 @@ export const EVENTS_DATA = [
       "day": "03",
       "year": "2024"
     },
-    "image": "/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_16_PIB-1.jpg"
+    image: '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg'
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@ export const EVENTS_DATA = [
       "day": "12",
       "year": "2023"
     },
-    "image": "/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_10_3.jpg"
+    image: '/Events/JVV _ THE BODY SHOP – Inauguración T4 Aeropuerto Madrid/imgi_16_32bfcdd1-8c05-48f0-8577-0d8be4d58759_portada.jpg'
   },
   {
     "id": 6,
@@ -68,7 +68,7 @@ export const EVENTS_DATA = [
       "day": "13",
       "year": "2023"
     },
-    "image": "/Events/JVV _ TIMEOUT/imageye___-_imgi_10_WhatsApp-Image-2023-05-17-at-16.16.42-1.jpg"
+    image: '/Events/JVV _ TIMEOUT/imgi_14_20230313_Premios-TimeOut-Food-and-Drink.-Teatro-Eslava.-Madrid_RMR_0011_Logo-2048x1365_portada.jpg'
   },
   {
     "id": 7,
@@ -79,7 +79,7 @@ export const EVENTS_DATA = [
       "day": "31",
       "year": "2022"
     },
-    "image": "/hotel-me-new.jpg"
+    image: '/Events/RIU PLAZA DE ESPAÑA/imageye___-_imgi_16_MG_3556-2048x1463_PORTADA.jpg'
   },
   {
     "id": 8,
@@ -90,7 +90,7 @@ export const EVENTS_DATA = [
       "day": "24",
       "year": "2022"
     },
-    "image": "/Events/JVV _ FESTIVAL PARAÍSO III Edición/imgi_11_5-2-1.jpg"
+    image: '/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_5_Paraiso-cartel-1_portada.png'
   },
   {
     "id": 9,
@@ -112,7 +112,7 @@ export const EVENTS_DATA = [
       "day": "11",
       "year": "2019"
     },
-    "image": "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n.jpg"
+    image: '/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n_portada.jpg'
   },
   {
     "id": 11,
@@ -123,7 +123,7 @@ export const EVENTS_DATA = [
       "day": "03",
       "year": "2018"
     },
-    "image": "/Events/JVV _ LATITUDE en El Paracaidista/imgi_14_DSCF2260.png"
+    image: '/Events/JVV _ LATITUDE en El Paracaidista/imgi_52_Invitacion1_portada.png'
   },
   {
     "id": 12,
@@ -134,7 +134,7 @@ export const EVENTS_DATA = [
       "day": "27",
       "year": "2019"
     },
-    "image": "/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114.jpg"
+    image: '/Events/JVV _ APEROL FEST Barcelona/imgi_4_APEROS-TWF_BCN_57114_portada.jpg'
   },
   {
     "id": 13,
@@ -145,7 +145,7 @@ export const EVENTS_DATA = [
       "day": "18",
       "year": "2019"
     },
-    "image": "/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled.jpg"
+    image: '/Events/JVV _ ROGER VIVIER con Julia de Castro/imgi_4_20190618sdr126_20190618113639464-scaled_portada.jpg'
   },
   {
     "id": 14,
@@ -156,7 +156,7 @@ export const EVENTS_DATA = [
       "day": "04",
       "year": "2019"
     },
-    "image": "/Events/JVV _ APEROL FEST Madrid/imgi_4_H71A1340.jpg"
+    image: '/Events/JVV _ APEROL FEST Madrid/imgi_6_H71A9166_portada.jpg'
   },
   {
     "id": 15,
@@ -167,7 +167,7 @@ export const EVENTS_DATA = [
       "day": "08",
       "year": "2018"
     },
-    "image": "/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_10_AYanik-Park-2.png"
+    image: '/Events/JVV _ FESTIVAL PARAÍSO I Edición/imgi_5_Paraiso-cartel-1_portada.png'
   },
   {
     "id": 16,
@@ -178,7 +178,7 @@ export const EVENTS_DATA = [
       "day": "05",
       "year": "2018"
     },
-    "image": "/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_10_FashionLunch_VC_SH_62.png"
+    image: '/Events/JVV _ VESTIAIRE COLLECTIVE en Soho House Barcelona/imgi_9_FashionLunch_VC_SH_11_portada.png'
   },
   {
     "id": 17,
@@ -189,7 +189,7 @@ export const EVENTS_DATA = [
       "day": "29",
       "year": "2018"
     },
-    "image": "/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_10_Bottega-Veneta-3.png"
+    image: '/Events/JVV _ BOTTEGA VENETA en Soho House Barcelona/imgi_5_Bottega-Veneta-2_portada.png'
   },
   {
     "id": 18,
@@ -200,7 +200,7 @@ export const EVENTS_DATA = [
       "day": "14",
       "year": "2018"
     },
-    "image": "/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_10_IMG_2487.png"
+    image: '/Events/JVV _ ELEMENTS by Andrea Dopico Cafarelli/imgi_6_IMG_21002-2_portada.png'
   },
   {
     "id": 19,
@@ -211,7 +211,7 @@ export const EVENTS_DATA = [
       "day": "26",
       "year": "2018"
     },
-    "image": "/Events/JVV _ VANDÔMIAN/imgi_4_IMG_1871.png"
+    image: '/Events/JVV _ VANDÔMIAN/imgi_6_IMG_1872_portada.png'
   },
   {
     "id": 20,
@@ -222,7 +222,7 @@ export const EVENTS_DATA = [
       "day": "16",
       "year": "2017"
     },
-    "image": "/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_4_shonmott.jpg"
+    image: '/Events/JVV _ SHON MOTT BARCELONA – PAU CLARÍS/imgi_9_shonmott_02_portada.jpg'
   },
   {
     "id": 21,
@@ -233,7 +233,7 @@ export const EVENTS_DATA = [
       "day": "28",
       "year": "2017"
     },
-    "image": "/Events/JVV _ LA PERLA/imgi_10_La_perla_07.jpg"
+    image: '/Events/JVV _ LA PERLA/imgi_10_La_perla_07_portada.jpg'
   },
   {
     "id": 22,
@@ -244,7 +244,7 @@ export const EVENTS_DATA = [
       "day": "21",
       "year": "2017"
     },
-    "image": "/Events/JVV _ FOMO/imgi_20_fomo_02.jpg"
+    image: '/Events/JVV _ FOMO/imgi_38_fomo_08_portada.jpg'
   },
   {
     "id": 23,
@@ -255,7 +255,7 @@ export const EVENTS_DATA = [
       "day": "23",
       "year": "2017"
     },
-    "image": "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01.jpg"
+    image: '/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01_portada.jpg'
   },
   {
     "id": 24,
@@ -266,7 +266,7 @@ export const EVENTS_DATA = [
       "day": "29",
       "year": "2016"
     },
-    "image": "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02.jpg"
+    image: '/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02_portada.jpg'
   },
   {
     "id": 25,
@@ -277,7 +277,7 @@ export const EVENTS_DATA = [
       "day": "16",
       "year": "2016"
     },
-    "image": "/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_10_Mango_donosti_06.jpg"
+    image: '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10_portada.jpg'
   },
   {
     "id": 26,
@@ -288,7 +288,7 @@ export const EVENTS_DATA = [
       "day": "15",
       "year": "2016"
     },
-    "image": "/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VioletaxMango_12.jpg"
+    image: '/Events/JVV _ VIOLETA X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_9_VioletaxMango_13_portada.jpg'
   },
   {
     "id": 27,
@@ -299,7 +299,7 @@ export const EVENTS_DATA = [
       "day": "15",
       "year": "2016"
     },
-    "image": "/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_10_VFNO_26.jpg"
+    image: '/Events/JVV _ MANGO X VOGUE FASHION’S NIGHT OUT (VFNO)/imgi_8_VFNO_22_portada.jpg'
   },
   {
     "id": 28,
@@ -310,7 +310,7 @@ export const EVENTS_DATA = [
       "day": "29",
       "year": "2016"
     },
-    "image": "/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_113_SC_SunsetPeople_54-768x1152.jpg"
+    image: '/Events/JVV _ SUNSET PEOPLE BARCELONA/imgi_34_SC_SunsetPeople_8-768x1152_portada.jpg'
   },
   {
     "id": 29,
@@ -321,7 +321,7 @@ export const EVENTS_DATA = [
       "day": "22",
       "year": "2016"
     },
-    "image": "/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_108_13268219_252684188420706_3781755597142707113_o.jpg"
+    image: '/Events/JVV _ CHA CHÁ «THE BRUNCH»/imgi_164_13247789_252684125087379_6652051671936717720_o_portada.jpg'
   },
   {
     "id": 30,
@@ -332,7 +332,7 @@ export const EVENTS_DATA = [
       "day": "29",
       "year": "2016"
     },
-    "image": "/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_23_IMG_9522-1024x683.jpg"
+    image: '/Events/JVV _ EMPORIO ARMANI SOUNDS/imgi_41_IMG_9838-1024x683_portada.jpg'
   },
   {
     "id": 31,
@@ -343,7 +343,7 @@ export const EVENTS_DATA = [
       "day": "24",
       "year": "2016"
     },
-    "image": "/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_15_e01f0be7-1282-4d73-84d0-fecfde9e2aa0.jpg"
+    image: '/Events/JVV _ EXPOSICIÓN ALBERTO LÁZARO/imgi_35_apart_portada.jpg'
   },
   {
     "id": 32,
@@ -354,7 +354,7 @@ export const EVENTS_DATA = [
       "day": "10",
       "year": "2015"
     },
-    "image": "/Events/JVV _ POP UP STORE LYDIA DELGADO/imgi_9_Pop-Up-Lydia-Delgado-Madrid.jpg"
+    image: '/Events/JVV _ POP UP STORE LYDIA DELGADO/imgi_9_Pop-Up-Lydia-Delgado-Madrid.jpg'
   },
   {
     "id": 33,
@@ -365,7 +365,7 @@ export const EVENTS_DATA = [
       "day": "14",
       "year": "2015"
     },
-    "image": "/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1.jpg"
+    image: '/Events/JVV _ APERTURA SHON MOTT MADRID/imgi_28_MG_4570-1_portada.jpg'
   },
   {
     "id": 34,
@@ -376,7 +376,7 @@ export const EVENTS_DATA = [
       "day": "29",
       "year": "2011"
     },
-    "image": "/Events/JVV _ PANDORA/imgi_4_pandora_flyer.jpg"
+    image: '/Events/JVV _ PANDORA/imgi_4_pandora_flyer.jpg'
   }
 ];
 

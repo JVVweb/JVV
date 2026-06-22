@@ -49,11 +49,13 @@ const EVENTS_DETAILS_DATA = [
       es: "En la edición de 2025 del Palma International Boat Show (del 30 de abril al 3 de mayo), una de las ferias náuticas más prestigiosas del Mediterráneo y un referente internacional del sector, JVV se encargó de la selección y coordinación de perfiles estratégicos e influencers, conectando el mundo náutico con nuevas audiencias y generando visibilidad de alto valor para el evento. El Palma International Boat Show reúne a más de 30.000 visitantes y más de 300 empresas internacionales, posicionando a Palma de Mallorca como un centro global para la navegación y un punto de encuentro esencial para la innovación, el estilo de vida y el mar.",
       en: "At the 2025 edition of the Palma International Boat Show (April 30 – May 3), one of the most prestigious nautical fairs in the Mediterranean and an international benchmark in the sector, JVV was in charge of selecting and coordinating strategic profiles and influencers, connecting the nautical world with new audiences and generating high-value visibility for the event. The Palma International Boat Show brings together over 30,000 visitors and more than 300 international companies, positioning Palma de Mallorca as a global hub for yachting and an essential meeting point for innovation, lifestyle, and the sea."
     },
-    image: '/Palma International.jpg',
+    image: '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg',
     gallery: [
-      '/Palma International.jpg',
-      '/Palma International.jpg',
-      '/Palma International.jpg'
+      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_16_PIB-1.jpg',
+      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_19_PIB-2.jpg',
+      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_22_PIB-3.jpg',
+      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_25_PIB-4.jpg',
+      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg'
     ]
   },
   {
@@ -66,11 +68,21 @@ const EVENTS_DETAILS_DATA = [
       es: "JVV se encargó de la producción del evento y del concepto CASA PATYKA en Barcelona, un formato que llegó a la ciudad por primera vez. Diseñado para crear una experiencia de eco-lujo, este espacio reunió a profesionales de la farmacia, influencers y otros entusiastas de la marca para descubrir Glow, la nueva línea de PATYKA formulada para iluminar la piel con ingredientes naturales y orgánicos. Los asistentes tuvieron la oportunidad de conocer de primera mano la innovación de la marca, probar los productos y sumergirse en el universo sensorial de PATYKA.",
       en: "JVV was in charge of the event production and the CASA PATYKA concept in Barcelona, a format that arrived in the city for the first time. Designed to create an eco-luxury experience, this space brought together pharmacy professionals, influencers, and other brand enthusiasts to discover Glow, PATYKA's new line formulated to illuminate the skin with natural and organic ingredients. Attendees had the opportunity to experience the brand's innovation firsthand, test the products, and immerse themselves in PATYKA's sensory universe."
     },
-    image: '/CASA PATYKA.jpg',
+    image: '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled_portada.jpg',
     gallery: [
-      '/CASA PATYKA.jpg',
-      '/CASA PATYKA.jpg',
-      '/CASA PATYKA.jpg'
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_101_Patyka-88-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_36_T8A2447-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_41_Patyka-6-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_46_Patyka-26-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_51_Patyka-33-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_56_Patyka-54-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_61_Patyka-103-scaled_portada.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_71_Patyka-27-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_76_Patyka-51-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_81_Patyka-66-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_86_Patyka-70-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_91_Patyka-76-scaled.jpg',
+      '/Events/JVV _ CASA PATYKA presentación – Línea Glow/imgi_96_Patyka-82-scaled.jpg'
     ]
   }
 ];
