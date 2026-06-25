@@ -12,26 +12,46 @@ export interface Project {
 export const PROJECTS_DATA: Project[] = [
   {
     id: 1,
-    title: {
-      es: 'Editorial & Entrevista Neo2',
-      en: 'Editorial & Interview Neo2'
-    },
-    client: 'Neo2 Magazine',
-    talent: 'Andrea Tivadar',
-    year: '2024',
-    description: {
-      es: 'Editorial exclusiva y entrevista en profundidad en la prestigiosa revista Neo2 Magazine con la actriz y modelo Andrea Tivadar. Un ensayo visual de alta moda que captura la estética y el estilo contemporáneos.',
-      en: 'Exclusive editorial and in-depth interview in the prestigious Neo2 Magazine featuring actress and model Andrea Tivadar. A high-fashion visual essay capturing contemporary aesthetics and style statements.'
-    },
-    image: '/Andrea 3.jpg',
-    images: [
-      '/Andrea.jpg',
-      '/Andrea 2.jpg',
-      '/Andrea 3.jpg'
-    ]
+    title: { es: "Fotos por Patrick Shuttler", en: "Photos by Patrick Shuttler" },
+    client: "",
+    talent: "Andrea Tivadar",
+    year: "2024",
+    description: { es: "Fotos de Andrea Tivadar por Patrick Shuttler", en: "Fotos de Andrea Tivadar por Patrick Shuttler" },
+    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg",
+    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3075.jpg"]
   },
   {
     id: 2,
+    title: { es: "Patrocinio Festival Mayrit Madrid", en: "Mayrit Madrid Festival Sponsorship" },
+    client: "",
+    talent: "Fevertree",
+    year: "2024",
+    description: { es: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid", en: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid" },
+    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg",
+    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3069.jpg"]
+  },
+  {
+    id: 3,
+    title: { es: "Desigual", en: "Desigual" },
+    client: "",
+    talent: "Zumos Linda",
+    year: "2024",
+    description: { es: "Zumos Linda para Desigual", en: "Zumos Linda para Desigual" },
+    image: "https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg",
+    images: ["https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg"]
+  },
+  {
+    id: 4,
+    title: { es: "Mo\u00ebt & Chandon y Zumos Linda", en: "Mo\u00ebt & Chandon and Zumos Linda" },
+    client: "",
+    talent: "Ana Fernandez",
+    year: "2024",
+    description: { es: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda", en: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda" },
+    image: "https://jvv.com.es/wp-content/uploads/2026/01/Moet.png",
+    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Moet.png", "https://jvv.com.es/wp-content/uploads/2026/01/Linda.png"]
+  },
+  {
+    id: 5,
     title: {
       es: "Chloe's Clue",
       en: "Chloe's Clue"
@@ -51,7 +71,7 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 6,
     title: {
       es: 'Fashion Day',
       en: 'Fashion Day'
@@ -71,47 +91,7 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
-    id: 4,
-    title: { es: "Fotos por Patrick Shuttler", en: "Photos by Patrick Shuttler" },
-    client: "",
-    talent: "Andrea Tivadar",
-    year: "2024",
-    description: { es: "Fotos de Andrea Tivadar por Patrick Shuttler", en: "Fotos de Andrea Tivadar por Patrick Shuttler" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3075.jpg"]
-  },
-  {
-    id: 5,
-    title: { es: "Patrocinio Festival Mayrit Madrid", en: "Mayrit Madrid Festival Sponsorship" },
-    client: "",
-    talent: "Fevertree",
-    year: "2024",
-    description: { es: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid", en: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3069.jpg"]
-  },
-  {
-    id: 6,
-    title: { es: "Desigual", en: "Desigual" },
-    client: "",
-    talent: "Zumos Linda",
-    year: "2024",
-    description: { es: "Zumos Linda para Desigual", en: "Zumos Linda para Desigual" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg"]
-  },
-  {
     id: 7,
-    title: { es: "Mo\u00ebt & Chandon y Zumos Linda", en: "Mo\u00ebt & Chandon and Zumos Linda" },
-    client: "",
-    talent: "Ana Fernandez",
-    year: "2024",
-    description: { es: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda", en: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Moet.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Moet.png", "https://jvv.com.es/wp-content/uploads/2026/01/Linda.png"]
-  },
-  {
-    id: 8,
     title: { es: "L\u00edo Mallorca", en: "L\u00edo Mallorca" },
     client: "",
     talent: "Abraham Garc\u00eda",
@@ -121,7 +101,7 @@ export const PROJECTS_DATA: Project[] = [
     images: ["https://jvv.com.es/wp-content/uploads/2026/01/Lio-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Lio-2.png"]
   },
   {
-    id: 9,
+    id: 8,
     title: { es: "IMAGIN (La Caixa)", en: "IMAGIN (La Caixa)" },
     client: "",
     talent: "Valeria Vegas",
@@ -129,6 +109,26 @@ export const PROJECTS_DATA: Project[] = [
     description: { es: "Valeria Vegas para IMAGIN (La Caixa)", en: "Valeria Vegas para IMAGIN (La Caixa)" },
     image: "",
     images: []
+  },
+  {
+    id: 9,
+    title: {
+      es: 'Editorial & Entrevista Neo2',
+      en: 'Editorial & Interview Neo2'
+    },
+    client: 'Neo2 Magazine',
+    talent: 'Andrea Tivadar',
+    year: '2024',
+    description: {
+      es: 'Editorial exclusiva y entrevista en profundidad en la prestigiosa revista Neo2 Magazine con la actriz y modelo Andrea Tivadar. Un ensayo visual de alta moda que captura la estética y el estilo contemporáneos.',
+      en: 'Exclusive editorial and in-depth interview in the prestigious Neo2 Magazine featuring actress and model Andrea Tivadar. A high-fashion visual essay capturing contemporary aesthetics and style statements.'
+    },
+    image: '/Andrea 3.jpg',
+    images: [
+      '/Andrea.jpg',
+      '/Andrea 2.jpg',
+      '/Andrea 3.jpg'
+    ]
   },
   {
     id: 10,
