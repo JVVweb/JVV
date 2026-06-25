@@ -4,11 +4,23 @@ import SEO from '../components/SEO';
 
 const HOTEL_PROJECTS = [
   {
+    id: 'terreno-barrio',
+    name: 'Hotel Terreno Barrio',
+    location: 'Palma de Mallorca',
+    descEs: 'PR y selector musical del espacio, así como del restaurante Destape y el club Dos Rombos, posicionados en el histórico espacio del Club Mutante.',
+    descEn: 'PR and music selector of the space, as well as the Destape restaurant and Dos Rombos club, positioned in the historic space of Club Mutante.',
+    image: '/hotel-terreno-barrio.jpg',
+    typeEs: 'PR & Dirección Musical',
+    typeEn: 'PR & Musical Direction'
+  },
+  {
     id: 'cappuccino',
     name: 'Hotel Cappuccino',
     location: 'Palma de Mallorca',
     descEs: 'Hotel boutique icónico donde el arte y el diseño convergen. Estrategia de comunicación global, gestión de imagen y relaciones institucionales con marcas del sector del lujo.',
     descEn: 'Iconic boutique hotel where art and design converge. Global communication strategy, image management, and institutional relations with luxury sector brands.',
+    subdescEs: 'Colaboraciones con Restaurant Cappuccino y Café Gijón, para los que JVV gestionó la comunicación en su gran inauguración.',
+    subdescEn: 'Collaborations with Restaurant Cappuccino and Café Gijón, for which JVV handled communications for their grand opening.',
     image: '/photo-hotel-cappuccino-palma-palma-de-mallorca-22.jpeg',
     typeEs: 'Estrategia de Marca',
     typeEn: 'Brand Strategy'
@@ -121,6 +133,14 @@ export default function Hospitality() {
               <p className="text-base font-light opacity-60 leading-relaxed mb-8 max-w-md">
                 {language === 'es' ? project.descEs : project.descEn}
               </p>
+              {('subdescEs' in project && project.subdescEs) && (
+                <div className="mt-4 pt-4 border-t border-white/10 max-w-md">
+                  <h4 className="text-xs font-medium mb-3 uppercase tracking-widest">{language === 'es' ? 'Colaboraciones' : 'Collaborations'}</h4>
+                  <p className="text-sm font-light opacity-50 leading-relaxed">
+                    {language === 'es' ? project.subdescEs : project.subdescEn}
+                  </p>
+                </div>
+              )}
             </div>
           </motion.div>
         ))}

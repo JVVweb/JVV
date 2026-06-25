@@ -63,6 +63,8 @@ export default function Contact() {
               <select className="w-full bg-transparent border-b border-white/10 py-3 focus:outline-none focus:border-white transition-colors text-lg appearance-none cursor-pointer">
                 <option className="bg-brand-bg">{language === 'es' ? 'Representación de Talento' : 'Talent Scouting'}</option>
                 <option className="bg-brand-bg">{language === 'es' ? 'Solicitud de Reserva / Booking' : 'Booking Inquiry'}</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Producción de Eventos' : 'Events Production'}</option>
+                <option className="bg-brand-bg">{language === 'es' ? 'Convocatoria' : 'Guest Management'}</option>
                 <option className="bg-brand-bg">{language === 'es' ? 'Prensa / Medios' : 'Press / Media'}</option>
                 <option className="bg-brand-bg">{language === 'es' ? 'Otro' : 'Other'}</option>
               </select>
