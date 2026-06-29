@@ -17,8 +17,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Andrea Tivadar",
     year: "2024",
     description: { es: "Fotos de Andrea Tivadar por Patrick Shuttler", en: "Fotos de Andrea Tivadar por Patrick Shuttler" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3074.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3075.jpg"]
+    image: "/wp-content/uploads/2025/12/IMG_3074.jpg",
+    images: ["/wp-content/uploads/2025/12/IMG_3074.jpg", "/wp-content/uploads/2025/12/IMG_3075.jpg"]
   },
   {
     id: 2,
@@ -27,8 +27,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Fevertree",
     year: "2024",
     description: { es: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid", en: "Patrocinio de Fevertree para el festival de Dise\u00f1o y Mobiliario Mayrit en Madrid" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG_3070.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/IMG_3069.jpg"]
+    image: "/wp-content/uploads/2025/12/IMG_3070.jpg",
+    images: ["/wp-content/uploads/2025/12/IMG_3070.jpg", "/wp-content/uploads/2025/12/IMG_3069.jpg"]
   },
   {
     id: 3,
@@ -37,8 +37,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Zumos Linda",
     year: "2024",
     description: { es: "Zumos Linda para Desigual", en: "Zumos Linda para Desigual" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/LINDA.jpg"]
+    image: "/wp-content/uploads/2025/12/LINDA.jpg",
+    images: ["/wp-content/uploads/2025/12/LINDA.jpg"]
   },
   {
     id: 4,
@@ -47,8 +47,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Ana Fernandez",
     year: "2024",
     description: { es: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda", en: "Bonawa (Barco de la actriz Ana Fernandez) para Mo\u00ebt & Chandon y Zumos Linda" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Moet.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Moet.png", "https://jvv.com.es/wp-content/uploads/2026/01/Linda.png"]
+    image: "/wp-content/uploads/2026/01/Moet.png",
+    images: ["/wp-content/uploads/2026/01/Moet.png", "/wp-content/uploads/2026/01/Linda.png"]
   },
   {
     id: 5,
@@ -97,8 +97,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Abraham Garc\u00eda",
     year: "2024",
     description: { es: "Abraham Garc\u00eda para L\u00edo Mallorca", en: "Abraham Garc\u00eda para L\u00edo Mallorca" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Lio-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Lio-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Lio-2.png"]
+    image: "/wp-content/uploads/2026/01/Lio-1.png",
+    images: ["/wp-content/uploads/2026/01/Lio-1.png", "/wp-content/uploads/2026/01/Lio-2.png"]
   },
   {
     id: 8,
@@ -137,8 +137,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Rocio Saiz y Valeria Vegas",
     year: "2024",
     description: { es: "Rocio Saiz y Valeria Vegas, embajadoras de The Body Shop", en: "Rocio Saiz y Valeria Vegas, embajadoras de The Body Shop" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/Sin-titulo.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/Sin-titulo.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/1.jpg"]
+    image: "/wp-content/uploads/2025/12/Sin-titulo.jpg",
+    images: ["/wp-content/uploads/2025/12/Sin-titulo.jpg", "/wp-content/uploads/2025/12/1.jpg"]
   },
   {
     id: 11,
@@ -147,8 +147,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Yaiza Canosa",
     year: "2024",
     description: { es: "Yaiza Canosa para Sage", en: "Yaiza Canosa para Sage" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/IMG-20240326-WA0100.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/IMG-20240326-WA0100.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/A0153E3D-DBC0-4CB7-AB14-E7EDCF8EB4AB.png"]
+    image: "/wp-content/uploads/2025/12/IMG-20240326-WA0100.jpg",
+    images: ["/wp-content/uploads/2025/12/IMG-20240326-WA0100.jpg", "/wp-content/uploads/2025/12/A0153E3D-DBC0-4CB7-AB14-E7EDCF8EB4AB.png"]
   },
   {
     id: 12,
@@ -157,8 +157,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Abraham Garc\u00eda",
     year: "2024",
     description: { es: "Abraham Garc\u00eda para Disaronno", en: "Abraham Garc\u00eda para Disaronno" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Disaronno-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Disaronno-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Disaronno-2.png"]
+    image: "/wp-content/uploads/2026/01/Disaronno-1.png",
+    images: ["/wp-content/uploads/2026/01/Disaronno-1.png", "/wp-content/uploads/2026/01/Disaronno-2.png"]
   },
   {
     id: 13,
@@ -167,8 +167,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Mery Miles",
     year: "2024",
     description: { es: "Mery Miles para Levi's y Vespa", en: "Mery Miles para Levi's y Vespa" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Levis.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Levis.png"]
+    image: "/wp-content/uploads/2026/01/Levis.png",
+    images: ["/wp-content/uploads/2026/01/Levis.png"]
   },
   {
     id: 14,
@@ -177,8 +177,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Alex de la Croix",
     year: "2024",
     description: { es: "Alex de la Croix para Vogue Hong Kong", en: "Alex de la Croix para Vogue Hong Kong" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Vogue-HK1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Vogue-HK1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Vogue-HK2.png"]
+    image: "/wp-content/uploads/2026/01/Vogue-HK1.png",
+    images: ["/wp-content/uploads/2026/01/Vogue-HK1.png", "/wp-content/uploads/2026/01/Vogue-HK2.png"]
   },
   {
     id: 15,
@@ -187,8 +187,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Rocio Saiz",
     year: "2024",
     description: { es: "Rocio Saiz presentadora para el desfile \"Out of the Closet\" en el hotel W Ibiza", en: "Rocio Saiz presentadora para el desfile \"Out of the Closet\" en el hotel W Ibiza" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-28.jpg"]
+    image: "/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg",
+    images: ["/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg", "/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-28.jpg"]
   },
   {
     id: 16,
@@ -207,8 +207,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Yaiza Canosa",
     year: "2024",
     description: { es: "Yaiza Canosa para Meta futuro de laSexta", en: "Yaiza Canosa para Meta futuro de laSexta" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36.jpeg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36.jpeg", "https://jvv.com.es/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36-1.jpeg"]
+    image: "/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36.jpeg",
+    images: ["/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36.jpeg", "/wp-content/uploads/2025/12/WhatsApp-Image-2022-12-30-at-10.37.36-1.jpeg"]
   },
   {
     id: 18,
@@ -217,8 +217,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Andrea Tivadar y Paloma Lopez",
     year: "2024",
     description: { es: "Andrea Tivadar y Paloma Lopez para Antonio Riva Milano en Gala Bridal Barcelona", en: "Andrea Tivadar y Paloma Lopez para Antonio Riva Milano en Gala Bridal Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Bridal-1.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Bridal-1.jpg", "https://jvv.com.es/wp-content/uploads/2026/01/Bridal-2.jpg"]
+    image: "/wp-content/uploads/2026/01/Bridal-1.jpg",
+    images: ["/wp-content/uploads/2026/01/Bridal-1.jpg", "/wp-content/uploads/2026/01/Bridal-2.jpg"]
   },
   {
     id: 19,
@@ -237,8 +237,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Sandra Delaporte y Joan Pedrola",
     year: "2024",
     description: { es: "Sandra Delaporte y Joan Pedrola embajadores de Armani Exchange para Espa\u00f1a y Portugal", en: "Sandra Delaporte y Joan Pedrola embajadores de Armani Exchange para Espa\u00f1a y Portugal" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/AX_ALTA_delaporte02.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/AX_ALTA_delaporte02.jpg", "https://jvv.com.es/wp-content/uploads/2025/12/AX_ALTA_17-joan-pedrola.jpg"]
+    image: "/wp-content/uploads/2025/12/AX_ALTA_delaporte02.jpg",
+    images: ["/wp-content/uploads/2025/12/AX_ALTA_delaporte02.jpg", "/wp-content/uploads/2025/12/AX_ALTA_17-joan-pedrola.jpg"]
   },
   {
     id: 21,
@@ -247,8 +247,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Jesus Vazquez Viedma",
     year: "2024",
     description: { es: "Jesus Vazquez Viedma - Director de M\u00e1ster de Comunicaci\u00f3n, Marketing y Producci\u00f3n de Eventos de Moda en el LCI de Barcelona", en: "Jesus Vazquez Viedma - Director de M\u00e1ster de Comunicaci\u00f3n, Marketing y Producci\u00f3n de Eventos de Moda en el LCI de Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/unnamed-2.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/unnamed-2.jpg", "https://jvv.com.es/wp-content/uploads/2026/01/LCI-1.png"]
+    image: "/wp-content/uploads/2025/12/unnamed-2.jpg",
+    images: ["/wp-content/uploads/2025/12/unnamed-2.jpg", "/wp-content/uploads/2026/01/LCI-1.png"]
   },
   {
     id: 22,
@@ -257,8 +257,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Verbena Studio",
     year: "2024",
     description: { es: "Verbena Studio para AD", en: "Verbena Studio para AD" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Untitled.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Untitled.png", "https://jvv.com.es/wp-content/uploads/2026/01/Verbena-2.png"]
+    image: "/wp-content/uploads/2026/01/Untitled.png",
+    images: ["/wp-content/uploads/2026/01/Untitled.png", "/wp-content/uploads/2026/01/Verbena-2.png"]
   },
   {
     id: 23,
@@ -267,8 +267,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Carla Cervantes",
     year: "2024",
     description: { es: "Carla Cervantes para Volkswagen", en: "Carla Cervantes para Volkswagen" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/VW-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/VW-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/VW-2.png"]
+    image: "/wp-content/uploads/2026/01/VW-1.png",
+    images: ["/wp-content/uploads/2026/01/VW-1.png", "/wp-content/uploads/2026/01/VW-2.png"]
   },
   {
     id: 24,
@@ -277,8 +277,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Portada de Julia de Castro para Yodona", en: "Portada de Julia de Castro para Yodona" },
-    image: "https://jvv.com.es/wp-content/uploads/2025/12/unnamed-1.jpg",
-    images: ["https://jvv.com.es/wp-content/uploads/2025/12/unnamed-1.jpg"]
+    image: "/wp-content/uploads/2025/12/unnamed-1.jpg",
+    images: ["/wp-content/uploads/2025/12/unnamed-1.jpg"]
   },
   {
     id: 25,
@@ -287,8 +287,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para J&B", en: "Julia de Castro para J&B" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/JB-2.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/JB-2.png", "https://jvv.com.es/wp-content/uploads/2026/01/JB-3.png"]
+    image: "/wp-content/uploads/2026/01/JB-2.png",
+    images: ["/wp-content/uploads/2026/01/JB-2.png", "/wp-content/uploads/2026/01/JB-3.png"]
   },
   {
     id: 26,
@@ -297,8 +297,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Carla Cervantes y Sandra Egido",
     year: "2024",
     description: { es: "Carla Cervantes y Sandra Egido para Oysho", en: "Carla Cervantes y Sandra Egido para Oysho" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Oysho-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Oysho-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Oysho-2.png"]
+    image: "/wp-content/uploads/2026/01/Oysho-1.png",
+    images: ["/wp-content/uploads/2026/01/Oysho-1.png", "/wp-content/uploads/2026/01/Oysho-2.png"]
   },
   {
     id: 27,
@@ -307,8 +307,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Adriana Gastellum y Jon Morales",
     year: "2024",
     description: { es: "Adriana Gastellum y Jon Morales para H&M y Moschino", en: "Adriana Gastellum y Jon Morales para H&M y Moschino" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/HM-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/HM-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/HM-2.png"]
+    image: "/wp-content/uploads/2026/01/HM-1.png",
+    images: ["/wp-content/uploads/2026/01/HM-1.png", "/wp-content/uploads/2026/01/HM-2.png"]
   },
   {
     id: 28,
@@ -317,8 +317,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Jose Lamu\u00f1o",
     year: "2024",
     description: { es: "Jose Lamu", en: "Jose Lamu" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Volvo-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Volvo-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Volvo-2.png"]
+    image: "/wp-content/uploads/2026/01/Volvo-1.png",
+    images: ["/wp-content/uploads/2026/01/Volvo-1.png", "/wp-content/uploads/2026/01/Volvo-2.png"]
   },
   {
     id: 29,
@@ -327,8 +327,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Carla Cervantes",
     year: "2024",
     description: { es: "Carla Cervantes por Cozarllado", en: "Carla Cervantes por Cozarllado" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png"]
+    image: "/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png",
+    images: ["/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png"]
   },
   {
     id: 30,
@@ -337,8 +337,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Adriana Gastellum y Jose Lamu\u00f1o",
     year: "2024",
     description: { es: "Adriana Gastellum y Jose Lamu\u00f1o para Aperol Spritz en Mad Cool", en: "Adriana Gastellum y Jose Lamu\u00f1o para Aperol Spritz en Mad Cool" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Aperol-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Aperol-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Aperol-2.png"]
+    image: "/wp-content/uploads/2026/01/Aperol-1.png",
+    images: ["/wp-content/uploads/2026/01/Aperol-1.png", "/wp-content/uploads/2026/01/Aperol-2.png"]
   },
   {
     id: 31,
@@ -347,8 +347,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Adriana Gastellum y Marco Llorente",
     year: "2024",
     description: { es: "Adriana Gastellum y Marco Llorente para Emporio Armani Occhiali en Mad Cool", en: "Adriana Gastellum y Marco Llorente para Emporio Armani Occhiali en Mad Cool" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Armani-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Armani-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Armani-2.png"]
+    image: "/wp-content/uploads/2026/01/Armani-1.png",
+    images: ["/wp-content/uploads/2026/01/Armani-1.png", "/wp-content/uploads/2026/01/Armani-2.png"]
   },
   {
     id: 32,
@@ -357,8 +357,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Jose Lamu\u00f1o",
     year: "2024",
     description: { es: "Jose Lamu\u00f1o para Schweppes", en: "Jose Lamu\u00f1o para Schweppes" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Schweppes.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Schweppes.png", "https://jvv.com.es/wp-content/uploads/2026/01/Schweppes-2.png"]
+    image: "/wp-content/uploads/2026/01/Schweppes.png",
+    images: ["/wp-content/uploads/2026/01/Schweppes.png", "/wp-content/uploads/2026/01/Schweppes-2.png"]
   },
   {
     id: 33,
@@ -367,8 +367,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Vestiaire Collective",
     year: "2024",
     description: { es: "Fashion for Lunch con Vestiaire Collective en Soho House Barcelona", en: "Fashion for Lunch con Vestiaire Collective en Soho House Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Vestiaire-Collective-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Vestiaire-Collective-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Vestiaire-Collective-2.png"]
+    image: "/wp-content/uploads/2026/01/Vestiaire-Collective-1.png",
+    images: ["/wp-content/uploads/2026/01/Vestiaire-Collective-1.png", "/wp-content/uploads/2026/01/Vestiaire-Collective-2.png"]
   },
   {
     id: 34,
@@ -377,8 +377,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro y Patricia Valley",
     year: "2024",
     description: { es: "Julia de Castro y Patricia Valley para Zalando", en: "Julia de Castro y Patricia Valley para Zalando" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Zalando-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Zalando-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Zalando-2.png"]
+    image: "/wp-content/uploads/2026/01/Zalando-1.png",
+    images: ["/wp-content/uploads/2026/01/Zalando-1.png", "/wp-content/uploads/2026/01/Zalando-2.png"]
   },
   {
     id: 35,
@@ -387,8 +387,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Bultaco",
     year: "2024",
     description: { es: "Presentaci\u00f3n Bultaco Perfumes", en: "Presentaci\u00f3n Bultaco Perfumes" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Bultaco-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Bultaco-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Bultaco-3.png"]
+    image: "/wp-content/uploads/2026/01/Bultaco-1.png",
+    images: ["/wp-content/uploads/2026/01/Bultaco-1.png", "/wp-content/uploads/2026/01/Bultaco-3.png"]
   },
   {
     id: 36,
@@ -397,8 +397,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Alejandro Gomez Palomo",
     year: "2024",
     description: { es: "Fashion for Lunch con Alejandro Gomez Palomo en Soho House Barcelona", en: "Fashion for Lunch con Alejandro Gomez Palomo en Soho House Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Palomo-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Palomo-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Palomo-2.png"]
+    image: "/wp-content/uploads/2026/01/Palomo-1.png",
+    images: ["/wp-content/uploads/2026/01/Palomo-1.png", "/wp-content/uploads/2026/01/Palomo-2.png"]
   },
   {
     id: 37,
@@ -407,8 +407,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Palito Domingu\u00edn",
     year: "2024",
     description: { es: "Palito Domingu\u00edn para Angel Schlesser", en: "Palito Domingu\u00edn para Angel Schlesser" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Palito-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Palito-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Palito-2.png"]
+    image: "/wp-content/uploads/2026/01/Palito-1.png",
+    images: ["/wp-content/uploads/2026/01/Palito-1.png", "/wp-content/uploads/2026/01/Palito-2.png"]
   },
   {
     id: 38,
@@ -417,8 +417,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Juanjo Oliva",
     year: "2024",
     description: { es: "Fashion for Lunch con Juanjo Oliva en Soho House Barcelona", en: "Fashion for Lunch con Juanjo Oliva en Soho House Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Juanjo-Oliva.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Juanjo-Oliva.png"]
+    image: "/wp-content/uploads/2026/01/Juanjo-Oliva.png",
+    images: ["/wp-content/uploads/2026/01/Juanjo-Oliva.png"]
   },
   {
     id: 39,
@@ -427,8 +427,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Cristina Casta\u00f1o y Alejandra Prats",
     year: "2024",
     description: { es: "Cristina Casta\u00f1o y Alejandra Prats para Starlite Marbella", en: "Cristina Casta\u00f1o y Alejandra Prats para Starlite Marbella" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Cristina-Castano.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Cristina-Castano.png", "https://jvv.com.es/wp-content/uploads/2026/01/Alejandra-Prats.png"]
+    image: "/wp-content/uploads/2026/01/Cristina-Castano.png",
+    images: ["/wp-content/uploads/2026/01/Cristina-Castano.png", "/wp-content/uploads/2026/01/Alejandra-Prats.png"]
   },
   {
     id: 40,
@@ -437,8 +437,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para Vogue", en: "Julia de Castro para Vogue" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Vogue.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Vogue.png", "https://jvv.com.es/wp-content/uploads/2026/01/Vogue-2.png"]
+    image: "/wp-content/uploads/2026/01/Vogue.png",
+    images: ["/wp-content/uploads/2026/01/Vogue.png", "/wp-content/uploads/2026/01/Vogue-2.png"]
   },
   {
     id: 41,
@@ -447,8 +447,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para Harper's Bazaar", en: "Julia de Castro para Harper's Bazaar" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Harpers-Bazaar-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Harpers-Bazaar-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Harpers-Bazaar-2.png"]
+    image: "/wp-content/uploads/2026/01/Harpers-Bazaar-1.png",
+    images: ["/wp-content/uploads/2026/01/Harpers-Bazaar-1.png", "/wp-content/uploads/2026/01/Harpers-Bazaar-2.png"]
   },
   {
     id: 42,
@@ -457,8 +457,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para Bvlgari", en: "Julia de Castro para Bvlgari" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Bvlgari-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Bvlgari-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Bvlgari-2.png"]
+    image: "/wp-content/uploads/2026/01/Bvlgari-1.png",
+    images: ["/wp-content/uploads/2026/01/Bvlgari-1.png", "/wp-content/uploads/2026/01/Bvlgari-2.png"]
   },
   {
     id: 43,
@@ -467,8 +467,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Patricia Valley",
     year: "2024",
     description: { es: "Patricia Valley para Dior Barcelona", en: "Patricia Valley para Dior Barcelona" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Dior-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Dior-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Dior-2.png"]
+    image: "/wp-content/uploads/2026/01/Dior-1.png",
+    images: ["/wp-content/uploads/2026/01/Dior-1.png", "/wp-content/uploads/2026/01/Dior-2.png"]
   },
   {
     id: 44,
@@ -477,8 +477,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Guinness",
     year: "2024",
     description: { es: "Convocatoria de evento para Guiness en Madrid", en: "Convocatoria de evento para Guiness en Madrid" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Guinness-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Guinness-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Guinness-2.png"]
+    image: "/wp-content/uploads/2026/01/Guinness-1.png",
+    images: ["/wp-content/uploads/2026/01/Guinness-1.png", "/wp-content/uploads/2026/01/Guinness-2.png"]
   },
   {
     id: 45,
@@ -487,8 +487,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para San Isidro (Madrid)", en: "Julia de Castro para San Isidro (Madrid)" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/San-Isidro-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/San-Isidro-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/San-Isidro-2.png"]
+    image: "/wp-content/uploads/2026/01/San-Isidro-1.png",
+    images: ["/wp-content/uploads/2026/01/San-Isidro-1.png", "/wp-content/uploads/2026/01/San-Isidro-2.png"]
   },
   {
     id: 46,
@@ -497,8 +497,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Andrea Vandall",
     year: "2024",
     description: { es: "Andrea Vandall para Jameson Whiskey", en: "Andrea Vandall para Jameson Whiskey" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Jameson.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Jameson.png"]
+    image: "/wp-content/uploads/2026/01/Jameson.png",
+    images: ["/wp-content/uploads/2026/01/Jameson.png"]
   },
   {
     id: 47,
@@ -507,8 +507,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Producci\u00f3n JVV",
     year: "2024",
     description: { es: "Producci\u00f3n de evento en residencia privada en Madrid", en: "Producci\u00f3n de evento en residencia privada en Madrid" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Evento-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Evento-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Evento-2.png"]
+    image: "/wp-content/uploads/2026/01/Evento-1.png",
+    images: ["/wp-content/uploads/2026/01/Evento-1.png", "/wp-content/uploads/2026/01/Evento-2.png"]
   },
   {
     id: 48,
@@ -517,8 +517,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Cha Cha",
     year: "2024",
     description: { es: "Convocatoria VIP para Cha Cha", en: "Convocatoria VIP para Cha Cha" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Cha-Cha-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Cha-Cha-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Cha-Cha-2.png"]
+    image: "/wp-content/uploads/2026/01/Cha-Cha-1.png",
+    images: ["/wp-content/uploads/2026/01/Cha-Cha-1.png", "/wp-content/uploads/2026/01/Cha-Cha-2.png"]
   },
   {
     id: 49,
@@ -527,8 +527,8 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Julia de Castro",
     year: "2024",
     description: { es: "Julia de Castro para Hendrick's", en: "Julia de Castro para Hendrick's" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Julia-Castro-Hendricks.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Julia-Castro-Hendricks.png"]
+    image: "/wp-content/uploads/2026/01/Julia-Castro-Hendricks.png",
+    images: ["/wp-content/uploads/2026/01/Julia-Castro-Hendricks.png"]
   },
   {
     id: 50,
@@ -537,7 +537,7 @@ export const PROJECTS_DATA: Project[] = [
     talent: "Lydia Delgado",
     year: "2024",
     description: { es: "Pop-up Store Lydia Delgado", en: "Pop-up Store Lydia Delgado" },
-    image: "https://jvv.com.es/wp-content/uploads/2026/01/Lydia-Delgado-1.png",
-    images: ["https://jvv.com.es/wp-content/uploads/2026/01/Lydia-Delgado-1.png", "https://jvv.com.es/wp-content/uploads/2026/01/Lydia-Delgado-2.png"]
+    image: "/wp-content/uploads/2026/01/Lydia-Delgado-1.png",
+    images: ["/wp-content/uploads/2026/01/Lydia-Delgado-1.png", "/wp-content/uploads/2026/01/Lydia-Delgado-2.png"]
   }
 ];
