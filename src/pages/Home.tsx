@@ -188,27 +188,33 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
-          <div className="animate-marquee flex items-center space-x-16 md:space-x-28">
+          <div className="animate-marquee flex w-max">
             {/* Set 1 */}
-            {CLIENT_LOGOS.map((logo, idx) => (
-              <img
-                key={`logo-1-${idx}`}
-                src={logo}
-                alt="Client Brand"
-                className="h-11 md:h-16 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                style={{ filter: 'brightness(0) invert(1)' }}
-              />
-            ))}
+            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+              {CLIENT_LOGOS.map((logo, idx) => (
+                <div key={`logo-1-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Client Brand"
+                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                    style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                </div>
+              ))}
+            </div>
             {/* Set 2 (loop copy) */}
-            {CLIENT_LOGOS.map((logo, idx) => (
-              <img
-                key={`logo-2-${idx}`}
-                src={logo}
-                alt="Client Brand"
-                className="h-11 md:h-16 w-auto object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                style={{ filter: 'brightness(0) invert(1)' }}
-              />
-            ))}
+            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+              {CLIENT_LOGOS.map((logo, idx) => (
+                <div key={`logo-2-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Client Brand"
+                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                    style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
