@@ -22,15 +22,16 @@ const MOBILE_BANNERS = [
 ];
 
 const CLIENT_LOGOS = [
-  '/jvv-reebok9.png',
-  '/JVV-tiffanny-19.png',
+  '/Netflix9.png',
+  '/logo-volkswagen.svg',
+  '/logo-mastercard.svg',
+  '/logo-emporio-armani.svg',
   '/JVV-YSLbeaute9.png',
-  '/jvv-mac9.png',
-  '/JVV-chloe-logo9.png',
-  '/imgi_86_PACO-RABANNE9.png',
-  '/imgi_88_INAEM-1500x920-copia9.png',
-  '/imgi_145_JVV-VOGUE_LOGO9.png',
-  '/imgi_360_AMAZ9ON-1024x1024.png'
+  '/logo-dior.svg',
+  '/logo-thyssen.svg',
+  '/logo-aperol.svg',
+  '/logo-loreal.svg',
+  '/logo-roger-vivier.svg',
 ];
 
 export default function Home() {
