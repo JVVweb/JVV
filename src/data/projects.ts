@@ -103,8 +103,13 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Yaiza Canosa como ponente en Marketing Rocks, el encuentro para profesionales y apasionados del marketing celebrado en Mallorca.',
       en: 'Yaiza Canosa as a speaker at Marketing Rocks, the meeting for marketing professionals and enthusiasts held in Mallorca.'
     },
-    image: '/projects/marketing-rocks.jpg',
-    images: ['/projects/marketing-rocks.jpg']
+    image: '/marketing-rocks-1.jpg',
+    images: [
+      '/marketing-rocks-1.jpg',
+      '/marketing-rocks-2.jpg',
+      '/marketing-rocks-3.jpg',
+      '/marketing-rocks-4.jpg'
+    ]
   },
   {
     id: 8,
