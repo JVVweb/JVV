@@ -10,15 +10,15 @@ const DESKTOP_BANNERS = [
   '/banner jvv.jpg',
   '/JJJV BANNER.jpg',
   '/JJV BANNER.jpg',
-  '/me.jpeg',
-  '/sohohouse.webp'
+  '/bottega-hero.jpg',
+  '/kenzo-hero.jpg'
 ];
 
 const MOBILE_BANNERS = [
   '/Andrea 3.jpg',
   '/JJJV BANNER.jpg',
-  '/me.jpeg',
-  '/sohohouse.webp'
+  '/bottega-hero.jpg',
+  '/kenzo-hero.jpg'
 ];
 
 const CLIENT_LOGOS = [
