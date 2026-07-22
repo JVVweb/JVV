@@ -33,8 +33,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Participación de Valeria Vegas en la campaña de promoción de La Más Grande, la serie documental original de Movistar Plus+ sobre la vida y el legado de Rocío Jurado.',
       en: 'Participation of Valeria Vegas in the promotional campaign of La Más Grande, the original documentary series of Movistar Plus+ about the life and legacy of Rocío Jurado.'
     },
-    image: '/valeria-vegas-movistar.jpg',
-    images: ['/valeria-vegas-movistar.jpg']
+    image: '',
+    images: []
   },
   {
     id: 3,
@@ -93,8 +93,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Yaiza Canosa como ponente en el evento organizado por INFECAR en Gran Canaria.',
       en: 'Yaiza Canosa as a speaker at the event organized by INFECAR in Gran Canaria.'
     },
-    image: '/projects/infecar.jpg',
-    images: ['/projects/infecar.jpg']
+    image: '',
+    images: []
   },
   {
     id: 7,
@@ -149,8 +149,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Participación de Yaiza Canosa en el evento organizado por CEGID en Málaga.',
       en: 'Participation of Yaiza Canosa in the event organized by CEGID in Malaga.'
     },
-    image: '/projects/cegid.jpg',
-    images: ['/projects/cegid.jpg']
+    image: '',
+    images: []
   },
   {
     id: 11,

@@ -54,24 +54,31 @@ export default function ProjectDetail() {
         </div>
 
         {/* Aspect-Ratio Preserving Masonry Grid Layout */}
-        <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
-          {project.images.map((img, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: i * 0.1 }}
-              className="break-inside-avoid mb-6 bg-zinc-900 shadow-lg border border-white/5 overflow-hidden rounded-sm"
-            >
-              <img 
-                src={img} 
-                alt={`${project.title[language]} ${i}`}
-                className="w-full h-auto object-contain transition-transform duration-[2s] hover:scale-105 block"
-              />
-            </motion.div>
-          ))}
-        </div>
+        {project.images && project.images.length > 0 ? (
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 [column-fill:_balance]">
+            {project.images.map((img, i) => (
+              <motion.div 
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: i * 0.1 }}
+                className="break-inside-avoid mb-6 bg-zinc-900 shadow-lg border border-white/5 overflow-hidden rounded-sm"
+              >
+                <img 
+                  src={img} 
+                  alt={`${project.title[language]} ${i}`}
+                  className="w-full h-auto object-contain transition-transform duration-[2s] hover:scale-105 block"
+                />
+              </motion.div>
+            ))}
+          </div>
+        ) : (
+          <div className="w-full aspect-[21/9] bg-zinc-950 border border-white/5 flex flex-col items-center justify-center rounded-sm">
+            <img src="/jvv logo white new.png" alt="JVV Logo" className="h-24 w-auto opacity-10 object-contain" />
+            <span className="text-xs tracking-widest uppercase opacity-20 mt-4 font-display">JVV Projects</span>
+          </div>
+        )}
 
         {/* Seamless Project Navigation */}
         <section className="border-t border-white/5 pt-16 mt-24">
