@@ -18,11 +18,8 @@ export default function TalentDetail() {
 
   if (!talent) return null;
 
-  const professionTitle = talent.type === 'models' 
-    ? (language === 'es' ? 'Modelo' : 'Model') 
-    : talent.type === 'actors' 
-    ? (language === 'es' ? 'Actor' : 'Actor') 
-    : (language === 'es' ? 'Artista' : 'Artist');
+  const firstType = Array.isArray(talent.type) ? talent.type[0] : (talent as any).type;
+  const professionTitle = t(`talent.${firstType}`);
 
   return (
     <div className="pt-40 pb-24">

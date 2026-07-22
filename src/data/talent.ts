@@ -1,9 +1,19 @@
-export type TalentType = 'all' | 'models' | 'actors' | 'artists';
+export type TalentType = 
+  | 'all' 
+  | 'emprendedoras' 
+  | 'djs' 
+  | 'cantantes' 
+  | 'actores' 
+  | 'comunicadores' 
+  | 'fotografos' 
+  | 'directores' 
+  | 'pintoras' 
+  | 'deportistas';
 
 export interface Talent {
   id: number;
   name: string;
-  type: TalentType;
+  type: TalentType[];
   location: string;
   image: string;
   description: { es: string; en: string };
@@ -20,7 +30,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 1,
     "name": "Valeria Vegas",
-    "type": "artists",
+    type: ['comunicadores'],
     "location": "Madrid",
     image: '/Talents/JVV _ VALERIA VEGAS/valeria-vegas-main.jpg',
     "description": {
@@ -82,10 +92,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/3NqkSXQG1og"
     ]
   },
+
   {
     "id": 2,
     "name": "Joan Pedrola",
-    "type": "actors",
+    type: ['actores'],
     "location": "Barcelona",
     image: '/Talents/JVV _ JOAN PEDROLA/imgi_5_WhatsApp-Image-2021-02-08-at-11.11.16-1-main.jpg',
     "description": {
@@ -150,10 +161,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/FoYWQ3hC5jo"
     ]
   },
+
   {
     "id": 3,
     "name": "Andrea Tivadar",
-    "type": "actors",
+    type: ['actores'],
     "location": "Londres / Barcelona",
     image: '/Talents/JVV _ ANDREA TIVADAR/imgi_19_3C4A0940-768x1152-main.jpg',
     "description": {
@@ -221,12 +233,13 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/IyjXjK77GjQ"
     ]
   },
+
   {
     "id": 4,
     "name": "David Castillo",
-    "type": "actors",
+    type: ['actores'],
     "location": "Madrid",
-    image: '/Talents/JVV _ DAVID CASTILLO/imgi_7_11-Nov_-cap-5_79-scaled.jpg',
+    image: '/Talents/JVV _ DAVID CASTILLO/david-castillo.jpg',
     "description": {
       "es": "David Castillo empezó a hablar casi entre cámaras, ya que con tan solo 7 años sus padres le adentraron en el mundo de la publicidad después de que viera un anuncio de desayunos, donde llevaban a los niños en una especie de nave espacial. Ahí fue donde decidió que él también quería dedicarse a eso. Después de esa trayectoria inicial como imagen publicitaria, intervino en varias series de televisión como ‘’Hospital Central‘’, ‘’Ana y los 7‘’ y ‘’Manolito Gafotas‘’, basada en el personaje homónimo de Elvira Lindo, dando vida a Yihad durante trece capítulos. El salto al cine tuvo lugar en 2004, con un papel menor en ‘’El séptimo día‘’de Carlos Saura y otro de mayor importancia en ‘’Cachorro‘’ donde interpretaba a Bernardo, un niño de nueve años que por las circunstancias tiene que convivir con su tío homosexual.\n\nEn 2005, entró a formar parte del reparto de ‘’Aída ‘’ con la que logró una gran popularidad a lo largo de sus casi diez años de emisión, interpretando a Jonathan García, el menor de los hijos de Aída García.\n\nA partir del año 2011, empezó a actuar en obras teatrales, como ‘’Münchhausen‘’, ‘’Naturaleza muerta en una cuneta‘’ (2012-2013) o ‘’Emilia‘’ (2014).\n\nEn 2015 es seleccionado para formar parte de la Joven Compañía Nacional de Teatro Clásico. Una de sus últimas participaciones teatrales ha sido la obra ‘’Lulu‘’, con la que ha girado por diversas ciudades de nuestro país.\n\nDavid es un aficionado de la música, pasión que le ha llevado a pinchar en fiestas privadas, discotecas y festivales de todo el país. Sus seguidores son muy fieles y les siguen tanto en estas sesiones como en sus redes sociales, por lo que son muchas las marcas que se han interesado en colaborar con él.\n\nHa participado en el rodaje de “Los Nuestros Dos”, la segunda temporada de la miniserie de Telecinco y en la serie de Antena 3 “Amar es para Siempre” en su séptima temporada. Es parte del reparto de la serie de Amazon Prime, “El Cid”, primera serie de esta plataforma de producción española estrenada a finales del 2020 cuya segunda temporada ya está disponible, y David vuelve a protagonizar al Escudero Lisardo. Además, es uno de los actores corales protagonistas de la primera serie de Disney Plus de producción española dirigida por Paco León, “Besos al aire”.\n\nCon la obra de teatro, “Retorno al hogar” ha estado todo el 2023 girando por todo el país. Además, ha comenzado su carrera como escritor con la publicación, en el mismo año, de su libro de poesía “Piedra de madera”.",
       "en": "David Castillo began speaking almost between cameras, since at only 7 years old his parents introduced him to the world of advertising after he saw a breakfast commercial where children were carried in a spaceship. That's when he decided he wanted to dedicate himself to that. After that initial path as an advertising image, he participated in several television series such as \"Hospital Central\", \"Ana y los 7\", and \"Manolito Gafotas\", based on the character by Elvira Lindo, playing Yihad for thirteen episodes. The jump to cinema took place in 2004 with a minor role in Carlos Saura's \"El séptimo día\" and another of greater importance in \"Cachorro\", where he played Bernardo, a nine-year-old boy who has to live with his homosexual uncle.\n\nIn 2005, he became part of the cast of \"Aída\", with which he achieved great popularity throughout its nearly ten years of broadcasting, playing Jonathan García, the youngest of Aída García's children.\n\nFrom 2011, he began acting in plays such as \"Münchhausen\", \"Naturaleza muerta en una cuneta\" (2012-2013), or \"Emilia\" (2014).\n\nIn 2015, he was selected to join the Joven Compañía Nacional de Teatro Clásico. One of his latest theater appearances has been the play \"Lulu\", which toured various cities in our country.\n\nDavid is a music fan, a passion that has led him to DJ at private parties, clubs, and festivals nationwide. His followers are very loyal, following him both in these sessions and on his social media, making many brands interested in collaborating with him.\n\nHe participated in the filming of \"Los Nuestros Dos\", the second season of the Telecinco miniseries, and in the seventh season of the Antena 3 series \"Amar es para Siempre\". He is part of the cast of the Amazon Prime series \"El Cid\", the platform's first Spanish-produced series premiered in late 2020, with the second season already available, where David returns to star as Squire Lisardo. Additionally, he is one of the lead ensemble actors in the first Disney Plus Spanish production directed by Paco León, \"Besos al aire\".\n\nWith the play \"Retorno al hogar\", he toured the country throughout 2023. He also started his writing career with the publication in the same year of his poetry book \"Piedra de madera\"."
@@ -286,10 +299,70 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/B0Ao7NfdYV0"
     ]
   },
+
+  {
+    "id": 6,
+    "name": "Rocío Saiz",
+    type: ['djs', 'comunicadores'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg',
+    "description": {
+      "es": "Activismo, política, feminismo, reivindicación y mucha música. Rocío Saiz es cantante solista además de formar parte de los grupos Monterrosa y Las Chillers, también es DJ y comunicadora. Su discurso a favor de la diversidad y su crítica al heteropatriarcado la han convertido en uno de los referentes LGTBIQ+ con más carácter y fuerza en España.\n\nAhora se embarca en esta nueva aventura. La pista de baile es política, la diversión nunca es tan inocente como se pinta, y los dramas amorosos rara vez son una experiencia intransferible. Rocío habla de todo lo que sucede antes, durante y después del baile: desengaños, sexo con y sin amor, relaciones tóxicas, la plenitud de ser dueña de tu destino tantas horas como sea posible, pero también el insomnio derivado del estrés laboral y falta de dinero y la necesidad de cierto hedonismo para olvidarse de todo de vez en cuando.\n\nLo ha hecho con Monterrosa con éxitos eurovisivos y baladas fuera de tiempo, como si pudiéramos juntar a Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia y Vengaboys para hacer himnos generacionales que expliquen cómo nos sentimos en 2020, y ahora emprende camino en solitario para unir mundos entre la sofisticación de Monterrosa y su fuerza viva con Las Chillers. En el verano de 2022 fue la presentadora del desfile ‘Out of the closet’ para el Hotel W Ibiza y la presentadora del nuevo espacio de Movistar + ‘La Nevera de Inverfest’\n\nHa participado en numerosos festivales como el Atlantic Fest, Cala Mijas o el Culture Business Pride en Tenerife junto a Village People.",
+      "en": "Activism, politics, feminism, advocacy, and lots of music. Rocío Saiz is a solo singer in addition to being part of the groups Monterrosa and Las Chillers, as well as a DJ and communicator. Her discourse in favor of diversity and her criticism of the heteropatriarchy have made her one of the LGTBIQ+ references with the most character and strength in Spain.\n\nNow she embarks on this new adventure. The dance floor is political, fun is never as innocent as it is painted, and love dramas are rarely a non-transferable experience. Rocío talks about everything that happens before, during, and after the dance: disappointments, sex with and without love, toxic relationships, the fulfillment of being master of your destiny for as many hours as possible, but also insomnia derived from work stress and lack of money, and the need for a certain hedonism to forget everything from time to time.\n\nShe did it with Monterrosa with Eurovision-style hits and timeless ballads, as if we could bring together Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia, and Vengaboys to make generational anthems explaining how we felt in 2020, and now she sets off on a solo journey to bridge worlds between the sophistication of Monterrosa and her live force with Las Chillers. In the summer of 2022, she hosted the \"Out of the closet\" fashion show for the W Ibiza Hotel and presented the new Movistar+ space \"La Nevera de Inverfest\".\n\nShe has participated in numerous festivals such as Atlantic Fest, Cala Mijas, or Culture Business Pride in Tenerife alongside Village People."
+    },
+    gallery: [
+      '/Talents/JVV _ ROCIO SAIZ/imgi_60_MG_6157c-570x570.jpg',
+      '/Talents/JVV _ ROCIO SAIZ/imgi_6_image0-1-900x1200.jpg',
+      '/Talents/JVV _ ROCIO SAIZ/imgi_8_image2-1-900x1200.jpg',
+      '/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Cantante / DJ / Activista",
+        "Bandas": "Las Chillers, Monterrosa",
+        "Plataformas": "Movistar+, W Ibiza"
+      },
+      "en": {
+        "Profession": "Singer / DJ / Activist",
+        "Bands": "Las Chillers, Monterrosa",
+        "Platforms": "Movistar+, W Ibiza"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "La Nevera de Inverfest (Presentadora de Movistar+)",
+          "en": "La Nevera de Inverfest (Movistar+ Presenter)"
+        },
+        "year": "2022"
+      },
+      {
+        "title": {
+          "es": "Out of the Closet (Presentadora en W Ibiza)",
+          "en": "Out of the Closet (W Ibiza Host)"
+        },
+        "year": "2022"
+      },
+      {
+        "title": {
+          "es": "Proyecto Electro-Pop Monterrosa",
+          "en": "Monterrosa Electro-Pop Project"
+        },
+        "year": "2020"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/9-Wag7Bog4I",
+      "https://www.youtube.com/embed/WNxV2ge52qc",
+      "https://www.youtube.com/embed/j--FYmTp1pc",
+      "https://www.youtube.com/embed/NMOr2-xj7OI"
+    ]
+  },
+
   {
     "id": 5,
     "name": "Pablo Erroz",
-    "type": "artists",
+    type: ['directores'],
     "location": "Palma de Mallorca",
     image: '/Talents/JVV _ PABLO ERROZ/imgi_10_PF25_Erroz_0924-1-scaled.jpg',
     "description": {
@@ -352,68 +425,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/wxQ1aIAiqHo"
     ]
   },
-  {
-    "id": 6,
-    "name": "Rocío Saiz",
-    "type": "artists",
-    "location": "Madrid",
-    image: '/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg',
-    "description": {
-      "es": "Activismo, política, feminismo, reivindicación y mucha música. Rocío Saiz es cantante solista además de formar parte de los grupos Monterrosa y Las Chillers, también es DJ y comunicadora. Su discurso a favor de la diversidad y su crítica al heteropatriarcado la han convertido en uno de los referentes LGTBIQ+ con más carácter y fuerza en España.\n\nAhora se embarca en esta nueva aventura. La pista de baile es política, la diversión nunca es tan inocente como se pinta, y los dramas amorosos rara vez son una experiencia intransferible. Rocío habla de todo lo que sucede antes, durante y después del baile: desengaños, sexo con y sin amor, relaciones tóxicas, la plenitud de ser dueña de tu destino tantas horas como sea posible, pero también el insomnio derivado del estrés laboral y falta de dinero y la necesidad de cierto hedonismo para olvidarse de todo de vez en cuando.\n\nLo ha hecho con Monterrosa con éxitos eurovisivos y baladas fuera de tiempo, como si pudiéramos juntar a Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia y Vengaboys para hacer himnos generacionales que expliquen cómo nos sentimos en 2020, y ahora emprende camino en solitario para unir mundos entre la sofisticación de Monterrosa y su fuerza viva con Las Chillers. En el verano de 2022 fue la presentadora del desfile ‘Out of the closet’ para el Hotel W Ibiza y la presentadora del nuevo espacio de Movistar + ‘La Nevera de Inverfest’\n\nHa participado en numerosos festivales como el Atlantic Fest, Cala Mijas o el Culture Business Pride en Tenerife junto a Village People.",
-      "en": "Activism, politics, feminism, advocacy, and lots of music. Rocío Saiz is a solo singer in addition to being part of the groups Monterrosa and Las Chillers, as well as a DJ and communicator. Her discourse in favor of diversity and her criticism of the heteropatriarchy have made her one of the LGTBIQ+ references with the most character and strength in Spain.\n\nNow she embarks on this new adventure. The dance floor is political, fun is never as innocent as it is painted, and love dramas are rarely a non-transferable experience. Rocío talks about everything that happens before, during, and after the dance: disappointments, sex with and without love, toxic relationships, the fulfillment of being master of your destiny for as many hours as possible, but also insomnia derived from work stress and lack of money, and the need for a certain hedonism to forget everything from time to time.\n\nShe did it with Monterrosa with Eurovision-style hits and timeless ballads, as if we could bring together Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia, and Vengaboys to make generational anthems explaining how we felt in 2020, and now she sets off on a solo journey to bridge worlds between the sophistication of Monterrosa and her live force with Las Chillers. In the summer of 2022, she hosted the \"Out of the closet\" fashion show for the W Ibiza Hotel and presented the new Movistar+ space \"La Nevera de Inverfest\".\n\nShe has participated in numerous festivals such as Atlantic Fest, Cala Mijas, or Culture Business Pride in Tenerife alongside Village People."
-    },
-    gallery: [
-      '/Talents/JVV _ ROCIO SAIZ/imgi_60_MG_6157c-570x570.jpg',
-      '/Talents/JVV _ ROCIO SAIZ/imgi_6_image0-1-900x1200.jpg',
-      '/Talents/JVV _ ROCIO SAIZ/imgi_8_image2-1-900x1200.jpg',
-      '/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Cantante / DJ / Activista",
-        "Bandas": "Las Chillers, Monterrosa",
-        "Plataformas": "Movistar+, W Ibiza"
-      },
-      "en": {
-        "Profession": "Singer / DJ / Activist",
-        "Bands": "Las Chillers, Monterrosa",
-        "Platforms": "Movistar+, W Ibiza"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "La Nevera de Inverfest (Presentadora de Movistar+)",
-          "en": "La Nevera de Inverfest (Movistar+ Presenter)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Out of the Closet (Presentadora en W Ibiza)",
-          "en": "Out of the Closet (W Ibiza Host)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Proyecto Electro-Pop Monterrosa",
-          "en": "Monterrosa Electro-Pop Project"
-        },
-        "year": "2020"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/9-Wag7Bog4I",
-      "https://www.youtube.com/embed/WNxV2ge52qc",
-      "https://www.youtube.com/embed/j--FYmTp1pc",
-      "https://www.youtube.com/embed/NMOr2-xj7OI"
-    ]
-  },
+
   {
     "id": 7,
     "name": "Giorgio Ciccone",
-    "type": "artists",
+    type: ['directores'],
     "location": "Milán / Madrid",
     image: '/Talents/JVV _ GIORGIO CICCONE/imgi_6_IMG_7842-e1743098380963-main.jpg',
     "description": {
@@ -463,10 +479,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/29x7dws-FOY"
     ]
   },
+
   {
     "id": 8,
     "name": "Delaporte",
-    "type": "artists",
+    type: ['cantantes'],
     "location": "Madrid",
     image: '/Talents/JVV _ DELAPORTE/imgi_4_B0I8139edit-main.jpg',
     "description": {
@@ -526,57 +543,111 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/lyR-8c4LRtg"
     ]
   },
+
   {
-    "id": 9,
-    "name": "Impulsiva",
-    "type": "artists",
-    "location": "Valencia / Madrid",
-    image: '/Talents/JVV _ IMPULSIVA/imgi_4_IMPULSIVA-ph_Luz_Soria-web-9135-900x1200-main.jpg',
+    "id": 13,
+    "name": "Natalie Batlle",
+    type: ['emprendedoras', 'comunicadores'],
+    "location": "Chicago / Barcelona",
+    image: '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
     "description": {
-      "es": "IMPULSIVA es un duo español de música electrónica vocal que nace en 2015, compuesto por el valenciano Carlos Gorbe y el madrileño Daniel Jumillas.\n\nSu música está muy influenciada por el sonido británico de antes y de ahora. En 2020 sacan su primer álbum “As We Are”, un LP de 9 temas que hace un recorrido emocional sobre diferentes facetas de sus propios autores. Algunos de estos se pueden escuchar en la serie de HBO “Todo lo Otro”.\n\nTambién han participado haciendo música para diversos espectáculos teatrales tanto en solitario como en conjunto.",
-      "en": "IMPULSIVA is a Spanish vocal electronic music duo born in 2015, composed of Carlos Gorbe from Valencia and Daniel Jumillas from Madrid.\n\nTheir music is highly influenced by British sounds of the past and present. In 2020 they released their first album \"As We Are\", an LP of 9 tracks that takes an emotional journey through different facets of its authors. Some of these tracks can be heard in the HBO series \"Todo lo Otro\".\n\nThey have also participated in making music for various theater shows, both individually and collectively."
+      "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Conraíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto.\n\nComo ponente internacional, Natalie inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
+      "en": "Entrepreneur, brand consultant, and international speaker. Natalie stands out for her expertise in storytelling and building purpose-driven brands with high social impact and strong media presence.\n\nWith roots in Chicago and Spain, she connects her experience in strategic communications, alliances, and creative entrepreneurship to turn bold ideas into high-impact businesses. As an international speaker, Natalie inspires with talks on leadership, conscious entrepreneurship, brand storytelling, fundraising, and startup culture. She has collaborated with brands like LVMH, Bumble, and Under Armour, and has been recognized in media outlets such as Vogue, La Vanguardia, and Forbes. She lives between Chicago and Barcelona with her husband and two children, dedicated to connecting people and brands to create innovative, purpose-driven projects."
     },
     gallery: [
-      '/Talents/JVV _ IMPULSIVA/imgi_4_IMPULSIVA-ph_Luz_Soria-web-9135-900x1200-main.jpg',
-      '/Talents/JVV _ IMPULSIVA/imgi_5_IMPULSIVA-ph_Luz_Soria-web-9267-900x1200.jpg',
-      '/Talents/JVV _ IMPULSIVA/imgi_6_IMPULSIVA-ph_Luz_Soria-web-9330-900x1200.jpg',
-      '/Talents/JVV _ IMPULSIVA/imgi_7_IMPULSIVA-ph_Luz_Soria-web-9475-900x1200.jpg',
-      '/Talents/JVV _ IMPULSIVA/imgi_8_image_6483441-4-900x1200.jpg',
-      '/Talents/JVV _ IMPULSIVA/imgi_9_image_6483441-5-900x1200.jpg'
+      '/Talents/JVV _ NATALIE BATLLE/imgi_4_FOTO-1-NATALIE-900x724.jpg',
+      '/Talents/JVV _ NATALIE BATLLE/imgi_5_FOTO-2-NATALIE-900x724.jpg',
+      '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
+      '/Talents/JVV _ NATALIE BATLLE/imgi_7_FOTO-4-NATALIE-900x683.jpg',
+      '/Talents/JVV _ NATALIE BATLLE/natalie-batlle.jpg'
     ],
     "stats": {
       "es": {
-        "Profesión": "Duo de Música Electrónica Vocal",
-        "Miembros": "Carlos Gorbe, Daniel Jumillas",
-        "Álbumes": "As We Are (2020)"
+        "Profesión": "Emprendedora / Consultora / Ponente",
+        "Base": "Chicago & Barcelona",
+        "Clientes": "LVMH, Bumble, Under Armour"
       },
       "en": {
-        "Profession": "Vocal Electronic Music Duo",
-        "Members": "Carlos Gorbe, Daniel Jumillas",
-        "Albums": "As We Are (2020)"
+        "Profession": "Entrepreneur / Consultant / Speaker",
+        "Base": "Chicago & Barcelona",
+        "Clients": "LVMH, Bumble, Under Armour"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "As We Are (Álbum de Debut)",
-          "en": "As We Are (Debut Album)"
+          "es": "Consultoría de Marca y Narración Estratégica",
+          "en": "Storytelling and Brand Consulting"
         },
-        "year": "2020"
+        "year": "2020-2026"
       },
       {
         "title": {
-          "es": "Música para Todo Lo Otro (Serie de HBO)",
-          "en": "Music for Todo Lo Otro (HBO Series)"
+          "es": "Artículos editoriales en Vogue y Forbes",
+          "en": "Vogue & Forbes Editorial Features"
         },
-        "year": "2021"
+        "year": "2024"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/IUKVjmlTwp0",
+      "https://www.youtube.com/embed/5ghIv0OXRVQ"
+    ]
+  },
+
+  {
+    "id": 11,
+    "name": "Ayub El Kadmiri",
+    type: ['fotografos'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
+    "description": {
+      "es": "Ayub El Kadmiri, nacido en Marruecos, se mudó a Madrid con apenas 4 años. Desde bien pequeño se interesó por la fotografía, y a los pocos años se convirtió en algo esencial para él. Empezó en su adolescencia retratando a sus amigos con la cámara que su hermano le había prestado, y poco a poco al ver que la fotografía realmente le motivaba y apasionaba decidió dar un paso más grande y comprarse su propio equipo fotográfico, empezando a profesionalizar lo que primero fue solo un hobby.\n\nCon el paso de los años, su fotografía, al igual que él, ha ido evolucionando. Ha realizado proyectos en videoclips (de foto fija), en colecciones de moda, en eventos sociales…Ha trabajado en revistas como Icon Magazine, Metal Magazine y La Vie Magazine. Ha fotografiado en exclusiva a la actriz e influencer Sara Matos en su paso por España, para Icon Magazine ha fotografiado al futbolista Borja Iglesias, al actor Hugo Silva y al cantante Teo Lucadamo. Sigue empapándose de nuevas experiencias y se encuentra abierto a hacer todo tipo de proyectos.",
+      "en": "Ayub El Kadmiri, born in Morocco, moved to Madrid when he was just 4 years old. From a very young age he was interested in photography, and within a few years it became essential for him. He started in his adolescence portraying his friends with a camera lent by his brother, and gradually, seeing that photography really motivated and excited him, he decided to take a bigger step and buy his own equipment, starting to professionalize what was initially just a hobby.\n\nOver the years, his photography, like him, has evolved. He has carried out projects in music videos (still photography), fashion collections, social events... He has worked in magazines such as Icon Magazine, Metal Magazine, and La Vie Magazine. He has photographed actress and influencer Sara Matos exclusively during her visit to Spain, and for Icon Magazine he has photographed footballer Borja Iglesias, actor Hugo Silva, and singer Teo Lucadamo. He continues to soak up new experiences and is open to all kinds of projects."
+    },
+    gallery: [
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_4_FOTO-1-AYUB.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_5_FOTO-2-AYUB.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_6_FOTO-3-AYUB.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_7_FOTO-4-AYUB.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_8_FOTO-5-AYUB.jpg',
+      '/Talents/JVV _ AYUB EL KADMIRI/imgi_9_FOTO-6-AYUB.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Fotógrafo",
+        "Revistas": "Icon, Metal, La Vie",
+        "Colaboradores": "Hugo Silva, Sara Matos, Borja Iglesias"
+      },
+      "en": {
+        "Profession": "Photographer",
+        "Magazines": "Icon, Metal, La Vie",
+        "Collaborators": "Hugo Silva, Sara Matos, Borja Iglesias"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Fotografía editorial para Icon Magazine",
+          "en": "Editorial Photography for Icon Magazine"
+        },
+        "year": "2023"
+      },
+      {
+        "title": {
+          "es": "Sesión exclusiva con Sara Matos",
+          "en": "Exclusive Session with Sara Matos"
+        },
+        "year": "2023"
       }
     ]
   },
+
   {
     "id": 10,
     "name": "Pepa Charro (La Terremoto)",
-    "type": "actors",
+    type: ['cantantes', 'comunicadores'],
     "location": "Palma de Mallorca",
     image: '/Talents/JVV _ PEPA CHARRO _ LA TERREMOTO DE ALCORCÓN/imgi_10_7j9a9754-1-1.jpg',
     "description": {
@@ -637,58 +708,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/lGkURikIdzI"
     ]
   },
-  {
-    "id": 11,
-    "name": "Ayub El Kadmiri",
-    "type": "artists",
-    "location": "Madrid",
-    image: '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
-    "description": {
-      "es": "Ayub El Kadmiri, nacido en Marruecos, se mudó a Madrid con apenas 4 años. Desde bien pequeño se interesó por la fotografía, y a los pocos años se convirtió en algo esencial para él. Empezó en su adolescencia retratando a sus amigos con la cámara que su hermano le había prestado, y poco a poco al ver que la fotografía realmente le motivaba y apasionaba decidió dar un paso más grande y comprarse su propio equipo fotográfico, empezando a profesionalizar lo que primero fue solo un hobby.\n\nCon el paso de los años, su fotografía, al igual que él, ha ido evolucionando. Ha realizado proyectos en videoclips (de foto fija), en colecciones de moda, en eventos sociales…Ha trabajado en revistas como Icon Magazine, Metal Magazine y La Vie Magazine. Ha fotografiado en exclusiva a la actriz e influencer Sara Matos en su paso por España, para Icon Magazine ha fotografiado al futbolista Borja Iglesias, al actor Hugo Silva y al cantante Teo Lucadamo. Sigue empapándose de nuevas experiencias y se encuentra abierto a hacer todo tipo de proyectos.",
-      "en": "Ayub El Kadmiri, born in Morocco, moved to Madrid when he was just 4 years old. From a very young age he was interested in photography, and within a few years it became essential for him. He started in his adolescence portraying his friends with a camera lent by his brother, and gradually, seeing that photography really motivated and excited him, he decided to take a bigger step and buy his own equipment, starting to professionalize what was initially just a hobby.\n\nOver the years, his photography, like him, has evolved. He has carried out projects in music videos (still photography), fashion collections, social events... He has worked in magazines such as Icon Magazine, Metal Magazine, and La Vie Magazine. He has photographed actress and influencer Sara Matos exclusively during her visit to Spain, and for Icon Magazine he has photographed footballer Borja Iglesias, actor Hugo Silva, and singer Teo Lucadamo. He continues to soak up new experiences and is open to all kinds of projects."
-    },
-    gallery: [
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_4_FOTO-1-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_5_FOTO-2-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_6_FOTO-3-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_7_FOTO-4-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_8_FOTO-5-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_9_FOTO-6-AYUB.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Fotógrafo",
-        "Revistas": "Icon, Metal, La Vie",
-        "Colaboradores": "Hugo Silva, Sara Matos, Borja Iglesias"
-      },
-      "en": {
-        "Profession": "Photographer",
-        "Magazines": "Icon, Metal, La Vie",
-        "Collaborators": "Hugo Silva, Sara Matos, Borja Iglesias"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Fotografía editorial para Icon Magazine",
-          "en": "Editorial Photography for Icon Magazine"
-        },
-        "year": "2023"
-      },
-      {
-        "title": {
-          "es": "Sesión exclusiva con Sara Matos",
-          "en": "Exclusive Session with Sara Matos"
-        },
-        "year": "2023"
-      }
-    ]
-  },
+
   {
     "id": 12,
     "name": "Ion Leibar",
-    "type": "artists",
+    type: ['fotografos'],
     "location": "Madrid",
     image: '/Talents/JVV _ ION LEIBAR/imgi_4_Ion-Leibal-900x1200-main.jpg',
     "description": {
@@ -733,60 +757,405 @@ export const TALENT_DATA: Talent[] = [
       }
     ]
   },
+
   {
-    "id": 13,
-    "name": "Natalie Batlle",
-    "type": "artists",
-    "location": "Chicago / Barcelona",
-    image: '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
+    "id": 18,
+    "name": "Diego Osorio",
+    type: ['actores'],
+    "location": "Nueva York",
+    image: '/Talents/JVV _ DIEGO OSORIO/imgi_5_image-2-main.png',
     "description": {
-      "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Conraíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto.\n\nComo ponente internacional, Natalie inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
-      "en": "Entrepreneur, brand consultant, and international speaker. Natalie stands out for her expertise in storytelling and building purpose-driven brands with high social impact and strong media presence.\n\nWith roots in Chicago and Spain, she connects her experience in strategic communications, alliances, and creative entrepreneurship to turn bold ideas into high-impact businesses. As an international speaker, Natalie inspires with talks on leadership, conscious entrepreneurship, brand storytelling, fundraising, and startup culture. She has collaborated with brands like LVMH, Bumble, and Under Armour, and has been recognized in media outlets such as Vogue, La Vanguardia, and Forbes. She lives between Chicago and Barcelona with her husband and two children, dedicated to connecting people and brands to create innovative, purpose-driven projects."
+      "es": "Diego lleva varios años dedicado en pleno a su carrera como actor, tanto formándose en EEUU como participando en ficciones como «Drug Mule» o «Roshambo». Desde Nueva York, donde reside, no para de sumarse y crear proyectos interesantes.\n\nAdemás también hemos podido verle recientemente en el especial de Callejeros Viajeros de Nueva York donde pudo hablar sobre su carrera como actor y su vida en América.\n\nHa colaborado con un sinfín de marcas y ha aparecido en casi todas las revistas más importantes de nuestro país. En esta etapa está encantado de sumarse a acciones afines a su perfil y su trayectoria y espera que también en nuestro país se le conozca más en detalle y conseguir emocionar y transmitir a quienes le sigan a través de series, fashion films, cortos y películas.",
+      "en": "Diego has spent several years fully dedicated to his acting career, both training in the US and participating in productions like \"Drug Mule\" or \"Roshambo\". From New York, where he resides, he keeps joining and creating interesting projects.\n\nAdditionally, we could recently see him in the Callejeros Viajeros special on New York, where he spoke about his acting career and life in America.\n\nHe has collaborated with countless brands and appeared in almost all the most important magazines in Spain. In this phase, he is delighted to join actions aligned with his profile and career, hoping to be known in more detail in our country to move and connect with those who follow him through series, fashion films, shorts, and films."
     },
     gallery: [
-      '/Talents/JVV _ NATALIE BATLLE/imgi_4_FOTO-1-NATALIE-900x724.jpg',
-      '/Talents/JVV _ NATALIE BATLLE/imgi_5_FOTO-2-NATALIE-900x724.jpg',
-      '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
-      '/Talents/JVV _ NATALIE BATLLE/imgi_7_FOTO-4-NATALIE-900x683.jpg',
-      '/Talents/JVV _ NATALIE BATLLE/natalie-batlle.jpg'
+      '/Talents/JVV _ DIEGO OSORIO/imgi_4_image-3.png',
+      '/Talents/JVV _ DIEGO OSORIO/imgi_5_image-2-main.png',
+      '/Talents/JVV _ DIEGO OSORIO/imgi_6_MG_1160-copia.jpg',
+      '/Talents/JVV _ DIEGO OSORIO/imgi_7_DiegoOsorio-1.jpg'
     ],
     "stats": {
       "es": {
-        "Profesión": "Emprendedora / Consultora / Ponente",
-        "Base": "Chicago & Barcelona",
-        "Clientes": "LVMH, Bumble, Under Armour"
+        "Profesión": "Actor",
+        "Residencia": "Nueva York (EEUU)",
+        "Trabajos Destacados": "Drug Mule, Roshambo, Callejeros Viajeros"
       },
       "en": {
-        "Profession": "Entrepreneur / Consultant / Speaker",
-        "Base": "Chicago & Barcelona",
-        "Clients": "LVMH, Bumble, Under Armour"
+        "Profession": "Actor",
+        "Residence": "New York (USA)",
+        "Notable Works": "Drug Mule, Roshambo, Callejeros Viajeros"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Consultoría de Marca y Narración Estratégica",
-          "en": "Storytelling and Brand Consulting"
+          "es": "Callejeros Viajeros: Nueva York (Especial)",
+          "en": "Callejeros Viajeros: New York (Special)"
         },
-        "year": "2020-2026"
+        "year": "2023"
       },
       {
         "title": {
-          "es": "Artículos editoriales en Vogue y Forbes",
-          "en": "Vogue & Forbes Editorial Features"
+          "es": "Roshambo (Actor principal)",
+          "en": "Roshambo (Lead actor)"
         },
-        "year": "2024"
+        "year": "2022"
+      },
+      {
+        "title": {
+          "es": "Drug Mule (Cortometraje de ficción)",
+          "en": "Drug Mule (Fiction short film)"
+        },
+        "year": "2021"
       }
     ],
     "videos": [
-      "https://www.youtube.com/embed/IUKVjmlTwp0",
-      "https://www.youtube.com/embed/5ghIv0OXRVQ"
+      "https://www.youtube.com/embed/zRcBJFCmmmk"
     ]
   },
+
+  {
+    "id": 15,
+    "name": "Chloe’s Clue",
+    type: ['cantantes'],
+    "location": "Valencia",
+    image: '/Talents/JVV _ CHLOE’S CLUE/imgi_6_Cloes2-main.jpg',
+    "description": {
+      "es": "Chlöe’s Clue es el proyecto de la valenciana Raquel Adalid (1996) que surge como resultado de casualidades románticas del destino en el año 2014 y acaba convirtiéndose en la vía bendita para desenmascarar y desvelar sus delicias más intimistas, misteriosas, ocultas y prohibidas a través de los “cantos/llantos ligeros” -así denomina Raquel a las melodías que crea y predica-. La vena musical de la cantautora se venía prediciendo en una de esas mágicas y majestuosas bolas de cristal desde sus primeros años de vida. Melómana de nacimiento, a los tres años ya pedía mini-guitarras de juguete a los Reyes Magos y robaba todos los mandos de televisión para utilizarlos a modo de micrófono.",
+      "en": "Chlöe's Clue is the project of Raquel Adalid (1996) from Valencia, arising from romantic coincidences of destiny in 2014, becoming a blessed way to unmask and reveal her most intimate, mysterious, hidden, and forbidden delights through \"light songs/cries\" — as Raquel calls the melodies she creates and preaches. The singer-songwriter's musical vein had been predicted in a magic crystal ball from her earliest years of life. A music lover by birth, at age three she was already asking the Three Wise Men for toy mini-guitars and stealing all the TV remotes to use as microphones."
+    },
+    gallery: [
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_10_Ismael-Nasrollah-11.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_11_Ismael-Nasrollah-1.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_4_Cloes1principal.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_5_Cloes3.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_6_Cloes2-main.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_7_Cloes.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_8_Ismael-Nasrollah-17.jpg',
+      '/Talents/JVV _ CHLOE’S CLUE/imgi_9_Ismael-Nasrollah-15.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Cantautora / Artista",
+        "Nombre Real": "Raquel Adalid",
+        "Instrumentos": "Voz, Guitarra"
+      },
+      "en": {
+        "Profession": "Singer-songwriter / Artist",
+        "Real Name": "Raquel Adalid",
+        "Instruments": "Vocals, Guitar"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Lanzamiento y Producciones Independientes",
+          "en": "Releases & Independent Productions"
+        },
+        "year": "2014-2026"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/8eSabd_tKeY",
+      "https://www.youtube.com/embed/1T497MY4o9E"
+    ]
+  },
+
+  {
+    "id": 9,
+    "name": "Impulsiva",
+    type: ['djs'],
+    "location": "Valencia / Madrid",
+    image: '/Talents/JVV _ IMPULSIVA/imgi_4_IMPULSIVA-ph_Luz_Soria-web-9135-900x1200-main.jpg',
+    "description": {
+      "es": "IMPULSIVA es un duo español de música electrónica vocal que nace en 2015, compuesto por el valenciano Carlos Gorbe y el madrileño Daniel Jumillas.\n\nSu música está muy influenciada por el sonido británico de antes y de ahora. En 2020 sacan su primer álbum “As We Are”, un LP de 9 temas que hace un recorrido emocional sobre diferentes facetas de sus propios autores. Algunos de estos se pueden escuchar en la serie de HBO “Todo lo Otro”.\n\nTambién han participado haciendo música para diversos espectáculos teatrales tanto en solitario como en conjunto.",
+      "en": "IMPULSIVA is a Spanish vocal electronic music duo born in 2015, composed of Carlos Gorbe from Valencia and Daniel Jumillas from Madrid.\n\nTheir music is highly influenced by British sounds of the past and present. In 2020 they released their first album \"As We Are\", an LP of 9 tracks that takes an emotional journey through different facets of its authors. Some of these tracks can be heard in the HBO series \"Todo lo Otro\".\n\nThey have also participated in making music for various theater shows, both individually and collectively."
+    },
+    gallery: [
+      '/Talents/JVV _ IMPULSIVA/imgi_4_IMPULSIVA-ph_Luz_Soria-web-9135-900x1200-main.jpg',
+      '/Talents/JVV _ IMPULSIVA/imgi_5_IMPULSIVA-ph_Luz_Soria-web-9267-900x1200.jpg',
+      '/Talents/JVV _ IMPULSIVA/imgi_6_IMPULSIVA-ph_Luz_Soria-web-9330-900x1200.jpg',
+      '/Talents/JVV _ IMPULSIVA/imgi_7_IMPULSIVA-ph_Luz_Soria-web-9475-900x1200.jpg',
+      '/Talents/JVV _ IMPULSIVA/imgi_8_image_6483441-4-900x1200.jpg',
+      '/Talents/JVV _ IMPULSIVA/imgi_9_image_6483441-5-900x1200.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Duo de Música Electrónica Vocal",
+        "Miembros": "Carlos Gorbe, Daniel Jumillas",
+        "Álbumes": "As We Are (2020)"
+      },
+      "en": {
+        "Profession": "Vocal Electronic Music Duo",
+        "Members": "Carlos Gorbe, Daniel Jumillas",
+        "Albums": "As We Are (2020)"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "As We Are (Álbum de Debut)",
+          "en": "As We Are (Debut Album)"
+        },
+        "year": "2020"
+      },
+      {
+        "title": {
+          "es": "Música para Todo Lo Otro (Serie de HBO)",
+          "en": "Music for Todo Lo Otro (HBO Series)"
+        },
+        "year": "2021"
+      }
+    ]
+  },
+
+  {
+    "id": 16,
+    "name": "Eli Kapowski",
+    type: ['djs'],
+    "location": "Barcelona",
+    image: '/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg',
+    "description": {
+      "es": "Eli Kapowski es una selectora que explora el sonido disco láser más 80′. Sus sesiones eclécticas de principio a final y profundizan en el sonido de la música funky y disco con toques houseros y ritmo electrónico con mucho beat, que sin duda no te harán parar de bailar.\n\nEn activo desde 2014, ha estado detrás de los platos en los lugares más emblemáticos de la ciudad condal y alrededores.\n\nEs pura explosión de good vibe remezclada estilosamente con mucha energía y elegancia. No hay ninguna restricción que valga: disfrute y baile por dentro y por fuera, sentado o de pie.",
+      "en": "Eli Kapowski is a selector exploring the laser disco sound of the 80s. Her sessions are eclectic from start to finish, delving into funky and disco music with house touches and electronic rhythms with heavy beats that will surely keep you dancing.\n\nActive since 2014, she has been behind the decks in the most iconic spots of Barcelona and its surroundings.\n\nShe is a pure explosion of good vibes stylishly mixed with energy and elegance. No restrictions apply: enjoy and dance inside and out, sitting or standing."
+    },
+    gallery: [
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_10_2020-03-26-2-1.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_4_WhatsApp-Image-2022-10-27-at-12.27.21-7.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_6_image2-900x1200.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_7_image1-900x1200.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_8_B173ABFE-2BFE-4437-8FE8-D40E9BE41A86-900x1200.jpg',
+      '/Talents/JVV _ ELI KAPOWSKI/imgi_9_2020-03-26-1-1.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "DJ / Selectora",
+        "Estilo": "Disco Láser 80s / Funky / House",
+        "Trayectoria": "Activa desde 2014"
+      },
+      "en": {
+        "Profession": "DJ / Selector",
+        "Style": "Disco Laser 80s / Funky / House",
+        "Career": "Active since 2014"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Sesiones Residencias en Barcelona",
+          "en": "Residency Sessions in Barcelona"
+        },
+        "year": "2014-2026"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/mfF6bnxwpQk"
+    ]
+  },
+
+  {
+    "id": 17,
+    "name": "Martina Benvenutto",
+    type: ['comunicadores'],
+    "location": "Mallorca",
+    image: '/Talents/JVV _ MARTINA BENVENUTTO/imgi_4_image_50408961-900x1200-main.jpg',
+    "description": {
+      "es": "Martina Benvenutto es divertida, creativa, auténtica y cosmopolita.\nNacida en Uruguay y residente desde hace varios años en Mallorca es actualmente la directora creativa y fundadora de la marca de ropa “Benvenutto”, inspirada en la tendencia boho chic creada para la mujer con un espíritu libre.\n\nAdemás, es diseñadora de interiores, especialidad para la que se formó en Barcelona. De ahí nació su pasión por coleccionar obras de arte, siendo embajadora de Knack Art Show.\n\nHa sido musa de grandes fotógrafos reconocidos como Blaise Retenward, Anna Panic y Leonardo Condor, entre otros y ha aparecido en revistas, diarios nacionales y locales, así como en televisiones, como por ejemplo en el programa Holi Málaga donde ha sido requerida ya en diversas ocasiones.\n\nSon muchas las marcas que colaboran con ella para que a través de su mirada comunique, tales como San Miguel, Port Aventura y ha sido musa de diseñadores en el desfile del hotel W Ibiza donde desfiló con las grandes creaciones de firmas nacionales como las de Ivvana Mestre, Natividad Castillo, Vigina Vald, Weyler, entre otras.",
+      "en": "Martina Benvenutto is fun, creative, authentic, and cosmopolitan. Born in Uruguay and residing in Mallorca for several years, she is currently the creative director and founder of the clothing brand \"Benvenutto\", inspired by the boho chic trend created for free-spirited women.\n\nAdditionally, she is an interior designer, a specialty she trained for in Barcelona. From there, her passion for collecting artwork was born, serving as an ambassador for the Knack Art Show.\n\nShe has been a muse to great renowned photographers such as Blaise Retenward, Anna Panic, and Leonardo Condor, among others, and has appeared in magazines, national and local newspapers, and TV shows like Holi Málaga. Many brands collaborate with her, such as San Miguel and Port Aventura, and she has desfiled at the W Ibiza hotel with creations of national firms like Ivvana Mestre, Natividad Castillo, Virginia Vald, and Weyler, among others."
+    },
+    gallery: [
+      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_4_image_50408961-900x1200-main.jpg',
+      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_5_Foto-7-9-22-13-36-55.jpg',
+      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_6_Foto-6-9-22-8-51-22-900x1200.jpg',
+      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_7_Foto-1-9-22-9-43-43-3-900x1200.jpg',
+      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_8_Captura-de-pantalla-2022-12-29-a-las-11.33.29-824x1200.png'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Diseñadora de Interiores / Modelo",
+        "Marca": "Benvenutto Clothing",
+        "Embajadora": "Knack Art Show"
+      },
+      "en": {
+        "Profession": "Interior Designer / Model",
+        "Brand": "Benvenutto Clothing",
+        "Ambassador": "Knack Art Show"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Desfile de moda del W Ibiza (Musa)",
+          "en": "W Ibiza Fashion Parade (Muse)"
+        },
+        "year": "2022"
+      },
+      {
+        "title": {
+          "es": "Embajadora de Knack Art Show",
+          "en": "Knack Art Show Ambassador"
+        },
+        "year": "2021"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/nBREkdaodv8",
+      "https://www.youtube.com/embed/BjNhHC0y5Mk"
+    ]
+  },
+
+  {
+    "id": 19,
+    "name": "Alexctiv",
+    type: ['fotografos'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ ALEXCTIV/Alexctiv_main.jpeg',
+    "description": {
+      "es": "Alexctiv, a su corta edad, es director de campañas de vídeo publicitarias, dirige arte y diseña estrategias de marca para empresas en la industria de la moda, la belleza y el lujo.\n\nGraduado en Telecomunicaciones en la Universidad Politécnica de Madrid, desarrolló su pasión por las películas cinematográficas en 2015. Desde entonces, la atención a los detalles le ha llevado a crear películas de moda, estilo de vida, comerciales de automóviles y más recientemente, también vídeos de hospitalidad (principalmente de hoteles) …\n\nSu estilo personal, con imágenes minimalistas, dinámicas y emotivas, le llevan a realizar vídeos con una técnica narrativa cercana que unifica exclusividad con perspectivas culturales y de tendencia.\n\nAunque su principal rol es el de director, siempre disfruta cogiendo la cámara y también editando.\n\nAlgunos de sus clientes son el grupo LVMH, Audi, Alma en Pena, Vogue, Mastercard, Fever Tree, Prada, etc.",
+      "en": "Alexctiv, at a young age, is a director of commercial video campaigns, art director, and brand strategist for companies in the fashion, beauty, and luxury industries.\n\nGraduated in Telecommunications from the Polytecnic University of Madrid, he developed his passion for films in 2015. Since then, his attention to detail has led him to create fashion films, lifestyle films, car commercials, and more recently, hospitality videos (mainly for hotels)...\n\nHis personal style, with minimalist, dynamic, and emotional images, leads him to make videos with a close narrative technique that unifies exclusivity with cultural and trend perspectives.\n\nAlthough his main role is director, he always enjoys taking the camera and editing.\n\nSome of his clients include the LVMH group, Audi, Alma en Pena, Vogue, Mastercard, Fever Tree, Prada, etc."
+    },
+    gallery: [
+      '/Talents/JVV _ ALEXCTIV/Alexctiv_main.jpeg',
+      '/Talents/JVV _ ALEXCTIV/imgi_10_image_6487327-6.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_11_Iova_02.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_12_Iova_07.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_13_Iova_05.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_14_Iova_06.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_15_image_6487327-3.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_16_image_6487327-2.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_17_Iova_01.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_18_image_6483441-4.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_19_unnamed-2-1.png',
+      '/Talents/JVV _ ALEXCTIV/imgi_22_unnamed-1.png',
+      '/Talents/JVV _ ALEXCTIV/imgi_4_image_6483441-1.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_52_image_6487327-768x756.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_5_image_6483441-3.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_6_Iova_04.jpg',
+      '/Talents/JVV _ ALEXCTIV/imgi_7_image_6483441-5.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Director / Filmmaker / Productor",
+        "Clientes": "LVMH, Audi, Vogue, Prada",
+        "Estudios": "Telecomunicaciones (UPM)"
+      },
+      "en": {
+        "Profession": "Director / Filmmaker / Producer",
+        "Clients": "LVMH, Audi, Vogue, Prada",
+        "Education": "Telecommunications (UPM)"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Producciones de moda y lujo internacionales",
+          "en": "International fashion and luxury shoots"
+        },
+        "year": "2020-2026"
+      }
+    ],
+    "videos": [
+      "https://player.vimeo.com/video/299179817?h=345e75eb67",
+      "https://player.vimeo.com/video/299179724?h=924fc54e78",
+      "https://player.vimeo.com/video/299179756?h=afe4d8b5e5"
+    ]
+  },
+
+  {
+    "id": 21,
+    "name": "Ana Julieta",
+    type: ['djs'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ ANA JULIETA/imgi_5_ensaio2-3-900x1080-main.jpg',
+    "description": {
+      "es": "Ana Julieta es mitad española, mitad brasileña y nacida en París, sus orígenes multiculturales hacen que su música tenga elementos únicos.\n\nSu nicho musical es el circuit, estilo predominante en la escena LGBTQIA+. Con una performance siempre enérgica, es conocida por llevar su energía brasileña a cualquier evento de manera a crear momentos que se quedan en la memoria.\n\nAna Julieta vivió toda su vida en Salvador de Bahía, Brasil donde allí ha compartido escenario con los grandes de la música brasileña. Recién llegada a Madrid, ya conserva dos residencias en la capital y mantiene su residencia en uno de los mayores grupos de eventos LGBTQIA+ de Brasil.",
+      "en": "Ana Julieta is half Spanish, half Brazilian, and born in Paris; her multicultural origins give her music unique elements.\n\nHer musical niche is circuit, the predominant style in the LGBTQIA+ scene. With an energetic performance, she is known for bringing her Brazilian energy to any event to create memorable moments.\n\nAna Julieta lived her whole life in Salvador de Bahía, Brazil, where she shared the stage with greats of Brazilian music. Recently arrived in Madrid, she already holds two residencies in the capital and maintains her residency in one of Brazil's largest LGBTQIA+ event groups."
+    },
+    gallery: [
+      '/Talents/JVV _ ANA JULIETA/imgi_4_IMG_8995.jpg.jpg',
+      '/Talents/JVV _ ANA JULIETA/imgi_5_ensaio2-3-900x1080-main.jpg',
+      '/Talents/JVV _ ANA JULIETA/imgi_6_ANAJU-SHINE-37.jpg-900x1200.jpg',
+      '/Talents/JVV _ ANA JULIETA/imgi_7_ANA-JULIETA_5a-FOTO-900x1200.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "DJ / Arquitecta",
+        "Origen": "Franco-Español-Brasileña",
+        "Residencias": "Madrid y Salvador de Bahía"
+      },
+      "en": {
+        "Profession": "DJ / Architect",
+        "Origin": "French-Spanish-Brazilian",
+        "Residencies": "Madrid & Salvador de Bahía"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Residencias musicales en Madrid",
+          "en": "Madrid Club Residencies"
+        },
+        "year": "2024"
+      },
+      {
+        "title": {
+          "es": "Shows en vivo en Salvador de Bahía (Brasil)",
+          "en": "Live Shows in Salvador de Bahía (Brazil)"
+        },
+        "year": "2022-2023"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/W4pKyTbJDoY"
+    ]
+  },
+
+  {
+    "id": 20,
+    "name": "Patrick Schuttler",
+    type: ['fotografos'],
+    "location": "Barcelona",
+    image: '/Talents/JVV _ PATRICK SCHUTTLER/imgi_4_image-main.png',
+    "description": {
+      "es": "El fotógrafo alemán – australiano, Patrick Schuttler se mudó a Barcelona en 2019 después de 10 años viviendo en Londres. Empezando en el mundo de la fotografía con 12 años en el estudio de fotografía de su padre en Perth, Australia, y más tarde viajando el mundo durante más de 18 años fotografiando moda, publicidad y paisajes. Patrick ahora considera Barcelona su nuevo hogar y base de su carrera en expansión.\n\nLas influencias artísticas de Patrick son diversas y su mayor pasión nace de su amor por la naturaleza y el mar, habiendo crecido surfeando las mejores olas de Australia.",
+      "en": "German-Australian photographer Patrick Schuttler moved to Barcelona in 2019 after living in London for 10 years. Starting in the photography world at age 12 in his father's studio in Perth, Australia, and later traveling the world for over 18 years shooting fashion, advertising, and landscapes. Patrick now considers Barcelona his new home and base for his expanding career.\n\nPatrick's artistic influences are diverse, and his greatest passion comes from his love of nature and the sea, having grown up surfing Australia's best waves."
+    },
+    gallery: [
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_4_image-main.png',
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_5_Patrick_Schuttler001.jpg',
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_6_Patrick_Schuttler003.jpg',
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_7_Patrick_Schuttler002.jpg',
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_8_Patrick_Schuttler005.jpg',
+      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_9_Portada.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Fotógrafo",
+        "Especialidad": "Moda, Publicidad, Paisaje",
+        "Experiencia": "Más de 18 años"
+      },
+      "en": {
+        "Profession": "Photographer",
+        "Specialty": "Fashion, Advertising, Landscape",
+        "Experience": "Over 18 years"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Fotografía comercial y editorial en Barcelona",
+          "en": "Commercial & Editorial Photography in Barcelona"
+        },
+        "year": "2019-2026"
+      }
+    ]
+  },
+
   {
     "id": 14,
     "name": "Suri",
-    "type": "artists",
+    type: ['djs'],
     "location": "Madrid / Valencia",
     image: '/Talents/JVV _ SURI/imgi_10_Foto-27-6-18-5-52-09 (1)-main.jpg',
     "description": {
@@ -842,349 +1211,11 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/jnHPE1AK6es"
     ]
   },
-  {
-    "id": 15,
-    "name": "Chloe’s Clue",
-    "type": "artists",
-    "location": "Valencia",
-    image: '/Talents/JVV _ CHLOE’S CLUE/imgi_6_Cloes2-main.jpg',
-    "description": {
-      "es": "Chlöe’s Clue es el proyecto de la valenciana Raquel Adalid (1996) que surge como resultado de casualidades románticas del destino en el año 2014 y acaba convirtiéndose en la vía bendita para desenmascarar y desvelar sus delicias más intimistas, misteriosas, ocultas y prohibidas a través de los “cantos/llantos ligeros” -así denomina Raquel a las melodías que crea y predica-. La vena musical de la cantautora se venía prediciendo en una de esas mágicas y majestuosas bolas de cristal desde sus primeros años de vida. Melómana de nacimiento, a los tres años ya pedía mini-guitarras de juguete a los Reyes Magos y robaba todos los mandos de televisión para utilizarlos a modo de micrófono.",
-      "en": "Chlöe's Clue is the project of Raquel Adalid (1996) from Valencia, arising from romantic coincidences of destiny in 2014, becoming a blessed way to unmask and reveal her most intimate, mysterious, hidden, and forbidden delights through \"light songs/cries\" — as Raquel calls the melodies she creates and preaches. The singer-songwriter's musical vein had been predicted in a magic crystal ball from her earliest years of life. A music lover by birth, at age three she was already asking the Three Wise Men for toy mini-guitars and stealing all the TV remotes to use as microphones."
-    },
-    gallery: [
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_10_Ismael-Nasrollah-11.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_11_Ismael-Nasrollah-1.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_4_Cloes1principal.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_5_Cloes3.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_6_Cloes2-main.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_7_Cloes.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_8_Ismael-Nasrollah-17.jpg',
-      '/Talents/JVV _ CHLOE’S CLUE/imgi_9_Ismael-Nasrollah-15.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Cantautora / Artista",
-        "Nombre Real": "Raquel Adalid",
-        "Instrumentos": "Voz, Guitarra"
-      },
-      "en": {
-        "Profession": "Singer-songwriter / Artist",
-        "Real Name": "Raquel Adalid",
-        "Instruments": "Vocals, Guitar"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Lanzamiento y Producciones Independientes",
-          "en": "Releases & Independent Productions"
-        },
-        "year": "2014-2026"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/8eSabd_tKeY",
-      "https://www.youtube.com/embed/1T497MY4o9E"
-    ]
-  },
-  {
-    "id": 16,
-    "name": "Eli Kapowski",
-    "type": "artists",
-    "location": "Barcelona",
-    image: '/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg',
-    "description": {
-      "es": "Eli Kapowski es una selectora que explora el sonido disco láser más 80′. Sus sesiones eclécticas de principio a final y profundizan en el sonido de la música funky y disco con toques houseros y ritmo electrónico con mucho beat, que sin duda no te harán parar de bailar.\n\nEn activo desde 2014, ha estado detrás de los platos en los lugares más emblemáticos de la ciudad condal y alrededores.\n\nEs pura explosión de good vibe remezclada estilosamente con mucha energía y elegancia. No hay ninguna restricción que valga: disfrute y baile por dentro y por fuera, sentado o de pie.",
-      "en": "Eli Kapowski is a selector exploring the laser disco sound of the 80s. Her sessions are eclectic from start to finish, delving into funky and disco music with house touches and electronic rhythms with heavy beats that will surely keep you dancing.\n\nActive since 2014, she has been behind the decks in the most iconic spots of Barcelona and its surroundings.\n\nShe is a pure explosion of good vibes stylishly mixed with energy and elegance. No restrictions apply: enjoy and dance inside and out, sitting or standing."
-    },
-    gallery: [
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_10_2020-03-26-2-1.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_4_WhatsApp-Image-2022-10-27-at-12.27.21-7.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_6_image2-900x1200.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_7_image1-900x1200.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_8_B173ABFE-2BFE-4437-8FE8-D40E9BE41A86-900x1200.jpg',
-      '/Talents/JVV _ ELI KAPOWSKI/imgi_9_2020-03-26-1-1.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "DJ / Selectora",
-        "Estilo": "Disco Láser 80s / Funky / House",
-        "Trayectoria": "Activa desde 2014"
-      },
-      "en": {
-        "Profession": "DJ / Selector",
-        "Style": "Disco Laser 80s / Funky / House",
-        "Career": "Active since 2014"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Sesiones Residencias en Barcelona",
-          "en": "Residency Sessions in Barcelona"
-        },
-        "year": "2014-2026"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/mfF6bnxwpQk"
-    ]
-  },
-  {
-    "id": 17,
-    "name": "Martina Benvenutto",
-    "type": "models",
-    "location": "Mallorca",
-    image: '/Talents/JVV _ MARTINA BENVENUTTO/imgi_4_image_50408961-900x1200-main.jpg',
-    "description": {
-      "es": "Martina Benvenutto es divertida, creativa, auténtica y cosmopolita.\nNacida en Uruguay y residente desde hace varios años en Mallorca es actualmente la directora creativa y fundadora de la marca de ropa “Benvenutto”, inspirada en la tendencia boho chic creada para la mujer con un espíritu libre.\n\nAdemás, es diseñadora de interiores, especialidad para la que se formó en Barcelona. De ahí nació su pasión por coleccionar obras de arte, siendo embajadora de Knack Art Show.\n\nHa sido musa de grandes fotógrafos reconocidos como Blaise Retenward, Anna Panic y Leonardo Condor, entre otros y ha aparecido en revistas, diarios nacionales y locales, así como en televisiones, como por ejemplo en el programa Holi Málaga donde ha sido requerida ya en diversas ocasiones.\n\nSon muchas las marcas que colaboran con ella para que a través de su mirada comunique, tales como San Miguel, Port Aventura y ha sido musa de diseñadores en el desfile del hotel W Ibiza donde desfiló con las grandes creaciones de firmas nacionales como las de Ivvana Mestre, Natividad Castillo, Vigina Vald, Weyler, entre otras.",
-      "en": "Martina Benvenutto is fun, creative, authentic, and cosmopolitan. Born in Uruguay and residing in Mallorca for several years, she is currently the creative director and founder of the clothing brand \"Benvenutto\", inspired by the boho chic trend created for free-spirited women.\n\nAdditionally, she is an interior designer, a specialty she trained for in Barcelona. From there, her passion for collecting artwork was born, serving as an ambassador for the Knack Art Show.\n\nShe has been a muse to great renowned photographers such as Blaise Retenward, Anna Panic, and Leonardo Condor, among others, and has appeared in magazines, national and local newspapers, and TV shows like Holi Málaga. Many brands collaborate with her, such as San Miguel and Port Aventura, and she has desfiled at the W Ibiza hotel with creations of national firms like Ivvana Mestre, Natividad Castillo, Virginia Vald, and Weyler, among others."
-    },
-    gallery: [
-      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_4_image_50408961-900x1200-main.jpg',
-      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_5_Foto-7-9-22-13-36-55.jpg',
-      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_6_Foto-6-9-22-8-51-22-900x1200.jpg',
-      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_7_Foto-1-9-22-9-43-43-3-900x1200.jpg',
-      '/Talents/JVV _ MARTINA BENVENUTTO/imgi_8_Captura-de-pantalla-2022-12-29-a-las-11.33.29-824x1200.png'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Diseñadora de Interiores / Modelo",
-        "Marca": "Benvenutto Clothing",
-        "Embajadora": "Knack Art Show"
-      },
-      "en": {
-        "Profession": "Interior Designer / Model",
-        "Brand": "Benvenutto Clothing",
-        "Ambassador": "Knack Art Show"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Desfile de moda del W Ibiza (Musa)",
-          "en": "W Ibiza Fashion Parade (Muse)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Embajadora de Knack Art Show",
-          "en": "Knack Art Show Ambassador"
-        },
-        "year": "2021"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/nBREkdaodv8",
-      "https://www.youtube.com/embed/BjNhHC0y5Mk"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "Diego Osorio",
-    "type": "actors",
-    "location": "Nueva York",
-    image: '/Talents/JVV _ DIEGO OSORIO/imgi_5_image-2-main.png',
-    "description": {
-      "es": "Diego lleva varios años dedicado en pleno a su carrera como actor, tanto formándose en EEUU como participando en ficciones como «Drug Mule» o «Roshambo». Desde Nueva York, donde reside, no para de sumarse y crear proyectos interesantes.\n\nAdemás también hemos podido verle recientemente en el especial de Callejeros Viajeros de Nueva York donde pudo hablar sobre su carrera como actor y su vida en América.\n\nHa colaborado con un sinfín de marcas y ha aparecido en casi todas las revistas más importantes de nuestro país. En esta etapa está encantado de sumarse a acciones afines a su perfil y su trayectoria y espera que también en nuestro país se le conozca más en detalle y conseguir emocionar y transmitir a quienes le sigan a través de series, fashion films, cortos y películas.",
-      "en": "Diego has spent several years fully dedicated to his acting career, both training in the US and participating in productions like \"Drug Mule\" or \"Roshambo\". From New York, where he resides, he keeps joining and creating interesting projects.\n\nAdditionally, we could recently see him in the Callejeros Viajeros special on New York, where he spoke about his acting career and life in America.\n\nHe has collaborated with countless brands and appeared in almost all the most important magazines in Spain. In this phase, he is delighted to join actions aligned with his profile and career, hoping to be known in more detail in our country to move and connect with those who follow him through series, fashion films, shorts, and films."
-    },
-    gallery: [
-      '/Talents/JVV _ DIEGO OSORIO/imgi_4_image-3.png',
-      '/Talents/JVV _ DIEGO OSORIO/imgi_5_image-2-main.png',
-      '/Talents/JVV _ DIEGO OSORIO/imgi_6_MG_1160-copia.jpg',
-      '/Talents/JVV _ DIEGO OSORIO/imgi_7_DiegoOsorio-1.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Actor",
-        "Residencia": "Nueva York (EEUU)",
-        "Trabajos Destacados": "Drug Mule, Roshambo, Callejeros Viajeros"
-      },
-      "en": {
-        "Profession": "Actor",
-        "Residence": "New York (USA)",
-        "Notable Works": "Drug Mule, Roshambo, Callejeros Viajeros"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Callejeros Viajeros: Nueva York (Especial)",
-          "en": "Callejeros Viajeros: New York (Special)"
-        },
-        "year": "2023"
-      },
-      {
-        "title": {
-          "es": "Roshambo (Actor principal)",
-          "en": "Roshambo (Lead actor)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Drug Mule (Cortometraje de ficción)",
-          "en": "Drug Mule (Fiction short film)"
-        },
-        "year": "2021"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/zRcBJFCmmmk"
-    ]
-  },
-  {
-    "id": 19,
-    "name": "Alexctiv",
-    "type": "artists",
-    "location": "Madrid",
-    image: '/Talents/JVV _ ALEXCTIV/Alexctiv_main.jpeg',
-    "description": {
-      "es": "Alexctiv, a su corta edad, es director de campañas de vídeo publicitarias, dirige arte y diseña estrategias de marca para empresas en la industria de la moda, la belleza y el lujo.\n\nGraduado en Telecomunicaciones en la Universidad Politécnica de Madrid, desarrolló su pasión por las películas cinematográficas en 2015. Desde entonces, la atención a los detalles le ha llevado a crear películas de moda, estilo de vida, comerciales de automóviles y más recientemente, también vídeos de hospitalidad (principalmente de hoteles) …\n\nSu estilo personal, con imágenes minimalistas, dinámicas y emotivas, le llevan a realizar vídeos con una técnica narrativa cercana que unifica exclusividad con perspectivas culturales y de tendencia.\n\nAunque su principal rol es el de director, siempre disfruta cogiendo la cámara y también editando.\n\nAlgunos de sus clientes son el grupo LVMH, Audi, Alma en Pena, Vogue, Mastercard, Fever Tree, Prada, etc.",
-      "en": "Alexctiv, at a young age, is a director of commercial video campaigns, art director, and brand strategist for companies in the fashion, beauty, and luxury industries.\n\nGraduated in Telecommunications from the Polytecnic University of Madrid, he developed his passion for films in 2015. Since then, his attention to detail has led him to create fashion films, lifestyle films, car commercials, and more recently, hospitality videos (mainly for hotels)...\n\nHis personal style, with minimalist, dynamic, and emotional images, leads him to make videos with a close narrative technique that unifies exclusivity with cultural and trend perspectives.\n\nAlthough his main role is director, he always enjoys taking the camera and editing.\n\nSome of his clients include the LVMH group, Audi, Alma en Pena, Vogue, Mastercard, Fever Tree, Prada, etc."
-    },
-    gallery: [
-      '/Talents/JVV _ ALEXCTIV/Alexctiv_main.jpeg',
-      '/Talents/JVV _ ALEXCTIV/imgi_10_image_6487327-6.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_11_Iova_02.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_12_Iova_07.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_13_Iova_05.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_14_Iova_06.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_15_image_6487327-3.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_16_image_6487327-2.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_17_Iova_01.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_18_image_6483441-4.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_19_unnamed-2-1.png',
-      '/Talents/JVV _ ALEXCTIV/imgi_22_unnamed-1.png',
-      '/Talents/JVV _ ALEXCTIV/imgi_4_image_6483441-1.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_52_image_6487327-768x756.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_5_image_6483441-3.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_6_Iova_04.jpg',
-      '/Talents/JVV _ ALEXCTIV/imgi_7_image_6483441-5.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Director / Filmmaker / Productor",
-        "Clientes": "LVMH, Audi, Vogue, Prada",
-        "Estudios": "Telecomunicaciones (UPM)"
-      },
-      "en": {
-        "Profession": "Director / Filmmaker / Producer",
-        "Clients": "LVMH, Audi, Vogue, Prada",
-        "Education": "Telecommunications (UPM)"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Producciones de moda y lujo internacionales",
-          "en": "International fashion and luxury shoots"
-        },
-        "year": "2020-2026"
-      }
-    ],
-    "videos": [
-      "https://player.vimeo.com/video/299179817?h=345e75eb67",
-      "https://player.vimeo.com/video/299179724?h=924fc54e78",
-      "https://player.vimeo.com/video/299179756?h=afe4d8b5e5"
-    ]
-  },
-  {
-    "id": 20,
-    "name": "Patrick Schuttler",
-    "type": "artists",
-    "location": "Barcelona",
-    image: '/Talents/JVV _ PATRICK SCHUTTLER/imgi_4_image-main.png',
-    "description": {
-      "es": "El fotógrafo alemán – australiano, Patrick Schuttler se mudó a Barcelona en 2019 después de 10 años viviendo en Londres. Empezando en el mundo de la fotografía con 12 años en el estudio de fotografía de su padre en Perth, Australia, y más tarde viajando el mundo durante más de 18 años fotografiando moda, publicidad y paisajes. Patrick ahora considera Barcelona su nuevo hogar y base de su carrera en expansión.\n\nLas influencias artísticas de Patrick son diversas y su mayor pasión nace de su amor por la naturaleza y el mar, habiendo crecido surfeando las mejores olas de Australia.",
-      "en": "German-Australian photographer Patrick Schuttler moved to Barcelona in 2019 after living in London for 10 years. Starting in the photography world at age 12 in his father's studio in Perth, Australia, and later traveling the world for over 18 years shooting fashion, advertising, and landscapes. Patrick now considers Barcelona his new home and base for his expanding career.\n\nPatrick's artistic influences are diverse, and his greatest passion comes from his love of nature and the sea, having grown up surfing Australia's best waves."
-    },
-    gallery: [
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_4_image-main.png',
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_5_Patrick_Schuttler001.jpg',
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_6_Patrick_Schuttler003.jpg',
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_7_Patrick_Schuttler002.jpg',
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_8_Patrick_Schuttler005.jpg',
-      '/Talents/JVV _ PATRICK SCHUTTLER/imgi_9_Portada.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Fotógrafo",
-        "Especialidad": "Moda, Publicidad, Paisaje",
-        "Experiencia": "Más de 18 años"
-      },
-      "en": {
-        "Profession": "Photographer",
-        "Specialty": "Fashion, Advertising, Landscape",
-        "Experience": "Over 18 years"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Fotografía comercial y editorial en Barcelona",
-          "en": "Commercial & Editorial Photography in Barcelona"
-        },
-        "year": "2019-2026"
-      }
-    ]
-  },
-  {
-    "id": 21,
-    "name": "Ana Julieta",
-    "type": "artists",
-    "location": "Madrid",
-    image: '/Talents/JVV _ ANA JULIETA/imgi_5_ensaio2-3-900x1080-main.jpg',
-    "description": {
-      "es": "Ana Julieta es mitad española, mitad brasileña y nacida en París, sus orígenes multiculturales hacen que su música tenga elementos únicos.\n\nSu nicho musical es el circuit, estilo predominante en la escena LGBTQIA+. Con una performance siempre enérgica, es conocida por llevar su energía brasileña a cualquier evento de manera a crear momentos que se quedan en la memoria.\n\nAna Julieta vivió toda su vida en Salvador de Bahía, Brasil donde allí ha compartido escenario con los grandes de la música brasileña. Recién llegada a Madrid, ya conserva dos residencias en la capital y mantiene su residencia en uno de los mayores grupos de eventos LGBTQIA+ de Brasil.",
-      "en": "Ana Julieta is half Spanish, half Brazilian, and born in Paris; her multicultural origins give her music unique elements.\n\nHer musical niche is circuit, the predominant style in the LGBTQIA+ scene. With an energetic performance, she is known for bringing her Brazilian energy to any event to create memorable moments.\n\nAna Julieta lived her whole life in Salvador de Bahía, Brazil, where she shared the stage with greats of Brazilian music. Recently arrived in Madrid, she already holds two residencies in the capital and maintains her residency in one of Brazil's largest LGBTQIA+ event groups."
-    },
-    gallery: [
-      '/Talents/JVV _ ANA JULIETA/imgi_4_IMG_8995.jpg.jpg',
-      '/Talents/JVV _ ANA JULIETA/imgi_5_ensaio2-3-900x1080-main.jpg',
-      '/Talents/JVV _ ANA JULIETA/imgi_6_ANAJU-SHINE-37.jpg-900x1200.jpg',
-      '/Talents/JVV _ ANA JULIETA/imgi_7_ANA-JULIETA_5a-FOTO-900x1200.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "DJ / Arquitecta",
-        "Origen": "Franco-Español-Brasileña",
-        "Residencias": "Madrid y Salvador de Bahía"
-      },
-      "en": {
-        "Profession": "DJ / Architect",
-        "Origin": "French-Spanish-Brazilian",
-        "Residencies": "Madrid & Salvador de Bahía"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Residencias musicales en Madrid",
-          "en": "Madrid Club Residencies"
-        },
-        "year": "2024"
-      },
-      {
-        "title": {
-          "es": "Shows en vivo en Salvador de Bahía (Brasil)",
-          "en": "Live Shows in Salvador de Bahía (Brazil)"
-        },
-        "year": "2022-2023"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/W4pKyTbJDoY"
-    ]
-  },
+
   {
     "id": 22,
     "name": "Ana Fernández",
-    "type": "actors",
+    type: ['actores'],
     "location": "Madrid",
     image: '/Talents/JVV _ ANA FERNÁNDEZ/imgi_7_Anafernandez_04-main.jpg',
     "description": {
@@ -1233,60 +1264,58 @@ export const TALENT_DATA: Talent[] = [
       }
     ]
   },
+
   {
-    "id": 23,
-    "name": "Prostíbulo Poético",
-    "type": "artists",
-    "location": "Barcelona / Madrid",
-    image: '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
+    "id": 29,
+    "name": "Damián López",
+    type: ['comunicadores', 'deportistas'],
+    "location": "Buenos Aires / Madrid",
+    image: '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_5_2021-09-22-13_42_26.8100200-01-900x1200-main.jpg',
     "description": {
-      "es": "Hijo primogénito del «Poetry Brothel» de Nueva York, instalado en Barcelona desde hace ya diez años y comenzando su andadura en Madrid, cosechando seguidores acérrimos y buenas críticas, este colectivo de poetas, bailarines y performers, convierte cada evento en un campo de pruebas donde la poesía en privado le echa un pulso a los típicos recitales al uso.\n\nDirigido por la actriz y poeta Sònia Barba, a la que el proyecto se le ajusta como anillo al dedo por su trayectoria creativa y su afición a la poesía desde niña, Prostíbulo Poético viene realizando actuaciones periódicas en Festivales, hoteles, fiestas privadas y locales tan especiales como la Sala Equis y el Club Matador en Madrid y Soho House, La Bacanal o el Festival Palo Alto en Barcelona.\n\nPoesía, irreverencia y rebelión es el lema de estas poetas que llegaron para quedarse. Así lo certifican sus diez años de trayectoria y los »Libros Rojos», publicación anual que recoge el trabajo de las integrantes, y gancho que utilizan para seducir a los que acuden a ellas atraídos por la curiosidad y salen convencidos de que ha llegado la hora de derribar los prejuicios que rodean a la temida poesía. Aseguran que van a quitarte el miedo a los fantasmas. Y que en una época en la que uno no puede fiarse de lo que ve, solo queda fiarse de lo que siente.\n\nSe encuentran en plena expansión ibérica, llegando a Valladolid y Lisboa con talleres y actuaciones.",
-      "en": "The eldest son of the New York \"Poetry Brothel\", established in Barcelona for ten years and beginning its journey in Madrid, harvesting staunch followers and good reviews, this collective of poets, dancers, and performers turns every event into a testing ground where poetry in private wrestles with typical recitals.\n\nDirected by actress and poet Sònia Barba, to whom the project fits like a glove due to her creative career and love of poetry since childhood, Prostíbulo Poético has been performing regularly in festivals, hotels, private parties, and venues as special as Sala Equis and Club Matador in Madrid, and Soho House, La Bacanal, or Palo Alto Festival in Barcelona.\n\nPoetry, irreverence, and rebellion is the motto of these poets who are here to stay. This is certified by their ten-year career and the \"Libros Rojos\", an annual publication that collects the work of the members, and the hook they use to seduce those who come to them drawn by curiosity, leaving convinced that the time has come to break down the prejudices surrounding feared poetry. They assure they will take away your fear of ghosts. And that in a time when one cannot trust what they see, they can only trust what they feel.\n\nThey are in full Iberian expansion, reaching Valladolid and Lisbon with workshops and performances."
+      "es": "Damián López es argentino, nacido en Buenos Aires en 1987, de familia emigrante que cruzo el océano en épocas de crisis europeas descendiente de portugueses, italianos y españoles.\n\nHa dedicado su vida al deporte y al activismo por los derechos de las personas del colectivo LGTB+, en sus comienzos deportivos comenzó su carrera en Taekwondo ITF en donde consiguió numerosos logros nacionales e internacionales. Actualmente es deportista federado por España en la que se desempeña como atleta de Taekwondo WT.\n\nA los 23 años tras recuperarse de un cáncer con metástasis que le pronosticaba una esperanza de vida del 35%, decidió dedicar su vida por completo al activismo para mostrar al mundo que el deporte puede cambiar tu vida.\n\nActualmente es el primer activista por los derechos LGTBIQ+ de Taekwondo del mundo, es el creador y entrenador del primer Club LGTBIQ+ federado de Taekwondo del mundo, presidente de la primera secretaria de diversidad dentro de un ente que regula el Taekwondo en España, es también la imagen deportiva y embajador de la candidatura de valencia para albergar los juegos olímpicos de la diversidad en el año 2026. Fue También el impulsor de la creación del primer departamento de diversidad dentro de una institución que regula el Taekwondo a nivel nacional en Argentina.",
+      "en": "Damián López is Argentine, born in Buenos Aires in 1987, from an immigrant family that crossed the ocean in times of European crisis, descending from Portuguese, Italians, and Spaniards.\n\nHe has dedicated his life to sport and activism for the rights of LGTB+ people; in his sporting beginnings, he started his career in ITF Taekwondo, where he achieved numerous national and international successes. Currently, he is a federated athlete in Spain playing as a WT Taekwondo athlete.\n\nAt age 23, after recovering from metastasized cancer that gave him a 35% life expectancy, he decided to dedicate his life entirely to activism to show the world that sport can change your life.\n\nCurrently, he is the first Taekwondo LGTBIQ+ rights activist in the world, the creator and coach of the first federated LGTBIQ+ Taekwondo club in the world, president of the first diversity secretariat within a Taekwondo regulating body in Spain, and is also the sports face and ambassador for Valencia's bid to host the Diversity Olympic Games in 2026. He was also the promoter of the creation of the first department of diversity within a national Taekwondo regulating institution in Argentina."
     },
     gallery: [
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_6_3.png',
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_7_4.jpg',
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_8_unnamed-2.png',
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_9_unnamed.png',
-      '/Talents/JVV _ PROSTÍBULO POÉTICO/prostibulo-a-color-1280x768.jpg'
+      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_4_Damian-2.png',
+      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_5_2021-09-22-13_42_26.8100200-01-900x1200-main.jpg',
+      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_6_2021-09-10-16_29_56.0660200-scaled-900x1200.jpg',
+      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_6_WhatsApp-Image-2023-05-17-at-14.46.48-900x1200.jpg',
+      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_7_WhatsApp-Image-2023-05-17-at-14.47.21-1-900x1200.jpg'
     ],
     "stats": {
       "es": {
-        "Profesión": "Colectivo Poético / Performers",
-        "Dirección": "Sònia Barba",
-        "Publicaciones": "Libros Rojos"
+        "Profesión": "Taekwondista WT / Activista LGTBIQ+",
+        "Logros": "Creador del primer Club LGTBIQ+ de Taekwondo federado",
+        "Embajador": "Candidatura Valencia Juegos Diversidad 2026"
       },
       "en": {
-        "Profession": "Poetic Collective / Performers",
-        "Direction": "Sònia Barba",
-        "Publications": "Libros Rojos"
+        "Profession": "Taekwondo WT Athlete / LGTBIQ+ Activist",
+        "Achievements": "Creator of the first federated LGTBIQ+ Taekwondo club",
+        "Ambassador": "Valencia Diversity Games 2026 Candidacy"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Actuaciones en Soho House, Sala Equis y Club Matador",
-          "en": "Performances at Soho House, Sala Equis & Club Matador"
+          "es": "Candidatura Juegos Olímpicos de la Diversidad Valencia 2026",
+          "en": "Valencia Diversity Olympic Games 2026 Bid"
         },
-        "year": "2016-2026"
+        "year": "2024-2026"
       },
       {
         "title": {
-          "es": "Publicación de los Libros Rojos (Anual)",
-          "en": "Libros Rojos Publication (Annual)"
+          "es": "Fundación del primer Club de Taekwondo LGTBIQ+ federado",
+          "en": "Founding of the first federated LGTBIQ+ Taekwondo Club"
         },
-        "year": "2014-2026"
+        "year": "2021"
       }
-    ],
-    "videos": [
-      "https://player.vimeo.com/video/69289779?h=5bd6d811b4"
     ]
   },
+
   {
     "id": 24,
     "name": "Plates, Tables and More",
-    "type": "artists",
+    type: ['directores'],
     "location": "Milán / Madrid",
     image: '/Talents/JVV _ PLATES, TABLES AND MORE/imgi_4_Plates-tables-and-more-3-scaled-900x1200-main.jpg',
     "description": {
@@ -1323,62 +1352,11 @@ export const TALENT_DATA: Talent[] = [
       }
     ]
   },
-  {
-    "id": 25,
-    "name": "Alicia Galuzis",
-    "type": "artists",
-    "location": "Madrid",
-    image: '/Talents/JVV _ ALICIA GALUZIS/imgi_6_GALUZIS-2-main.png',
-    "description": {
-      "es": "La música es la arteria principal de Alicia. Comenzó su trayectoria como Dj en 2006 en la escena alternativa de Madrid.\n\nHa compaginado diferentes residencias en clubs de la capital como Nells Madrid, Low club, Independance, Elástico, Fabuloso Club, etc.\n\nTambién ha recorrido territorio nacional con sesiones en otras ciudades como Valencia, Zaragoza, Barcelona o Ibiza en la Fiesta Aniversario del Club Fabuloso en el Hotel Pikes o en varias ediciones del FIB (Festival Internacional de Benicàssim).\n\nComo últimas colaboraciones, fue elegida en la primera edición del Festival Paraíso como Dj de continuidad en 2018.\n\nAparte del clubbing, ha actuado también en museos como el Musac de León, en la presentación del libro “Benicàssim El Festival” tras el concierto de Jay-Jay Johanson, el Museo Nacional Centro de Arte Reina Sofía (Nubel) y en las Fiestas de San Isidro 2017 en el emblemático Parque del Retiro.\n\nHa pinchado para una extensa lista de marcas y eventos como: Stand Vogue Mercedes Fashion Week 2012, Fib Club Madrid Fashion Week 2009, Stella McCartney, Mango, Shon Mott, entre otras.",
-      "en": "Music is Alicia's main artery. She began her career as a DJ in 2006 in Madrid's alternative scene.\n\nShe has balanced different residencies in clubs in the capital such as Nells Madrid, Low Club, Independance, Elástico, Fabuloso Club, etc. She has also toured Spain with sessions in other cities such as Valencia, Zaragoza, Barcelona, or Ibiza at the Anniversary Party of Club Fabuloso at the Pikes Hotel or in several editions of the FIB (Benicàssim International Festival).\n\nAs for recent collaborations, she was chosen in the first edition of the Paraíso Festival as continuity DJ in 2018.\n\nBesides clubbing, she has performed in museums such as Musac in León, at the presentation of the book \"Benicàssim El Festival\" after Jay-Jay Johanson's concert, the Reina Sofía National Art Center (Nubel), and at the San Isidro 2017 festivities in the emblematic Retiro Park.\n\nShe has DJ'd for an extensive list of brands and events such as: Stand Vogue Mercedes Fashion Week 2012, Fib Club Madrid Fashion Week 2009, Stella McCartney, Mango, Shon Mott, among others."
-    },
-    gallery: [
-      '/Talents/JVV _ ALICIA GALUZIS/imgi_4_VioletaxMango_17.jpg',
-      '/Talents/JVV _ ALICIA GALUZIS/imgi_6_GALUZIS-2-main.png',
-      '/Talents/JVV _ ALICIA GALUZIS/imgi_7_GALUZIS.png',
-      '/Talents/JVV _ ALICIA GALUZIS/imgi_8_n615963398_1354512_3514.png'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "DJ",
-        "Trayectoria": "DJ desde 2006",
-        "Eventos Clave": "FIB, Festival Paraíso, Stand Vogue MBFW"
-      },
-      "en": {
-        "Profession": "DJ",
-        "Career": "DJ since 2006",
-        "Key Events": "FIB, Paraíso Festival, Vogue Stand MBFW"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "DJ en continuidad (Festival Paraíso)",
-          "en": "Continuity DJ (Paraíso Festival)"
-        },
-        "year": "2018"
-      },
-      {
-        "title": {
-          "es": "Sesión en Pikes Hotel (Ibiza - Club Fabuloso)",
-          "en": "Session at Pikes Hotel (Ibiza - Club Fabuloso)"
-        },
-        "year": "2016"
-      },
-      {
-        "title": {
-          "es": "DJ oficial en Stand Vogue Mercedes Fashion Week",
-          "en": "Official DJ at Vogue Mercedes Fashion Week Stand"
-        },
-        "year": "2012"
-      }
-    ]
-  },
+
   {
     "id": 26,
     "name": "Rebeca Khamlichi",
-    "type": "artists",
+    type: ['pintoras'],
     "location": "Madrid",
     image: '/Talents/JVV _ REBECA KHAMLICHI/8717_image_586216.jpg',
     "description": {
@@ -1420,10 +1398,65 @@ export const TALENT_DATA: Talent[] = [
       }
     ]
   },
+
+  {
+    "id": 28,
+    "name": "Pablo García",
+    type: ['fotografos'],
+    "location": "Denia / Madrid",
+    image: '/Talents/JVV _ PABLO GARCÍA/imgi_4_Pablo-principale-main.jpg',
+    "description": {
+      "es": "Pablo García nace en Denia en 1994. Con menos de 30 años ya ha vivido en grandes capitales como Londres, Madrid o Barcelona. Desde bien pequeño tiene un interés especial por el arte y empieza a dibujar cosas sencillas en los primeros años de su vida. Es a los 16 años cuando una cámara digital se cruza en su camino y comienza a realizar fotos de paisaje, pasión que continuará cuando un año después consigue su primera réflex y se sumerge de lleno en el mundo de la fotografía. Se describe con un estilo muy natural, busca mostrar quien es su modelo a través de una mirada o un gesto. Su trabajo le ha llevado ya a trabajar para revistas como GQ, Telva, Vanidad o Vein en Milán, Londres, París o Barcelona. Uno de sus últimos trabajos ha sido con Dior Beauty donde realizó una sesión para presentar los nuevos productos de la firma de moda de la mano de la actriz y modelo, Godeliv. Además, colabora constantemente con marcas como The Body Shop.",
+      "en": "Pablo García was born in Denia in 1994. Under the age of 30, he has already lived in major capitals such as London, Madrid, or Barcelona. From an early age, he had a special interest in art and began drawing simple things in the first years of his life. It was at age 16 when a digital camera crossed his path and he began taking landscape photos, a passion that continued when a year later he got his first SLR and immersed himself fully in the world of photography. He describes himself with a very natural style, seeking to show who his model is through a look or a gesture. His work has already led him to work for magazines such as GQ, Telva, Vanidad, or Vein in Milan, London, Paris, or Barcelona. One of his latest works was with Dior Beauty, where he shot a session to present the brand's new products with actress and model Godeliv. In addition, he constantly collaborates with brands such as The Body Shop."
+    },
+    gallery: [
+      '/Talents/JVV _ PABLO GARCÍA/imgi_10_Pedro1.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_11_Pedro.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_4_Pablo-principale-main.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_5_dior2747.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_6_dior2612.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_7_Pedro4.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_8_Pedro3.jpg',
+      '/Talents/JVV _ PABLO GARCÍA/imgi_9_Pedro2.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Director de Fotografía / Fotógrafo",
+        "Revistas": "GQ, Telva, Vanidad, Vein",
+        "Clientes": "Dior Beauty, The Body Shop"
+      },
+      "en": {
+        "Profession": "Director of Photography / Photographer",
+        "Magazines": "GQ, Telva, Vanidad, Vein",
+        "Clients": "Dior Beauty, The Body Shop"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Dior Beauty con Godeliv (Campaña de Lanzamiento)",
+          "en": "Dior Beauty with Godeliv (Launch Campaign)"
+        },
+        "year": "2023"
+      },
+      {
+        "title": {
+          "es": "Editoriales internacionales (Milán, París, Londres)",
+          "en": "International Editorials (Milan, Paris, London)"
+        },
+        "year": "2020-2026"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/4Rp22QeTuzo",
+      "https://www.youtube.com/embed/w9X-_D0w2xA"
+    ]
+  },
+
   {
     "id": 27,
     "name": "Niña Vintage",
-    "type": "artists",
+    type: ['cantantes'],
     "location": "Madrid",
     image: '/Talents/JVV _ NIÑA VINTAGE/main.jpg',
     "description": {
@@ -1479,109 +1512,115 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/H_NTxmdzr-s"
     ]
   },
+
   {
-    "id": 28,
-    "name": "Pablo García",
-    "type": "artists",
-    "location": "Denia / Madrid",
-    image: '/Talents/JVV _ PABLO GARCÍA/imgi_4_Pablo-principale-main.jpg',
+    "id": 23,
+    "name": "Prostíbulo Poético",
+    type: [],
+    "location": "Barcelona / Madrid",
+    image: '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
     "description": {
-      "es": "Pablo García nace en Denia en 1994. Con menos de 30 años ya ha vivido en grandes capitales como Londres, Madrid o Barcelona. Desde bien pequeño tiene un interés especial por el arte y empieza a dibujar cosas sencillas en los primeros años de su vida. Es a los 16 años cuando una cámara digital se cruza en su camino y comienza a realizar fotos de paisaje, pasión que continuará cuando un año después consigue su primera réflex y se sumerge de lleno en el mundo de la fotografía. Se describe con un estilo muy natural, busca mostrar quien es su modelo a través de una mirada o un gesto. Su trabajo le ha llevado ya a trabajar para revistas como GQ, Telva, Vanidad o Vein en Milán, Londres, París o Barcelona. Uno de sus últimos trabajos ha sido con Dior Beauty donde realizó una sesión para presentar los nuevos productos de la firma de moda de la mano de la actriz y modelo, Godeliv. Además, colabora constantemente con marcas como The Body Shop.",
-      "en": "Pablo García was born in Denia in 1994. Under the age of 30, he has already lived in major capitals such as London, Madrid, or Barcelona. From an early age, he had a special interest in art and began drawing simple things in the first years of his life. It was at age 16 when a digital camera crossed his path and he began taking landscape photos, a passion that continued when a year later he got his first SLR and immersed himself fully in the world of photography. He describes himself with a very natural style, seeking to show who his model is through a look or a gesture. His work has already led him to work for magazines such as GQ, Telva, Vanidad, or Vein in Milan, London, Paris, or Barcelona. One of his latest works was with Dior Beauty, where he shot a session to present the brand's new products with actress and model Godeliv. In addition, he constantly collaborates with brands such as The Body Shop."
+      "es": "Hijo primogénito del «Poetry Brothel» de Nueva York, instalado en Barcelona desde hace ya diez años y comenzando su andadura en Madrid, cosechando seguidores acérrimos y buenas críticas, este colectivo de poetas, bailarines y performers, convierte cada evento en un campo de pruebas donde la poesía en privado le echa un pulso a los típicos recitales al uso.\n\nDirigido por la actriz y poeta Sònia Barba, a la que el proyecto se le ajusta como anillo al dedo por su trayectoria creativa y su afición a la poesía desde niña, Prostíbulo Poético viene realizando actuaciones periódicas en Festivales, hoteles, fiestas privadas y locales tan especiales como la Sala Equis y el Club Matador en Madrid y Soho House, La Bacanal o el Festival Palo Alto en Barcelona.\n\nPoesía, irreverencia y rebelión es el lema de estas poetas que llegaron para quedarse. Así lo certifican sus diez años de trayectoria y los »Libros Rojos», publicación anual que recoge el trabajo de las integrantes, y gancho que utilizan para seducir a los que acuden a ellas atraídos por la curiosidad y salen convencidos de que ha llegado la hora de derribar los prejuicios que rodean a la temida poesía. Aseguran que van a quitarte el miedo a los fantasmas. Y que en una época en la que uno no puede fiarse de lo que ve, solo queda fiarse de lo que siente.\n\nSe encuentran en plena expansión ibérica, llegando a Valladolid y Lisboa con talleres y actuaciones.",
+      "en": "The eldest son of the New York \"Poetry Brothel\", established in Barcelona for ten years and beginning its journey in Madrid, harvesting staunch followers and good reviews, this collective of poets, dancers, and performers turns every event into a testing ground where poetry in private wrestles with typical recitals.\n\nDirected by actress and poet Sònia Barba, to whom the project fits like a glove due to her creative career and love of poetry since childhood, Prostíbulo Poético has been performing regularly in festivals, hotels, private parties, and venues as special as Sala Equis and Club Matador in Madrid, and Soho House, La Bacanal, or Palo Alto Festival in Barcelona.\n\nPoetry, irreverence, and rebellion is the motto of these poets who are here to stay. This is certified by their ten-year career and the \"Libros Rojos\", an annual publication that collects the work of the members, and the hook they use to seduce those who come to them drawn by curiosity, leaving convinced that the time has come to break down the prejudices surrounding feared poetry. They assure they will take away your fear of ghosts. And that in a time when one cannot trust what they see, they can only trust what they feel.\n\nThey are in full Iberian expansion, reaching Valladolid and Lisbon with workshops and performances."
     },
     gallery: [
-      '/Talents/JVV _ PABLO GARCÍA/imgi_10_Pedro1.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_11_Pedro.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_4_Pablo-principale-main.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_5_dior2747.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_6_dior2612.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_7_Pedro4.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_8_Pedro3.jpg',
-      '/Talents/JVV _ PABLO GARCÍA/imgi_9_Pedro2.jpg'
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_6_3.png',
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_7_4.jpg',
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_8_unnamed-2.png',
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_9_unnamed.png',
+      '/Talents/JVV _ PROSTÍBULO POÉTICO/prostibulo-a-color-1280x768.jpg'
     ],
     "stats": {
       "es": {
-        "Profesión": "Director de Fotografía / Fotógrafo",
-        "Revistas": "GQ, Telva, Vanidad, Vein",
-        "Clientes": "Dior Beauty, The Body Shop"
+        "Profesión": "Colectivo Poético / Performers",
+        "Dirección": "Sònia Barba",
+        "Publicaciones": "Libros Rojos"
       },
       "en": {
-        "Profession": "Director of Photography / Photographer",
-        "Magazines": "GQ, Telva, Vanidad, Vein",
-        "Clients": "Dior Beauty, The Body Shop"
+        "Profession": "Poetic Collective / Performers",
+        "Direction": "Sònia Barba",
+        "Publications": "Libros Rojos"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Dior Beauty con Godeliv (Campaña de Lanzamiento)",
-          "en": "Dior Beauty with Godeliv (Launch Campaign)"
+          "es": "Actuaciones en Soho House, Sala Equis y Club Matador",
+          "en": "Performances at Soho House, Sala Equis & Club Matador"
         },
-        "year": "2023"
+        "year": "2016-2026"
       },
       {
         "title": {
-          "es": "Editoriales internacionales (Milán, París, Londres)",
-          "en": "International Editorials (Milan, Paris, London)"
+          "es": "Publicación de los Libros Rojos (Anual)",
+          "en": "Libros Rojos Publication (Annual)"
         },
-        "year": "2020-2026"
+        "year": "2014-2026"
       }
     ],
     "videos": [
-      "https://www.youtube.com/embed/4Rp22QeTuzo",
-      "https://www.youtube.com/embed/w9X-_D0w2xA"
+      "https://player.vimeo.com/video/69289779?h=5bd6d811b4"
     ]
   },
+
   {
-    "id": 29,
-    "name": "Damián López",
-    "type": "artists",
-    "location": "Buenos Aires / Madrid",
-    image: '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_5_2021-09-22-13_42_26.8100200-01-900x1200-main.jpg',
+    "id": 25,
+    "name": "Alicia Galuzis",
+    type: ['djs'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ ALICIA GALUZIS/imgi_6_GALUZIS-2-main.png',
     "description": {
-      "es": "Damián López es argentino, nacido en Buenos Aires en 1987, de familia emigrante que cruzo el océano en épocas de crisis europeas descendiente de portugueses, italianos y españoles.\n\nHa dedicado su vida al deporte y al activismo por los derechos de las personas del colectivo LGTB+, en sus comienzos deportivos comenzó su carrera en Taekwondo ITF en donde consiguió numerosos logros nacionales e internacionales. Actualmente es deportista federado por España en la que se desempeña como atleta de Taekwondo WT.\n\nA los 23 años tras recuperarse de un cáncer con metástasis que le pronosticaba una esperanza de vida del 35%, decidió dedicar su vida por completo al activismo para mostrar al mundo que el deporte puede cambiar tu vida.\n\nActualmente es el primer activista por los derechos LGTBIQ+ de Taekwondo del mundo, es el creador y entrenador del primer Club LGTBIQ+ federado de Taekwondo del mundo, presidente de la primera secretaria de diversidad dentro de un ente que regula el Taekwondo en España, es también la imagen deportiva y embajador de la candidatura de valencia para albergar los juegos olímpicos de la diversidad en el año 2026. Fue También el impulsor de la creación del primer departamento de diversidad dentro de una institución que regula el Taekwondo a nivel nacional en Argentina.",
-      "en": "Damián López is Argentine, born in Buenos Aires in 1987, from an immigrant family that crossed the ocean in times of European crisis, descending from Portuguese, Italians, and Spaniards.\n\nHe has dedicated his life to sport and activism for the rights of LGTB+ people; in his sporting beginnings, he started his career in ITF Taekwondo, where he achieved numerous national and international successes. Currently, he is a federated athlete in Spain playing as a WT Taekwondo athlete.\n\nAt age 23, after recovering from metastasized cancer that gave him a 35% life expectancy, he decided to dedicate his life entirely to activism to show the world that sport can change your life.\n\nCurrently, he is the first Taekwondo LGTBIQ+ rights activist in the world, the creator and coach of the first federated LGTBIQ+ Taekwondo club in the world, president of the first diversity secretariat within a Taekwondo regulating body in Spain, and is also the sports face and ambassador for Valencia's bid to host the Diversity Olympic Games in 2026. He was also the promoter of the creation of the first department of diversity within a national Taekwondo regulating institution in Argentina."
+      "es": "La música es la arteria principal de Alicia. Comenzó su trayectoria como Dj en 2006 en la escena alternativa de Madrid.\n\nHa compaginado diferentes residencias en clubs de la capital como Nells Madrid, Low club, Independance, Elástico, Fabuloso Club, etc.\n\nTambién ha recorrido territorio nacional con sesiones en otras ciudades como Valencia, Zaragoza, Barcelona o Ibiza en la Fiesta Aniversario del Club Fabuloso en el Hotel Pikes o en varias ediciones del FIB (Festival Internacional de Benicàssim).\n\nComo últimas colaboraciones, fue elegida en la primera edición del Festival Paraíso como Dj de continuidad en 2018.\n\nAparte del clubbing, ha actuado también en museos como el Musac de León, en la presentación del libro “Benicàssim El Festival” tras el concierto de Jay-Jay Johanson, el Museo Nacional Centro de Arte Reina Sofía (Nubel) y en las Fiestas de San Isidro 2017 en el emblemático Parque del Retiro.\n\nHa pinchado para una extensa lista de marcas y eventos como: Stand Vogue Mercedes Fashion Week 2012, Fib Club Madrid Fashion Week 2009, Stella McCartney, Mango, Shon Mott, entre otras.",
+      "en": "Music is Alicia's main artery. She began her career as a DJ in 2006 in Madrid's alternative scene.\n\nShe has balanced different residencies in clubs in the capital such as Nells Madrid, Low Club, Independance, Elástico, Fabuloso Club, etc. She has also toured Spain with sessions in other cities such as Valencia, Zaragoza, Barcelona, or Ibiza at the Anniversary Party of Club Fabuloso at the Pikes Hotel or in several editions of the FIB (Benicàssim International Festival).\n\nAs for recent collaborations, she was chosen in the first edition of the Paraíso Festival as continuity DJ in 2018.\n\nBesides clubbing, she has performed in museums such as Musac in León, at the presentation of the book \"Benicàssim El Festival\" after Jay-Jay Johanson's concert, the Reina Sofía National Art Center (Nubel), and at the San Isidro 2017 festivities in the emblematic Retiro Park.\n\nShe has DJ'd for an extensive list of brands and events such as: Stand Vogue Mercedes Fashion Week 2012, Fib Club Madrid Fashion Week 2009, Stella McCartney, Mango, Shon Mott, among others."
     },
     gallery: [
-      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_4_Damian-2.png',
-      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_5_2021-09-22-13_42_26.8100200-01-900x1200-main.jpg',
-      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_6_2021-09-10-16_29_56.0660200-scaled-900x1200.jpg',
-      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_6_WhatsApp-Image-2023-05-17-at-14.46.48-900x1200.jpg',
-      '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_7_WhatsApp-Image-2023-05-17-at-14.47.21-1-900x1200.jpg'
+      '/Talents/JVV _ ALICIA GALUZIS/imgi_4_VioletaxMango_17.jpg',
+      '/Talents/JVV _ ALICIA GALUZIS/imgi_6_GALUZIS-2-main.png',
+      '/Talents/JVV _ ALICIA GALUZIS/imgi_7_GALUZIS.png',
+      '/Talents/JVV _ ALICIA GALUZIS/imgi_8_n615963398_1354512_3514.png'
     ],
     "stats": {
       "es": {
-        "Profesión": "Taekwondista WT / Activista LGTBIQ+",
-        "Logros": "Creador del primer Club LGTBIQ+ de Taekwondo federado",
-        "Embajador": "Candidatura Valencia Juegos Diversidad 2026"
+        "Profesión": "DJ",
+        "Trayectoria": "DJ desde 2006",
+        "Eventos Clave": "FIB, Festival Paraíso, Stand Vogue MBFW"
       },
       "en": {
-        "Profession": "Taekwondo WT Athlete / LGTBIQ+ Activist",
-        "Achievements": "Creator of the first federated LGTBIQ+ Taekwondo club",
-        "Ambassador": "Valencia Diversity Games 2026 Candidacy"
+        "Profession": "DJ",
+        "Career": "DJ since 2006",
+        "Key Events": "FIB, Paraíso Festival, Vogue Stand MBFW"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Candidatura Juegos Olímpicos de la Diversidad Valencia 2026",
-          "en": "Valencia Diversity Olympic Games 2026 Bid"
+          "es": "DJ en continuidad (Festival Paraíso)",
+          "en": "Continuity DJ (Paraíso Festival)"
         },
-        "year": "2024-2026"
+        "year": "2018"
       },
       {
         "title": {
-          "es": "Fundación del primer Club de Taekwondo LGTBIQ+ federado",
-          "en": "Founding of the first federated LGTBIQ+ Taekwondo Club"
+          "es": "Sesión en Pikes Hotel (Ibiza - Club Fabuloso)",
+          "en": "Session at Pikes Hotel (Ibiza - Club Fabuloso)"
         },
-        "year": "2021"
+        "year": "2016"
+      },
+      {
+        "title": {
+          "es": "DJ oficial en Stand Vogue Mercedes Fashion Week",
+          "en": "Official DJ at Vogue Mercedes Fashion Week Stand"
+        },
+        "year": "2012"
       }
     ]
   },
+
   {
     "id": 30,
     "name": "MJE",
-    "type": "artists",
+    type: ['djs'],
     "location": "Lugano / Madrid",
     image: '/Talents/JVV _ MJE/imgi_4_aj3R7LvR-900x1200-main.jpg',
     "description": {

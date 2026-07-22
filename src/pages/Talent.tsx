@@ -11,7 +11,7 @@ export default function Talent() {
 
   const filteredTalent = filter === 'all' 
     ? TALENT_DATA 
-    : TALENT_DATA.filter(item => item.type === filter);
+    : TALENT_DATA.filter(item => item.type.includes(filter));
 
   return (
     <div className="pt-40 pb-32 px-6 max-w-7xl mx-auto">
@@ -29,7 +29,7 @@ export default function Talent() {
         </motion.div>
         
         <div className="flex flex-nowrap gap-x-8 border-b border-white/5 pb-4 overflow-x-auto no-scrollbar scroll-smooth">
-          {(['all', 'models', 'actors', 'artists'] as TalentType[]).map((cat) => (
+          {(['all', 'emprendedoras', 'djs', 'cantantes', 'actores', 'comunicadores', 'fotografos', 'directores', 'pintoras', 'deportistas'] as TalentType[]).map((cat) => (
             <button
               key={cat}
               onClick={() => setFilter(cat)}

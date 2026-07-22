@@ -180,7 +180,7 @@ export default function Home() {
       <section className="py-24 bg-black border-t border-b border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-12">
           <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
-            {language === 'es' ? 'Marcas Colaboradoras' : 'Partner Brands'}
+            {language === 'es' ? 'Clientes' : 'Clients'}
           </span>
         </div>
         <div className="relative w-full flex items-center overflow-hidden">
