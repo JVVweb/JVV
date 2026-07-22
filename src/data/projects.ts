@@ -80,8 +80,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Colaboración entre la marca española de ropa con tecnología textil Sepiia y la emprendedora Yaiza Canosa, la empresaria Natalie Batlle y el decorador Lorenzo Castillo.',
       en: 'Collaboration between the Spanish clothing brand with textile technology Sepiia and entrepreneur Yaiza Canosa, businesswoman Natalie Batlle, and decorator Lorenzo Castillo.'
     },
-    image: '/projects/sepiia-technology.jpg',
-    images: ['/projects/sepiia-technology.jpg']
+    image: '/sepiia-yaiza.jpg',
+    images: ['/sepiia-yaiza.jpg']
   },
   {
     id: 6,
@@ -124,8 +124,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Colaboración entre la emprendedora Yaiza Canosa y la marca española de ropa con tecnología textil Sepiia.',
       en: 'Collaboration between entrepreneur Yaiza Canosa and the Spanish clothing brand with textile technology Sepiia.'
     },
-    image: '/projects/sepiia-yaiza.jpg',
-    images: ['/projects/sepiia-yaiza.jpg']
+    image: '/sepiia-yaiza.jpg',
+    images: ['/sepiia-yaiza.jpg']
   },
   {
     id: 9,
