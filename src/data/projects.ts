@@ -177,8 +177,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'El pasado mes de agosto, tuvimos la oportunidad de colaborar en la edición del ELLA Festival Mallorca 2025, un evento que celebra la diversidad, la cultura y la innovación.',
       en: 'Last August, we had the opportunity to collaborate in the edition of the ELLA Festival Mallorca 2025, an event that celebrates diversity, culture and innovation.'
     },
-    image: '/ella-stairs.jpg',
-    images: ['/ella-stairs.jpg', '/ella festival.jpg']
+    image: '/ella festival.jpg',
+    images: ['/ella festival.jpg']
   },
   {
     id: 13,

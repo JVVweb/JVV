@@ -62,9 +62,8 @@ const EVENTS_DETAILS_DATA = [
       es: 'El pasado mes de agosto, tuvimos la oportunidad de colaborar en la edición del ELLA Festival Mallorca 2025, un evento que celebra la diversidad, la cultura y la innovación.\nNos ocupamos de generar espacios interesantes dentro del beach club que fue el punto de encuentro durante ese fin de semana. Junto a Hammam Al Ándalus, creamos un santuario de bienestar, ofreciendo momentos de relajación y conexión a través de una experiencia sensorial inmersiva y con Júpiter Bornay y Greta Jewelry transformamos el arte en emoción, presentando la joyería como una forma de expresión artística con piezas atemporales. Activaciones diferentes, un mismo propósito: crear conexiones auténticas y memorables.',
       en: 'Last August, we had the opportunity to collaborate in the edition of the ELLA Festival Mallorca 2025, an event that celebrates diversity, culture and innovation.\nWe took care of generating interesting spaces within the beach club that was the meeting point during that weekend. Together with Hammam Al Ándalus, we create a sanctuary of well-being, offering moments of relaxation and connection through an immersive sensory experience and with Júpiter Bornay and Greta Jewelry we transform art into emotion, presenting jewelry as a form of artistic expression with timeless pieces. Different activations, the same purpose: create authentic and memorable connections.'
     },
-    image: '/ella-stairs.jpg',
+    image: '/ella festival.jpg',
     gallery: [
-      '/ella-stairs.jpg',
       '/ella festival.jpg'
     ]
   },

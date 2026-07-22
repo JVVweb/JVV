@@ -11,7 +11,7 @@ const HOTEL_PROJECTS = [
     location: 'Palma de Mallorca',
     descEs: 'PR y selector musical del espacio, así como del restaurante Destape y el club Dos Rombos, posicionados en el histórico espacio del Club Mutante.',
     descEn: 'PR and music selector of the space, as well as the Destape restaurant and Dos Rombos club, positioned in the historic space of Club Mutante.',
-    images: ['/hotel-terreno-barrio.jpg', '/terreno-club.jpg'],
+    images: ['/hotel-terreno-barrio.jpg'],
     typeEs: 'PR & Dirección Musical',
     typeEn: 'PR & Musical Direction'
   },
