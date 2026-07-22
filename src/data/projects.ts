@@ -204,8 +204,13 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Shooting realizado por nuestro fotógrafo Ayub el Kadmiri en la convocatoria de prensa para la presentación de Punto Nemo, la serie de Prime Video protagonizada por Sara Matos, durante su visita promocional a Madrid.',
       en: 'Shooting by our photographer Ayub el Kadmiri at the press call for the presentation of Punto Nemo, the Prime Video series starring Sara Matos, during her promotional visit to Madrid.'
     },
-    image: '/projects/sara-matos.jpg',
-    images: ['/projects/sara-matos.jpg']
+    image: '/sara-matos-1.jpg',
+    images: [
+      '/sara-matos-1.jpg',
+      '/sara-matos-2.jpg',
+      '/sara-matos-3.jpg',
+      '/sara-matos-4.jpg'
+    ]
   },
   {
     id: 16,
