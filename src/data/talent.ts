@@ -1516,7 +1516,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 23,
     "name": "Prostíbulo Poético",
-    type: [],
+    type: ['cantantes'],
     "location": "Barcelona / Madrid",
     image: '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
     "description": {

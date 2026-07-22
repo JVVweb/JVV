@@ -78,10 +78,13 @@ export default function Home() {
           {activeBanners.map((banner, index) => (
             <div
               key={banner}
-              className={`absolute inset-0 bg-cover bg-center transition-all duration-[2000ms] ${
+              className={`absolute inset-0 bg-cover transition-all duration-[2000ms] ${
                 index === bgIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
               }`}
-              style={{ backgroundImage: `url('${banner}')` }}
+              style={{ 
+                backgroundImage: `url('${banner}')`,
+                backgroundPosition: banner.includes('bottega') ? 'center bottom' : 'center'
+              }}
             />
           ))}
         </div>
