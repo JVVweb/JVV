@@ -26,17 +26,25 @@ export default function Contact() {
               <p className="text-2xl font-light">info@jvv.com.es</p>
               <p className="text-xl font-light opacity-40">(+34) 618 785 351</p>
             </div>
-            <div>
-              <h4 className="text-xs uppercase tracking-wider opacity-30 mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
+            <div className="flex flex-col space-y-2">
+              <h4 className="text-xs uppercase tracking-wider opacity-30 mb-2 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
                 {t('contact.follow')}
               </h4>
               <a 
                 href="https://www.instagram.com/jvv_pr?igsh=bW1hcTZ6ajhsYWVz" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-xl font-light hover:opacity-60 transition-opacity"
+                className="text-xl font-light hover:opacity-60 transition-opacity w-fit"
               >
                 @jvv_pr
+              </a>
+              <a 
+                href="https://www.linkedin.com/company/jvv-selection/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xl font-light hover:opacity-60 transition-opacity w-fit"
+              >
+                JVV Selection (LinkedIn)
               </a>
             </div>
           </div>
