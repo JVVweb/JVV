@@ -20,8 +20,8 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Colaboración entre Adidas Originals Eyewear y la DJ Ana Julieta para una acción de visibilidad de marca.',
       en: 'Collaboration between Adidas Originals Eyewear and DJ Ana Julieta for a brand visibility action.'
     },
-    image: '/adidas-ana-julieta.png',
-    images: ['/adidas-ana-julieta.png']
+    image: '/adidas-ana-julieta.jpg',
+    images: ['/adidas-ana-julieta.jpg']
   },
   {
     id: 2,

@@ -52,7 +52,7 @@ export default function Projects() {
                 )}
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-700 flex items-center justify-center z-20">
                    <span className="text-xs uppercase tracking-tight border border-white/40 px-6 py-3 rounded-full">
-                     {language === 'es' ? 'Explorar' : 'Explore View'}
+                     {language === 'es' ? 'Ver Proyecto' : 'View Project'}
                    </span>
                 </div>
               </Link>
@@ -68,9 +68,9 @@ export default function Projects() {
                   </>
                 )}
               </div>
-              <h2 className="text-4xl md:text-6xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
+              <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
               <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
-                {language === 'es' ? 'Explorar Proyecto' : 'Explore Project'}
+                {language === 'es' ? 'Ver Proyecto' : 'View Project'}
               </Link>
             </div>
           </motion.div>
