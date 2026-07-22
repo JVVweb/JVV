@@ -190,8 +190,11 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Ponencia de Valeria Vegas sobre diversidad sexual con motivo del Mes del Orgullo, celebrada en Torrejón de Ardoz.',
       en: 'Valeria Vegas lecture on sexual diversity on the occasion of Pride Month, held in Torrejón de Ardoz.'
     },
-    image: '/projects/valeria-orgullo.jpg',
-    images: ['/projects/valeria-orgullo.jpg']
+    image: '/valeria-orgullo-1.jpg',
+    images: [
+      '/valeria-orgullo-1.jpg',
+      '/valeria-orgullo-2.jpg'
+    ]
   },
   {
     id: 14,
