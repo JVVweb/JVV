@@ -40,8 +40,8 @@ export default function Footer() {
               {language === 'es' ? 'Redes' : 'Social'}
             </h4>
             <div className="flex space-x-6">
-              <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Instagram className="w-5 h-5" /></a>
-              <a href="#" className="opacity-40 hover:opacity-100 transition-opacity"><Linkedin className="w-5 h-5" /></a>
+              <a href="https://www.instagram.com/jvv_pr?igsh=bW1hcTZ6ajhsYWVz" target="_blank" rel="noopener noreferrer" className="opacity-40 hover:opacity-100 transition-opacity"><Instagram className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/company/jvv-representaci%C3%B3n-y-eventos/" target="_blank" rel="noopener noreferrer" className="opacity-40 hover:opacity-100 transition-opacity"><Linkedin className="w-5 h-5" /></a>
             </div>
           </div>
         </div>

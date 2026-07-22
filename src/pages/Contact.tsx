@@ -30,7 +30,14 @@ export default function Contact() {
               <h4 className="text-xs uppercase tracking-wider opacity-30 mb-4 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
                 {t('contact.follow')}
               </h4>
-              <p className="text-xl font-light">@jvv_pr</p>
+              <a 
+                href="https://www.instagram.com/jvv_pr?igsh=bW1hcTZ6ajhsYWVz" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-xl font-light hover:opacity-60 transition-opacity"
+              >
+                @jvv_pr
+              </a>
             </div>
           </div>
         </motion.div>

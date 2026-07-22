@@ -62,13 +62,10 @@ const EVENTS_DETAILS_DATA = [
       es: 'El pasado mes de agosto, tuvimos la oportunidad de colaborar en la edición del ELLA Festival Mallorca 2025, un evento que celebra la diversidad, la cultura y la innovación.\nNos ocupamos de generar espacios interesantes dentro del beach club que fue el punto de encuentro durante ese fin de semana. Junto a Hammam Al Ándalus, creamos un santuario de bienestar, ofreciendo momentos de relajación y conexión a través de una experiencia sensorial inmersiva y con Júpiter Bornay y Greta Jewelry transformamos el arte en emoción, presentando la joyería como una forma de expresión artística con piezas atemporales. Activaciones diferentes, un mismo propósito: crear conexiones auténticas y memorables.',
       en: 'Last August, we had the opportunity to collaborate in the edition of the ELLA Festival Mallorca 2025, an event that celebrates diversity, culture and innovation.\nWe took care of generating interesting spaces within the beach club that was the meeting point during that weekend. Together with Hammam Al Ándalus, we create a sanctuary of well-being, offering moments of relaxation and connection through an immersive sensory experience and with Júpiter Bornay and Greta Jewelry we transform art into emotion, presenting jewelry as a form of artistic expression with timeless pieces. Different activations, the same purpose: create authentic and memorable connections.'
     },
-    image: '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg',
+    image: '/ella-stairs.jpg',
     gallery: [
-      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_16_PIB-1.jpg',
-      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_19_PIB-2.jpg',
-      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_22_PIB-3.jpg',
-      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_25_PIB-4.jpg',
-      '/Events/JVV _ PALMA INTERNATIONAL BOAT SHOW 2025/imgi_28_PIB-5_portada.jpg'
+      '/ella-stairs.jpg',
+      '/ella festival.jpg'
     ]
   },
   {
@@ -526,7 +523,7 @@ const EVENTS_DETAILS_DATA = [
       es: 'Mango\nnos encargó la producción del evento especial de la noche\nShopping Gauean\nen su tienda de la calle Fuenterrabia 15 en San Sebastian. Fueron muchas las personas que se acercaron y escucharon la música\nnon stop\ndel\ndj Alverto Sánchez\ny disfrutaron de descuentos y sorpresas.',
       en: 'Handle\nWe were commissioned to produce the evening\'s special event.\nShopping Gauean\nin its store on 15 Fuenterrabia Street in San Sebastian. Many people came and listened to the music.\nnon stop\nof the\ndj Alverto Sánchez\nand enjoyed discounts and surprises.'
     },
-    image: '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10_portada.jpg',
+    image: '/mango-lencero.jpg',
     gallery: [
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_10_Mango_donosti_06.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_11_Mango_donosti_05.jpg',
@@ -536,12 +533,12 @@ const EVENTS_DETAILS_DATA = [
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_15_Mango_donosti_12.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_16_Mango_donosti_01.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_17_Mango_donosti_17.jpg',
-      '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_18_Mango_donosti_11.jpg',
+      
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_19_Mango_donosti_1.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_6_Mango_donosti_09.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_7_Mango_donosti_08.jpg',
       '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_8_Mango_donosti_07.jpg',
-      '/Events/JVV _ MANGO x SHOPPING GAUEAN DONOSTI/imgi_9_Mango_donosti_10_portada.jpg'
+      '/mango-lencero.jpg'
     ]
   },
   {

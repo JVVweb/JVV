@@ -46,12 +46,12 @@ export const TALENT_DATA: Talent[] = [
     ],
     "stats": {
       "es": {
-        "Profesión": "Escritora / Comunicadora / Conductora",
+        "Profesión": "Escritora / Comunicadora",
         "Estudios": "Comunicación Audiovisual",
         "Destacado": "Veneno, Vestidas de azul, Libérate"
       },
       "en": {
-        "Profession": "Writer / Communicator / Host",
+        "Profession": "Writer / Communicator",
         "Education": "Audiovisual Communication",
         "Notable": "Veneno, Vestidas de azul, Libérate"
       }
@@ -114,16 +114,10 @@ export const TALENT_DATA: Talent[] = [
     ],
     "stats": {
       "es": {
-        "Altura": "189cm",
-        "Ojos": "Marrones",
-        "Idiomas": "ES, EN, CAT",
-        "Agencias": "JVV Agency"
+        "Idiomas": "ES, EN, CAT"
       },
       "en": {
-        "Height": "189cm",
-        "Eyes": "Brown",
-        "Languages": "ES, EN, CAT",
-        "Agencies": "JVV Agency"
+        "Languages": "ES, EN, CAT"
       }
     },
     "projects": [
@@ -166,7 +160,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 3,
     "name": "Andrea Tivadar",
     type: ['actores'],
-    "location": "Londres / Barcelona",
+    "location": "Barcelona / Londres",
     image: '/Talents/JVV _ ANDREA TIVADAR/imgi_19_3C4A0940-768x1152-main.jpg',
     "description": {
       "es": "Andrea Tivadar es una actriz británica de origen rumano que actualmente divide su tiempo entre Londres y Barcelona. Decidió cambiar de carrera al graduarse en la Universidad ‘QMUL’- Escuela de Ciencias e Ingeniería de Materiales. Después de terminar su formación en 2012, debutó en el papel de Pam, en la película española ‘’Las aventuras de Jesús María Cristóbal Pequeño’’.\n\nComenzó a cantar a los 6 años y en marzo de 2015 fue invitada a cantar con Poncho, una banda argentina, en su concierto en Barcelona. Ese mismo año, Andrea apareció en el video musical “Elle m’a aimé” de Kendji Girac que fue recibido con más de 80 millones de visitas en YouTube. El 2016 estuvo marcado por su gira promocional para Kingsglaive: Final Fantasy XV para el cual hizo paneles en el Festival Internacional de Cine de ComiCon San Diego, Los Ángeles y Sitges.\n\nAndrea interpreta el papel principal en la producción española “Blood Metal Revenge” que estuvo en la competencia oficial en el Festival de Sitges 2019. Además, apareció en 2 episodios de la exitosa serie de televisión “Killing Eve” (temporada 2) de HBO. Por último, pero no menos importante, Andrea es el personaje principal de la película “Safe Inside”, lanzada en 2020 por la cual fue nominada para 2 premios a “Mejor Actriz” en festivales de EUA, y protagoniza la película “Lumina”, dirigida por Gino McKoy, encarnando a Dellah.\n\nPor segunda vez, es la imagen internacional de la marca de relojes Festina junto a Gerard Butler. Además, en 2019 protagonizó una editorial en Vogue España durante la celebración del Orgullo.\n\nAndrea habla inglés, español, rumano y francés.\n\nSus dos últimos proyectos han sido ‘’Maté a un Tipo’’, una obra de teatro en el Espacio R (Barcelona), y ‘’Mi cuerpo mi casa’’, una pieza de danza Butó junto a Aymara Padrón, dirigidas por Natalia López Santa Cruz.\n\nAndrea ha sido elegida como embajadora de la firma italiana de ceremonia, Antonio Riva, durante la semana Bridal 2021 en Barcelona, cerrando su desfile junto al diseñador.\n\nEs imagen mundial de Lindt y trabajó como modelo para marcas como Seat.\n\nRecientemente ha trabajado en dos grandes proyectos de la plataforma streaming Netflix, “Si Lo Hubiera Sabido” (Netlifx España) y en la temporada 2 de “Warrior Nun” (Netflix USA).",
@@ -319,13 +313,11 @@ export const TALENT_DATA: Talent[] = [
     "stats": {
       "es": {
         "Profesión": "Cantante / DJ / Activista",
-        "Bandas": "Las Chillers, Monterrosa",
-        "Plataformas": "Movistar+, W Ibiza"
+        "Bandas": "Las Chillers, Monterrosa"
       },
       "en": {
         "Profession": "Singer / DJ / Activist",
-        "Bands": "Las Chillers, Monterrosa",
-        "Platforms": "Movistar+, W Ibiza"
+        "Bands": "Las Chillers, Monterrosa"
       }
     },
     "projects": [
@@ -363,7 +355,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 5,
     "name": "Pablo Erroz",
     type: ['directores'],
-    "location": "Palma de Mallorca",
+    "location": "Madrid / Palma de Mallorca",
     image: '/Talents/JVV _ PABLO ERROZ/imgi_10_PF25_Erroz_0924-1-scaled.jpg',
     "description": {
       "es": "Pablo Erroz es uno de los diseñadores de moda más prometedores de España. Nacido en Palma de Mallorca y formado en Barcelona, lanzó su propia etiqueta en 2010 tras adquirir experiencia en prendas de exterior y piel con Inditex. El trabajo de Erroz se caracteriza por la creación de piezas unisex y atemporales dirigidas a personas con personalidad que valoran la moda ética y están dispuestas a invertir en prendas que perduren en el tiempo. Sus colecciones interpretan una fusión del estilo urbano con un lujo fácil y sofisticado, adaptándose a las tendencias contemporáneas.\n\nSus designs abarcan ropa y artículos de piel con siluetas audaces y deportivas, reflejando un enfoque artesanal que armoniza el pasado y el futuro. Esta propuesta anual, que fusiona verano e invierno, busca eliminar las temporadas tradicionales y promover un consumo más consciente y respetuoso con el medio ambiente.\n\nA sus 34 años, Pablo Erroz se ha consolidado como una de las voces más influyentes de la moda en España, defendiendo la idea de que la moda es un medio de comunicación capaz de transformar la sociedad. Su colaboración con Xiaomi fusiona a la perfección moda y tecnología, mostrando productos como la Smart Band 8 Pro. Erroz considera que la tecnología es clave en su trabajo, mejorando la conectividad y la eficiencia. Para él, la moda es un puente que conecta personas y empresas, abordando temas de sostenibilidad y uso responsable de la tecnología.\n\nCabe destacar que Pablo Erroz ha diseñado y supervisado la personalización de la carroza de Air Europa para el desfile del Orgullo LGTBIQ+ de Madrid 2024. Esta colaboración refleja la ética multidisciplinar y colaborativa de su casa de moda, que también se ha expandido a través de asociaciones con sectores como la tecnología y la aviación. El diseño de la carroza fusiona la identidad de Air Europa y la marca Erroz, destacando elementos como el azul y blanco del cielo, la libertad y referencias a ciudades icónicas. Esta colaboración refuerza las alianzas estratégicas entre ambas entidades, permitiéndoles seguir explorando nuevos horizontes.\n\nSorprende en Mercedes-Benz Fashion Week Madrid 2025 con una colección inspirada en la energía vibrante de los hoteles urbanos. Sin temporadas, apuesta por la versatilidad y un enfoque unisex, reafirmando su compromiso con la sostenibilidad al minimizar el impacto ambiental y priorizar la durabilidad y atemporalidad de cada prenda.\n\nAdemás, Erroz ha colaborado con marcas destacadas como Xiaomi y Montblanc, y ha sido entrevistado en RTVE y La Razón España, consolidando aún más su reputación en la industria de la moda.",
@@ -548,7 +540,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 13,
     "name": "Natalie Batlle",
     type: ['emprendedoras', 'comunicadores'],
-    "location": "Chicago / Barcelona",
+    "location": "Barcelona / Chicago",
     image: '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
     "description": {
       "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Conraíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto.\n\nComo ponente internacional, Natalie inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
@@ -762,7 +754,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 18,
     "name": "Diego Osorio",
     type: ['actores'],
-    "location": "Nueva York",
+    "location": "Madrid / Nueva York",
     image: '/Talents/JVV _ DIEGO OSORIO/imgi_5_image-2-main.png',
     "description": {
       "es": "Diego lleva varios años dedicado en pleno a su carrera como actor, tanto formándose en EEUU como participando en ficciones como «Drug Mule» o «Roshambo». Desde Nueva York, donde reside, no para de sumarse y crear proyectos interesantes.\n\nAdemás también hemos podido verle recientemente en el especial de Callejeros Viajeros de Nueva York donde pudo hablar sobre su carrera como actor y su vida en América.\n\nHa colaborado con un sinfín de marcas y ha aparecido en casi todas las revistas más importantes de nuestro país. En esta etapa está encantado de sumarse a acciones afines a su perfil y su trayectoria y espera que también en nuestro país se le conozca más en detalle y conseguir emocionar y transmitir a quienes le sigan a través de series, fashion films, cortos y películas.",
@@ -1205,10 +1197,6 @@ export const TALENT_DATA: Talent[] = [
         },
         "year": "2016"
       }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/b8eZydt519I",
-      "https://www.youtube.com/embed/jnHPE1AK6es"
     ]
   },
 
@@ -1269,7 +1257,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 29,
     "name": "Damián López",
     type: ['comunicadores', 'deportistas'],
-    "location": "Buenos Aires / Madrid",
+    "location": "Madrid / Buenos Aires",
     image: '/Talents/JVV _ DAMIÁN LÓPEZ/imgi_5_2021-09-22-13_42_26.8100200-01-900x1200-main.jpg',
     "description": {
       "es": "Damián López es argentino, nacido en Buenos Aires en 1987, de familia emigrante que cruzo el océano en épocas de crisis europeas descendiente de portugueses, italianos y españoles.\n\nHa dedicado su vida al deporte y al activismo por los derechos de las personas del colectivo LGTB+, en sus comienzos deportivos comenzó su carrera en Taekwondo ITF en donde consiguió numerosos logros nacionales e internacionales. Actualmente es deportista federado por España en la que se desempeña como atleta de Taekwondo WT.\n\nA los 23 años tras recuperarse de un cáncer con metástasis que le pronosticaba una esperanza de vida del 35%, decidió dedicar su vida por completo al activismo para mostrar al mundo que el deporte puede cambiar tu vida.\n\nActualmente es el primer activista por los derechos LGTBIQ+ de Taekwondo del mundo, es el creador y entrenador del primer Club LGTBIQ+ federado de Taekwondo del mundo, presidente de la primera secretaria de diversidad dentro de un ente que regula el Taekwondo en España, es también la imagen deportiva y embajador de la candidatura de valencia para albergar los juegos olímpicos de la diversidad en el año 2026. Fue También el impulsor de la creación del primer departamento de diversidad dentro de una institución que regula el Taekwondo a nivel nacional en Argentina.",
@@ -1403,7 +1391,7 @@ export const TALENT_DATA: Talent[] = [
     "id": 28,
     "name": "Pablo García",
     type: ['fotografos'],
-    "location": "Denia / Madrid",
+    "location": "Madrid",
     image: '/Talents/JVV _ PABLO GARCÍA/imgi_4_Pablo-principale-main.jpg',
     "description": {
       "es": "Pablo García nace en Denia en 1994. Con menos de 30 años ya ha vivido en grandes capitales como Londres, Madrid o Barcelona. Desde bien pequeño tiene un interés especial por el arte y empieza a dibujar cosas sencillas en los primeros años de su vida. Es a los 16 años cuando una cámara digital se cruza en su camino y comienza a realizar fotos de paisaje, pasión que continuará cuando un año después consigue su primera réflex y se sumerge de lleno en el mundo de la fotografía. Se describe con un estilo muy natural, busca mostrar quien es su modelo a través de una mirada o un gesto. Su trabajo le ha llevado ya a trabajar para revistas como GQ, Telva, Vanidad o Vein en Milán, Londres, París o Barcelona. Uno de sus últimos trabajos ha sido con Dior Beauty donde realizó una sesión para presentar los nuevos productos de la firma de moda de la mano de la actriz y modelo, Godeliv. Además, colabora constantemente con marcas como The Body Shop.",
