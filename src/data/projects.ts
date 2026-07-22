@@ -46,8 +46,11 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Yaiza Canosa como ponente en Show Me The Money en Madrid, el evento dedicado a finanzas, inversión y economía que reúne a expertos y líderes del sector.',
       en: 'Yaiza Canosa as a speaker at Show Me The Money in Madrid, the event dedicated to finance, investment, and economy that gathers experts and industry leaders.'
     },
-    image: '/projects/show-the-money.jpg',
-    images: ['/projects/show-the-money.jpg']
+    image: '/show-the-money-1.jpg',
+    images: [
+      '/show-the-money-1.jpg',
+      '/show-the-money-2.jpg'
+    ]
   },
   {
     id: 4,
@@ -159,8 +162,11 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Yaiza Canosa como ponente en Woman Rocks, el evento dedicado al liderazgo y al emprendimiento femenino celebrado en Madrid.',
       en: 'Yaiza Canosa as a speaker at Woman Rocks, the event dedicated to leadership and female entrepreneurship held in Madrid.'
     },
-    image: '/projects/woman-rocks.jpg',
-    images: ['/projects/woman-rocks.jpg']
+    image: '/woman-rocks-1.jpg',
+    images: [
+      '/woman-rocks-1.jpg',
+      '/woman-rocks-2.jpg'
+    ]
   },
   {
     id: 12,
