@@ -71,8 +71,13 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Colaboración entre la marca española de ropa con tecnología textil Sepiia y la emprendedora Yaiza Canosa y el decorador Lorenzo Castillo.',
       en: 'Collaboration between the Spanish clothing brand with textile technology Sepiia and entrepreneur Yaiza Canosa and interior designer Lorenzo Castillo.'
     },
-    image: '/sepiia-yaiza.jpg',
-    images: ['/sepiia-yaiza.jpg']
+    image: '/sepiia-1.jpg',
+    images: [
+      '/sepiia-1.jpg',
+      '/sepiia-2.jpg',
+      '/sepiia-3.jpg',
+      '/sepiia-4.jpg'
+    ]
   },
   {
     id: 5,
