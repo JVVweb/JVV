@@ -136,8 +136,13 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Participación de Yaiza Canosa en el evento organizado por CEGID en Málaga.',
       en: 'Participation of Yaiza Canosa in the event organized by CEGID in Malaga.'
     },
-    image: '',
-    images: []
+    image: '/cegid-1.jpg',
+    images: [
+      '/cegid-1.jpg',
+      '/cegid-2.jpg',
+      '/cegid-3.jpg',
+      '/cegid-4.jpg'
+    ]
   },
   {
     id: 9,
