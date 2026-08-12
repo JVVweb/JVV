@@ -89,8 +89,11 @@ export const PROJECTS_DATA: Project[] = [
       es: 'Yaiza Canosa como ponente en el evento organizado por INFECAR en Gran Canaria.',
       en: 'Yaiza Canosa as a speaker at the event organized by INFECAR in Gran Canaria.'
     },
-    image: '',
-    images: []
+    image: '/infecar-1.jpg',
+    images: [
+      '/infecar-1.jpg',
+      '/infecar-2.jpg'
+    ]
   },
   {
     id: 6,
