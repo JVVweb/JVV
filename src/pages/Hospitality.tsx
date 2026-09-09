@@ -13,7 +13,8 @@ const HOTEL_PROJECTS = [
     descEn: 'PR and music selector of the space, as well as the Destape restaurant and Dos Rombos club, the latter positioned in the historic space of Club Mutante.',
     images: ['/hotel-terreno-barrio.jpg'],
     typeEs: 'PR & Dirección Musical',
-    typeEn: 'PR & Musical Direction'
+    typeEn: 'PR & Musical Direction',
+    link: 'https://www.terrenohotel.com/es/'
   },
   {
     id: 'cappuccino',
@@ -37,7 +38,8 @@ const HOTEL_PROJECTS = [
     descEn: 'The epitome of coastal luxury in the Mediterranean. Collaboration in brand positioning, exclusive events for VIP clients, and editorial communication campaigns.',
     images: ['/stregis.webp'],
     typeEs: 'Posicionamiento y Eventos',
-    typeEn: 'Positioning & Events'
+    typeEn: 'Positioning & Events',
+    link: 'https://www.marriott.com/es/hotels/pmixr-the-st-regis-mardavall-mallorca-resort/overview/'
   },
   {
     id: 'soho-house',
@@ -47,7 +49,8 @@ const HOTEL_PROJECTS = [
     descEn: 'Private members\' club and hotel of reference in Barcelona\'s Gothic quarter. We collaborate in the conceptualization of public relations campaigns and connection with local artistic talent.',
     images: ['/sohohouse.webp'],
     typeEs: 'Consultoría y RRPP',
-    typeEn: 'Consulting & PR'
+    typeEn: 'Consulting & PR',
+    link: 'https://www.sohohouse.com/houses/soho-house-barcelona'
   },
   {
     id: 'w-ibiza',
@@ -57,7 +60,8 @@ const HOTEL_PROJECTS = [
     descEn: 'A modern beachfront design sanctuary in Santa Eulalia. Creative programming for fashion events, music curation, and international press invitations.',
     images: ['/w-ibiza.jpeg'],
     typeEs: 'Curación Creativa y Eventos',
-    typeEn: 'Creative Curation & Events'
+    typeEn: 'Creative Curation & Events',
+    link: 'https://www.marriott.com/es/hotels/ibzwh-w-ibiza/overview/'
   },
   {
     id: 'me-madrid',
@@ -67,7 +71,8 @@ const HOTEL_PROJECTS = [
     descEn: 'Artistic hub in the emblematic Plaza de Santa Ana. Coordination of premium events, fashion presentations, and brand activations with high media impact.',
     images: ['/hotel-me-new.jpg'],
     typeEs: 'Activación de Marca',
-    typeEn: 'Brand Activation'
+    typeEn: 'Brand Activation',
+    link: 'https://mereinavictoria.madridhotels360.net/es/'
   }
 ];
 
