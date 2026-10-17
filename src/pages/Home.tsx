@@ -83,6 +83,46 @@ const ALLIANCE_LOGOS = [
   '/logos/alianzas/trabalhe-conosco-heineken.png',
 ];
 
+const getLogoClass = (logo: string) => {
+  if (logo.includes('ysl')) {
+    // Tall vertical monogram: make it prominent, crisp, and clear
+    return 'h-12 md:h-16 w-auto max-w-[120px]';
+  }
+  if (
+    logo.includes('cala-mijas') ||
+    logo.includes('body-shop') ||
+    logo.includes('uniqlo') ||
+    logo.includes('memadrid') ||
+    logo.includes('estrelladamm') ||
+    logo.includes('yodona') ||
+    logo.includes('mastercard') ||
+    logo.includes('jvv-ad') ||
+    logo.includes('h-038-m') ||
+    logo.includes('converse') ||
+    logo.includes('premios') ||
+    logo.includes('drmartins') ||
+    logo.includes('laroca')
+  ) {
+    // Compact, square, and badge logos
+    return 'h-9 md:h-11 w-auto max-w-[130px]';
+  }
+  if (
+    logo.includes('hilfiger') ||
+    logo.includes('moisesnieto') ||
+    logo.includes('analocking') ||
+    logo.includes('commes-des-garc') ||
+    logo.includes('voguebusiness') ||
+    logo.includes('the-objective') ||
+    logo.includes('esteelauder') ||
+    logo.includes('tiffanny')
+  ) {
+    // Wide banner wordmarks
+    return 'h-5 md:h-6 w-auto max-w-[180px] md:max-w-[210px]';
+  }
+  // Standard logos
+  return 'h-7 md:h-8 w-auto max-w-[150px] md:max-w-[180px]';
+};
+
 export default function Home() {
   const { t, language } = useLanguage();
   const [bgIndex, setBgIndex] = useState(0);
@@ -229,8 +269,8 @@ export default function Home() {
       </section>
 
       {/* Alliances Logo Marquee Section (ALIANZAS) */}
-      <section className="py-10 md:py-12 bg-black border-t border-b border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-6">
+      <section className="py-8 md:py-10 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-4">
           <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
             {t('alliances.title')}
           </span>
@@ -239,27 +279,27 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
-          <div className="animate-marquee flex w-max">
+          <div className="animate-marquee flex w-max items-center">
             {/* Set 1 */}
-            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-1-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                <div key={`alliance-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
                     src={logo}
                     alt="Alliance Partner"
-                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
                 </div>
               ))}
             </div>
             {/* Set 2 (loop copy) */}
-            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-2-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                <div key={`alliance-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
                     src={logo}
                     alt="Alliance Partner"
-                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
                 </div>
               ))}
@@ -305,8 +345,8 @@ export default function Home() {
       </section>
 
       {/* Brand Logo Marquee Section (MARCAS) */}
-      <section className="py-10 md:py-12 bg-black border-t border-b border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-6">
+      <section className="py-8 md:py-10 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-4">
           <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
             {t('clients.title')}
           </span>
@@ -315,27 +355,27 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
-          <div className="animate-marquee flex w-max">
+          <div className="animate-marquee flex w-max items-center">
             {/* Set 1 */}
-            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {CLIENT_LOGOS.map((logo, idx) => (
-                <div key={`logo-1-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                <div key={`logo-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
                     src={logo}
                     alt="Client Brand"
-                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
                 </div>
               ))}
             </div>
             {/* Set 2 (loop copy) */}
-            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {CLIENT_LOGOS.map((logo, idx) => (
-                <div key={`logo-2-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                <div key={`logo-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
                     src={logo}
                     alt="Client Brand"
-                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
                 </div>
               ))}
