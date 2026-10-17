@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import SEO from '../components/SEO';
 import { PROJECTS_DATA } from '../data/projects';
 
@@ -38,6 +38,34 @@ export default function ProjectDetail() {
             <p className="text-xl font-light opacity-60 leading-relaxed max-w-2xl">
               {project.description[language]}
             </p>
+            {(project.videoLinks && project.videoLinks.length > 0) ? (
+              <div className="mt-8 flex flex-wrap gap-4">
+                {project.videoLinks.map((v, idx) => (
+                  <a
+                    key={idx}
+                    href={v.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center space-x-3 px-6 py-3 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+                  >
+                    <span>{v.label[language]}</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                ))}
+              </div>
+            ) : project.videoUrl ? (
+              <div className="mt-8">
+                <a
+                  href={project.videoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-3 px-8 py-4 border border-white/20 rounded-full text-xs uppercase tracking-widest hover:bg-white hover:text-black hover:border-white transition-all duration-300"
+                >
+                  <span>{language === 'es' ? 'Ver Video del Proyecto' : 'Watch Project Video'}</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            ) : null}
           </div>
           <div className="lg:col-span-4 flex flex-col justify-end lg:items-end">
             <div className="space-y-4 text-right w-full">

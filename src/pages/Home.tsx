@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 const DESKTOP_BANNERS = [
   '/banner jvv.jpg',
-  '/JJJV BANNER.jpg',
+  '/valeria-movistar-hero.jpg',
   '/JJV BANNER.jpg',
   '/bottega-hero.jpg',
   '/kenzo-hero.jpg'
@@ -16,7 +16,7 @@ const DESKTOP_BANNERS = [
 
 const MOBILE_BANNERS = [
   '/Andrea 3.jpg',
-  '/JJJV BANNER.jpg',
+  '/valeria-movistar-hero.jpg',
   '/bottega-hero.jpg',
   '/kenzo-hero.jpg'
 ];
@@ -32,6 +32,27 @@ const CLIENT_LOGOS = [
   '/logo-aperol.svg',
   '/logo-loreal.svg',
   '/logo-roger-vivier.svg',
+];
+
+const ALLIANCE_LOGOS = [
+  '/alliance-vogue.svg',
+  '/alliance-condenast.svg',
+  '/alliance-gq.svg',
+  '/alliance-ad.svg',
+  '/alliance-icon.svg',
+  '/alliance-sonar.svg',
+  '/alliance-uniqlo.svg',
+  '/alliance-stella.svg',
+  '/alliance-hilfiger.svg',
+  '/alliance-levis.svg',
+  '/alliance-hm.svg',
+  '/alliance-drmartens.svg',
+  '/alliance-converse.svg',
+  '/alliance-estrelladamm.svg',
+  '/alliance-heineken.svg',
+  '/alliance-vespa.svg',
+  '/alliance-palomo.svg',
+  '/alliance-neo2.svg',
 ];
 
 export default function Home() {
@@ -179,11 +200,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Logo Marquee Section */}
-      <section className="py-24 bg-black border-t border-b border-white/5 overflow-hidden">
+      {/* Brand Logo Marquee Section (MARCAS) */}
+      <section className="py-24 bg-black border-t border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-12">
           <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
-            {language === 'es' ? 'Clientes' : 'Clients'}
+            {t('clients.title')}
           </span>
         </div>
         <div className="relative w-full flex items-center overflow-hidden">
@@ -212,6 +233,49 @@ export default function Home() {
                   <img
                     src={logo}
                     alt="Client Brand"
+                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                    style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Alliances Logo Marquee Section (ALIANZAS) */}
+      <section className="py-24 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-12">
+          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
+            {t('alliances.title')}
+          </span>
+        </div>
+        <div className="relative w-full flex items-center overflow-hidden">
+          {/* Side fade masks for elegant depth */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          
+          <div className="animate-marquee flex w-max">
+            {/* Set 1 */}
+            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+              {ALLIANCE_LOGOS.map((logo, idx) => (
+                <div key={`alliance-1-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Alliance Partner"
+                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
+                    style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Set 2 (loop copy) */}
+            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+              {ALLIANCE_LOGOS.map((logo, idx) => (
+                <div key={`alliance-2-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Alliance Partner"
                     className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
                     style={{ filter: 'brightness(0) invert(1)' }}
                   />

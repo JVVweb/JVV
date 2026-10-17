@@ -30,7 +30,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 1,
     "name": "Valeria Vegas",
-    type: ['comunicadores'],
+    type: ['comunicadores', 'emprendedoras'],
     "location": "Madrid",
     image: '/Talents/JVV _ VALERIA VEGAS/valeria-vegas-main.jpg',
     "description": {
@@ -297,7 +297,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 6,
     "name": "Rocío Saiz",
-    type: ['djs', 'comunicadores'],
+    type: ['djs', 'comunicadores', 'emprendedoras', 'cantantes', 'actores'],
     "location": "Madrid",
     image: '/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg',
     "description": {
@@ -543,8 +543,8 @@ export const TALENT_DATA: Talent[] = [
     "location": "Barcelona / Chicago",
     image: '/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg',
     "description": {
-      "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Conraíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto.\n\nComo ponente internacional, Natalie inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
-      "en": "Entrepreneur, brand consultant, and international speaker. Natalie stands out for her expertise in storytelling and building purpose-driven brands with high social impact and strong media presence.\n\nWith roots in Chicago and Spain, she connects her experience in strategic communications, alliances, and creative entrepreneurship to turn bold ideas into high-impact businesses. As an international speaker, Natalie inspires with talks on leadership, conscious entrepreneurship, brand storytelling, fundraising, and startup culture. She has collaborated with brands like LVMH, Bumble, and Under Armour, and has been recognized in media outlets such as Vogue, La Vanguardia, and Forbes. She lives between Chicago and Barcelona with her husband and two children, dedicated to connecting people and brands to create innovative, purpose-driven projects."
+      "es": "Emprendedora, inversora ángel y voz de referencia en el ecosistema internacional de negocios, tecnología y marcas de consumo con propósito. Con raíces entre Estados Unidos y España, ha desarrollado una trayectoria global conectando innovación, inversión, comunicación estratégica y creación de comunidad.\n\nEs fundadora de Juno House, el primer club social en Barcelona concebido para impulsar el liderazgo femenino y la conexión entre mujeres emprendedoras, directivas y creativas, que en pocos años se ha consolidado como un espacio de referencia para el talento y los negocios en la ciudad.\n\nA lo largo de su carrera ha trabajado y colaborado con marcas globales como LVMH, Bumble o Under Armour, y ha sido reconocida en medios como Forbes, Vogue o La Vanguardia por su visión sobre liderazgo, emprendimiento y construcción de marca.\n\nComo speaker y conectora dentro del ecosistema empresarial, participa habitualmente en foros internacionales compartiendo su experiencia en emprendimiento, inversión, comunidad, liderazgo femenino y el futuro del trabajo.",
+      "en": "Entrepreneur, angel investor, and a leading voice in the international ecosystem of business, technology, and purpose-driven consumer brands. With roots between the United States and Spain, she has developed a global career connecting innovation, investment, strategic communication, and community building.\n\nShe is the founder of Juno House, the first social club in Barcelona conceived to boost female leadership and connection among women entrepreneurs, executives, and creatives, which in just a few years has consolidated itself as a benchmark space for talent and business in the city.\n\nThroughout her career, she has worked and collaborated with global brands such as LVMH, Bumble, and Under Armour, and has been recognized in media outlets like Forbes, Vogue, and La Vanguardia for her vision on leadership, entrepreneurship, and brand building.\n\nAs a speaker and connector within the business ecosystem, she regularly participates in international forums sharing her experience in entrepreneurship, investment, community, female leadership, and the future of work."
     },
     gallery: [
       '/Talents/JVV _ NATALIE BATLLE/imgi_4_FOTO-1-NATALIE-900x724.jpg',
@@ -588,63 +588,14 @@ export const TALENT_DATA: Talent[] = [
   },
 
   {
-    "id": 11,
-    "name": "Ayub El Kadmiri",
-    type: ['fotografos'],
-    "location": "Madrid",
-    image: '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
-    "description": {
-      "es": "Ayub El Kadmiri, nacido en Marruecos, se mudó a Madrid con apenas 4 años. Desde bien pequeño se interesó por la fotografía, y a los pocos años se convirtió en algo esencial para él. Empezó en su adolescencia retratando a sus amigos con la cámara que su hermano le había prestado, y poco a poco al ver que la fotografía realmente le motivaba y apasionaba decidió dar un paso más grande y comprarse su propio equipo fotográfico, empezando a profesionalizar lo que primero fue solo un hobby.\n\nCon el paso de los años, su fotografía, al igual que él, ha ido evolucionando. Ha realizado proyectos en videoclips (de foto fija), en colecciones de moda, en eventos sociales…Ha trabajado en revistas como Icon Magazine, Metal Magazine y La Vie Magazine. Ha fotografiado en exclusiva a la actriz e influencer Sara Matos en su paso por España, para Icon Magazine ha fotografiado al futbolista Borja Iglesias, al actor Hugo Silva y al cantante Teo Lucadamo. Sigue empapándose de nuevas experiencias y se encuentra abierto a hacer todo tipo de proyectos.",
-      "en": "Ayub El Kadmiri, born in Morocco, moved to Madrid when he was just 4 years old. From a very young age he was interested in photography, and within a few years it became essential for him. He started in his adolescence portraying his friends with a camera lent by his brother, and gradually, seeing that photography really motivated and excited him, he decided to take a bigger step and buy his own equipment, starting to professionalize what was initially just a hobby.\n\nOver the years, his photography, like him, has evolved. He has carried out projects in music videos (still photography), fashion collections, social events... He has worked in magazines such as Icon Magazine, Metal Magazine, and La Vie Magazine. He has photographed actress and influencer Sara Matos exclusively during her visit to Spain, and for Icon Magazine he has photographed footballer Borja Iglesias, actor Hugo Silva, and singer Teo Lucadamo. He continues to soak up new experiences and is open to all kinds of projects."
-    },
-    gallery: [
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_4_FOTO-1-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_5_FOTO-2-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_6_FOTO-3-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_7_FOTO-4-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_87_image00001-e1712686860227-2048x2048-main.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_8_FOTO-5-AYUB.jpg',
-      '/Talents/JVV _ AYUB EL KADMIRI/imgi_9_FOTO-6-AYUB.jpg'
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Fotógrafo",
-        "Revistas": "Icon, Metal, La Vie",
-        "Colaboradores": "Hugo Silva, Sara Matos, Borja Iglesias"
-      },
-      "en": {
-        "Profession": "Photographer",
-        "Magazines": "Icon, Metal, La Vie",
-        "Collaborators": "Hugo Silva, Sara Matos, Borja Iglesias"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Fotografía editorial para Icon Magazine",
-          "en": "Editorial Photography for Icon Magazine"
-        },
-        "year": "2023"
-      },
-      {
-        "title": {
-          "es": "Sesión exclusiva con Sara Matos",
-          "en": "Exclusive Session with Sara Matos"
-        },
-        "year": "2023"
-      }
-    ]
-  },
-
-  {
     "id": 10,
     "name": "Pepa Charro (La Terremoto)",
-    type: ['cantantes', 'comunicadores'],
+    type: ['cantantes', 'comunicadores', 'djs', 'actores'],
     "location": "Palma de Mallorca",
     image: '/Talents/JVV _ PEPA CHARRO _ LA TERREMOTO DE ALCORCÓN/imgi_10_7j9a9754-1-1.jpg',
     "description": {
-      "es": "Entre mil mundos se encuentra Pepa Charro y su alterego La Terremoto de Alcorcón, con una larga trayectoria profesional que nace de la compañía teatral Diabéticas Aceleradas y que le lleva por derroteros como el más puro cabaret, el cine, el teatro, la televisión o la gastronomía de vanguardia.\n\nCon películas a sus espaldas como “Piedras” de Ramón Salazar, “Carta a Eva” de Agustí Villaronga o “Los Amantes pasajeros” de Pedro Almodóvar con quien colabora artísticamente en sus estrenos como maestra de ceremonias y coordinadora artística desde “Volver” acompañándole al Festival de Cannes con “La mala Educación” y “Julieta”.\n\nEntre sus últimos estrenos se encuentran las películas como ‘’Loli Tormenta’’ de Agustí Villaronga y “La Novia de América” de Alfonso Albacete.\n\nPresentadora de multitud de galas desde las galas “Shangay”, aniversario de la revista AD o cualquier evento LGTBIQ+ , colectivo con el que lleva trabajando después de más de 20 años en España, Italia, Inglaterra, Portugal, Bélgica, Francia o EEUU.\n\nSe atreve a hacer cameos con artistas de la talla de Fangoria o Hidrogenesse, a producir su propio espectáculo con la dirección de Antonia San Juan o a coordinar el cabaret del MACBA, confeccionar su propia pieza para el Museo de Arte Contemporáneo Es Baluard e inaugurar el MUSAC.\n\nEl entretenimiento  en diversos formatos es pieza clave para alcanzar popularidad concursante de programas de la talla de “Masterchef Celebrity” de TVE, “Tu cara me suena” o “Me resbala” de Antena 3 o presentadora de “Niquelaó” de la plataforma Netflix.\n\nProtagoniza la serie “Escenas de matrimonio” y “Fenómenos” de Antena 3 y colabora en otras como “Aída”, “Paquita Salas” o “Arde Madrid”, “Con el culo al aire” y “El Ministerio del tiempo”\n\nParticipa también siempre en tono de humor del programa de RNE “Tarde lo que tarde” después de haberlo sido de Onda Cero con “Surtido de Ibéricos” de la mano de Carlos Latre o “Lo que es la vida” con Nieves Herrero.\n\nCompagina su vida artística con la hostelería siendo propietaria y dinamizadora cultural del Bar Flexas en Palma donde congrega cada año a cerca de 10.000 personas con un cartel artístico muy ecléctico colaborando con artistas de la talla de EL niño de Elche, Joe Crepúsculo, Massiel, la Bienquerida, Papá Topo, Milly Vanilly, Betty Missiego o Chicks on speed.",
-      "en": "Between a thousand worlds lies Pepa Charro and her alter ego La Terremoto de Alcorcón, with a long professional career born from the theater company Diabéticas Aceleradas, leading her to paths such as pure cabaret, cinema, theater, television, or avant-garde gastronomy.\n\nWith films under her belt such as \"Piedras\" by Ramón Salazar, \"Carta a Eva\" by Agustí Villaronga, or \"Los Amantes pasajeros\" by Pedro Almodóvar, with whom she collaborates artistically in his premieres as master of ceremonies and artistic coordinator since \"Volver\", accompanying him to the Cannes Film Festival with \"La mala Educación\" and \"Julieta\".\n\nAmong her latest releases are films like \"Loli Tormenta\" by Agustí Villaronga and \"La Novia de América\" by Alfonso Albacete.\n\nHost of many galas from the \"Shangay\" galas, the AD magazine anniversary, or any LGTBIQ+ event, a community she has been working with for more than 20 years in Spain, Italy, England, Portugal, Belgium, France, and the US.\n\nShe dares to make cameos with artists of the caliber of Fangoria or Hidrogenesse, to produce her own show under the direction of Antonia San Juan, or to coordinate the cabaret of MACBA, make her own piece for the Es Baluard Museum of Contemporary Art, and inaugurate the MUSAC.\n\nEntertainment in various formats is key to achieving popularity, as a contestant in shows such as TVE's \"Masterchef Celebrity\", \"Tu cara me suena\" or \"Me resbala\" on Antena 3, or host of Netflix's \"Niquelaó\".\n\nShe stars in the series \"Escenas de matrimonio\" and \"Fenómenos\" on Antena 3 and collaborates in others such as \"Aída\", \"Paquita Salas\", \"Arde Madrid\", \"Con el culo al aire\" and \"El Ministerio del tiempo\".\n\nShe also participates, always in a humorous tone, in the RNE program \"Tarde lo que tarde\" after having done so on Onda Cero with \"Surtido de Ibéricos\" alongside Carlos Latre, or \"Lo que es la vida\" with Nieves Herrero.\n\nShe balances her artistic life with hospitality, being the owner and cultural promoter of Bar Flexas in Palma, where she gathers around 10,000 people each year with an eclectic artistic lineup, collaborating with artists of the caliber of El Niño de Elche, Joe Crepúsculo, Massiel, La Bienquerida, Papá Topo, Milli Vanilli, Betty Missiego, or Chicks on Speed."
+      "es": "Entre mil mundos se encuentra Pepa Charro y su alterego La Terremoto de Alcorcón, con una larga trayectoria profesional que nace de la compañía teatral Diabéticas Aceleradas y que le lleva por derroteros como el más puro cabaret, el cine, el teatro, la televisión o la gastronomía de vanguardia.\n\nCon películas a sus espaldas como “Piedras” de Ramón Salazar, “Carta a Eva” de Agustí Villaronga o “Los Amantes pasajeros” de Pedro Almodóvar con quien colabora artísticamente en sus estrenos como maestra de ceremonias y coordinadora artística desde “Volver” acompañándole al Festival de Cannes con “La mala Educación” y “Julieta”.\n\nEntre sus últimos estrenos se encuentran las películas como ‘’Loli Tormenta’’ de Agustí Villaronga y “La Novia de América” de Alfonso Albacete.\n\nPresentadora de multitud de galas desde las galas “Shangay”, aniversario de la revista AD o cualquier evento LGTBIQ+ , colectivo con el que lleva trabajando después de más de 20 años en España, Italia, Inglaterra, Portugal, Bélgica, Francia o EEUU.\n\nSe atreve a hacer cameos con artistas de la talla de Fangoria o Hidrogenesse, a producir su propio espectáculo con la dirección de Antonia San Juan o a coordinar el cabaret del MACBA, confeccionar su propia pieza para el Museo de Arte Contemporáneo Es Baluard e inaugurar el MUSAC.\n\nEl entretenimiento  en diversos formatos es pieza clave para alcanzar popularidad concursante de programas de la talla de “Masterchef Celebrity” de TVE, “Tu cara me suena” o “Me resbala” de Antena 3 o presentadora de “Niquelaó” de la plataforma Netflix.\n\nProtagoniza la serie “Escenas de matrimonio” y “Fenómenos” de Antena 3 y colabora en otras como “Aída”, “Paquita Salas” o “Arde Madrid”, “Con el culo al aire” y “El Ministerio del tiempo”\n\nParticipa también siempre en tono de humor del programa de RNE “Tarde lo que tarde” después de haberlo sido de Onda Cero con “Surtido de Ibéricos” de la mano de Carlos Latre o “Lo que es la vida” con Nieves Herrero.\n\nCompagina su vida artística con la hostelería siendo propietaria y dinamizadora cultural del Bar Flexas en Palma donde congrega cada año a cerca de 10.000 personas con un cartel artístico muy ecléctico colaborando con artistas de la talla de EL niño de Elche, Joe Crepúsculo, Massiel, la Bienquerida, Papá Topo, Milly Vanilly, Betty Missiego o Chicks on speed.\n\nEntre sus últimos trabajos, sobre los escenarios, protagoniza la obra “53 Domingos” de Cesc Gay, obra cuyo mismo papel en el cine es de Carmen Machi, sumando así una nueva propuesta teatral a una trayectoria marcada por la versatilidad y la presencia en diferentes disciplinas y formatos artísticos.",
+      "en": "Between a thousand worlds lies Pepa Charro and her alter ego La Terremoto de Alcorcón, with a long professional career born from the theater company Diabéticas Aceleradas, leading her to paths such as pure cabaret, cinema, theater, television, or avant-garde gastronomy.\n\nWith films under her belt such as \"Piedras\" by Ramón Salazar, \"Carta a Eva\" by Agustí Villaronga, or \"Los Amantes pasajeros\" by Pedro Almodóvar, with whom she collaborates artistically in his premieres as master of ceremonies and artistic coordinator since \"Volver\", accompanying him to the Cannes Film Festival with \"La mala Educación\" and \"Julieta\".\n\nAmong her latest releases are films like \"Loli Tormenta\" by Agustí Villaronga and \"La Novia de América\" by Alfonso Albacete.\n\nHost of many galas from the \"Shangay\" galas, the AD magazine anniversary, or any LGTBIQ+ event, a community she has been working with for more than 20 years in Spain, Italy, England, Portugal, Belgium, France, and the US.\n\nShe dares to make cameos with artists of the caliber of Fangoria or Hidrogenesse, to produce her own show under the direction of Antonia San Juan, or to coordinate the cabaret of MACBA, make her own piece for the Es Baluard Museum of Contemporary Art, and inaugurate the MUSAC.\n\nEntertainment in various formats is key to achieving popularity, as a contestant in shows such as TVE's \"Masterchef Celebrity\", \"Tu cara me suena\" or \"Me resbala\" on Antena 3, or host of Netflix's \"Niquelaó\".\n\nShe stars in the series \"Escenas de matrimonio\" and \"Fenómenos\" on Antena 3 and collaborates in others such as \"Aída\", \"Paquita Salas\", \"Arde Madrid\", \"Con el culo al aire\" and \"El Ministerio del tiempo\".\n\nShe also participates, always in a humorous tone, in the RNE program \"Tarde lo que tarde\" after having done so on Onda Cero with \"Surtido de Ibéricos\" alongside Carlos Latre, or \"Lo que es la vida\" with Nieves Herrero.\n\nShe balances her artistic life with hospitality, being the owner and cultural promoter of Bar Flexas in Palma, where she gathers around 10,000 people each year with an eclectic artistic lineup, collaborating with artists of the caliber of El Niño de Elche, Joe Crepúsculo, Massiel, La Bienquerida, Papá Topo, Milli Vanilli, Betty Missiego, or Chicks on Speed.\n\nAmong her latest works on stage, she stars in the play \"53 Domingos\" by Cesc Gay—a role played in the film version by Carmen Machi—adding a new theatrical production to a career marked by versatility and presence across diverse artistic disciplines and formats."
     },
     gallery: [
       '/Talents/JVV _ PEPA CHARRO _ LA TERREMOTO DE ALCORCÓN/imgi_10_7j9a9754-1-1.jpg',
@@ -949,7 +900,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 17,
     "name": "Martina Benvenutto",
-    type: ['comunicadores'],
+    type: ['comunicadores', 'emprendedoras'],
     "location": "Mallorca",
     image: '/Talents/JVV _ MARTINA BENVENUTTO/imgi_4_image_50408961-900x1200-main.jpg',
     "description": {
@@ -1504,7 +1455,7 @@ export const TALENT_DATA: Talent[] = [
   {
     "id": 23,
     "name": "Prostíbulo Poético",
-    type: ['cantantes'],
+    type: [],
     "location": "Barcelona / Madrid",
     image: '/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg',
     "description": {

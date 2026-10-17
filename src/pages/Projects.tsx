@@ -69,9 +69,21 @@ export default function Projects() {
                 )}
               </div>
               <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
-              <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
-                {language === 'es' ? 'Ver Proyecto' : 'View Project'}
-              </Link>
+              <div className="flex flex-wrap items-center gap-6">
+                <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
+                  {language === 'es' ? 'Ver Proyecto' : 'View Project'}
+                </Link>
+                {project.videoUrl && (
+                  <a
+                    href={project.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all opacity-70 hover:opacity-100"
+                  >
+                    {language === 'es' ? 'Ver Video ↗' : 'Watch Video ↗'}
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}
