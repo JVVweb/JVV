@@ -22,37 +22,65 @@ const MOBILE_BANNERS = [
 ];
 
 const CLIENT_LOGOS = [
-  '/Netflix9.png',
-  '/logo-volkswagen.svg',
-  '/logo-mastercard.svg',
-  '/logo-emporio-armani.svg',
-  '/JVV-YSLbeaute9.png',
-  '/logo-dior.svg',
-  '/logo-thyssen.svg',
-  '/logo-aperol.svg',
-  '/logo-loreal.svg',
-  '/logo-roger-vivier.svg',
+  '/logos/marcas/netflix.png',
+  '/logos/marcas/prime.png',
+  '/logos/marcas/mastercard.png',
+  '/logos/marcas/armani.png',
+  '/logos/marcas/ck.png',
+  '/logos/marcas/commes-des-garc-ons.png',
+  '/logos/marcas/jvv-chloe-logo.png',
+  '/logos/marcas/jvv-kenzo.png',
+  '/logos/marcas/jvv-jeanpaulgaultier.png',
+  '/logos/marcas/jvv-tiffanny.png',
+  '/logos/marcas/jvv-yslbeaute.png',
+  '/logos/marcas/jvv-esteelauder-logo.png',
+  '/logos/marcas/jvv-mac.png',
+  '/logos/marcas/aristocrazy.png',
+  '/logos/marcas/jvv-birckenstock.png',
+  '/logos/marcas/jvv-reebok.png',
+  '/logos/marcas/jvv-eastpack-logo.png',
+  '/logos/marcas/jvv-bershka.png',
+  '/logos/marcas/the-body-shop-logo-copia.png',
+  '/logos/marcas/jvv-martini.png',
+  '/logos/marcas/jvv-victoria.png',
+  '/logos/marcas/jvv-memadrid.png',
+  '/logos/marcas/jvv-laroca.png',
+  '/logos/marcas/jvv-hola.png',
+  '/logos/marcas/jvv-yodona-logo.png',
+  '/logos/marcas/timeout.png',
+  '/logos/marcas/jvv-premios.png',
+  '/logos/marcas/uc3m.png',
 ];
 
 const ALLIANCE_LOGOS = [
-  '/alliance-vogue.svg',
-  '/alliance-condenast.svg',
-  '/alliance-gq.svg',
-  '/alliance-ad.svg',
-  '/alliance-icon.svg',
-  '/alliance-sonar.svg',
-  '/alliance-uniqlo.svg',
-  '/alliance-stella.svg',
-  '/alliance-hilfiger.svg',
-  '/alliance-levis.svg',
-  '/alliance-hm.svg',
-  '/alliance-drmartens.svg',
-  '/alliance-converse.svg',
-  '/alliance-estrelladamm.svg',
-  '/alliance-heineken.svg',
-  '/alliance-vespa.svg',
-  '/alliance-palomo.svg',
-  '/alliance-neo2.svg',
+  '/logos/alianzas/jvv-vogue-logo.png',
+  '/logos/alianzas/voguebusiness.png',
+  '/logos/alianzas/jvv-condenast.png',
+  '/logos/alianzas/jvv-gq.png',
+  '/logos/alianzas/jvv-ad.png',
+  '/logos/alianzas/jvv-icon.png',
+  '/logos/alianzas/jvv-instyle.png',
+  '/logos/alianzas/logo-neo2-copia.png',
+  '/logos/alianzas/images-3-copia.png',
+  '/logos/alianzas/the-objective.png',
+  '/logos/alianzas/shangay.png',
+  '/logos/alianzas/jvv-rne-logo.png',
+  '/logos/alianzas/jvv-sonar-logo.png',
+  '/logos/alianzas/cala-mijas.png',
+  '/logos/alianzas/jvv-stellamccartney-logo.png',
+  '/logos/alianzas/jvv-hilfiger-logo.png',
+  '/logos/alianzas/jvv-levis-logo.png',
+  '/logos/alianzas/h-038-m.png',
+  '/logos/alianzas/uniqlo.png',
+  '/logos/alianzas/jvv-drmartins3-logo.png',
+  '/logos/alianzas/jvv-converse-logo.png',
+  '/logos/alianzas/vespa.png',
+  '/logos/alianzas/jvv-palomo-logo.png',
+  '/logos/alianzas/jvv-analocking-logo.png',
+  '/logos/alianzas/jvv-moisesnieto-logo.png',
+  '/logos/alianzas/jvv-dominico.png',
+  '/logos/alianzas/jvv-estrelladamm-logo.png',
+  '/logos/alianzas/trabalhe-conosco-heineken.png',
 ];
 
 export default function Home() {
@@ -200,84 +228,38 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Brand Logo Marquee Section (MARCAS) */}
-      <section className="py-24 bg-black border-t border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-12">
-          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
-            {t('clients.title')}
-          </span>
-        </div>
-        <div className="relative w-full flex items-center overflow-hidden">
-          {/* Side fade masks for elegant depth */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
-          
-          <div className="animate-marquee flex w-max">
-            {/* Set 1 */}
-            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
-              {CLIENT_LOGOS.map((logo, idx) => (
-                <div key={`logo-1-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
-                  <img
-                    src={logo}
-                    alt="Client Brand"
-                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                    style={{ filter: 'brightness(0) invert(1)' }}
-                  />
-                </div>
-              ))}
-            </div>
-            {/* Set 2 (loop copy) */}
-            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
-              {CLIENT_LOGOS.map((logo, idx) => (
-                <div key={`logo-2-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
-                  <img
-                    src={logo}
-                    alt="Client Brand"
-                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                    style={{ filter: 'brightness(0) invert(1)' }}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Alliances Logo Marquee Section (ALIANZAS) */}
-      <section className="py-24 bg-black border-t border-b border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-12">
+      <section className="py-10 md:py-12 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-6">
           <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
             {t('alliances.title')}
           </span>
         </div>
         <div className="relative w-full flex items-center overflow-hidden">
-          {/* Side fade masks for elegant depth */}
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
           <div className="animate-marquee flex w-max">
             {/* Set 1 */}
-            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
               {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-1-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                <div key={`alliance-1-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
                   <img
                     src={logo}
                     alt="Alliance Partner"
-                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                    style={{ filter: 'brightness(0) invert(1)' }}
+                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
               ))}
             </div>
             {/* Set 2 (loop copy) */}
-            <div className="flex items-center gap-16 md:gap-28 pr-16 md:pr-28">
+            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
               {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-2-${idx}`} className="w-32 md:w-48 h-12 md:h-16 flex items-center justify-center shrink-0">
+                <div key={`alliance-2-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
                   <img
                     src={logo}
                     alt="Alliance Partner"
-                    className="max-w-full max-h-full object-contain opacity-35 hover:opacity-100 transition-opacity duration-300"
-                    style={{ filter: 'brightness(0) invert(1)' }}
+                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
                   />
                 </div>
               ))}
@@ -322,8 +304,48 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Brand Logo Marquee Section (MARCAS) */}
+      <section className="py-10 md:py-12 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-6">
+          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
+            {t('clients.title')}
+          </span>
+        </div>
+        <div className="relative w-full flex items-center overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          
+          <div className="animate-marquee flex w-max">
+            {/* Set 1 */}
+            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+              {CLIENT_LOGOS.map((logo, idx) => (
+                <div key={`logo-1-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Client Brand"
+                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Set 2 (loop copy) */}
+            <div className="flex items-center gap-12 md:gap-20 pr-12 md:pr-20">
+              {CLIENT_LOGOS.map((logo, idx) => (
+                <div key={`logo-2-${idx}`} className="w-32 md:w-44 h-10 md:h-12 flex items-center justify-center shrink-0">
+                  <img
+                    src={logo}
+                    alt="Client Brand"
+                    className="w-full h-full object-contain opacity-45 hover:opacity-100 transition-opacity duration-300"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Call to Action */}
-      <section className="py-36 px-6 text-center relative border-t border-white/5 bg-[#030303]">
+      <section className="py-36 px-6 text-center relative bg-[#030303]">
         <div className="max-w-4xl mx-auto relative z-10">
           <span className="text-[10px] uppercase tracking-[0.2em] opacity-30 mb-6 block font-display">
             {language === 'es' ? 'Trabajo & Producción' : 'Work & Production'}
