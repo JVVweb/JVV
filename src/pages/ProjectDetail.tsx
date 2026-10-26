@@ -34,7 +34,16 @@ export default function ProjectDetail() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
           <div className="lg:col-span-8">
-            <h1 className="text-5xl md:text-7xl font-serif tracking-tighter mb-8 uppercase leading-tight">{project.title[language]}</h1>
+            <div className="flex items-center space-x-3 mb-4 text-xs tracking-tight">
+              <span className="opacity-40">{project.year}</span>
+              {project.client && (
+                <>
+                  <span className="opacity-30">—</span>
+                  <span className="opacity-80 font-semibold text-white text-sm md:text-base tracking-normal">{project.client}</span>
+                </>
+              )}
+            </div>
+            <h1 className="text-5xl md:text-7xl font-serif tracking-tighter mb-8 leading-tight">{project.title[language]}</h1>
             <p className="text-xl font-light opacity-60 leading-relaxed max-w-2xl">
               {project.description[language]}
             </p>

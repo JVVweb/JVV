@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: t('nav.talent'), path: '/talent' },
     { name: t('nav.events'), path: '/events' },
     { name: t('nav.projects'), path: '/projects' },
+    { name: t('nav.comunicacion'), path: '/comunicacion' },
     { name: t('nav.hospitality'), path: '/hospitality' },
     { name: t('nav.about'), path: '/about' },
     { name: t('nav.contact'), path: '/contact' },
@@ -42,7 +43,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-12">
+        <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
           {navItems.map((item) => (
             <Link 
               key={item.path} 

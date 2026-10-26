@@ -59,16 +59,16 @@ export default function Projects() {
             </div>
             
             <div className={`md:col-span-5 ${idx % 2 !== 0 ? 'md:order-1' : ''}`}>
-              <div className="flex items-center space-x-4 mb-6 text-xs uppercase tracking-tight">
-                <span className="opacity-30">{project.year}</span>
-                {project.talent && (
+              <div className="flex items-center space-x-3 mb-6 text-xs tracking-tight">
+                <span className="opacity-40">{project.year}</span>
+                {project.client && (
                   <>
                     <span className="opacity-30">—</span>
-                    <span className="opacity-100 font-bold text-white text-sm md:text-base tracking-normal">{project.talent}</span>
+                    <span className="opacity-90 font-semibold text-white text-sm md:text-base tracking-normal">{project.client}</span>
                   </>
                 )}
               </div>
-              <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tight uppercase leading-tight">{project.title[language]}</h2>
+              <h2 className="text-3xl md:text-5xl font-serif mb-8 tracking-tight leading-tight">{project.title[language]}</h2>
               <div className="flex flex-wrap items-center gap-6">
                 <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
                   {language === 'es' ? 'Ver Proyecto' : 'View Project'}

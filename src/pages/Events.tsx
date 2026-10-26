@@ -48,6 +48,27 @@ export const EVENTS_DATA = [
     ]
   },
   {
+    "id": 36,
+    "title": "INDOON",
+    "category": "EVENT",
+    "date": {
+      "month": "JUN",
+      "day": "15",
+      "year": "2025"
+    },
+    "location": "Spain",
+    "description": {
+      "es": "Inauguración oficial de INDOON en Mallorca; Sostenibilidad, producción consciente y diseño atemporal mediterráneo.",
+      "en": "Official opening of INDOON in Mallorca; Sustainability, conscious production and timeless Mediterranean design."
+    },
+    "image": "/indoon-1.jpg",
+    "gallery": [
+      "/indoon-1.jpg",
+      "/indoon-2.jpg",
+      "/indoon-3.jpg"
+    ]
+  },
+  {
     "id": 4,
     "title": "PALMA INTERNATIONAL BOAT SHOW 2025",
     "category": "EVENT",

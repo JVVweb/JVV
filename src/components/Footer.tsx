@@ -31,7 +31,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-light">
               <li><a href="mailto:info@jvv.com.es" className="hover:opacity-60 transition-opacity">info@jvv.com.es</a></li>
               <li className="opacity-40">Madrid, Barcelona & Mallorca</li>
-              <li className="opacity-40">(+34 ) 618 785 351</li>
+              <li className="opacity-40">+34 606 06 50 57</li>
             </ul>
           </div>
           

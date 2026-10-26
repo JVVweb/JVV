@@ -268,82 +268,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Alliances Logo Marquee Section (ALIANZAS) */}
-      <section className="py-8 md:py-10 bg-black border-t border-b border-white/5 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 mb-4">
-          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
-            {t('alliances.title')}
-          </span>
-        </div>
-        <div className="relative w-full flex items-center overflow-hidden">
-          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
-          
-          <div className="animate-marquee flex w-max items-center">
-            {/* Set 1 */}
-            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
-              {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
-                  <img
-                    src={logo}
-                    alt="Alliance Partner"
-                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
-                  />
-                </div>
-              ))}
-            </div>
-            {/* Set 2 (loop copy) */}
-            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
-              {ALLIANCE_LOGOS.map((logo, idx) => (
-                <div key={`alliance-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
-                  <img
-                    src={logo}
-                    alt="Alliance Partner"
-                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Talent Grid (Teaser) */}
-      <section className="py-32 px-6 bg-[#080808]">
-        <div className="max-w-7xl mx-auto">
-           <div className="flex justify-between items-end mb-16">
-              <h2 className="text-5xl font-serif">{language === 'es' ? 'El Talento' : 'The Talent'}</h2>
-              <Link to="/talent" className="text-sm uppercase tracking-tight opacity-50 hover:opacity-100 transition-opacity flex items-center space-x-2">
-                <span>{language === 'es' ? 'Ver Todo el Roster' : 'View All Roster'}</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-           </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
-              {TALENT_DATA.slice(0, 6).map((person) => (
-                <motion.div 
-                  key={person.id}
-                  whileHover={{ y: -10 }}
-                  className="group"
-                >
-                  <Link to={`/talent/${person.id}`}>
-                    <div className="aspect-[3/4] bg-zinc-900 overflow-hidden relative mb-6">
-                      <img 
-                        src={person.image}
-                        alt={person.name}
-                        className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                    </div>
-                    <h3 className="text-2xl font-serif mb-1 group-hover:opacity-60 transition-opacity">{person.name}</h3>
-                    <p className="text-xs uppercase tracking-tight opacity-40">{getProfession(person)} / {person.location}</p>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-        </div>
-      </section>
-
       {/* Brand Logo Marquee Section (MARCAS) */}
       <section className="py-8 md:py-10 bg-black border-t border-b border-white/5 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 mb-4">
@@ -375,6 +299,85 @@ export default function Home() {
                   <img
                     src={logo}
                     alt="Client Brand"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Talent Grid (Teaser) */}
+      <section className="py-32 px-6 bg-[#080808]">
+        <div className="max-w-7xl mx-auto">
+           <div className="flex justify-between items-end mb-16">
+              <h2 className="text-5xl font-serif">{language === 'es' ? 'El Talento' : 'The Talent'}</h2>
+              <Link to="/talent" className="text-sm uppercase tracking-tight opacity-50 hover:opacity-100 transition-opacity flex items-center space-x-2">
+                <span>{language === 'es' ? 'Ver Todo el Roster' : 'View All Roster'}</span>
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+           </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
+              {[1, 2, 3, 4, 10, 5]
+                .map((id) => TALENT_DATA.find((p) => p.id === id))
+                .filter((person): person is NonNullable<typeof person> => Boolean(person))
+                .map((person) => (
+                <motion.div 
+                  key={person.id}
+                  whileHover={{ y: -10 }}
+                  className="group"
+                >
+                  <Link to={`/talent/${person.id}`}>
+                    <div className="aspect-[3/4] bg-zinc-900 overflow-hidden relative mb-6">
+                      <img 
+                        src={person.image}
+                        alt={person.name}
+                        className="w-full h-full object-cover transition-all duration-1000 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+                    </div>
+                    <h3 className="text-2xl font-serif mb-1 group-hover:opacity-60 transition-opacity">{person.name}</h3>
+                    <p className="text-xs uppercase tracking-tight opacity-40">{getProfession(person)} / {person.location}</p>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+        </div>
+      </section>
+
+      {/* Alliances Logo Marquee Section (ALIANZAS) */}
+      <section className="py-8 md:py-10 bg-black border-t border-b border-white/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 mb-4">
+          <span className="text-[10px] uppercase tracking-widest opacity-40 block font-display">
+            {t('alliances.title')}
+          </span>
+        </div>
+        <div className="relative w-full flex items-center overflow-hidden">
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          
+          <div className="animate-marquee flex w-max items-center">
+            {/* Set 1 */}
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
+              {ALLIANCE_LOGOS.map((logo, idx) => (
+                <div key={`alliance-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
+                  <img
+                    src={logo}
+                    alt="Alliance Partner"
+                    className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
+                  />
+                </div>
+              ))}
+            </div>
+            {/* Set 2 (loop copy) */}
+            <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
+              {ALLIANCE_LOGOS.map((logo, idx) => (
+                <div key={`alliance-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
+                  <img
+                    src={logo}
+                    alt="Alliance Partner"
                     className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
                 </div>

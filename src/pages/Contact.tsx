@@ -24,7 +24,7 @@ export default function Contact() {
                 {t('contact.inquiries')}
               </h4>
               <p className="text-2xl font-light">info@jvv.com.es</p>
-              <p className="text-xl font-light opacity-40">(+34) 618 785 351</p>
+              <p className="text-xl font-light opacity-40">+34 606 06 50 57</p>
             </div>
             <div className="flex flex-col space-y-2">
               <h4 className="text-xs uppercase tracking-wider opacity-30 mb-2 font-normal" style={{ fontFamily: 'Arial, Helvetica, sans-serif' }}>
@@ -39,12 +39,12 @@ export default function Contact() {
                 @jvv_pr
               </a>
               <a 
-                href="https://www.linkedin.com/company/jvv-selection/" 
+                href="https://www.linkedin.com/company/jvv-representaci%C3%B3n-y-eventos/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-xl font-light hover:opacity-60 transition-opacity w-fit"
               >
-                JVV Selection (LinkedIn)
+                JVV Representación y Eventos (LinkedIn)
               </a>
             </div>
           </div>
