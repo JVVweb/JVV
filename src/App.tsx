@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation, useNavigationType, Navigate } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -16,12 +16,20 @@ import Hospitality from './pages/Hospitality';
 import Comunicacion from './pages/Comunicacion';
 import Legal from './pages/Legal';
 
-// Scroll to top on route change
+// Scroll to top on forward route change while preserving scroll on refresh & browser Back/Forward
 function ScrollToTop() {
   const { pathname } = useLocation();
+  const navType = useNavigationType();
+  const prevPathRef = useRef(pathname);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (prevPathRef.current !== pathname) {
+      prevPathRef.current = pathname;
+      if (navType !== 'POP') {
+        window.scrollTo(0, 0);
+      }
+    }
+  }, [pathname, navType]);
   return null;
 }
 

@@ -1,25 +1,23 @@
 import { motion } from 'motion/react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { TALENT_DATA } from '../data/talent';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
-import { useEffect } from 'react';
 import SEO from '../components/SEO';
 
 export default function TalentDetail() {
   const { id } = useParams();
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
   const talent = TALENT_DATA.find(t => t.id === Number(id));
 
-  useEffect(() => {
-    if (!talent) navigate('/talent');
-  }, [talent, navigate]);
-
-  if (!talent) return null;
+  if (!talent) {
+    return <Navigate to="/talent" replace />;
+  }
 
   const firstType = Array.isArray(talent.type) ? talent.type[0] : (talent as any).type;
-  const professionTitle = t(`talent.${firstType}`);
+  const professionTitle = firstType
+    ? t(`talent.${firstType}`)
+    : (talent.stats?.[language]?.['Profesión'] || talent.stats?.[language]?.['Profession'] || 'Talent');
 
   return (
     <div className="pt-40 pb-24">

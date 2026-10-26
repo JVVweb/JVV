@@ -48,7 +48,7 @@ export const EVENTS_DATA = [
     ]
   },
   {
-    "id": 36,
+    "id": 37,
     "title": "INDOON",
     "category": "EVENT",
     "date": {

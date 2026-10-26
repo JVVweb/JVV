@@ -1,13 +1,36 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
 import { TALENT_DATA, TalentType } from '../data/talent';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import SEO from '../components/SEO';
+
+const VALID_CATEGORIES: TalentType[] = [
+  'all',
+  'emprendedoras',
+  'djs',
+  'cantantes',
+  'actores',
+  'comunicadores',
+  'fotografos',
+  'directores',
+  'pintoras',
+  'deportistas',
+];
 
 export default function Talent() {
   const { t, language } = useLanguage();
-  const [filter, setFilter] = useState<TalentType>('all');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const rawCategory = searchParams.get('category') as TalentType | null;
+  const filter: TalentType =
+    rawCategory && VALID_CATEGORIES.includes(rawCategory) ? rawCategory : 'all';
+
+  const handleSetFilter = (cat: TalentType) => {
+    if (cat === 'all') {
+      setSearchParams({}, { replace: true });
+    } else {
+      setSearchParams({ category: cat }, { replace: true });
+    }
+  };
 
   const filteredTalent = filter === 'all' 
     ? TALENT_DATA 
@@ -29,10 +52,10 @@ export default function Talent() {
         </motion.div>
         
         <div className="flex flex-nowrap gap-x-8 border-b border-white/5 pb-4 overflow-x-auto no-scrollbar scroll-smooth">
-          {(['all', 'emprendedoras', 'djs', 'cantantes', 'actores', 'comunicadores', 'fotografos', 'directores', 'pintoras', 'deportistas'] as TalentType[]).map((cat) => (
+          {VALID_CATEGORIES.map((cat) => (
             <button
               key={cat}
-              onClick={() => setFilter(cat)}
+              onClick={() => handleSetFilter(cat)}
               className={`text-xs uppercase tracking-tight transition-all duration-300 relative pb-2 whitespace-nowrap ${filter === cat ? 'opacity-100 font-medium' : 'opacity-30 hover:opacity-100'}`}
             >
               {t(`talent.${cat}`)}

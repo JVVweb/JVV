@@ -148,10 +148,11 @@ export default function Home() {
   }, [isMobile, activeBanners.length]);
 
   const getProfession = (person: any) => {
-    const isEs = language === 'es';
-    if (person.type === 'models') return isEs ? 'Modelo' : 'Model';
-    if (person.type === 'actors') return isEs ? 'Actor' : 'Actor';
-    return isEs ? 'Artista' : 'Artist';
+    const firstType = Array.isArray(person.type) ? person.type[0] : person.type;
+    if (firstType) {
+      return t(`talent.${firstType}`);
+    }
+    return language === 'es' ? 'Artista' : 'Artist';
   };
 
   return (

@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/((?!assets/|Talents/|Events/|logos/|wp-content/|.*\\..*).*)",
       "destination": "/index.html"
     }
   ]
