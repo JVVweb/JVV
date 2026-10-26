@@ -1162,9 +1162,9 @@ export const TALENT_DATA: Talent[] = [
       "en": "One of the actresses with the greatest character and trajectory in Spain. She started very young as a protagonist in various Spanish series such as \"Cuestión de Sexo\" or \"Los Protegidos\", the latter with a new season in broadcast.\n\nHer jump to cinema as a protagonist was with Alfonso Albacete's film \"Solo Química\", premiered in 2015. Subsequently, she performed classical texts by José Luis García at the Teatro Español in \"Arte Nuevo\" (2015).\n\nAfter forming part of the cast of the TV series \"Amar Es Para Siempre\", she was one of the protagonists of \"Las Chicas del Cable\", playing Carlota, the first Spanish series produced by Netflix."
     },
     gallery: [
-      '/Talents/JVV _ ANA FERNÁNDEZ/imgi_4_Anafernandez_01 Ana-Carlota-Fernández ana_carlot2.jpg',
+      '/Talents/JVV _ ANA FERNÁNDEZ/imgi_4_Anafernandez_01.jpg',
       '/Talents/JVV _ ANA FERNÁNDEZ/imgi_5_Anafernandez_02.jpg',
-      '/Talents/JVV _ ANA FERNÁNDEZ/imgi_6_Anafernandez_03 Ana-Carlota-Fernández ana_carlota.jpg',
+      '/Talents/JVV _ ANA FERNÁNDEZ/imgi_6_Anafernandez_03.jpg',
       '/Talents/JVV _ ANA FERNÁNDEZ/imgi_7_Anafernandez_04-main.jpg'
     ],
     "stats": {

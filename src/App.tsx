@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
@@ -14,6 +14,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Hospitality from './pages/Hospitality';
 import Comunicacion from './pages/Comunicacion';
+import Legal from './pages/Legal';
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -44,6 +45,9 @@ export default function App() {
               <Route path="/hospitality" element={<Hospitality />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/privacy" element={<Legal />} />
+              <Route path="/terms" element={<Legal />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
           <Footer />

@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft, Clock, MapPin } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -8,12 +8,10 @@ import { EVENTS_DATA } from './Events';
 export default function EventDetail() {
   const { id } = useParams();
   const { language } = useLanguage();
-  const navigate = useNavigate();
   const event = EVENTS_DATA.find(e => e.id === Number(id));
 
   if (!event) {
-    navigate('/events');
-    return null;
+    return <Navigate to="/events" replace />;
   }
 
   return (

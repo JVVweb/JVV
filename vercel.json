@@ -1,63 +1,8 @@
 {
-  "cleanUrls": true,
-  "redirects": [
-    { "source": "/sobre-jvv", "destination": "/about", "permanent": true },
-    { "source": "/sobre-jvv/", "destination": "/about", "permanent": true },
-    
-    { "source": "/proyectos", "destination": "/projects", "permanent": true },
-    { "source": "/proyectos/", "destination": "/projects", "permanent": true },
-    
-    { "source": "/contacto", "destination": "/contact", "permanent": true },
-    { "source": "/contacto/", "destination": "/contact", "permanent": true },
-    
-    { "source": "/management", "destination": "/talent", "permanent": true },
-    { "source": "/management/", "destination": "/talent", "permanent": true },
-    
-    { "source": "/eventos", "destination": "/events", "permanent": true },
-    { "source": "/eventos/", "destination": "/events", "permanent": true },
-    
-    { "source": "/comunicacion", "destination": "/hospitality", "permanent": true },
-    { "source": "/comunicacion/", "destination": "/hospitality", "permanent": true },
-    
-    { "source": "/clientes", "destination": "/projects", "permanent": true },
-    { "source": "/clientes/", "destination": "/projects", "permanent": true },
-    
-    { "source": "/area-privada", "destination": "/", "permanent": true },
-    { "source": "/area-privada/", "destination": "/", "permanent": true },
-    
-    { "source": "/en", "destination": "/", "permanent": true },
-    { "source": "/en/", "destination": "/", "permanent": true },
-    { "source": "/en/projects", "destination": "/projects", "permanent": true },
-    { "source": "/en/projects/", "destination": "/projects", "permanent": true },
-
-    { "source": "/managed/joan-pedrola", "destination": "/talent/2", "permanent": true },
-    { "source": "/managed/joan-pedrola/", "destination": "/talent/2", "permanent": true },
-    
-    { "source": "/portfolio_page/chloes-clue", "destination": "/talent/15", "permanent": true },
-    { "source": "/portfolio_page/chloes-clue/", "destination": "/talent/15", "permanent": true },
-    
-    { "source": "/portfolio_page/david-castillo", "destination": "/talent/4", "permanent": true },
-    { "source": "/portfolio_page/david-castillo/", "destination": "/talent/4", "permanent": true },
-    
-    { "source": "/portfolio_page/pepacharro-laterremoto", "destination": "/talent/10", "permanent": true },
-    { "source": "/portfolio_page/pepacharro-laterremoto/", "destination": "/talent/10", "permanent": true },
-    
-    { "source": "/portfolio_page/rocio-saiz", "destination": "/talent/6", "permanent": true },
-    { "source": "/portfolio_page/rocio-saiz/", "destination": "/talent/6", "permanent": true },
-    
-    { "source": "/portfolio_page/valeria_vegas", "destination": "/talent/1", "permanent": true },
-    { "source": "/portfolio_page/valeria_vegas/", "destination": "/talent/1", "permanent": true },
-
-    { "source": "/paraiso-festival-2019", "destination": "/events", "permanent": true },
-    { "source": "/paraiso-festival-2019/", "destination": "/events", "permanent": true },
-
-    { "source": "/t4-2023-5-26-2-2-3-2", "destination": "/events", "permanent": true },
-    { "source": "/t4-2023-5-26-2-2-3-2/", "destination": "/events", "permanent": true },
-
-    { "source": "/t4-2023-5-26-2-3", "destination": "/events", "permanent": true },
-    { "source": "/t4-2023-5-26-2-3/", "destination": "/events", "permanent": true }
-  ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ]
 }

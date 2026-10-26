@@ -49,10 +49,15 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-white/5 text-[10px] uppercase tracking-widest opacity-30">
           <p className="text-center md:text-left w-full md:w-auto">{t('footer.rights')}</p>
           <div className="flex space-x-8 mt-6 md:mt-0">
-            <a href="#" className="hover:opacity-100 transition-opacity">{t('footer.privacy')}</a>
-            <a href="#" className="hover:opacity-100 transition-opacity">{t('footer.terms')}</a>
+            <Link to="/privacy" className="hover:opacity-100 transition-opacity">{t('footer.privacy')}</Link>
+            <Link to="/terms" className="hover:opacity-100 transition-opacity">{t('footer.terms')}</Link>
           </div>
         </div>
+        <p className="mt-6 text-[10px] font-light leading-relaxed opacity-20 text-center md:text-left max-w-4xl">
+          {language === 'es'
+            ? 'Todas las marcas, logotipos e imágenes editoriales de terceros mostrados en este sitio web pertenecen a sus respectivos propietarios y se incluyen exclusivamente con fines de portfolio, referencia informativa y muestra de trabajos realizados.'
+            : 'All third-party trademarks, logos, and editorial imagery displayed on this website are the property of their respective owners and are included strictly for portfolio, informational reference, and showcase purposes.'}
+        </p>
       </div>
     </footer>
   );

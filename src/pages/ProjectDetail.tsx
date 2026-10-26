@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Navigate, Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -8,19 +8,17 @@ import { PROJECTS_DATA } from '../data/projects';
 export default function ProjectDetail() {
   const { id } = useParams();
   const { t, language } = useLanguage();
-  const navigate = useNavigate();
   const project = PROJECTS_DATA.find(p => p.id === Number(id));
 
   if (!project) {
-    navigate('/projects');
-    return null;
+    return <Navigate to="/projects" replace />;
   }
 
   return (
     <div className="pt-40 pb-32 px-6">
       <SEO 
-        title={`${project.title[language]} | ${project.client}`}
-        description={`${project.title[language]} - A campaign for ${project.client} (${project.year}) produced by JVV Agency. ${project.description[language]}`}
+        title={project.client ? `${project.title[language]} | ${project.client}` : project.title[language]}
+        description={`${project.title[language]} (${project.year}) - JVV Agency. ${project.description[language]}`}
         ogImage={project.images[0]}
       />
       <div className="max-w-7xl mx-auto">
@@ -78,10 +76,12 @@ export default function ProjectDetail() {
           </div>
           <div className="lg:col-span-4 flex flex-col justify-end lg:items-end">
             <div className="space-y-4 text-right w-full">
-              <div className="flex justify-between lg:justify-end lg:space-x-12 border-b border-white/10 pb-4">
-                <span className="text-[10px] uppercase tracking-widest opacity-30">{language === 'es' ? 'Cliente' : 'Client'}</span>
-                <span className="text-sm font-medium">{project.client}</span>
-              </div>
+              {project.client && (
+                <div className="flex justify-between lg:justify-end lg:space-x-12 border-b border-white/10 pb-4">
+                  <span className="text-[10px] uppercase tracking-widest opacity-30">{language === 'es' ? 'Cliente' : 'Client'}</span>
+                  <span className="text-sm font-medium">{project.client}</span>
+                </div>
+              )}
               <div className="flex justify-between lg:justify-end lg:space-x-12 border-b border-white/10 pb-4">
                 <span className="text-[10px] uppercase tracking-widest opacity-30">{language === 'es' ? 'Año' : 'Year'}</span>
                 <span className="text-sm font-medium">{project.year}</span>

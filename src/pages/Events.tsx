@@ -347,7 +347,7 @@ export const EVENTS_DATA = [
       "/Events/JVV _ FRANGELICO/imgi_4_60782950_400453880682005_3191332550403324939_n_portada.jpg",
       "/Events/JVV _ FRANGELICO/imgi_5_60914570_2274642219285064_7550676502692508645_n.jpg",
       "/Events/JVV _ FRANGELICO/imgi_6_59894378_147463536392500_1403255679737929204_n.jpg",
-      "/Events/JVV _ FRANGELICO/imgi_7_frangelico-sobremesa-madrid-2019_selecció-final_07-.jpg"
+      "/Events/JVV _ FRANGELICO/imgi_7_frangelico-sobremesa-madrid-2019_seleccion-final_07-.jpg"
     ]
   },
   {
@@ -670,9 +670,9 @@ export const EVENTS_DATA = [
     "image": "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02_portada.jpg",
     "gallery": [
       "/Events/JVV _ 115 ANIVERSARIO CAPAS SESEÑA/DS_02_portada.jpg",
-      "https://jvv.com.es/wp-content/uploads/2016/10/Dsquare_01.jpg",
-      "https://jvv.com.es/wp-content/uploads/2016/10/Dsquare_03.jpg",
-      "https://jvv.com.es/wp-content/uploads/2016/10/Dsquare_04.jpg"
+      "/wp-content/uploads/2016/10/Dsquare_01.jpg",
+      "/wp-content/uploads/2016/10/Dsquare_03.jpg",
+      "/wp-content/uploads/2016/10/Dsquare_04.jpg"
     ]
   },
   {

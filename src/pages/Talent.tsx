@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import SEO from '../components/SEO';
 
 export default function Talent() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [filter, setFilter] = useState<TalentType>('all');
 
   const filteredTalent = filter === 'all' 
@@ -17,7 +17,7 @@ export default function Talent() {
     <div className="pt-40 pb-32 px-6 max-w-7xl mx-auto">
       <SEO 
         title={t('nav.talent')}
-        description="Roster of world-class models, actors, and directors represented by JVV Agency in Madrid and Barcelona. Discover exceptional creative and visual talent."
+        description="Roster of world-class models, actors, and directors represented by JVV Agency in Madrid, Barcelona and Mallorca. Discover exceptional creative and visual talent."
       />
       <header className="mb-20">
         <motion.div
@@ -60,14 +60,15 @@ export default function Talent() {
               <Link to={`/talent/${person.id}`}>
                 <div className="aspect-[3/4] overflow-hidden bg-zinc-900 mb-4 transition-all duration-700 relative">
                   <img 
-                    src={`${person.image}?auto=format&fit=crop&q=80&w=800`}
+                    src={person.image}
                     alt={person.name}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.5s]"
                   />
                   <div className="absolute inset-0 bg-brand-bg/10 opacity-20 group-hover:opacity-0 transition-opacity" />
                   
                   <div className="absolute bottom-0 left-0 w-full p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300 bg-brand-bg/40 backdrop-blur-sm pointer-events-none">
-                     <p className="text-xs uppercase tracking-tight text-white/80">View Portfolio</p>
+                     <p className="text-xs uppercase tracking-tight text-white/80">{language === 'es' ? 'Ver Portfolio' : 'View Portfolio'}</p>
                   </div>
                 </div>
                 <div className="flex flex-col md:flex-row md:justify-between md:items-baseline px-1 gap-1">

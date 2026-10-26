@@ -43,18 +43,21 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
-          {navItems.map((item) => (
-            <Link 
-              key={item.path} 
-              to={item.path} 
-              className={`nav-link ${location.pathname === item.path ? 'opacity-100 font-medium' : ''}`}
-            >
-              {item.name}
-            </Link>
-          ))}
+        <div className="hidden lg:flex items-center space-x-6 xl:space-x-9">
+          {navItems.map((item) => {
+            const isActive = item.path === '/' ? location.pathname === '/' : location.pathname.startsWith(item.path);
+            return (
+              <Link 
+                key={item.path} 
+                to={item.path} 
+                className={`nav-link whitespace-nowrap ${isActive ? 'opacity-100 font-medium' : ''}`}
+              >
+                {item.name}
+              </Link>
+            );
+          })}
           
-          <div className="flex items-center border border-white/10 rounded-full px-4 py-2 space-x-4">
+          <div className="flex items-center border border-white/10 rounded-full px-4 py-2 space-x-4 shrink-0">
             <button 
               onClick={() => setLanguage('es')}
               className={`text-[10px] uppercase tracking-tighter transition-all ${language === 'es' ? 'opacity-100 font-bold' : 'opacity-30 hover:opacity-100'}`}
@@ -72,7 +75,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="md:hidden z-50 text-white" onClick={() => setIsOpen(!isOpen)}>
+        <button className="lg:hidden z-50 text-white" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
@@ -86,26 +89,29 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsOpen(false)}
-              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 md:hidden"
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40 lg:hidden"
             />
             <motion.div 
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed right-0 top-0 bottom-0 w-[80%] max-w-sm bg-zinc-950/95 backdrop-blur-md z-40 md:hidden flex flex-col p-10 pt-28 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
+              className="fixed right-0 top-0 bottom-0 w-[80%] max-w-sm bg-zinc-950/95 backdrop-blur-md z-40 lg:hidden flex flex-col p-10 pt-28 shadow-[0_0_50px_rgba(0,0,0,0.8)]"
             >
               <div className="flex flex-col space-y-6 overflow-y-auto max-h-[calc(100vh-220px)] pr-2 no-scrollbar">
-                {navItems.map((item) => (
-                  <Link 
-                    key={item.path} 
-                    to={item.path} 
-                    onClick={() => setIsOpen(false)}
-                    className={`text-3xl font-serif tracking-tighter hover:opacity-60 transition-opacity uppercase ${location.pathname === item.path ? 'text-white font-medium' : 'text-white/60'}`}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                {navItems.map((item) => {
+                  const isActive = item.path === '/' ? location.pathname === '/' : location.pathname.startsWith(item.path);
+                  return (
+                    <Link 
+                      key={item.path} 
+                      to={item.path} 
+                      onClick={() => setIsOpen(false)}
+                      className={`text-3xl font-serif tracking-tighter hover:opacity-60 transition-opacity uppercase ${isActive ? 'text-white font-medium' : 'text-white/60'}`}
+                    >
+                      {item.name}
+                    </Link>
+                  );
+                })}
               </div>
               
               <div className="mt-auto pt-6">
