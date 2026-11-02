@@ -88,7 +88,8 @@ export const PROJECTS_DATA: Project[] = [
     "image": "/marketing-rocks-jesus.jpg",
     "images": [
       "/marketing-rocks-jesus.jpg"
-    ]
+    ],
+    "videoUrl": "/marketing-rocks-jesus.mp4"
   },
   {
     "id": 5,
