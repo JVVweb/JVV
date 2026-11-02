@@ -341,13 +341,14 @@ export const PROJECTS_DATA: Project[] = [
       "es": "Actuación y campaña editorial con Chloé's Clue para la marca de cosmética francesa Caudalie en la naturaleza virgen de Menorca.",
       "en": "Performance and scenic editorial campaign with Chloé's Clue for French skincare brand Caudalie in the pristine nature of Menorca."
     },
-    "image": "/caudile 3.jpg",
+    "image": "/caudalie-chloe-new.jpg",
     "images": [
-      "/caudile 3.jpg",
       "/caudalie-chloe-new.jpg",
+      "/caudile 3.jpg",
       "/Caudile1.jpg",
       "/caudile2.jpg"
-    ]
+    ],
+    "videoUrl": "/wp-content/uploads/2026/01/Caudalie-2-1.mp4"
   },
   {
     "id": 17,
