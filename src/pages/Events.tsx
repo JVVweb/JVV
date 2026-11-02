@@ -600,6 +600,7 @@ export const EVENTS_DATA = [
       "en": "Kenzo wanted to inaugurate its new flagship store on Paseo de Gracia (Barcelona) in style with the visit of its creative directors, Carol Lim and Humberto León. We were in charge of the development of the entire event, featuring a collaboration with Carlota Guerrero and her dancers. The evening was very special, with caricatures gifted to all attendees and a music session that made even the mannequins dance. A long list of guests brought together many well-known faces from Catalan and Spanish society.\nWe were also responsible for press and communication for both the event and interviews with major Spanish media outlets, as well as selecting and coordinating the celebrities and influencers who attended."
     },
     "image": "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01_portada.jpg",
+    "videoUrl": "https://www.youtube.com/watch?v=0kwUnJ-r5QU&list=LL",
     "gallery": [
       "/Events/JVV _ KENZO BCN/imgi_20_Kenzo_01_portada.jpg",
       "/Events/JVV _ KENZO BCN/imgi_21_Kenzo_02.jpg",

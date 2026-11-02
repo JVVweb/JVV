@@ -370,8 +370,8 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 18,
     "title": {
-      "es": "Abraham García",
-      "en": "Abraham García"
+      "es": "Embajador Abraham García",
+      "en": "Ambassador Abraham García"
     },
     "client": "Lio Mallorca",
     "talent": "Abraham García",
@@ -427,8 +427,8 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 22,
     "title": {
-      "es": "Abraham García",
-      "en": "Abraham García"
+      "es": "Embajador Abraham García",
+      "en": "Ambassador Abraham García"
     },
     "client": "Disaronno",
     "talent": "Abraham García",
@@ -486,7 +486,7 @@ export const PROJECTS_DATA: Project[] = [
       "es": "Entrevista y editorial de moda Alex de la Croix",
       "en": "Fashion interview and editorial Alex de la Croix"
     },
-    "client": "Vogue",
+    "client": "Vogue Hong Kong",
     "talent": "Alex de la Croix",
     "year": "2022",
     "description": {
@@ -502,40 +502,93 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 59,
     "title": {
-      "es": "Participación Mery Myles y ganadora del premio",
-      "en": "Mery Myles participation and award winner"
+      "es": "Participación Mery Myles y ganadora del primer premio",
+      "en": "Mery Myles Participation & First Prize Winner"
     },
     "client": "Concurso Vespa",
     "talent": "Mery Myles",
     "year": "2022",
     "description": {
-      "es": "Participación de Mery Myles en el Concurso Vespa, resultando ganadora del premio.",
-      "en": "Participation of Mery Myles in the Vespa Contest, winning the award."
+      "es": "Participación de Mery Myles en la primera edición de #VespaUrbanTalent (2022), resultando ganadora del primer premio del concurso nacional de talentos musicales organizado por Vespa con su tema «Mala y Cara».",
+      "en": "Participation of Mery Myles in the first edition of #VespaUrbanTalent (2022), winning first prize in the national musical talent contest organized by Vespa with her song 'Mala y Cara'."
     },
-    "image": "/vespa-mery-1.jpg",
+    "image": "/vespa-mery-only.png",
     "images": [
+      "/vespa-mery-only.png",
       "/vespa-mery-1.jpg",
       "/vespa-mery-2.jpg"
     ],
-    "videoUrl": "/wp-content/uploads/2026/01/Vespa.mp4"
+    "videoUrl": "/wp-content/uploads/2026/01/Vespa.mp4",
+    "videoLinks": [
+      {
+        "label": {
+          "es": "Escuchar Canción Ganadora (Spotify)",
+          "en": "Listen to Winning Song (Spotify)"
+        },
+        "url": "https://open.spotify.com/intl-es/album/7eDMfdx9aW3dImW0h0Ju3h"
+      },
+      {
+        "label": {
+          "es": "Leer Noticia del Evento",
+          "en": "Read Event Article"
+        },
+        "url": "https://www.periodicopublicidad.com/articulo/concursos/la-cuarta-cuerda-y-mery-myles-consiguen-la-victoria-en-el-vespaurbantalent-2022/20220712121051079679.html"
+      },
+      {
+        "label": {
+          "es": "Ver Video del Evento",
+          "en": "Watch Event Video"
+        },
+        "url": "/wp-content/uploads/2026/01/Vespa.mp4"
+      }
+    ]
   },
   {
     "id": 25,
     "title": {
-      "es": "Presentación del desfile outdoor The Closet — Rocío Saiz",
-      "en": "Host of the outdoor fashion show The Closet — Rocío Saiz"
+      "es": "Presentación del desfile Out of the Closet — Rocío Saiz",
+      "en": "Host of the fashion show Out of the Closet — Rocío Saiz"
     },
     "client": "W Ibiza",
     "talent": "Rocío Saiz",
     "year": "2022",
     "description": {
-      "es": "Rocío Saiz presentadora para el desfile outdoor \"The Closet\" en el hotel W Ibiza.",
-      "en": "Rocío Saiz as host for the outdoor fashion show \"The Closet\" at W Ibiza hotel."
+      "es": "Rocío Saiz presentadora para el desfile \"Out of the Closet\" en el hotel W Ibiza.",
+      "en": "Rocío Saiz as host for the fashion show \"Out of the Closet\" at W Ibiza hotel."
     },
     "image": "/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg",
     "images": [
       "/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-27-1.jpg",
       "/wp-content/uploads/2025/12/PHOTO-2024-03-27-18-17-28.jpg"
+    ]
+  },
+  {
+    "id": 64,
+    "title": {
+      "es": "Mery Myles",
+      "en": "Mery Myles"
+    },
+    "client": "Bastardo Hostel",
+    "talent": "Mery Myles",
+    "year": "2022",
+    "description": {
+      "es": "Concierto acústico de la artista multidisciplinar, cantante, compositora, actriz y bailarina Mery Myles en Bastardo Hostel (Madrid), presentando su fusión de sonidos urbanos, R&B, hip hop y soul junto al guitarrista Gabi.",
+      "en": "Acoustic concert by multidisciplinary artist, singer, songwriter, actress, and dancer Mery Myles at Bastardo Hostel (Madrid), presenting her fusion of urban sounds, R&B, hip hop, and soul alongside guitarist Gabi."
+    },
+    "image": "/bastardo-mery-1.jpg",
+    "images": [
+      "/bastardo-mery-1.jpg",
+      "/bastardo-mery-2.jpg",
+      "/bastardo-mery-3.jpg"
+    ],
+    "videoLinks": [
+      {
+        "label": {
+          "es": "Ver Evento en Bastardo Hostel",
+          "en": "View Event at Bastardo Hostel"
+        },
+        "url": "https://bastardohostel.com/es/programacion/mery-myles/"
+      }
     ]
   },
   {
@@ -579,7 +632,7 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 28,
     "title": {
-      "es": "Andrea Tivadar y Paloma López embajadora Gala Bridal Barcelona",
+      "es": "Andrea Tivadar y Paloma López embajadoras Gala Bridal Barcelona",
       "en": "Andrea Tivadar and Paloma López ambassadors Gala Bridal Barcelona"
     },
     "client": "Antonio Riva Milano",
@@ -691,8 +744,17 @@ export const PROJECTS_DATA: Project[] = [
     "image": "/wp-content/uploads/2025/12/unnamed-2.jpg",
     "images": [
       "/wp-content/uploads/2025/12/unnamed-2.jpg",
-      "/wp-content/uploads/2026/01/LCI-1.png"
-    ]
+      "/wp-content/uploads/2026/01/LCI-1.png",
+      "/lci-1.jpg",
+      "/lci-2.jpg",
+      "/lci-3.jpg",
+      "/lci-4.jpg",
+      "/lci-5.jpg",
+      "/lci-6.jpg",
+      "/lci-7.jpg",
+      "/lci-8.jpg"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=to47_AW3JGI&list=FL9Gh2HJPeHNTysOsDCL9OrQ"
   },
   {
     "id": 34,
@@ -710,6 +772,26 @@ export const PROJECTS_DATA: Project[] = [
     "image": "/wp-content/uploads/2025/12/unnamed-1.jpg",
     "images": [
       "/wp-content/uploads/2025/12/unnamed-1.jpg"
+    ]
+  },
+  {
+    "id": 63,
+    "title": {
+      "es": "Encuentros JVV Vásquez Viedma",
+      "en": "Encuentros JVV Vásquez Viedma"
+    },
+    "client": "Encuentros JVV Vásquez Viedma",
+    "talent": "Jesús Vázquez Viedma",
+    "year": "2020",
+    "description": {
+      "es": "Entrevistas hechas por JVV Vásquez Viedma a artistas durante la pandemia.",
+      "en": "Interviews conducted by JVV Vásquez Viedma with artists during the pandemic."
+    },
+    "image": "/encuentros-jvv-1.jpg",
+    "images": [
+      "/encuentros-jvv-1.jpg",
+      "/encuentros-jvv-2.jpg",
+      "/encuentros-jvv-3.jpg"
     ]
   },
   {
@@ -751,21 +833,57 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
-    "id": 60,
+    "id": 62,
     "title": {
-      "es": "Natty Peluso Portada",
-      "en": "Natty Peluso Cover"
+      "es": "Carla Cervantes",
+      "en": "Carla Cervantes"
     },
-    "client": "Revista Mine",
-    "talent": "Natty Peluso",
+    "client": "Vogue España - Armani",
+    "talent": "Carla Cervantes",
     "year": "2019",
     "description": {
-      "es": "Portada de Natty Peluso para Revista Mine.",
-      "en": "Natty Peluso cover for Revista Mine."
+      "es": "Entrevista y reportaje con la bailarina y coreógrafa Carla Cervantes para Vogue España junto a Giorgio Armani (Sì Passione).",
+      "en": "Interview and feature with dancer and choreographer Carla Cervantes for Vogue Spain with Giorgio Armani (Sì Passione)."
     },
-    "image": "/revista-mine-nathy.jpg",
+    "image": "/vogue-armani-carla-1.jpg",
     "images": [
-      "/revista-mine-nathy.jpg"
+      "/vogue-armani-carla-1.jpg",
+      "/vogue-armani-carla-2.jpg"
+    ],
+    "videoLinks": [
+      {
+        "label": {
+          "es": "Leer Artículo en Vogue España",
+          "en": "Read Article in Vogue Spain"
+        },
+        "url": "https://www.vogue.es/living/articulos/carla-cervantes-caro-bailarina-coreografa-armani-si-passione/38628"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "title": {
+      "es": "Portada y entrevista Nathy Peluso",
+      "en": "Cover and interview Nathy Peluso"
+    },
+    "client": "Revista Mine — Portada y entrevista",
+    "talent": "Nathy Peluso",
+    "year": "2019",
+    "description": {
+      "es": "Portada y entrevista de Nathy Peluso para Revista Mine.",
+      "en": "Nathy Peluso cover and interview for Revista Mine."
+    },
+    "image": "/nathy-mine-cover.jpg",
+    "images": [
+      "/nathy-mine-cover.jpg",
+      "/nathy-mine-page-1.jpg",
+      "/nathy-mine-page-2.jpg",
+      "/nathy-mine-page-3.jpg",
+      "/nathy-mine-page-4.jpg",
+      "/nathy-mine-page-5.jpg",
+      "/nathy-mine-page-6.jpg",
+      "/nathy-mine-page-7.jpg",
+      "/nathy-mine-page-8.jpg"
     ]
   },
   {
@@ -784,21 +902,24 @@ export const PROJECTS_DATA: Project[] = [
     "image": "/wp-content/uploads/2026/01/Oysho-1.png",
     "images": [
       "/wp-content/uploads/2026/01/Oysho-1.png",
-      "/wp-content/uploads/2026/01/Oysho-2.png"
+      "/wp-content/uploads/2026/01/Oysho-2.png",
+      "/oysho-extra-1.jpg",
+      "/oysho-extra-2.jpg",
+      "/oysho-extra-3.jpg"
     ]
   },
   {
     "id": 37,
     "title": {
-      "es": "Embajadora Adriana Gastellum y embajador Jon Morales",
-      "en": "Ambassador Adriana Gastellum and Ambassador Jon Morales"
+      "es": "Embajadora Adriana Gastelum y embajador Jon Morales",
+      "en": "Ambassador Adriana Gastelum and Ambassador Jon Morales"
     },
     "client": "H&M Moschino",
-    "talent": "Adriana Gastellum y Jon Morales",
+    "talent": "Adriana Gastelum y Jon Morales",
     "year": "2018",
     "description": {
-      "es": "Adriana Gastellum y Jon Morales embajadores para H&M Moschino.",
-      "en": "Adriana Gastellum and Jon Morales ambassadors for H&M Moschino."
+      "es": "Adriana Gastelum y Jon Morales embajadores para H&M Moschino.",
+      "en": "Adriana Gastelum and Jon Morales ambassadors for H&M Moschino."
     },
     "image": "/wp-content/uploads/2026/01/HM-1.png",
     "images": [
@@ -828,15 +949,15 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 41,
     "title": {
-      "es": "Embajadora Adriana Gastellum - embajador Marco Llorente x Mad Cool",
-      "en": "Ambassador Adriana Gastellum - Ambassador Marco Llorente x Mad Cool"
+      "es": "Embajadora Adriana Gastelum - embajador Marco Llorente x Mad Cool",
+      "en": "Ambassador Adriana Gastelum - Ambassador Marco Llorente x Mad Cool"
     },
     "client": "EMPORIO ARMANI OCCHIALI",
-    "talent": "Adriana Gastellum y Marco Llorente",
+    "talent": "Adriana Gastelum y Marco Llorente",
     "year": "2018",
     "description": {
-      "es": "Adriana Gastellum y Marco Llorente para Emporio Armani Occhiali en Mad Cool.",
-      "en": "Adriana Gastellum and Marco Llorente for Emporio Armani Occhiali at Mad Cool."
+      "es": "Adriana Gastelum y Marco Llorente para Emporio Armani Occhiali en Mad Cool.",
+      "en": "Adriana Gastelum and Marco Llorente for Emporio Armani Occhiali at Mad Cool."
     },
     "image": "/wp-content/uploads/2026/01/Armani-1.png",
     "images": [
@@ -859,21 +980,24 @@ export const PROJECTS_DATA: Project[] = [
     },
     "image": "/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png",
     "images": [
-      "/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png"
+      "/wp-content/uploads/2026/01/Carla-Cervantes-x-Cozarllado.png",
+      "/cozarllado-1.jpg",
+      "/cozarllado-2.jpg",
+      "/cozarllado-3.jpg"
     ]
   },
   {
     "id": 40,
     "title": {
-      "es": "Embajadora Adriana Gastellum - embajador x Mad Cool festival",
-      "en": "Ambassador Adriana Gastellum - Ambassador x Mad Cool festival"
+      "es": "Embajadora Adriana Gastelum - embajador x Mad Cool festival",
+      "en": "Ambassador Adriana Gastelum - Ambassador x Mad Cool festival"
     },
     "client": "Aperol Spritz",
-    "talent": "Adriana Gastellum y José Lamuño",
+    "talent": "Adriana Gastelum y José Lamuño",
     "year": "2018",
     "description": {
-      "es": "Adriana Gastellum y José Lamuño para Aperol Spritz en Mad Cool festival.",
-      "en": "Adriana Gastellum and José Lamuño for Aperol Spritz at Mad Cool festival."
+      "es": "Adriana Gastelum y José Lamuño para Aperol Spritz en Mad Cool festival.",
+      "en": "Adriana Gastelum and José Lamuño for Aperol Spritz at Mad Cool festival."
     },
     "image": "/wp-content/uploads/2026/01/Aperol-1.png",
     "images": [
@@ -906,17 +1030,37 @@ export const PROJECTS_DATA: Project[] = [
       "es": "Embajador José Lamuño",
       "en": "Ambassador José Lamuño"
     },
-    "client": "Schweppes Venecia",
+    "client": "Schweppes",
     "talent": "José Lamuño",
     "year": "2018",
     "description": {
-      "es": "José Lamuño embajador para Schweppes Venecia.",
-      "en": "José Lamuño ambassador for Schweppes Venice."
+      "es": "José Lamuño embajador para Schweppes.",
+      "en": "José Lamuño ambassador for Schweppes."
     },
     "image": "/wp-content/uploads/2026/01/Schweppes.png",
     "images": [
       "/wp-content/uploads/2026/01/Schweppes.png",
       "/wp-content/uploads/2026/01/Schweppes-2.png"
+    ]
+  },
+  {
+    "id": 61,
+    "title": {
+      "es": "Premio a Carla Cervantes",
+      "en": "Carla Cervantes Award"
+    },
+    "client": "Forbes 30 Under 30",
+    "talent": "Carla Cervantes",
+    "year": "2018",
+    "description": {
+      "es": "Reconocimiento a Carla Cervantes en la lista Forbes 30 Under 30.",
+      "en": "Recognition of Carla Cervantes in the Forbes 30 Under 30 list."
+    },
+    "image": "/forbes-carla-1.jpg",
+    "images": [
+      "/forbes-carla-1.jpg",
+      "/forbes-carla-2.jpg",
+      "/forbes-carla-3.jpg"
     ]
   },
   {

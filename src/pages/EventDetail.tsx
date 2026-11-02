@@ -83,9 +83,21 @@ export default function EventDetail() {
         <h2 className="text-[10px] uppercase tracking-[0.3em] opacity-30 mb-6 font-sans font-bold">
           {language === 'es' ? 'El Proyecto' : 'The Project'}
         </h2>
-        <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
+        <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed whitespace-pre-line">
           {event.description[language]}
         </p>
+        {'videoUrl' in event && event.videoUrl && (
+          <div className="mt-8">
+            <a
+              href={event.videoUrl as string}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 text-xs uppercase tracking-[0.2em] border border-white/20 px-6 py-3 hover:bg-white hover:text-black transition-all duration-300"
+            >
+              <span>▶ {language === 'es' ? 'Ver Vídeo' : 'Watch Video'}</span>
+            </a>
+          </div>
+        )}
       </section>
 
       {/* Gallery Grid */}
