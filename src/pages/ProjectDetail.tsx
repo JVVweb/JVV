@@ -109,6 +109,23 @@ export default function ProjectDetail() {
                 />
               </motion.div>
             ))}
+            {project.videoUrl && project.videoUrl.toLowerCase().endsWith('.mp4') && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="break-inside-avoid mb-6 bg-zinc-900 shadow-lg border border-white/5 overflow-hidden rounded-sm"
+              >
+                <video
+                  src={project.videoUrl}
+                  controls
+                  playsInline
+                  preload="metadata"
+                  className="w-full h-auto block"
+                />
+              </motion.div>
+            )}
           </div>
         ) : (
           <div className="w-full aspect-[21/9] bg-zinc-950 border border-white/5 flex flex-col items-center justify-center rounded-sm">
