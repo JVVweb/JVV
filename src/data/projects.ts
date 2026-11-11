@@ -371,6 +371,27 @@ export const PROJECTS_DATA: Project[] = [
     ]
   },
   {
+    "id": 65,
+    "title": {
+      "es": "Embajadora Valeria Vegas",
+      "en": "Ambassador Valeria Vegas"
+    },
+    "client": "THE BODY SHOP",
+    "talent": "Valeria Vegas",
+    "year": "2023",
+    "description": {
+      "es": "Valeria Vegas, embajadora anual de la marca con el lema ‘Self Love Uprising’.",
+      "en": "Valeria Vegas, annual brand ambassador under the motto ‘Self Love Uprising’."
+    },
+    "image": "/wp-content/uploads/2025/12/1.jpg",
+    "images": [
+      "/wp-content/uploads/2025/12/1.jpg",
+      "/wp-content/uploads/2026/01/Untitled-1.png",
+      "/wp-content/uploads/2025/12/Sin-titulo.jpg",
+      "/wp-content/uploads/2025/12/2.jpg"
+    ]
+  },
+  {
     "id": 18,
     "title": {
       "es": "Embajador Abraham García",
@@ -584,11 +605,12 @@ export const PROJECTS_DATA: Project[] = [
       "/bastardo-mery-2.jpg",
       "/bastardo-mery-3.jpg"
     ],
+    "videoUrl": "https://bastardohostel.com/es/programacion/mery-myles/",
     "videoLinks": [
       {
         "label": {
-          "es": "Ver Evento en Bastardo Hostel",
-          "en": "View Event at Bastardo Hostel"
+          "es": "Ver Info en Bastardo Hostel",
+          "en": "View Info at Bastardo Hostel"
         },
         "url": "https://bastardohostel.com/es/programacion/mery-myles/"
       }
@@ -780,15 +802,15 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 63,
     "title": {
-      "es": "Encuentros JVV Vásquez Viedma",
-      "en": "Encuentros JVV Vásquez Viedma"
+      "es": "Presentado por Jesús Vázquez Viedma",
+      "en": "Hosted by Jesús Vázquez Viedma"
     },
-    "client": "Encuentros JVV Vásquez Viedma",
+    "client": "ENCUENTROS JVV",
     "talent": "Jesús Vázquez Viedma",
     "year": "2020",
     "description": {
-      "es": "Entrevistas hechas por JVV Vásquez Viedma a artistas durante la pandemia.",
-      "en": "Interviews conducted by JVV Vásquez Viedma with artists during the pandemic."
+      "es": "Entrevistas capitaneadas por el fundador y CEO de la agencia, Jesús Vázquez Viedma. Artistas de la familia JVV durante la pandemia.",
+      "en": "Interviews led by the agency's founder and CEO, Jesús Vázquez Viedma. Artists from the JVV family during the pandemic."
     },
     "image": "/encuentros-jvv-1.jpg",
     "images": [
@@ -796,6 +818,25 @@ export const PROJECTS_DATA: Project[] = [
       "/encuentros-jvv-2.jpg",
       "/encuentros-jvv-3.jpg"
     ]
+  },
+  {
+    "id": 66,
+    "title": {
+      "es": "Videoclip “Las Montañas” patrocinado por YSL y dirigido por Eduardo Casanova",
+      "en": "Music video “Las Montañas” sponsored by YSL and directed by Eduardo Casanova"
+    },
+    "client": "YSL",
+    "talent": "Delaporte, Eduardo Casanova",
+    "year": "2020",
+    "description": {
+      "es": "Videoclip de «Las Montañas» de Delaporte, publicado en 2020 en colaboración con YSL Beauty. El vídeo promociona la barra de labios Rouge Pur Couture The Slim y fue producido junto a Mad Moon Music y JVV.",
+      "en": "Music video for “Las Montañas” by Delaporte, released in 2020 in collaboration with YSL Beauty. The video promotes the Rouge Pur Couture The Slim lipstick and was produced alongside Mad Moon Music and JVV."
+    },
+    "image": "/ysl-las-montanas.jpg",
+    "images": [
+      "/ysl-las-montanas.jpg"
+    ],
+    "videoUrl": "https://www.youtube.com/watch?v=8P7qs04TR6w"
   },
   {
     "id": 33,
@@ -1049,21 +1090,21 @@ export const PROJECTS_DATA: Project[] = [
   {
     "id": 61,
     "title": {
-      "es": "Premio a Carla Cervantes",
-      "en": "Carla Cervantes Award"
+      "es": "Premio a Carla Cervantes y a Sandra Egido",
+      "en": "Award to Carla Cervantes and Sandra Egido"
     },
     "client": "Forbes 30 Under 30",
-    "talent": "Carla Cervantes",
+    "talent": "Carla Cervantes y Sandra Egido",
     "year": "2018",
     "description": {
-      "es": "Reconocimiento a Carla Cervantes en la lista Forbes 30 Under 30.",
-      "en": "Recognition of Carla Cervantes in the Forbes 30 Under 30 list."
+      "es": "Premio a Carla Cervantes y a Sandra Egido en la lista Forbes 30 Under 30.",
+      "en": "Award to Carla Cervantes and Sandra Egido in the Forbes 30 Under 30 list."
     },
-    "image": "/forbes-carla-1.jpg",
+    "image": "/forbes-carla-3.jpg",
     "images": [
+      "/forbes-carla-3.jpg",
       "/forbes-carla-1.jpg",
-      "/forbes-carla-2.jpg",
-      "/forbes-carla-3.jpg"
+      "/forbes-carla-2.jpg"
     ]
   },
   {

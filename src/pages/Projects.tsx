@@ -73,15 +73,29 @@ export default function Projects() {
                 <Link to={`/projects/${project.id}`} className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all">
                   {language === 'es' ? 'Ver Proyecto' : 'View Project'}
                 </Link>
-                {project.videoUrl && (
-                  <a
-                    href={project.videoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all opacity-70 hover:opacity-100"
-                  >
-                    {language === 'es' ? 'Ver Video ↗' : 'Watch Video ↗'}
-                  </a>
+                {project.videoLinks && project.videoLinks.length > 0 ? (
+                  project.videoLinks.map((vLink, vIdx) => (
+                    <a
+                      key={vIdx}
+                      href={vLink.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all opacity-70 hover:opacity-100"
+                    >
+                      {vLink.label[language]} ↗
+                    </a>
+                  ))
+                ) : (
+                  project.videoUrl && !project.videoUrl.endsWith('.mp4') && (
+                    <a
+                      href={project.videoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs uppercase tracking-tight border-b border-white/20 pb-2 hover:border-white transition-all opacity-70 hover:opacity-100"
+                    >
+                      {language === 'es' ? 'Ver Video ↗' : 'Watch Video ↗'}
+                    </a>
+                  )
                 )}
               </div>
             </div>

@@ -50,6 +50,8 @@ const CLIENT_LOGOS = [
   '/logos/marcas/timeout.png',
   '/logos/marcas/jvv-premios.png',
   '/logos/marcas/uc3m.png',
+  '/logos/marcas/volkswagen.svg',
+  '/logos/marcas/jvv-stubhub.svg',
 ];
 
 const ALLIANCE_LOGOS = [
@@ -61,6 +63,8 @@ const ALLIANCE_LOGOS = [
   '/logos/alianzas/jvv-icon.png',
   '/logos/alianzas/jvv-instyle.png',
   '/logos/alianzas/logo-neo2-copia.png',
+  '/logos/alianzas/jvv-mine.png',
+  '/logos/alianzas/jvv-kluid-magazine-logo.png',
   '/logos/alianzas/images-3-copia.png',
   '/logos/alianzas/the-objective.png',
   '/logos/alianzas/shangay.png',
@@ -79,8 +83,32 @@ const ALLIANCE_LOGOS = [
   '/logos/alianzas/jvv-analocking-logo.png',
   '/logos/alianzas/jvv-moisesnieto-logo.png',
   '/logos/alianzas/jvv-dominico.png',
+  '/logos/alianzas/jvv-secondskin.png',
+  '/logos/alianzas/jvv-juan-vidale-logo.svg',
+  '/logos/alianzas/unknown.png',
+  '/logos/alianzas/jvv-duarte-logo.png',
+  '/logos/alianzas/jvv-cxharoruiz-logo.png',
+  '/logos/alianzas/jvv-vmb-logo.png',
+  '/logos/alianzas/jvv-loreak-logo.png',
+  '/logos/alianzas/antony.png',
+  '/logos/alianzas/blacklimba.png',
+  '/logos/alianzas/jvv-mrboho-logo.png',
+  '/logos/alianzas/kevin.png',
   '/logos/alianzas/jvv-estrelladamm-logo.png',
   '/logos/alianzas/trabalhe-conosco-heineken.png',
+  '/logos/alianzas/jvv-morritz-logo.png',
+  '/logos/alianzas/victoria.png',
+  '/logos/alianzas/jvv-gramona-logo.png',
+  '/logos/alianzas/jvv-premiummixes-logo.png',
+  '/logos/alianzas/moonwater.png',
+  '/logos/alianzas/jvv-totem-logo.png',
+  '/logos/alianzas/jvv-malasan-a-logo.png',
+  '/logos/alianzas/jvv-mdc-logo.png',
+  '/logos/alianzas/jvv-replica2-logo.png',
+  '/logos/alianzas/jvv-mahala-logo.png',
+  '/logos/alianzas/logo-sabor.png',
+  '/logos/alianzas/trebor.png',
+  '/logos/alianzas/fundaciojoan.png',
 ];
 
 const getLogoClass = (logo: string) => {
@@ -101,7 +129,18 @@ const getLogoClass = (logo: string) => {
     logo.includes('converse') ||
     logo.includes('premios') ||
     logo.includes('drmartins') ||
-    logo.includes('laroca')
+    logo.includes('laroca') ||
+    logo.includes('volkswagen') ||
+    logo.includes('duarte') ||
+    logo.includes('kluid') ||
+    logo.includes('malasan') ||
+    logo.includes('mdc') ||
+    logo.includes('mine') ||
+    logo.includes('morritz') ||
+    logo.includes('replica') ||
+    logo.includes('moonwater') ||
+    logo.includes('kevin') ||
+    logo.includes('fundaciojoan')
   ) {
     // Compact, square, and badge logos
     return 'h-9 md:h-11 w-auto max-w-[130px]';
@@ -114,7 +153,14 @@ const getLogoClass = (logo: string) => {
     logo.includes('voguebusiness') ||
     logo.includes('the-objective') ||
     logo.includes('esteelauder') ||
-    logo.includes('tiffanny')
+    logo.includes('tiffanny') ||
+    logo.includes('blacklimba') ||
+    logo.includes('secondskin') ||
+    logo.includes('unknown') ||
+    logo.includes('antony') ||
+    logo.includes('mrboho') ||
+    logo.includes('loreak') ||
+    logo.includes('juan-vidale')
   ) {
     // Wide banner wordmarks
     return 'h-5 md:h-6 w-auto max-w-[180px] md:max-w-[210px]';
