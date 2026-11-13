@@ -22,150 +22,232 @@ const MOBILE_BANNERS = [
 ];
 
 const CLIENT_LOGOS = [
-  '/logos/marcas/netflix.png',
-  '/logos/marcas/prime.png',
-  '/logos/marcas/mastercard.png',
-  '/logos/marcas/armani.png',
-  '/logos/marcas/ck.png',
-  '/logos/marcas/commes-des-garc-ons.png',
-  '/logos/marcas/jvv-chloe-logo.png',
-  '/logos/marcas/jvv-kenzo.png',
-  '/logos/marcas/jvv-jeanpaulgaultier.png',
-  '/logos/marcas/jvv-tiffanny.png',
-  '/logos/marcas/jvv-yslbeaute.png',
-  '/logos/marcas/jvv-esteelauder-logo.png',
-  '/logos/marcas/jvv-mac.png',
-  '/logos/marcas/aristocrazy.png',
-  '/logos/marcas/jvv-birckenstock.png',
-  '/logos/marcas/jvv-reebok.png',
-  '/logos/marcas/jvv-eastpack-logo.png',
-  '/logos/marcas/jvv-bershka.png',
-  '/logos/marcas/the-body-shop-logo-copia.png',
-  '/logos/marcas/jvv-martini.png',
-  '/logos/marcas/jvv-victoria.png',
-  '/logos/marcas/jvv-memadrid.png',
-  '/logos/marcas/jvv-laroca.png',
-  '/logos/marcas/jvv-hola.png',
-  '/logos/marcas/jvv-yodona-logo.png',
-  '/logos/marcas/timeout.png',
-  '/logos/marcas/jvv-premios.png',
-  '/logos/marcas/uc3m.png',
-  '/logos/marcas/volkswagen.svg',
-  '/logos/marcas/jvv-stubhub.svg',
+  { src: '/logos/marcas/mastercard.png', aspect: 1.29 },
+  { src: '/logos/marcas/jvv-stubhub.png', aspect: 4.91 },
+  { src: '/logos/marcas/jvv-jeanpaulgaultier.png', aspect: 2.77 },
+  { src: '/logos/marcas/commes-des-garcons.png', aspect: 9.19 },
+  { src: '/logos/marcas/volkswagen.png', aspect: 1 },
+  { src: '/logos/marcas/jvv-victoria.png', aspect: 5.27 },
+  { src: '/logos/marcas/jvv-tiffanny-1.png', aspect: 7.84 },
+  { src: '/logos/marcas/jvv-yodona.png', aspect: 1.23 },
+  { src: '/logos/marcas/jvv-estee.png', aspect: 8.04 },
+  { src: '/logos/marcas/jvv-eastpack.png', aspect: 2.8 },
+  { src: '/logos/marcas/jvv-chloe-1.png', aspect: 3.23 },
+  { src: '/logos/marcas/jvv-hola.png', aspect: 3.03 },
+  { src: '/logos/marcas/armani.png', aspect: 1.97 },
+  { src: '/logos/marcas/ck.png', aspect: 6.19 },
+  { src: '/logos/marcas/timeout.png', aspect: 2.65 },
+  { src: '/logos/marcas/the-body-shop-logo-copia.png', aspect: 1.02 },
+  { src: '/logos/marcas/uc3m.png', aspect: 3.28 },
+  { src: '/logos/marcas/prime.png', aspect: 3.25 },
+  { src: '/logos/marcas/jvv-birckenstock-1.png', aspect: 5.93 },
+  { src: '/logos/marcas/jvv-bershka.png', aspect: 4.59 },
+  { src: '/logos/marcas/jvv-reebok.png', aspect: 4.99 },
+  { src: '/logos/marcas/netflix.png', aspect: 3.63 },
+  { src: '/logos/marcas/jvv-yslbeaute.png', aspect: 0.5 },
+  { src: '/logos/marcas/jvv-memadrid.png', aspect: 1.15 },
+  { src: '/logos/marcas/aristocrazy.png', aspect: 5.86 },
+  { src: '/logos/marcas/jvv-premios.png', aspect: 1.64 },
+  { src: '/logos/marcas/jvv-laroca.png', aspect: 1.76 },
+  { src: '/logos/marcas/jvv-martini.png', aspect: 2.25 },
+  { src: '/logos/marcas/jvv-mac.png', aspect: 5.16 },
+  { src: '/logos/marcas/jvv-kenzo.png', aspect: 5.08 },
+  { src: '/logos/marcas/jvv-linda-logo.png', aspect: 1.24 },
+  { src: '/logos/marcas/jvv-armani-logo.png', aspect: 10.43 },
+  { src: '/logos/marcas/jvv-dior-logo.png', aspect: 2.5 },
+  { src: '/logos/marcas/jvv-shon-mott-logo.png', aspect: 10.43 },
+  { src: '/logos/marcas/thyssen.png', aspect: 2.49 },
+  { src: '/logos/marcas/jvv-madcool.png', aspect: 1.88 },
+  { src: '/logos/marcas/jvv-bulgari.png', aspect: 10.16 },
+  { src: '/logos/marcas/sin-titulo-1.png', aspect: 1.15 },
+  { src: '/logos/marcas/jvv-chacha.png', aspect: 1.39 },
+  { src: '/logos/marcas/jvv-filmin.png', aspect: 3.54 },
+  { src: '/logos/marcas/jvv-es-logo.png', aspect: 1.69 },
+  { src: '/logos/marcas/jvv-mango-logo.png', aspect: 6.11 },
+  { src: '/logos/marcas/jvv-lydiadelgado-logo.png', aspect: 4.4 },
+  { src: '/logos/marcas/jvv-guiness-logo.png', aspect: 1.92 },
+  { src: '/logos/marcas/jvv-sesena-logo.png', aspect: 4.52 },
+  { src: '/logos/marcas/kisspng-aperol-spritz-aperol-spritz-apritif-cocktail-apperol-5b24d277766cb9-2279400415291398314851-1.png', aspect: 1 },
+  { src: '/logos/marcas/jvv-baazar-logo.png', aspect: 4.13 },
+  { src: '/logos/marcas/jvv-elenabenarroch-logo.png', aspect: 2.04 },
+  { src: '/logos/marcas/jvv-jameson-logo.png', aspect: 2.99 },
+  { src: '/logos/marcas/jvv-brogmans-logo.png', aspect: 2.75 },
+  { src: '/logos/marcas/jvv-violetamango-logo.png', aspect: 3.15 },
+  { src: '/logos/marcas/jvv-tmagazine-logo.png', aspect: 0.84 },
+  { src: '/logos/marcas/jvv-sohohouse-logo.png', aspect: 1.58 },
+  { src: '/logos/marcas/jvv-laperla.png', aspect: 6.07 },
+  { src: '/logos/marcas/jvv-mazza-logo.png', aspect: 0.99 },
+  { src: '/logos/marcas/jvv-flooxer-logo.png', aspect: 4.11 },
+  { src: '/logos/marcas/jvv-dsquared-logo.png', aspect: 7.87 },
+  { src: '/logos/marcas/jvv-utopia-logo.png', aspect: 2.03 },
+  { src: '/logos/marcas/vestiaire-collective.png', aspect: 4.28 },
+  { src: '/logos/marcas/paraiso-logotipo-1.png', aspect: 6.56 },
+  { src: '/logos/marcas/jvv-thestoat-logo.png', aspect: 4.45 },
+  { src: '/logos/marcas/volvo-text-logo.png', aspect: 7.26 },
+  { src: '/logos/marcas/jvv-danone-logo.png', aspect: 3.18 },
+  { src: '/logos/marcas/jvv-starlite-logo.png', aspect: 1.79 },
+  { src: '/logos/marcas/amazon.png', aspect: 3.32 },
+  { src: '/logos/marcas/jvv-madrid-logo.png', aspect: 0.85 },
+  { src: '/logos/marcas/jvv-forbes-logo.png', aspect: 3.84 },
+  { src: '/logos/marcas/jvv-homeselect-logo.png', aspect: 10.94 },
+  { src: '/logos/marcas/jvv-avelinovargas-logo.png', aspect: 1.5 },
+  { src: '/logos/marcas/jvv-tanqueray-logo.png', aspect: 4.3 },
+  { src: '/logos/marcas/jvv-charco-logo.png', aspect: 3.68 },
+  { src: '/logos/marcas/jvv-luisatoledo-logo.png', aspect: 2.01 },
+  { src: '/logos/marcas/jvv-bultaco-logo.png', aspect: 4.72 },
+  { src: '/logos/marcas/jvv-eamseemadrid-logo.png', aspect: 3.84 },
+  { src: '/logos/marcas/jvv-vandomian-logo.png', aspect: 6.78 },
+  { src: '/logos/marcas/jvv-cozarllado-logo.png', aspect: 16.36 },
+  { src: '/logos/marcas/jvv-serviciocontinuo-logo.png', aspect: 1.54 },
+  { src: '/logos/marcas/devayalogo.png', aspect: 1.09 },
+  { src: '/logos/marcas/jvv-apartamnets-logo.png', aspect: 4.57 },
+  { src: '/logos/marcas/jvv-ponytale-logo.png', aspect: 2.31 },
+  { src: '/logos/marcas/jvv-h2h-logo.png', aspect: 1.76 },
+  { src: '/logos/marcas/jvv-metropolis-logo.png', aspect: 3.47 },
+  { src: '/logos/marcas/paco-rabanne.png', aspect: 8.63 },
+  { src: '/logos/marcas/jvv-gaviria-logo.png', aspect: 2.69 },
+  { src: '/logos/marcas/inaem-1500x920-copia.png', aspect: 4.78 },
+  { src: '/logos/marcas/jvv-paracaidistak-logo.png', aspect: 1 },
+  { src: '/logos/marcas/jvv-logo-loreal.png', aspect: 5.48 },
+  { src: '/logos/marcas/jvv-etnia.png', aspect: 2.71 },
+  { src: '/logos/marcas/jvv-jb.png', aspect: 0.84 },
+  { src: '/logos/marcas/imagenprincipalbig-e7c2ebc2-0675-48fa-be55-0c473352a6f5.png', aspect: 9.41 },
+  { src: '/logos/marcas/fever-tree.png', aspect: 2.68 },
+  { src: '/logos/marcas/jvv-monocle.png', aspect: 1.34 },
+  { src: '/logos/marcas/logo-santa-lucia-n-copia.png', aspect: 0.9 },
+  { src: '/logos/marcas/satisfyer.png', aspect: 4.69 },
+  { src: '/logos/marcas/logitech.png', aspect: 3.29 },
+  { src: '/logos/marcas/antonio.png', aspect: 0.97 },
+  { src: '/logos/marcas/jvv-modacalida.png', aspect: 2.5 },
+  { src: '/logos/marcas/burro.png', aspect: 2.11 },
+  { src: '/logos/marcas/vampire.png', aspect: 6.32 },
+  { src: '/logos/marcas/matador-logo.png', aspect: 12.14 },
+  { src: '/logos/marcas/jvv-loom.png', aspect: 2.62 },
+  { src: '/logos/marcas/freeda.png', aspect: 1.97 },
+  { src: '/logos/marcas/playground.png', aspect: 5.95 },
+  { src: '/logos/marcas/respuesta.png', aspect: 0.98 },
+  { src: '/logos/marcas/latitude-logo-2-1.png', aspect: 13.25 },
+  { src: '/logos/marcas/info-murcia.png', aspect: 1.21 },
+  { src: '/logos/marcas/jvv-lassere.png', aspect: 4.44 },
+  { src: '/logos/marcas/caixa.png', aspect: 4.82 },
+  { src: '/logos/marcas/cruzcampo.png', aspect: 4.72 },
+  { src: '/logos/marcas/sexta.png', aspect: 0.7 },
+  { src: '/logos/marcas/disaronno.png', aspect: 4.67 },
+  { src: '/logos/marcas/riu.png', aspect: 1.7 },
+  { src: '/logos/marcas/movistar.png', aspect: 1.42 },
+  { src: '/logos/marcas/fluchos.png', aspect: 1.92 },
+  { src: '/logos/marcas/inverfest.png', aspect: 5.26 },
+  { src: '/logos/marcas/jvv-frangelico.png', aspect: 2.41 },
+  { src: '/logos/marcas/jvv-divuit.png', aspect: 1.44 },
+  { src: '/logos/marcas/jvv-rogervivier.png', aspect: 3.23 },
+  { src: '/logos/marcas/sage.png', aspect: 1.78 },
+  { src: '/logos/marcas/oblicuo.png', aspect: 1.36 },
+  { src: '/logos/marcas/cistore.png', aspect: 1.16 },
+  { src: '/logos/marcas/junohouse.png', aspect: 5.77 },
+  { src: '/logos/marcas/patyka.png', aspect: 3.63 },
+  { src: '/logos/marcas/andbank.png', aspect: 5.82 },
+  { src: '/logos/marcas/torrejon.png', aspect: 1.91 },
+  { src: '/logos/marcas/cegid.png', aspect: 2.46 },
+  { src: '/logos/marcas/chaumet.png', aspect: 4.72 },
+  { src: '/logos/marcas/montenegro.png', aspect: 8.6 },
+  { src: '/logos/marcas/sepiia.png', aspect: 3.37 },
+  { src: '/logos/marcas/aliu.png', aspect: 4.31 },
+  { src: '/logos/marcas/flaxkale.png', aspect: 4.73 },
+  { src: '/logos/marcas/obradorlanena.png', aspect: 2.47 },
+  { src: '/logos/marcas/womanrocks.png', aspect: 1 },
 ];
 
 const ALLIANCE_LOGOS = [
-  '/logos/alianzas/jvv-vogue-logo.png',
-  '/logos/alianzas/voguebusiness.png',
-  '/logos/alianzas/jvv-condenast.png',
-  '/logos/alianzas/jvv-gq.png',
-  '/logos/alianzas/jvv-ad.png',
-  '/logos/alianzas/jvv-icon.png',
-  '/logos/alianzas/jvv-instyle.png',
-  '/logos/alianzas/logo-neo2-copia.png',
-  '/logos/alianzas/jvv-mine.png',
-  '/logos/alianzas/jvv-kluid-magazine-logo.png',
-  '/logos/alianzas/images-3-copia.png',
-  '/logos/alianzas/the-objective.png',
-  '/logos/alianzas/shangay.png',
-  '/logos/alianzas/jvv-rne-logo.png',
-  '/logos/alianzas/jvv-sonar-logo.png',
-  '/logos/alianzas/cala-mijas.png',
-  '/logos/alianzas/jvv-stellamccartney-logo.png',
-  '/logos/alianzas/jvv-hilfiger-logo.png',
-  '/logos/alianzas/jvv-levis-logo.png',
-  '/logos/alianzas/h-038-m.png',
-  '/logos/alianzas/uniqlo.png',
-  '/logos/alianzas/jvv-drmartins3-logo.png',
-  '/logos/alianzas/jvv-converse-logo.png',
-  '/logos/alianzas/vespa.png',
-  '/logos/alianzas/jvv-palomo-logo.png',
-  '/logos/alianzas/jvv-analocking-logo.png',
-  '/logos/alianzas/jvv-moisesnieto-logo.png',
-  '/logos/alianzas/jvv-dominico.png',
-  '/logos/alianzas/jvv-secondskin.png',
-  '/logos/alianzas/jvv-juan-vidale-logo.svg',
-  '/logos/alianzas/unknown.png',
-  '/logos/alianzas/jvv-duarte-logo.png',
-  '/logos/alianzas/jvv-cxharoruiz-logo.png',
-  '/logos/alianzas/jvv-vmb-logo.png',
-  '/logos/alianzas/jvv-loreak-logo.png',
-  '/logos/alianzas/antony.png',
-  '/logos/alianzas/blacklimba.png',
-  '/logos/alianzas/jvv-mrboho-logo.png',
-  '/logos/alianzas/kevin.png',
-  '/logos/alianzas/jvv-estrelladamm-logo.png',
-  '/logos/alianzas/trabalhe-conosco-heineken.png',
-  '/logos/alianzas/jvv-morritz-logo.png',
-  '/logos/alianzas/victoria.png',
-  '/logos/alianzas/jvv-gramona-logo.png',
-  '/logos/alianzas/jvv-premiummixes-logo.png',
-  '/logos/alianzas/moonwater.png',
-  '/logos/alianzas/jvv-totem-logo.png',
-  '/logos/alianzas/jvv-malasan-a-logo.png',
-  '/logos/alianzas/jvv-mdc-logo.png',
-  '/logos/alianzas/jvv-replica2-logo.png',
-  '/logos/alianzas/jvv-mahala-logo.png',
-  '/logos/alianzas/logo-sabor.png',
-  '/logos/alianzas/trebor.png',
-  '/logos/alianzas/fundaciojoan.png',
+  { src: '/logos/alianzas/jvv-gq.png', aspect: 2.05 },
+  { src: '/logos/alianzas/hm-1.png', aspect: 1.51 },
+  { src: '/logos/alianzas/uniqlo-1.png', aspect: 1.01 },
+  { src: '/logos/alianzas/jvv-hilfiger-logo.png', aspect: 17.7 },
+  { src: '/logos/alianzas/jvv-icon.png', aspect: 5.11 },
+  { src: '/logos/alianzas/jvv-estrelladamm-logo.png', aspect: 1.19 },
+  { src: '/logos/alianzas/cala-mijas.png', aspect: 1 },
+  { src: '/logos/alianzas/vespa.png', aspect: 1.92 },
+  { src: '/logos/alianzas/jvv-vogue-logo.png', aspect: 3.89 },
+  { src: '/logos/alianzas/jvv-morritz-logo.png', aspect: 1 },
+  { src: '/logos/alianzas/logo-neo2-copia.png', aspect: 4.63 },
+  { src: '/logos/alianzas/jvv-rne-logo.png', aspect: 1.96 },
+  { src: '/logos/alianzas/jvv-premiummixes-logo.png', aspect: 2.14 },
+  { src: '/logos/alianzas/jvv-mine.png', aspect: 1.78 },
+  { src: '/logos/alianzas/jvv-sonar-logo.png', aspect: 3.42 },
+  { src: '/logos/alianzas/jvv-moisesnieto-logo.png', aspect: 15.8 },
+  { src: '/logos/alianzas/moonwater.png', aspect: 1.17 },
+  { src: '/logos/alianzas/jvv-instyle.png', aspect: 4.15 },
+  { src: '/logos/alianzas/jvv-drmartins3-logo.png', aspect: 1.74 },
+  { src: '/logos/alianzas/jvv-ad.png', aspect: 1.42 },
+  { src: '/logos/alianzas/jvv-converse-logo.png', aspect: 1.55 },
+  { src: '/logos/alianzas/jvv-stellamccartney-logo.png', aspect: 5.67 },
+  { src: '/logos/alianzas/jvv-levis-logo.png', aspect: 2.46 },
+  { src: '/logos/alianzas/trabalhe-conosco-heineken.png', aspect: 1.98 },
+  { src: '/logos/alianzas/jvv-condenast.png', aspect: 4.99 },
+  { src: '/logos/alianzas/jvv-malasana-logo.png', aspect: 1.05 },
+  { src: '/logos/alianzas/jvv-totem-logo.png', aspect: 3.2 },
+  { src: '/logos/alianzas/jvv-loreak-logo.png', aspect: 5.8 },
+  { src: '/logos/alianzas/jvv-palomo-logo.png', aspect: 4.05 },
+  { src: '/logos/alianzas/jvv-analocking-logo.png', aspect: 10.5 },
+  { src: '/logos/alianzas/jvv-dominico.png', aspect: 4.8 },
+  { src: '/logos/alianzas/jvv-secondskin.png', aspect: 16.83 },
+  { src: '/logos/alianzas/jvv-gramona-logo.png', aspect: 3.11 },
+  { src: '/logos/alianzas/logo-sabor-1.png', aspect: 2.83 },
+  { src: '/logos/alianzas/jvv-juan-vidale-logo.png', aspect: 14.74 },
+  { src: '/logos/alianzas/jvv-kluid-magazine-logo.png', aspect: 1.01 },
+  { src: '/logos/alianzas/jvv-duarte-logo.png', aspect: 1 },
+  { src: '/logos/alianzas/jvv-mrboho-logo.png', aspect: 6.35 },
+  { src: '/logos/alianzas/jvv-replica2-logo.png', aspect: 1.03 },
+  { src: '/logos/alianzas/jvv-cxharoruiz-logo.png', aspect: 2.35 },
+  { src: '/logos/alianzas/jvv-vmb-logo.png', aspect: 2.21 },
+  { src: '/logos/alianzas/jvv-mahala-logo.png', aspect: 4.92 },
+  { src: '/logos/alianzas/jvv-mdc-logo.png', aspect: 1 },
+  { src: '/logos/alianzas/unknown.png', aspect: 11.12 },
+  { src: '/logos/alianzas/shangay.png', aspect: 3.35 },
+  { src: '/logos/alianzas/the-objective-1.png', aspect: 8.89 },
+  { src: '/logos/alianzas/voguebusiness.png', aspect: 9.34 },
+  { src: '/logos/alianzas/fundaciojoan-1.png', aspect: 1.96 },
+  { src: '/logos/alianzas/images-3-copia.png', aspect: 5.02 },
+  { src: '/logos/alianzas/blacklimba.png', aspect: 13.47 },
+  { src: '/logos/alianzas/victoria.png', aspect: 5 },
+  { src: '/logos/alianzas/antony.png', aspect: 7.07 },
+  { src: '/logos/alianzas/kevin.png', aspect: 0.63 },
+  { src: '/logos/alianzas/trebor.png', aspect: 3.42 },
+  { src: '/logos/alianzas/4home.png', aspect: 0.78 },
+  { src: '/logos/alianzas/folie.png', aspect: 2.97 },
+  { src: '/logos/alianzas/sexta.png', aspect: 4.9 },
+  { src: '/logos/alianzas/razon.png', aspect: 5.63 },
+  { src: '/logos/alianzas/jvv-lexdeux.png', aspect: 5.32 },
+  { src: '/logos/alianzas/vanidad.png', aspect: 4.96 },
+  { src: '/logos/alianzas/revista.png', aspect: 2.34 },
+  { src: '/logos/alianzas/reclam.png', aspect: 5.09 },
+  { src: '/logos/alianzas/museo-helga.png', aspect: 1 },
+  { src: '/logos/alianzas/20-minutos.png', aspect: 6.1 },
+  { src: '/logos/alianzas/progreso.png', aspect: 7.55 },
+  { src: '/logos/alianzas/jvv-sclhesser.png', aspect: 13.66 },
+  { src: '/logos/alianzas/jvv-ailanto-logo.png', aspect: 5.47 },
+  { src: '/logos/alianzas/magasin.png', aspect: 4.1 },
+  { src: '/logos/alianzas/acelerar.png', aspect: 4.21 },
+  { src: '/logos/alianzas/top100-1.png', aspect: 0.77 },
+  { src: '/logos/alianzas/heura.png', aspect: 5.04 },
+  { src: '/logos/alianzas/etnia.png', aspect: 4.33 },
+  { src: '/logos/alianzas/ecoalf.png', aspect: 5.67 },
+  { src: '/logos/alianzas/aro.png', aspect: 1 },
+  { src: '/logos/alianzas/junohouse.png', aspect: 5.77 },
 ];
 
-const getLogoClass = (logo: string) => {
-  if (logo.includes('ysl')) {
-    // Tall vertical monogram: make it prominent, crisp, and clear
+const getLogoClass = (logo: { src: string; aspect: number }) => {
+  if (logo.src.includes('ysl')) {
     return 'h-12 md:h-16 w-auto max-w-[120px]';
   }
-  if (
-    logo.includes('cala-mijas') ||
-    logo.includes('body-shop') ||
-    logo.includes('uniqlo') ||
-    logo.includes('memadrid') ||
-    logo.includes('estrelladamm') ||
-    logo.includes('yodona') ||
-    logo.includes('mastercard') ||
-    logo.includes('jvv-ad') ||
-    logo.includes('h-038-m') ||
-    logo.includes('converse') ||
-    logo.includes('premios') ||
-    logo.includes('drmartins') ||
-    logo.includes('laroca') ||
-    logo.includes('volkswagen') ||
-    logo.includes('duarte') ||
-    logo.includes('kluid') ||
-    logo.includes('malasan') ||
-    logo.includes('mdc') ||
-    logo.includes('mine') ||
-    logo.includes('morritz') ||
-    logo.includes('replica') ||
-    logo.includes('moonwater') ||
-    logo.includes('kevin') ||
-    logo.includes('fundaciojoan')
-  ) {
-    // Compact, square, and badge logos
+  if (logo.aspect < 0.85) {
+    return 'h-10 md:h-12 w-auto max-w-[120px]';
+  }
+  if (logo.aspect <= 1.75) {
     return 'h-9 md:h-11 w-auto max-w-[130px]';
   }
-  if (
-    logo.includes('hilfiger') ||
-    logo.includes('moisesnieto') ||
-    logo.includes('analocking') ||
-    logo.includes('commes-des-garc') ||
-    logo.includes('voguebusiness') ||
-    logo.includes('the-objective') ||
-    logo.includes('esteelauder') ||
-    logo.includes('tiffanny') ||
-    logo.includes('blacklimba') ||
-    logo.includes('secondskin') ||
-    logo.includes('unknown') ||
-    logo.includes('antony') ||
-    logo.includes('mrboho') ||
-    logo.includes('loreak') ||
-    logo.includes('juan-vidale')
-  ) {
-    // Wide banner wordmarks
+  if (logo.aspect >= 4.2) {
     return 'h-5 md:h-6 w-auto max-w-[180px] md:max-w-[210px]';
   }
-  // Standard logos
   return 'h-7 md:h-8 w-auto max-w-[150px] md:max-w-[180px]';
 };
 
@@ -326,13 +408,13 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
-          <div className="animate-marquee flex w-max items-center">
+          <div className="animate-marquee flex w-max items-center" style={{ animationDuration: '520s' }}>
             {/* Set 1 */}
             <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {CLIENT_LOGOS.map((logo, idx) => (
                 <div key={`logo-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
-                    src={logo}
+                    src={logo.src}
                     alt="Client Brand"
                     className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
@@ -344,7 +426,7 @@ export default function Home() {
               {CLIENT_LOGOS.map((logo, idx) => (
                 <div key={`logo-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
-                    src={logo}
+                    src={logo.src}
                     alt="Client Brand"
                     className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
@@ -405,13 +487,13 @@ export default function Home() {
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
           
-          <div className="animate-marquee flex w-max items-center">
+          <div className="animate-marquee flex w-max items-center" style={{ animationDuration: '295s' }}>
             {/* Set 1 */}
             <div className="flex items-center gap-8 md:gap-14 pr-8 md:pr-14">
               {ALLIANCE_LOGOS.map((logo, idx) => (
                 <div key={`alliance-1-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
-                    src={logo}
+                    src={logo.src}
                     alt="Alliance Partner"
                     className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
@@ -423,7 +505,7 @@ export default function Home() {
               {ALLIANCE_LOGOS.map((logo, idx) => (
                 <div key={`alliance-2-${idx}`} className="flex items-center justify-center shrink-0 h-14 md:h-16 px-2">
                   <img
-                    src={logo}
+                    src={logo.src}
                     alt="Alliance Partner"
                     className={`${getLogoClass(logo)} object-contain opacity-50 hover:opacity-100 transition-opacity duration-300`}
                   />
