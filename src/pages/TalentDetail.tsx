@@ -50,7 +50,7 @@ export default function TalentDetail() {
             </div>
 
             <div className="space-y-6">
-              <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed">
+              <p className="text-lg md:text-xl font-light opacity-70 leading-relaxed whitespace-pre-line">
                 {talent.description[language]}
               </p>
             </div>

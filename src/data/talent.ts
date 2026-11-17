@@ -1339,6 +1339,54 @@ export const TALENT_DATA: Talent[] = [
   },
 
   {
+    "id": 31,
+    "name": "Ale Marañón",
+    type: ['emprendedoras', 'pintoras'],
+    "location": "Madrid",
+    image: '/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg',
+    "description": {
+      "es": "Alejandra Marañón, licenciada en Publicidad y Relaciones Públicas por la Universidad de Navarra, es artista, creadora de contenido y emprendedora especializada en moda, belleza y cosmética.\n\nAle es hermana de Carlota Marañón, ambas comparten el gusto por la estética, los viajes y el arte.\n\nEn 2018 fundó Epiliscious, su primera firma de cosmética, que llegó a comercializarse en Druni.\n\nEn 2025 creó Amortizia Dark Couture, marca de moda con estética gótica, diseñada y producida en España y con presencia internacional que cada vez tiene más fieles clientas y clientes.\n\nCompagina su trayectoria empresarial con su trabajo como pintora y la creación de contenido en Instagram y TikTok, donde comparte su particular universo dark a través del arte, la moda, el maquillaje, la joyería y el lifestyle.",
+      "en": "Alejandra Marañón, who holds a degree in Advertising and Public Relations from the University of Navarra, is an artist, content creator, and entrepreneur specializing in fashion, beauty, and cosmetics.\n\nAle is the sister of Carlota Marañón; both share a passion for aesthetics, travel, and art.\n\nIn 2018 she founded Epiliscious, her first cosmetics brand, which went on to be sold at Druni.\n\nIn 2025 she created Amortizia Dark Couture, a gothic-aesthetic fashion brand designed and produced in Spain with an international presence and an ever-growing, loyal clientele.\n\nShe combines her entrepreneurial career with her work as a painter and content creation on Instagram and TikTok, where she shares her distinctive dark universe through art, fashion, makeup, jewelry, and lifestyle."
+    },
+    gallery: [
+      '/Talents/JVV _ ALE MARANON/ale-maranon-1.jpg',
+      '/Talents/JVV _ ALE MARANON/ale-maranon-2.jpg',
+      '/Talents/JVV _ ALE MARANON/ale-maranon-3.jpg',
+      '/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg'
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Artista · Emprendedora · Creadora de Contenido",
+        "Estudios": "Publicidad y Relaciones Públicas (Universidad de Navarra)",
+        "Marcas": "Amortizia Dark Couture, Epiliscious",
+        "Especialidad": "Arte, Moda, Belleza y Cosmética"
+      },
+      "en": {
+        "Profession": "Artist · Entrepreneur · Content Creator",
+        "Education": "Advertising & Public Relations (University of Navarra)",
+        "Brands": "Amortizia Dark Couture, Epiliscious",
+        "Specialty": "Art, Fashion, Beauty & Cosmetics"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Amortizia Dark Couture (Fundadora y Directora Creativa)",
+          "en": "Amortizia Dark Couture (Founder & Creative Director)"
+        },
+        "year": "2025"
+      },
+      {
+        "title": {
+          "es": "Epiliscious (Fundadora de firma de cosmética)",
+          "en": "Epiliscious (Founder of Cosmetics Brand)"
+        },
+        "year": "2018"
+      }
+    ]
+  },
+
+  {
     "id": 28,
     "name": "Pablo García",
     type: ['fotografos'],
