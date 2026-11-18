@@ -300,68 +300,6 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 6,
-    "name": "Rocío Saiz",
-    "type": [
-      "djs",
-      "comunicadores",
-      "emprendedoras",
-      "cantantes",
-      "actores"
-    ],
-    "location": "Madrid",
-    "image": "/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg",
-    "description": {
-      "es": "Activismo, política, feminismo, reivindicación y mucha música. Rocío Saiz es cantante solista además de formar parte de los grupos Monterrosa y Las Chillers, también es DJ y comunicadora. Su discurso a favor de la diversidad y su crítica al heteropatriarcado la han convertido en uno de los referentes LGTBIQ+ con más carácter y fuerza en España.\n\nAhora se embarca en esta nueva aventura. La pista de baile es política, la diversión nunca es tan inocente como se pinta, y los dramas amorosos rara vez son una experiencia intransferible. Rocío habla de todo lo que sucede antes, durante y después del baile: desengaños, sexo con y sin amor, relaciones tóxicas, la plenitud de ser dueña de tu destino tantas horas como sea posible, pero también el insomnio derivado del estrés laboral y falta de dinero y la necesidad de cierto hedonismo para olvidarse de todo de vez en cuando.\n\nLo ha hecho con Monterrosa con éxitos eurovisivos y baladas fuera de tiempo, como si pudiéramos juntar a Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia y Vengaboys para hacer himnos generacionales que expliquen cómo nos sentimos en 2020, y ahora emprende camino en solitario para unir mundos entre la sofisticación de Monterrosa y su fuerza viva con Las Chillers. En el verano de 2022 fue la presentadora del desfile ‘Out of the closet’ para el Hotel W Ibiza y la presentadora del nuevo espacio de Movistar + ‘La Nevera de Inverfest’\n\nHa participado en numerosos festivales como el Atlantic Fest, Cala Mijas o el Culture Business Pride en Tenerife junto a Village People.",
-      "en": "Activism, politics, feminism, advocacy, and lots of music. Rocío Saiz is a solo singer in addition to being part of the groups Monterrosa and Las Chillers, as well as a DJ and communicator. Her discourse in favor of diversity and her criticism of the heteropatriarchy have made her one of the LGTBIQ+ references with the most character and strength in Spain.\n\nNow she embarks on this new adventure. The dance floor is political, fun is never as innocent as it is painted, and love dramas are rarely a non-transferable experience. Rocío talks about everything that happens before, during, and after the dance: disappointments, sex with and without love, toxic relationships, the fulfillment of being master of your destiny for as many hours as possible, but also insomnia derived from work stress and lack of money, and the need for a certain hedonism to forget everything from time to time.\n\nShe did it with Monterrosa with Eurovision-style hits and timeless ballads, as if we could bring together Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia, and Vengaboys to make generational anthems explaining how we felt in 2020, and now she sets off on a solo journey to bridge worlds between the sophistication of Monterrosa and her live force with Las Chillers. In the summer of 2022, she hosted the \"Out of the closet\" fashion show for the W Ibiza Hotel and presented the new Movistar+ space \"La Nevera de Inverfest\".\n\nShe has participated in numerous festivals such as Atlantic Fest, Cala Mijas, or Culture Business Pride in Tenerife alongside Village People."
-    },
-    "gallery": [
-      "/Talents/JVV _ ROCIO SAIZ/imgi_60_MG_6157c-570x570.jpg",
-      "/Talents/JVV _ ROCIO SAIZ/imgi_6_image0-1-900x1200.jpg",
-      "/Talents/JVV _ ROCIO SAIZ/imgi_8_image2-1-900x1200.jpg",
-      "/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg"
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Cantante / DJ / Activista",
-        "Bandas": "Las Chillers, Monterrosa"
-      },
-      "en": {
-        "Profession": "Singer / DJ / Activist",
-        "Bands": "Las Chillers, Monterrosa"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "La Nevera de Inverfest (Presentadora de Movistar+)",
-          "en": "La Nevera de Inverfest (Movistar+ Presenter)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Out of the Closet (Presentadora en W Ibiza)",
-          "en": "Out of the Closet (W Ibiza Host)"
-        },
-        "year": "2022"
-      },
-      {
-        "title": {
-          "es": "Proyecto Electro-Pop Monterrosa",
-          "en": "Monterrosa Electro-Pop Project"
-        },
-        "year": "2020"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/9-Wag7Bog4I",
-      "https://www.youtube.com/embed/WNxV2ge52qc",
-      "https://www.youtube.com/embed/j--FYmTp1pc",
-      "https://www.youtube.com/embed/NMOr2-xj7OI"
-    ]
-  },
-  {
     "id": 5,
     "name": "Pablo Erroz",
     "type": [
@@ -430,56 +368,65 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 13,
-    "name": "Natalie Batlle",
+    "id": 6,
+    "name": "Rocío Saiz",
     "type": [
+      "djs",
+      "comunicadores",
       "emprendedoras",
-      "comunicadores"
+      "cantantes",
+      "actores"
     ],
-    "location": "Barcelona / Chicago",
-    "image": "/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg",
+    "location": "Madrid",
+    "image": "/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg",
     "description": {
-      "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Fundadora y ex presidenta de Juno House, el primer club privado en Europa dirigido a mujeres líderes que buscan un equilibrio entre su vida personal y profesional, con sede en Barcelona, que se ha consolidado como un referente nacional y de diseño.\n\nNatalie, con raíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto. Como ponente internacional, inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
-      "en": "Entrepreneur, business strategist, and brand ambassador, Natalie stands out for her expertise in storytelling and building brands with purpose, social impact, and media projection. Founder and former president of Juno House, the first private club in Europe aimed at women leaders seeking a balance between their personal and professional lives, based in Barcelona, which has established itself as a national and design benchmark.\n\nNatalie, with roots in Chicago and Spain, combines her experience in strategic communications, partnerships, and creative entrepreneurship to turn bold ideas into high-impact businesses. As an international speaker, she inspires with talks on leadership, conscious entrepreneurship, brand storytelling, fundraising, and entrepreneurial culture. She has collaborated with brands such as LVMH, Bumble, and Under Armour, and has been recognized in media outlets such as Vogue, La Vanguardia, and Forbes. She lives between Chicago and Barcelona with her husband and two children, dedicating herself to connecting people and brands to create innovative and purposeful projects."
+      "es": "Activismo, política, feminismo, reivindicación y mucha música. Rocío Saiz es cantante solista además de formar parte de los grupos Monterrosa y Las Chillers, también es DJ y comunicadora. Su discurso a favor de la diversidad y su crítica al heteropatriarcado la han convertido en uno de los referentes LGTBIQ+ con más carácter y fuerza en España.\n\nAhora se embarca en esta nueva aventura. La pista de baile es política, la diversión nunca es tan inocente como se pinta, y los dramas amorosos rara vez son una experiencia intransferible. Rocío habla de todo lo que sucede antes, durante y después del baile: desengaños, sexo con y sin amor, relaciones tóxicas, la plenitud de ser dueña de tu destino tantas horas como sea posible, pero también el insomnio derivado del estrés laboral y falta de dinero y la necesidad de cierto hedonismo para olvidarse de todo de vez en cuando.\n\nLo ha hecho con Monterrosa con éxitos eurovisivos y baladas fuera de tiempo, como si pudiéramos juntar a Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia y Vengaboys para hacer himnos generacionales que expliquen cómo nos sentimos en 2020, y ahora emprende camino en solitario para unir mundos entre la sofisticación de Monterrosa y su fuerza viva con Las Chillers. En el verano de 2022 fue la presentadora del desfile ‘Out of the closet’ para el Hotel W Ibiza y la presentadora del nuevo espacio de Movistar + ‘La Nevera de Inverfest’\n\nHa participado en numerosos festivales como el Atlantic Fest, Cala Mijas o el Culture Business Pride en Tenerife junto a Village People.",
+      "en": "Activism, politics, feminism, advocacy, and lots of music. Rocío Saiz is a solo singer in addition to being part of the groups Monterrosa and Las Chillers, as well as a DJ and communicator. Her discourse in favor of diversity and her criticism of the heteropatriarchy have made her one of the LGTBIQ+ references with the most character and strength in Spain.\n\nNow she embarks on this new adventure. The dance floor is political, fun is never as innocent as it is painted, and love dramas are rarely a non-transferable experience. Rocío talks about everything that happens before, during, and after the dance: disappointments, sex with and without love, toxic relationships, the fulfillment of being master of your destiny for as many hours as possible, but also insomnia derived from work stress and lack of money, and the need for a certain hedonism to forget everything from time to time.\n\nShe did it with Monterrosa with Eurovision-style hits and timeless ballads, as if we could bring together Tino Casal, La Oreja de Van Gogh, Abba, Astrud, Cecilia, and Vengaboys to make generational anthems explaining how we felt in 2020, and now she sets off on a solo journey to bridge worlds between the sophistication of Monterrosa and her live force with Las Chillers. In the summer of 2022, she hosted the \"Out of the closet\" fashion show for the W Ibiza Hotel and presented the new Movistar+ space \"La Nevera de Inverfest\".\n\nShe has participated in numerous festivals such as Atlantic Fest, Cala Mijas, or Culture Business Pride in Tenerife alongside Village People."
     },
     "gallery": [
-      "/Talents/JVV _ NATALIE BATLLE/imgi_4_FOTO-1-NATALIE-900x724.jpg",
-      "/Talents/JVV _ NATALIE BATLLE/imgi_5_FOTO-2-NATALIE-900x724.jpg",
-      "/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg",
-      "/Talents/JVV _ NATALIE BATLLE/imgi_7_FOTO-4-NATALIE-900x683.jpg",
-      "/Talents/JVV _ NATALIE BATLLE/natalie-batlle.jpg"
+      "/Talents/JVV _ ROCIO SAIZ/imgi_60_MG_6157c-570x570.jpg",
+      "/Talents/JVV _ ROCIO SAIZ/imgi_6_image0-1-900x1200.jpg",
+      "/Talents/JVV _ ROCIO SAIZ/imgi_8_image2-1-900x1200.jpg",
+      "/Talents/JVV _ ROCIO SAIZ/rocio-saiz-main.jpg"
     ],
     "stats": {
       "es": {
-        "Profesión": "Emprendedora / Consultora / Ponente",
-        "Base": "Chicago & Barcelona",
-        "Clientes": "LVMH, Bumble, Under Armour"
+        "Profesión": "Cantante / DJ / Activista",
+        "Bandas": "Las Chillers, Monterrosa"
       },
       "en": {
-        "Profession": "Entrepreneur / Consultant / Speaker",
-        "Base": "Chicago & Barcelona",
-        "Clients": "LVMH, Bumble, Under Armour"
+        "Profession": "Singer / DJ / Activist",
+        "Bands": "Las Chillers, Monterrosa"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Consultoría de Marca y Narración Estratégica",
-          "en": "Storytelling and Brand Consulting"
+          "es": "La Nevera de Inverfest (Presentadora de Movistar+)",
+          "en": "La Nevera de Inverfest (Movistar+ Presenter)"
         },
-        "year": "2020-2026"
+        "year": "2022"
       },
       {
         "title": {
-          "es": "Artículos editoriales en Vogue y Forbes",
-          "en": "Vogue & Forbes Editorial Features"
+          "es": "Out of the Closet (Presentadora en W Ibiza)",
+          "en": "Out of the Closet (W Ibiza Host)"
         },
-        "year": "2024"
+        "year": "2022"
+      },
+      {
+        "title": {
+          "es": "Proyecto Electro-Pop Monterrosa",
+          "en": "Monterrosa Electro-Pop Project"
+        },
+        "year": "2020"
       }
     ],
     "videos": [
-      "https://www.youtube.com/embed/IUKVjmlTwp0",
-      "https://www.youtube.com/embed/5ghIv0OXRVQ"
+      "https://www.youtube.com/embed/9-Wag7Bog4I",
+      "https://www.youtube.com/embed/WNxV2ge52qc",
+      "https://www.youtube.com/embed/j--FYmTp1pc",
+      "https://www.youtube.com/embed/NMOr2-xj7OI"
     ]
   },
   {
@@ -535,6 +482,59 @@ export const TALENT_DATA: Talent[] = [
     "videos": [
       "https://www.youtube.com/embed/a2RFE5kTC4g",
       "https://www.youtube.com/embed/29x7dws-FOY"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Natalie Batlle",
+    "type": [
+      "emprendedoras",
+      "comunicadores"
+    ],
+    "location": "Barcelona / Chicago",
+    "image": "/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg",
+    "description": {
+      "es": "Emprendedora, estratega de negocios y embajadora de marca, Natalie destaca por su expertise en storytelling y en la construcción de marcas con propósito, impacto social y proyección mediática. Fundadora y ex presidenta de Juno House, el primer club privado en Europa dirigido a mujeres líderes que buscan un equilibrio entre su vida personal y profesional, con sede en Barcelona, que se ha consolidado como un referente nacional y de diseño.\n\nNatalie, con raíces en Chicago y España, une su experiencia en comunicaciones estratégicas, alianzas y emprendimiento creativo para convertir bold ideas en negocios de alto impacto. Como ponente internacional, inspira con charlas sobre liderazgo, emprendimiento consciente, storytelling de marca, fundraising y cultura emprendedora. Ha colaborado con marcas como LVMH, Bumble y Under Armour, y ha sido reconocida en medios como Vogue, La Vanguardia y Forbes. Vive entre Chicago y Barcelona con su esposo y dos hijos, dedicándose a conectar personas y marcas para crear proyectos innovadores y con propósito.",
+      "en": "Entrepreneur, business strategist, and brand ambassador, Natalie stands out for her expertise in storytelling and building brands with purpose, social impact, and media projection. Founder and former president of Juno House, the first private club in Europe aimed at women leaders seeking a balance between their personal and professional lives, based in Barcelona, which has established itself as a national and design benchmark.\n\nNatalie, with roots in Chicago and Spain, combines her experience in strategic communications, partnerships, and creative entrepreneurship to turn bold ideas into high-impact businesses. As an international speaker, she inspires with talks on leadership, conscious entrepreneurship, brand storytelling, fundraising, and entrepreneurial culture. She has collaborated with brands such as LVMH, Bumble, and Under Armour, and has been recognized in media outlets such as Vogue, La Vanguardia, and Forbes. She lives between Chicago and Barcelona with her husband and two children, dedicating herself to connecting people and brands to create innovative and purposeful projects."
+    },
+    "gallery": [
+      "/Talents/JVV _ NATALIE BATLLE/imgi_4_FOTO-1-NATALIE-900x724.jpg",
+      "/Talents/JVV _ NATALIE BATLLE/imgi_5_FOTO-2-NATALIE-900x724.jpg",
+      "/Talents/JVV _ NATALIE BATLLE/imgi_6_FOTO-3-NATALIE-main.jpg",
+      "/Talents/JVV _ NATALIE BATLLE/imgi_7_FOTO-4-NATALIE-900x683.jpg",
+      "/Talents/JVV _ NATALIE BATLLE/natalie-batlle.jpg"
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Emprendedora / Consultora / Ponente",
+        "Base": "Chicago & Barcelona",
+        "Clientes": "LVMH, Bumble, Under Armour"
+      },
+      "en": {
+        "Profession": "Entrepreneur / Consultant / Speaker",
+        "Base": "Chicago & Barcelona",
+        "Clients": "LVMH, Bumble, Under Armour"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Consultoría de Marca y Narración Estratégica",
+          "en": "Storytelling and Brand Consulting"
+        },
+        "year": "2020-2026"
+      },
+      {
+        "title": {
+          "es": "Artículos editoriales en Vogue y Forbes",
+          "en": "Vogue & Forbes Editorial Features"
+        },
+        "year": "2024"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/IUKVjmlTwp0",
+      "https://www.youtube.com/embed/5ghIv0OXRVQ"
     ]
   },
   {
@@ -770,52 +770,6 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 16,
-    "name": "Eli Kapowski",
-    "type": [
-      "djs"
-    ],
-    "location": "Barcelona",
-    "image": "/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg",
-    "description": {
-      "es": "Eli Kapowski es una selectora que explora el sonido disco láser más 80′. Sus sesiones eclécticas de principio a final y profundizan en el sonido de la música funky y disco con toques houseros y ritmo electrónico con mucho beat, que sin duda no te harán parar de bailar.\n\nEn activo desde 2014, ha estado detrás de los platos en los lugares más emblemáticos de la ciudad condal y alrededores.\n\nEs pura explosión de good vibe remezclada estilosamente con mucha energía y elegancia. No hay ninguna restricción que valga: disfrute y baile por dentro y por fuera, sentado o de pie.",
-      "en": "Eli Kapowski is a selector exploring the laser disco sound of the 80s. Her sessions are eclectic from start to finish, delving into funky and disco music with house touches and electronic rhythms with heavy beats that will surely keep you dancing.\n\nActive since 2014, she has been behind the decks in the most iconic spots of Barcelona and its surroundings.\n\nShe is a pure explosion of good vibes stylishly mixed with energy and elegance. No restrictions apply: enjoy and dance inside and out, sitting or standing."
-    },
-    "gallery": [
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_10_2020-03-26-2-1.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_4_WhatsApp-Image-2022-10-27-at-12.27.21-7.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_6_image2-900x1200.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_7_image1-900x1200.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_8_B173ABFE-2BFE-4437-8FE8-D40E9BE41A86-900x1200.jpg",
-      "/Talents/JVV _ ELI KAPOWSKI/imgi_9_2020-03-26-1-1.jpg"
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "DJ / Selectora",
-        "Estilo": "Disco Láser 80s / Funky / House",
-        "Trayectoria": "Activa desde 2014"
-      },
-      "en": {
-        "Profession": "DJ / Selector",
-        "Style": "Disco Laser 80s / Funky / House",
-        "Career": "Active since 2014"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Sesiones Residencias en Barcelona",
-          "en": "Residency Sessions in Barcelona"
-        },
-        "year": "2014-2026"
-      }
-    ],
-    "videos": [
-      "https://www.youtube.com/embed/mfF6bnxwpQk"
-    ]
-  },
-  {
     "id": 18,
     "name": "Diego Osorio",
     "type": [
@@ -873,53 +827,49 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 31,
-    "name": "Ale Marañón",
+    "id": 16,
+    "name": "Eli Kapowski",
     "type": [
-      "emprendedoras",
-      "pintoras"
+      "djs"
     ],
-    "location": "Madrid",
-    "image": "/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg",
+    "location": "Barcelona",
+    "image": "/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg",
     "description": {
-      "es": "Alejandra Marañón, licenciada en Publicidad y Relaciones Públicas por la Universidad de Navarra, es artista, creadora de contenido y emprendedora especializada en moda, belleza y cosmética.\n\nAle es hermana de Carlota Marañón, ambas comparten el gusto por la estética, los viajes y el arte.\n\nEn 2018 fundó Epiliscious, su primera firma de cosmética, que llegó a comercializarse en Druni.\n\nEn 2025 creó Amortizia Dark Couture, marca de moda con estética gótica, diseñada y producida en España y con presencia internacional que cada vez tiene más fieles clientas y clientes.\n\nCompagina su trayectoria empresarial con su trabajo como pintora y la creación de contenido en Instagram y TikTok, donde comparte su particular universo dark a través del arte, la moda, el maquillaje, la joyería y el lifestyle.",
-      "en": "Alejandra Marañón, who holds a degree in Advertising and Public Relations from the University of Navarra, is an artist, content creator, and entrepreneur specializing in fashion, beauty, and cosmetics.\n\nAle is the sister of Carlota Marañón; both share a passion for aesthetics, travel, and art.\n\nIn 2018 she founded Epiliscious, her first cosmetics brand, which went on to be sold at Druni.\n\nIn 2025 she created Amortizia Dark Couture, a gothic-aesthetic fashion brand designed and produced in Spain with an international presence and an ever-growing, loyal clientele.\n\nShe combines her entrepreneurial career with her work as a painter and content creation on Instagram and TikTok, where she shares her distinctive dark universe through art, fashion, makeup, jewelry, and lifestyle."
+      "es": "Eli Kapowski es una selectora que explora el sonido disco láser más 80′. Sus sesiones eclécticas de principio a final y profundizan en el sonido de la música funky y disco con toques houseros y ritmo electrónico con mucho beat, que sin duda no te harán parar de bailar.\n\nEn activo desde 2014, ha estado detrás de los platos en los lugares más emblemáticos de la ciudad condal y alrededores.\n\nEs pura explosión de good vibe remezclada estilosamente con mucha energía y elegancia. No hay ninguna restricción que valga: disfrute y baile por dentro y por fuera, sentado o de pie.",
+      "en": "Eli Kapowski is a selector exploring the laser disco sound of the 80s. Her sessions are eclectic from start to finish, delving into funky and disco music with house touches and electronic rhythms with heavy beats that will surely keep you dancing.\n\nActive since 2014, she has been behind the decks in the most iconic spots of Barcelona and its surroundings.\n\nShe is a pure explosion of good vibes stylishly mixed with energy and elegance. No restrictions apply: enjoy and dance inside and out, sitting or standing."
     },
     "gallery": [
-      "/Talents/JVV _ ALE MARANON/ale-maranon-1.jpg",
-      "/Talents/JVV _ ALE MARANON/ale-maranon-2.jpg",
-      "/Talents/JVV _ ALE MARANON/ale-maranon-3.jpg",
-      "/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg"
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_10_2020-03-26-2-1.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_4_WhatsApp-Image-2022-10-27-at-12.27.21-7.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_5_09-WS-160822-WEB-96-900x1200-main.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_6_image2-900x1200.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_7_image1-900x1200.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_8_B173ABFE-2BFE-4437-8FE8-D40E9BE41A86-900x1200.jpg",
+      "/Talents/JVV _ ELI KAPOWSKI/imgi_9_2020-03-26-1-1.jpg"
     ],
     "stats": {
       "es": {
-        "Profesión": "Artista · Emprendedora · Creadora de Contenido",
-        "Estudios": "Publicidad y Relaciones Públicas (Universidad de Navarra)",
-        "Marcas": "Amortizia Dark Couture, Epiliscious",
-        "Especialidad": "Arte, Moda, Belleza y Cosmética"
+        "Profesión": "DJ / Selectora",
+        "Estilo": "Disco Láser 80s / Funky / House",
+        "Trayectoria": "Activa desde 2014"
       },
       "en": {
-        "Profession": "Artist · Entrepreneur · Content Creator",
-        "Education": "Advertising & Public Relations (University of Navarra)",
-        "Brands": "Amortizia Dark Couture, Epiliscious",
-        "Specialty": "Art, Fashion, Beauty & Cosmetics"
+        "Profession": "DJ / Selector",
+        "Style": "Disco Laser 80s / Funky / House",
+        "Career": "Active since 2014"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Amortizia Dark Couture (Fundadora y Directora Creativa)",
-          "en": "Amortizia Dark Couture (Founder & Creative Director)"
+          "es": "Sesiones Residencias en Barcelona",
+          "en": "Residency Sessions in Barcelona"
         },
-        "year": "2025"
-      },
-      {
-        "title": {
-          "es": "Epiliscious (Fundadora de firma de cosmética)",
-          "en": "Epiliscious (Founder of Cosmetics Brand)"
-        },
-        "year": "2018"
+        "year": "2014-2026"
       }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/mfF6bnxwpQk"
     ]
   },
   {
@@ -968,6 +918,56 @@ export const TALENT_DATA: Talent[] = [
           "en": "Music for Todo Lo Otro (HBO Series)"
         },
         "year": "2021"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Ale Marañón",
+    "type": [
+      "emprendedoras",
+      "pintoras"
+    ],
+    "location": "Madrid",
+    "image": "/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg",
+    "description": {
+      "es": "Alejandra Marañón, licenciada en Publicidad y Relaciones Públicas por la Universidad de Navarra, es artista, creadora de contenido y emprendedora especializada en moda, belleza y cosmética.\n\nAle es hermana de Carlota Marañón, ambas comparten el gusto por la estética, los viajes y el arte.\n\nEn 2018 fundó Epiliscious, su primera firma de cosmética, que llegó a comercializarse en Druni.\n\nEn 2025 creó Amortizia Dark Couture, marca de moda con estética gótica, diseñada y producida en España y con presencia internacional que cada vez tiene más fieles clientas y clientes.\n\nCompagina su trayectoria empresarial con su trabajo como pintora y la creación de contenido en Instagram y TikTok, donde comparte su particular universo dark a través del arte, la moda, el maquillaje, la joyería y el lifestyle.",
+      "en": "Alejandra Marañón, who holds a degree in Advertising and Public Relations from the University of Navarra, is an artist, content creator, and entrepreneur specializing in fashion, beauty, and cosmetics.\n\nAle is the sister of Carlota Marañón; both share a passion for aesthetics, travel, and art.\n\nIn 2018 she founded Epiliscious, her first cosmetics brand, which went on to be sold at Druni.\n\nIn 2025 she created Amortizia Dark Couture, a gothic-aesthetic fashion brand designed and produced in Spain with an international presence and an ever-growing, loyal clientele.\n\nShe combines her entrepreneurial career with her work as a painter and content creation on Instagram and TikTok, where she shares her distinctive dark universe through art, fashion, makeup, jewelry, and lifestyle."
+    },
+    "gallery": [
+      "/Talents/JVV _ ALE MARANON/ale-maranon-1.jpg",
+      "/Talents/JVV _ ALE MARANON/ale-maranon-2.jpg",
+      "/Talents/JVV _ ALE MARANON/ale-maranon-3.jpg",
+      "/Talents/JVV _ ALE MARANON/ale-maranon-main.jpg"
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Artista · Emprendedora · Creadora de Contenido",
+        "Estudios": "Publicidad y Relaciones Públicas (Universidad de Navarra)",
+        "Marcas": "Amortizia Dark Couture, Epiliscious",
+        "Especialidad": "Arte, Moda, Belleza y Cosmética"
+      },
+      "en": {
+        "Profession": "Artist · Entrepreneur · Content Creator",
+        "Education": "Advertising & Public Relations (University of Navarra)",
+        "Brands": "Amortizia Dark Couture, Epiliscious",
+        "Specialty": "Art, Fashion, Beauty & Cosmetics"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Amortizia Dark Couture (Fundadora y Directora Creativa)",
+          "en": "Amortizia Dark Couture (Founder & Creative Director)"
+        },
+        "year": "2025"
+      },
+      {
+        "title": {
+          "es": "Epiliscious (Fundadora de firma de cosmética)",
+          "en": "Epiliscious (Founder of Cosmetics Brand)"
+        },
+        "year": "2018"
       }
     ]
   },
@@ -1176,48 +1176,6 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 24,
-    "name": "Plates, Tables and More",
-    "type": [
-      "directores"
-    ],
-    "location": "Milán / Madrid",
-    "image": "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_4_Plates-tables-and-more-3-scaled-900x1200-main.jpg",
-    "description": {
-      "es": "Aliroska Adams es fashion stylist (graduada en Instituto Marangoni de Milán) madre de dos hijos, con una pasión para recibir invitados y la creación de mesas especiales. Table setting, centros de mesa, arreglos florales, bandejas de café y té y cualquier cosa que requiera una presentación impecable.\n\nPlates, tables and more es su proyecto, una idea que nació después de años de experiencia en organización de eventos privados tanto pequeños como grandes.\n\nEl objetivo es trabajar con las personas y las marcas en el arte de la decoración de mesas para crear experiencias únicas.",
-      "en": "Aliroska Adams is a fashion stylist (graduated from Istituto Marangoni in Milan), mother of two, with a passion for hosting and creating special tables. Table setting, centerpieces, floral arrangements, coffee and tea trays, and anything requiring impeccable presentation.\n\nPlates, Tables and More is her project, an idea born after years of experience organizing private events both small and large.\n\nThe goal is to work with individuals and brands in the art of table decoration to create unique experiences."
-    },
-    "gallery": [
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_4_Plates-tables-and-more-3-scaled-900x1200-main.jpg",
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_5_Plates-tables-and-more-2-scaled-900x1200.jpg",
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_6_Aliroska-Plates-table-and-more-scaled-900x1200.jpg",
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_7_WhatsApp-Image-2022-04-07-at-3.02.38-PM-1-900x1200.jpg",
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_8_WhatsApp-Image-2022-04-07-at-6.21.12-PM-1.jpg",
-      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_9_WhatsApp-Image-2022-04-07-at-6.21.55-PM-1.jpg"
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Estilista / Especialista en Tablescapes",
-        "Fundadora": "Aliroska Adams",
-        "Estudios": "Istituto Marangoni (Milán)"
-      },
-      "en": {
-        "Profession": "Stylist / Tablescapes Specialist",
-        "Founder": "Aliroska Adams",
-        "Education": "Istituto Marangoni (Milan)"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Diseño de mesas y dirección de arte en eventos privados",
-          "en": "Table design & art direction in private events"
-        },
-        "year": "2020-2026"
-      }
-    ]
-  },
-  {
     "id": 14,
     "name": "Suri",
     "type": [
@@ -1275,49 +1233,44 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 26,
-    "name": "Rebeca Khamlichi",
+    "id": 24,
+    "name": "Plates, Tables and More",
     "type": [
-      "pintoras"
+      "directores"
     ],
-    "location": "Madrid",
-    "image": "/Talents/JVV _ REBECA KHAMLICHI/8717_image_586216.jpg",
+    "location": "Milán / Madrid",
+    "image": "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_4_Plates-tables-and-more-3-scaled-900x1200-main.jpg",
     "description": {
-      "es": "Rebeca Khamlichi (Madrid, 1987) es una artista plástica, ilustradora y escritora inspirada por la iconografía religiosa del siglo XVII, los dibujos animados y Michael Haneke, el rosa chicle y las Pinturas Negras de Goya, el Superflat y la copla: algo así como si Doña Concha Piquer se arrancara por haikus. Pinta en Madrid en una terraza con vistas a los tejados del barrio de Lavapiés. Y lo hace, dice, porque- de momento- los acrílicos se dispensan sin receta médica.\n\nRebeca prepara una exposición y en este tiempo ha trabajado en acciones de marcas como Reebok, Coca-Cola, Beefeater, Absolut,… donde despliega todo su mundo de color y creatividad para dar forma y personalidad a zapatillas, botellas, murales o lo que se le ponga por delante.",
-      "en": "Rebeca Khamlichi (Madrid, 1987) is a visual artist, illustrator, and writer inspired by 17th-century religious iconography, cartoons and Michael Haneke, bubblegum pink and Goya's Black Paintings, Superflat and copla: sort of as if Doña Concha Piquer broke into haikus. She paints in Madrid on a terrace overlooking the rooftops of the Lavapiés neighborhood. And she does it, she says, because — for now — acrylics are dispensed without a prescription.\n\nRebeca is preparing an exhibition and during this time has worked on brand actions for Reebok, Coca-Cola, Beefeater, Absolut... where she deploys her whole world of color and creativity to give shape and personality to sneakers, bottles, murals, or whatever is put in front of her."
+      "es": "Aliroska Adams es fashion stylist (graduada en Instituto Marangoni de Milán) madre de dos hijos, con una pasión para recibir invitados y la creación de mesas especiales. Table setting, centros de mesa, arreglos florales, bandejas de café y té y cualquier cosa que requiera una presentación impecable.\n\nPlates, tables and more es su proyecto, una idea que nació después de años de experiencia en organización de eventos privados tanto pequeños como grandes.\n\nEl objetivo es trabajar con las personas y las marcas en el arte de la decoración de mesas para crear experiencias únicas.",
+      "en": "Aliroska Adams is a fashion stylist (graduated from Istituto Marangoni in Milan), mother of two, with a passion for hosting and creating special tables. Table setting, centerpieces, floral arrangements, coffee and tea trays, and anything requiring impeccable presentation.\n\nPlates, Tables and More is her project, an idea born after years of experience organizing private events both small and large.\n\nThe goal is to work with individuals and brands in the art of table decoration to create unique experiences."
     },
     "gallery": [
-      "/Talents/JVV _ REBECA KHAMLICHI/8717_image_586216.jpg",
-      "/Talents/JVV _ REBECA KHAMLICHI/Rebecahipsterian.jpg",
-      "/Talents/JVV _ REBECA KHAMLICHI/jvv-m.jpg",
-      "/Talents/JVV _ REBECA KHAMLICHI/rebeca-khamlichi.jpg"
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_4_Plates-tables-and-more-3-scaled-900x1200-main.jpg",
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_5_Plates-tables-and-more-2-scaled-900x1200.jpg",
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_6_Aliroska-Plates-table-and-more-scaled-900x1200.jpg",
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_7_WhatsApp-Image-2022-04-07-at-3.02.38-PM-1-900x1200.jpg",
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_8_WhatsApp-Image-2022-04-07-at-6.21.12-PM-1.jpg",
+      "/Talents/JVV _ PLATES, TABLES AND MORE/imgi_9_WhatsApp-Image-2022-04-07-at-6.21.55-PM-1.jpg"
     ],
     "stats": {
       "es": {
-        "Profesión": "Pintora / Ilustradora / Escritora",
-        "Clientes": "Reebok, Beefeater, Coca-Cola, Absolut",
-        "Estilo": "Pop-Art / Contemporáneo / Superflat"
+        "Profesión": "Estilista / Especialista en Tablescapes",
+        "Fundadora": "Aliroska Adams",
+        "Estudios": "Istituto Marangoni (Milán)"
       },
       "en": {
-        "Profession": "Painter / Illustrator / Writer",
-        "Clients": "Reebok, Beefeater, Coca-Cola, Absolut",
-        "Style": "Pop-Art / Contemporary / Superflat"
+        "Profession": "Stylist / Tablescapes Specialist",
+        "Founder": "Aliroska Adams",
+        "Education": "Istituto Marangoni (Milan)"
       }
     },
     "projects": [
       {
         "title": {
-          "es": "Campaña de Murales Absolut",
-          "en": "Absolut Murals Campaign"
+          "es": "Diseño de mesas y dirección de arte en eventos privados",
+          "en": "Table design & art direction in private events"
         },
-        "year": "2023"
-      },
-      {
-        "title": {
-          "es": "Diseño de Colaboración Reebok",
-          "en": "Reebok Collaboration Design"
-        },
-        "year": "2022"
+        "year": "2020-2026"
       }
     ]
   },
@@ -1367,6 +1320,53 @@ export const TALENT_DATA: Talent[] = [
           "en": "Founding of the first federated LGTBIQ+ Taekwondo Club"
         },
         "year": "2021"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Rebeca Khamlichi",
+    "type": [
+      "pintoras"
+    ],
+    "location": "Madrid",
+    "image": "/Talents/JVV _ REBECA KHAMLICHI/8717_image_586216.jpg",
+    "description": {
+      "es": "Rebeca Khamlichi (Madrid, 1987) es una artista plástica, ilustradora y escritora inspirada por la iconografía religiosa del siglo XVII, los dibujos animados y Michael Haneke, el rosa chicle y las Pinturas Negras de Goya, el Superflat y la copla: algo así como si Doña Concha Piquer se arrancara por haikus. Pinta en Madrid en una terraza con vistas a los tejados del barrio de Lavapiés. Y lo hace, dice, porque- de momento- los acrílicos se dispensan sin receta médica.\n\nRebeca prepara una exposición y en este tiempo ha trabajado en acciones de marcas como Reebok, Coca-Cola, Beefeater, Absolut,… donde despliega todo su mundo de color y creatividad para dar forma y personalidad a zapatillas, botellas, murales o lo que se le ponga por delante.",
+      "en": "Rebeca Khamlichi (Madrid, 1987) is a visual artist, illustrator, and writer inspired by 17th-century religious iconography, cartoons and Michael Haneke, bubblegum pink and Goya's Black Paintings, Superflat and copla: sort of as if Doña Concha Piquer broke into haikus. She paints in Madrid on a terrace overlooking the rooftops of the Lavapiés neighborhood. And she does it, she says, because — for now — acrylics are dispensed without a prescription.\n\nRebeca is preparing an exhibition and during this time has worked on brand actions for Reebok, Coca-Cola, Beefeater, Absolut... where she deploys her whole world of color and creativity to give shape and personality to sneakers, bottles, murals, or whatever is put in front of her."
+    },
+    "gallery": [
+      "/Talents/JVV _ REBECA KHAMLICHI/8717_image_586216.jpg",
+      "/Talents/JVV _ REBECA KHAMLICHI/Rebecahipsterian.jpg",
+      "/Talents/JVV _ REBECA KHAMLICHI/jvv-m.jpg",
+      "/Talents/JVV _ REBECA KHAMLICHI/rebeca-khamlichi.jpg"
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Pintora / Ilustradora / Escritora",
+        "Clientes": "Reebok, Beefeater, Coca-Cola, Absolut",
+        "Estilo": "Pop-Art / Contemporáneo / Superflat"
+      },
+      "en": {
+        "Profession": "Painter / Illustrator / Writer",
+        "Clients": "Reebok, Beefeater, Coca-Cola, Absolut",
+        "Style": "Pop-Art / Contemporary / Superflat"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Campaña de Murales Absolut",
+          "en": "Absolut Murals Campaign"
+        },
+        "year": "2023"
+      },
+      {
+        "title": {
+          "es": "Diseño de Colaboración Reebok",
+          "en": "Reebok Collaboration Design"
+        },
+        "year": "2022"
       }
     ]
   },
@@ -1594,56 +1594,6 @@ export const TALENT_DATA: Talent[] = [
     ]
   },
   {
-    "id": 23,
-    "name": "Prostíbulo Poético",
-    "type": [],
-    "location": "Barcelona / Madrid",
-    "image": "/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg",
-    "description": {
-      "es": "Hijo primogénito del «Poetry Brothel» de Nueva York, instalado en Barcelona desde hace ya diez años y comenzando su andadura en Madrid, cosechando seguidores acérrimos y buenas críticas, este colectivo de poetas, bailarines y performers, convierte cada evento en un campo de pruebas donde la poesía en privado le echa un pulso a los típicos recitales al uso.\n\nDirigido por la actriz y poeta Sònia Barba, a la que el proyecto se le ajusta como anillo al dedo por su trayectoria creativa y su afición a la poesía desde niña, Prostíbulo Poético viene realizando actuaciones periódicas en Festivales, hoteles, fiestas privadas y locales tan especiales como la Sala Equis y el Club Matador en Madrid y Soho House, La Bacanal o el Festival Palo Alto en Barcelona.\n\nPoesía, irreverencia y rebelión es el lema de estas poetas que llegaron para quedarse. Así lo certifican sus diez años de trayectoria y los »Libros Rojos», publicación anual que recoge el trabajo de las integrantes, y gancho que utilizan para seducir a los que acuden a ellas atraídos por la curiosidad y salen convencidos de que ha llegado la hora de derribar los prejuicios que rodean a la temida poesía. Aseguran que van a quitarte el miedo a los fantasmas. Y que en una época en la que uno no puede fiarse de lo que ve, solo queda fiarse de lo que siente.\n\nSe encuentran en plena expansión ibérica, llegando a Valladolid y Lisboa con talleres y actuaciones.",
-      "en": "The eldest son of the New York \"Poetry Brothel\", established in Barcelona for ten years and beginning its journey in Madrid, harvesting staunch followers and good reviews, this collective of poets, dancers, and performers turns every event into a testing ground where poetry in private wrestles with typical recitals.\n\nDirected by actress and poet Sònia Barba, to whom the project fits like a glove due to her creative career and love of poetry since childhood, Prostíbulo Poético has been performing regularly in festivals, hotels, private parties, and venues as special as Sala Equis and Club Matador in Madrid, and Soho House, La Bacanal, or Palo Alto Festival in Barcelona.\n\nPoetry, irreverence, and rebellion is the motto of these poets who are here to stay. This is certified by their ten-year career and the \"Libros Rojos\", an annual publication that collects the work of the members, and the hook they use to seduce those who come to them drawn by curiosity, leaving convinced that the time has come to break down the prejudices surrounding feared poetry. They assure they will take away your fear of ghosts. And that in a time when one cannot trust what they see, they can only trust what they feel.\n\nThey are in full Iberian expansion, reaching Valladolid and Lisbon with workshops and performances."
-    },
-    "gallery": [
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg",
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_6_3.png",
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_7_4.jpg",
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_8_unnamed-2.png",
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_9_unnamed.png",
-      "/Talents/JVV _ PROSTÍBULO POÉTICO/prostibulo-a-color-1280x768.jpg"
-    ],
-    "stats": {
-      "es": {
-        "Profesión": "Colectivo Poético / Performers",
-        "Dirección": "Sònia Barba",
-        "Publicaciones": "Libros Rojos"
-      },
-      "en": {
-        "Profession": "Poetic Collective / Performers",
-        "Direction": "Sònia Barba",
-        "Publications": "Libros Rojos"
-      }
-    },
-    "projects": [
-      {
-        "title": {
-          "es": "Actuaciones en Soho House, Sala Equis y Club Matador",
-          "en": "Performances at Soho House, Sala Equis & Club Matador"
-        },
-        "year": "2016-2026"
-      },
-      {
-        "title": {
-          "es": "Publicación de los Libros Rojos (Anual)",
-          "en": "Libros Rojos Publication (Annual)"
-        },
-        "year": "2014-2026"
-      }
-    ],
-    "videos": [
-      "https://player.vimeo.com/video/69289779?h=5bd6d811b4"
-    ]
-  },
-  {
     "id": 30,
     "name": "MJE",
     "type": [
@@ -1703,6 +1653,56 @@ export const TALENT_DATA: Talent[] = [
       "https://www.youtube.com/embed/qhmHOk7UGb0",
       "https://www.youtube.com/embed/e0QN3_YdVsU",
       "https://www.youtube.com/embed/Tba0XM3LTBI"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Prostíbulo Poético",
+    "type": [],
+    "location": "Barcelona / Madrid",
+    "image": "/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg",
+    "description": {
+      "es": "Hijo primogénito del «Poetry Brothel» de Nueva York, instalado en Barcelona desde hace ya diez años y comenzando su andadura en Madrid, cosechando seguidores acérrimos y buenas críticas, este colectivo de poetas, bailarines y performers, convierte cada evento en un campo de pruebas donde la poesía en privado le echa un pulso a los típicos recitales al uso.\n\nDirigido por la actriz y poeta Sònia Barba, a la que el proyecto se le ajusta como anillo al dedo por su trayectoria creativa y su afición a la poesía desde niña, Prostíbulo Poético viene realizando actuaciones periódicas en Festivales, hoteles, fiestas privadas y locales tan especiales como la Sala Equis y el Club Matador en Madrid y Soho House, La Bacanal o el Festival Palo Alto en Barcelona.\n\nPoesía, irreverencia y rebelión es el lema de estas poetas que llegaron para quedarse. Así lo certifican sus diez años de trayectoria y los »Libros Rojos», publicación anual que recoge el trabajo de las integrantes, y gancho que utilizan para seducir a los que acuden a ellas atraídos por la curiosidad y salen convencidos de que ha llegado la hora de derribar los prejuicios que rodean a la temida poesía. Aseguran que van a quitarte el miedo a los fantasmas. Y que en una época en la que uno no puede fiarse de lo que ve, solo queda fiarse de lo que siente.\n\nSe encuentran en plena expansión ibérica, llegando a Valladolid y Lisboa con talleres y actuaciones.",
+      "en": "The eldest son of the New York \"Poetry Brothel\", established in Barcelona for ten years and beginning its journey in Madrid, harvesting staunch followers and good reviews, this collective of poets, dancers, and performers turns every event into a testing ground where poetry in private wrestles with typical recitals.\n\nDirected by actress and poet Sònia Barba, to whom the project fits like a glove due to her creative career and love of poetry since childhood, Prostíbulo Poético has been performing regularly in festivals, hotels, private parties, and venues as special as Sala Equis and Club Matador in Madrid, and Soho House, La Bacanal, or Palo Alto Festival in Barcelona.\n\nPoetry, irreverence, and rebellion is the motto of these poets who are here to stay. This is certified by their ten-year career and the \"Libros Rojos\", an annual publication that collects the work of the members, and the hook they use to seduce those who come to them drawn by curiosity, leaving convinced that the time has come to break down the prejudices surrounding feared poetry. They assure they will take away your fear of ghosts. And that in a time when one cannot trust what they see, they can only trust what they feel.\n\nThey are in full Iberian expansion, reaching Valladolid and Lisbon with workshops and performances."
+    },
+    "gallery": [
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/articulos-635885-main.jpg",
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_6_3.png",
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_7_4.jpg",
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_8_unnamed-2.png",
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/imgi_9_unnamed.png",
+      "/Talents/JVV _ PROSTÍBULO POÉTICO/prostibulo-a-color-1280x768.jpg"
+    ],
+    "stats": {
+      "es": {
+        "Profesión": "Colectivo Poético / Performers",
+        "Dirección": "Sònia Barba",
+        "Publicaciones": "Libros Rojos"
+      },
+      "en": {
+        "Profession": "Poetic Collective / Performers",
+        "Direction": "Sònia Barba",
+        "Publications": "Libros Rojos"
+      }
+    },
+    "projects": [
+      {
+        "title": {
+          "es": "Actuaciones en Soho House, Sala Equis y Club Matador",
+          "en": "Performances at Soho House, Sala Equis & Club Matador"
+        },
+        "year": "2016-2026"
+      },
+      {
+        "title": {
+          "es": "Publicación de los Libros Rojos (Anual)",
+          "en": "Libros Rojos Publication (Annual)"
+        },
+        "year": "2014-2026"
+      }
+    ],
+    "videos": [
+      "https://player.vimeo.com/video/69289779?h=5bd6d811b4"
     ]
   }
 ];
